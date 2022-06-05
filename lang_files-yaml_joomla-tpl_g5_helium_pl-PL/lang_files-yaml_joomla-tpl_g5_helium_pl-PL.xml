@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="2.5" method="upgrade">
+
+    <name>lang_files-yaml_joomla-tpl_g5_helium_pl-PL</name>
+    <author>Zbigniew Sokal</author>
+    <creationDate>31 May 2022</creationDate>
+    <copyright>(C) 2018-2022 Poradniki Dziadka</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>admin@dziadek.guide</authorEmail>
+    <authorUrl>https://dziadek.guide</authorUrl>
+    <version>5.5.13</version>
+    <description>Polski (pl-PL) pakiet językowy dla plików YAML Helium szablonu Joomla Gantry 5</description>
+
+    <!-- Fileset definition -->
+    <fileset>
+
+        <!-- templates/styles -->
+        <files folder="templates" target="templates/g5_helium/blueprints/styles">
+            <filename>above.yaml</filename>
+            <filename>accent.yaml</filename>
+            <filename>base.yaml</filename>
+            <filename>breakpoints.yaml</filename>
+            <filename>expanded.yaml</filename>
+            <filename>features.yaml</filename>
+            <filename>font.yaml</filename>
+            <filename>footer.yaml</filename>
+            <filename>header.yaml</filename>
+            <filename>intro.yaml</filename>
+            <filename>link.yaml</filename>
+            <filename>menu.yaml</filename>
+            <filename>navigation.yaml</filename>
+            <filename>offcanvas.yaml</filename>
+            <filename>testimonials.yaml</filename>
+            <filename>utility.yaml</filename>
+        </files>
+
+        <!-- templates/gantry -->
+        <files folder="templates" target="templates/g5_helium/gantry">
+            <filename>presets.yaml</filename>
+            <filename>theme.yaml</filename>
+        </files>
+
+        <!-- templates/layouts -->
+        <files folder="templates" target="templates/g5_helium/layouts">
+            <filename>_body_only.yaml</filename>
+            <filename>_error.yaml</filename>
+            <filename>_offline.yaml</filename>
+            <filename>default.yaml</filename>
+            <filename>home_-_particles.yaml</filename>
+        </files>
+
+        <!-- templates/particles -->
+        <files folder="templates" target="templates/g5_helium/particles">
+            <filename>contentcubes.yaml</filename>
+            <filename>contenttabs.yaml</filename>
+            <filename>copyright.yaml</filename>
+            <filename>horizontalmenu.yaml</filename>
+            <filename>owlcarousel.yaml</filename>
+        </files>
+    </fileset>
+    <updateservers>
+        <server type="collection" priority="1" name="lang_gantry5_pl-PL">http://upgrade.dziadek.guide/translationlist.xml</server>
+    </updateservers>
+</extension>

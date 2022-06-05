@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="2.5" method="upgrade">
+
+    <name>lang_joomla-tpl_g5_helium_pl-PL</name>
+    <author>Zbigniew Sokal</author>
+    <creationDate>31 May 2022</creationDate>
+    <copyright>(C) 2018-2022 Poradniki Dziadka</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>admin@dziadek.guide</authorEmail>
+    <authorUrl>https://dziadek.guide</authorUrl>
+    <version>5.5.13</version>
+    <description>Polski (pl-PL) pakiet językowy dla Helium szablonu Gantry 5</description>
+
+    <!-- templates/g5_helium -->
+    <files folder="language" target="templates/g5_helium/language/pl-PL">
+        <filename>pl-PL.tpl_g5_helium.ini</filename>
+        <filename>pl-PL.tpl_g5_helium.sys.ini</filename>
+    </files>
+
+    <updateservers>
+        <server type="collection" priority="1" name="lang_gantry5_pl-PL">http://upgrade.dziadek.guide/translationlist.xml</server>
+    </updateservers>
+</extension>

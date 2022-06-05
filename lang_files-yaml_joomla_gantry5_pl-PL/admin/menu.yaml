@@ -1,0 +1,13 @@
+name: Menu
+description: Gantry menu.
+type: particle
+
+form:
+  fields:
+    settings.title:
+      type: input.text
+      label: Title
+
+    settings.description:
+      type: input.text
+      label: Description
