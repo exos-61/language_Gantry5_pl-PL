@@ -1,0 +1,85 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_videogallery1 {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_heading %}
+    {% if particle.heading_title or particle.heading_desc %}
+        <div class="gp_heading" style="text-align:{{ particle.heading_text_align|e }};">
+            {% if particle.heading_title %}
+                <{{ particle.heading_title_tag|e }} style="margin-top:0;">{{ particle.heading_title|raw }}</{{ particle.heading_title_tag|e }}>
+            {% endif %}
+            {% if particle.heading_desc %}
+                <div>{{ particle.heading_desc|raw|nl2br }}</div>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endset %}
+
+{% set gp_contents %}
+	{% for item in particle.gp_items %}
+        <div class="g-block size-{{ particle.columns|e }}">
+            <div class="gp_item {{ particle.title_pos|e }}">
+                {% set videoUrl %}
+                    {% if item.videoType == 'youtube' %}href="//www.youtube.com/embed/{{ item.yt_id|e }}?version=3{% if particle.autoplay %}&autoplay=1{% endif %}"{% else %}href="javascript:;"{% endif %}
+                    {% if item.videoType == 'local' %} data-lc-href="{% if item.mp4 %}{{ url(item.mp4)|e }}{% endif %}{% if item.webm and not item.mp4 %}{{ url(item.webm)|e }}{% endif %}{% if item.mp4 and item.webm %}, {{ url(item.webm)|e }}{% endif %}"{% endif %}
+                {% endset %}
+                <a {{ videoUrl }} data-rel="gpvideo{% if particle.gallery %}:{{ id }}{% endif %}">
+                    {% set thumbImg %}
+                        {% if item.videoType == 'youtube' %}
+                            {% if item.yt_img %}src="{{ url(item.yt_img)|e }}"{% else %}src="https://img.youtube.com/vi/{{ item.yt_id|e }}/maxresdefault.jpg"{% endif %}
+                        {% else %}
+                            {% if item.local_img %}src="{{ url(item.local_img)|e }}"{% endif %}
+                        {% endif %}
+                    {% endset %}
+                    <div class="gp_image">
+                        <img {{ thumbImg }} alt="{{ item.title|e }}">
+                        <i class="fa fa-play gp_item_icon"></i>
+                    </div>
+                    {% if item.title %}
+                        <h4 class="gp_item_title">{{ item.title|raw }}</h4>
+                    {% endif %}
+                </a>
+            </div>
+        </div>
+	{% endfor %}
+{% endset %}
+
+{% set gpscript %}
+    jQuery(document).ready(function($) {
+        $('#{{ id }} a[data-rel^=gpvideo').lightcase({
+            maxWidth: 1900,
+            maxHeight: 1400,
+            showSequenceInfo: false,
+            showTitle: false,
+            showCaption: false,
+            video: {
+                width: 1200,
+                height: 675,
+                autoplay : {% if particle.autoplay %}true{% else %}false{% endif %}
+            }
+        });
+    });
+{% endset %}
+
+{% block particle %}
+	{{ containerblock_start }}
+        {% if particle.gp_items %}
+            {{ gp_heading }}
+            <div class="gp_items">
+                <div class="g-grid{% if particle.margin %} gp_margin{% endif %}">
+                    {{ gp_contents }}
+                </div>    
+            </div>
+        {% endif %}
+	{{ containerblock_end }}
+{% endblock %}
+
+{% do gantry.load('jquery') %}
+{% do gantry.load('lightcase.init') %}
+{% do gantry.document.addInlineScript(gpscript, 0, 'footer') %}

@@ -1,0 +1,105 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_timeline {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_heading %}
+	{% if particle.heading_title or particle.heading_desc %}
+		<div class="gp_heading" style="text-align:{{ particle.heading_text_align|e }};">
+			{% if particle.heading_title %}
+				<{{ particle.heading_title_tag|e }} style="margin-top:0;">{{ particle.heading_title|raw }}</{{ particle.heading_title_tag|e }}>
+			{% endif %}
+			{% if particle.heading_desc %}
+				<div>{{ particle.heading_desc|raw|nl2br }}</div>
+			{% endif %}
+		</div>
+	{% endif %}
+{% endset %}
+
+{% set gp_contents %}
+	<div class="gp_contents">
+		<div class="gp_line"></div>
+		<div class="gp_items">
+			{% for item in particle.gp_items %}
+				{% if item.blockType == 'headline' %}
+					<div class="gp_clear"></div>
+					<div class="gp_block_headline{% if loop.first %} gp_first{% endif %}">
+						<div class="gp_block_headline_txt">{{ item.headlineTxt|raw }}</div>
+					</div>
+					<div class="gp_clear"></div>
+				{% else %}
+					{% if item.tlPos == 'center' %}
+						<div class="gp_clear"></div>
+					{% endif %}
+					<div class="gp_block gp_{{ item.tlPos|e }}">
+						<div class="gp_dot"><div class="gp_dot_inner"><div class="gp_dot_circle"></div></div></div>
+						<div class="gp_content">
+							{% if item.tlDate %}
+								<div class="gp_date">{{ item.tlDate|date("d M Y") }}</div>
+							{% endif %}
+							{% if item.img %}
+								<div class="gp_img">
+									<img src="{{ url(item.img)|e }}" alt="{{ item.imgAlt|e }}">
+								</div>
+							{% endif %}
+							{% if item.title %}
+								<h3>{{ item.title|raw }}</h3>
+							{% endif %}
+							{% if item.desc %}
+								<div class="gp_desc">{{ item.desc|raw }}</div>
+							{% endif %}
+							{% if item.url %}
+								<div class="gp_btn"><a href="{{ item.url|e }}" target="{{ item.urlTarget|e }}" class="{{ item.urlClass|e }}">{{ item.urlTxt|raw }}</a></div>
+							{% endif %}
+						</div>
+					</div>
+					{% if item.tlPos != 'left' %}
+						<div class="gp_clear"></div>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</div>
+		<div class="gp_clear"></div>
+	</div>
+{% endset %}
+
+{% block stylesheets %}
+	<style type="text/css">
+		#{{ id }} .gp_line, #{{ id }} .gp_dot_inner {
+			border-color: {{ particle.borderColor|default('#dfe5e8') }};
+		}
+		#{{ id }} .gp_dot_circle, #{{ id }} .gp_block_headline_txt {
+			background: {{ particle.dotColor|default('#2185d0') }};
+		}
+		#{{ id }} .gp_content {
+			background: {{ particle.bgColor|default('#eeeeee') }};
+			border: 1px solid {{ particle.borderColor|default('#eeeeee') }};
+		}
+		#{{ id }} .gp_block.gp_left .gp_content:before {
+			border-left-color: {{ particle.borderColor|default('#eeeeee') }};
+		}
+		#{{ id }} .gp_block.gp_right .gp_content:before {
+			border-right-color: {{ particle.borderColor|default('#eeeeee') }};
+		}
+		#{{ id }} .gp_block.gp_left .gp_content:after {
+			border-left-color: {{ particle.bgColor|default('#eeeeee') }};
+		}
+		#{{ id }} .gp_block.gp_right .gp_content:after {
+			border-right-color: {{ particle.bgColor|default('#eeeeee') }};
+		}
+	</style>
+{% endblock %}
+
+{% block particle %}
+	{{ containerblock_start }}
+		{% if particle.gp_items %}
+			{{ gp_heading }}
+			{{ gp_contents }}
+		{% endif %}
+	{{ containerblock_end }}
+{% endblock %}

@@ -1,0 +1,98 @@
+.gp_mailchimp_subscribe1 {
+	.gp_center {
+		@include align-items(center);
+	}
+	.gp_left {
+		.gp_title {
+			font-size: 28px;
+			line-height: 1.2;
+			margin: 0;
+		}
+		.gp_subtitle {
+			margin-top: 20px;
+		}
+	}
+	.gp_top {
+		text-align: center;
+		.gp_title {
+			font-size: 42px;
+			line-height: 1.2;
+			margin: 0 0 10px;
+		}
+		.gp_subtitle {
+			font-size: 22px;
+    		line-height: 26px;
+    		font-weight: 400;
+			margin: 0 0 20px;
+		}
+		.gp_field_block, .gp_privacy {
+			max-width: 420px;
+			margin: 0 auto;
+		}
+		.gp_privacy {
+			padding: 0 1rem;
+		}
+	}
+	.gp_bottom {
+		.gp_field_block {
+			margin-top: 1rem;
+			input {
+				padding: 14px 60px 14px 15px;
+				border-radius: 3px;
+				border: 0 !important;
+				width: 100%;
+				display: block;
+				height: 50px;
+				line-height: 50px;
+			}
+			button {
+				width: 60px;
+				height: 50px;
+				font-size: 22px !important;
+			}
+		}
+	}
+	.gp_privacy {
+		font-size: 13.6px;
+		margin-top: 11px;
+	}
+	.gp_field_block {
+		position: relative;
+		@include breakpoint(mobile-only) {
+			margin-top: 1rem;
+		}
+		input {
+			padding: 19px 70px 19px 25px;
+			border-radius: 4px;
+			border: 0 !important;
+			width: 100%;
+			display: block;
+			height: 62px;
+			line-height: 62px;
+		}
+		button {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			width: 70px;
+			height: 62px;
+			background: transparent !important;
+			color: $accent-color-1;
+			outline: 0;
+			border: 0 !important;
+			font-size: 25px !important;
+			border-top-right-radius: 4px !important;
+    		border-bottom-right-radius: 4px !important;
+    		border-top-left-radius: 0 !important;
+    		border-bottom-left-radius: 0 !important;
+    		transition: 0.25s;
+			&:hover {
+				background: lighten($accent-color-1, 50%) !important;
+			}
+		}
+	}
+	.gp_message {
+		margin-top: 11px;
+	}
+}

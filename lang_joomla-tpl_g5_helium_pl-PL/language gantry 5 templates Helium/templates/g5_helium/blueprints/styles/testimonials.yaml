@@ -1,0 +1,33 @@
+name: Testimonials Styles
+description: Testimonials section styles for the Helium theme
+type: section
+
+form:
+  fields:
+  
+    info_common:
+      type: separator.note
+      class: alert alert-info
+      content: '<b>Testimonials Styles</b> Style dla sekcji Testimonials. O Testimonials tutaj <a href="https://www.w3schools.com/howto/howto_css_testimonials.asp" target="_blank" title="Przykłady zastosowania"><i class="fa fa-external-link"></i> (How TO - Testimonials)</a>.<br><b>Jeśli chcesz, aby ustawienia konturu powróciły do ​​wartości domyślnych, usuń zaznaczenie pola wyboru i zapisz styl.</b>'
+
+    background:
+      type: input.colorpicker
+      label: Tło
+      default: "#8f4dae"
+    background-image:
+      type: input.imagepicker
+      label: Zdjęcie w tle
+      default: 'gantry-media://testimonials/img01.jpg'
+    background-overlay:
+      type: select.select
+      label: Nakładka tła
+      description: 'Umożliwia nakładanie gradientu liniowego z akcentowanych kolorów.'
+      placeholder: 'Select...'
+      default: enabled
+      options:
+        enabled: Enabled
+        disabled: Disabled
+    text-color:
+      type: input.colorpicker
+      label: Tekst
+      default: "#eceeef"

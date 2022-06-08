@@ -1,0 +1,43 @@
+class: ''
+bg_color: ''
+text_color: ''
+border_color: ''
+bg_img: ''
+bg_mask_color: '#000000'
+bg_mask: ''
+font_size: ''
+text_align: left
+padding: ''
+mobile_padding: ''
+shadow: ''
+heading_title: 'Gantry 5 Theme Framework'
+heading_title_tag: h1
+heading_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada enim nec enim vehicula, ut aliquam enim pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque nec pretium lacus, vitae posuere leo.'
+heading_text_align: center
+columns: '50'
+gp_items:
+  -
+    subtitle: ''
+    color: ''
+    title: ''
+    description: 'Pellentesque vel dapibus sapien, sodales finibus lorem. Quisque mollis accumsan justo, nec tristique lorem hendrerit vitae. Morbi efficitur mattis libero, ut ultricies dui dapibus quis. Ut laoreet scelerisque consequat. Aenean bibendum sagittis placerat. Duis mollis tempor tellus nec scelerisque. Pellentesque condimentum ligula eros.'
+    class: ''
+    variations: ''
+    name: 'Item 1'
+  -
+    subtitle: ''
+    color: ''
+    title: ''
+    description: 'Duis tincidunt venenatis velit sit amet dapibus. Vestibulum blandit, mauris at feugiat placerat, leo ex cursus quam, vel condimentum dui dui ullamcorper quam. Morbi eget lacus eget sapien pellentesque imperdiet vel id ex. Sed auctor nunc id mi dapibus.'
+    class: ''
+    variations: ''
+    name: 'Item 2'
+btn_text_align: center
+button1_text: 'SIGN UP NOW'
+button1_url: '#'
+button1_class: 'ui button'
+button1_target: _self
+button2_text: ''
+button2_url: '#'
+button2_class: 'ui button'
+button2_target: _self

@@ -1,0 +1,79 @@
+.gp_infobanner4 {
+	> .g-grid {
+		margin: 0 -14px;
+		> .g-block {
+			> .gp_content {
+				margin: 14px;
+				transition: 0.2s ease;
+				-webkit-transition: 0.2s ease;
+				overflow: hidden;
+				position: relative;
+				&:hover {
+					.gp_img img {
+						transform: scale(1.1);
+						-webkit-transform: scale(1.1);
+					}
+				}
+			}
+		}
+	}
+	.gp_img {
+		img {
+			transform: scale(1);
+			-webkit-transform: scale(1);
+			transition: all 0.5s ease;
+			-webkit-transition: all 0.5s ease;
+		}
+	}
+
+	.gp_inner {
+		position: absolute;
+		top: 0;
+		right: 5%;
+		bottom: 0;
+		left: 10%;
+		@include display(flex);
+    	@include align-items(center);
+    	color: #ffffff;
+    	.gp_subtitle {
+    		font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+			opacity: 0.8;
+    	}
+		h3 {
+			margin: 0 0 18px;
+			line-height: 1.15;
+			font-size: 34px;
+			font-weight: 400;
+			color: #ffffff !important;
+			@include breakpoint(small-mobile-range) {
+				font-size: 26px;
+			}
+		}
+		.gp_desc {
+			font-size: 16px;
+			margin-bottom: 15px;
+		}
+		.gp_btn {
+			a {
+				padding: 6px 20px;
+				border-radius: 4px;
+				color: #ffffff;
+				border: 2px solid #ffffff;
+				display: inline-block;
+				&:hover {
+					opacity: 0.85;
+				}
+			}
+		}
+	}
+	.gp_mask {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: #000000;
+	}
+}

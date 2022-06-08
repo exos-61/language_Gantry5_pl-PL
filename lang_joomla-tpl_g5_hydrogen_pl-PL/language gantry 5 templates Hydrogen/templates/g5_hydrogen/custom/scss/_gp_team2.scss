@@ -1,0 +1,55 @@
+.gp_team2 {
+    .gp_heading {
+        margin-bottom: 50px;
+    }
+    .gp_items {
+        margin: 0 -15px;
+    }
+    .gp_item {
+        margin: 0 15px 30px;
+    }
+    .gp_team_img {
+        position: relative;
+        overflow: hidden;
+    }
+    .gp_team_social {
+        margin: 1rem 0 1rem -13px;
+        > a {
+            margin: 0 6px;
+            padding: 7px;
+            line-height: 1;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+    }
+    .gp_team_info {
+        padding: 30px 40px 50px;
+        position: relative;
+        background: #f6f6f6;
+        .gp_team_title {
+            font-weight: 700;
+        }
+        .gp_team_desc {
+            padding: 1rem 0;
+            margin-top: 1rem;
+            border-top: 1px solid rgba(0,0,0,.12);
+        }
+        a.gp_team_btn {
+            font-size: 0.825rem;
+            padding: 8px 16px;
+            min-height: 1rem;
+            line-height: 1rem;
+            outline: 0;
+            text-decoration: none;
+            color: #ffffff;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            border-radius: 4px;
+            &:hover {
+                opacity: 0.75;
+            }
+        }
+    }
+}

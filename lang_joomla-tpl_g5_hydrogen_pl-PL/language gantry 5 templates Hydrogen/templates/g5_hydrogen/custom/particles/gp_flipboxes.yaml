@@ -1,0 +1,156 @@
+name: Gp Flip Boxes
+description: Gp Flip Boxes particle
+type: particle
+icon: fa-cube
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true
+
+    _note_demo:
+      type: separator.note
+      class: alert alert-success
+      content: <h4 style="margin:0;"><a href="https://demo.gantry5particles.com/i/flip-boxes" target="_blank"><i class="fa fa-external-link"></i> See demo</a></h4>
+
+    tabs:
+      type: container.tabs
+      fields:
+        tab_bg_styles:
+          label: Styles
+          fields:
+            class:
+              type: input.selectize
+              label: CSS Classes
+              description: CSS class name for the particle.
+              overridable: false
+
+        tab_heading:
+          label: '> Heading'
+          fields:
+            _note_heading:
+              type: separator.note
+              class: alert alert-info
+              content: <i class="fa fa-lightbulb-o"></i> Keep any field empty to disable.
+            heading_title:
+              type: textarea.textarea
+              label: Headline
+              overridable: false
+            heading_title_tag:
+              type: select.select
+              label: Title Tag
+              placeholder: 'Select...'
+              default: h1
+              overridable: false
+              options:
+                h1: H1
+                h2: H2
+                h3: H3
+            heading_desc:
+              type: textarea.textarea
+              label: Headline Description
+              overridable: false
+            textAlign:
+              type: select.select
+              label: Text Align
+              placeholder: 'Select...'
+              default: left
+              overridable: false
+              options:
+                left: Left
+                center: Center
+                right: Right
+
+        tab_main_contents:
+          label: '> Flip Boxes'
+          fields:
+            _note_flipboxes:
+              type: separator.note
+              class: alert alert-info
+              content: <i class="fa fa-lightbulb-o"></i> Keep any field empty to disable.
+            cols:
+              type: select.select
+              label: Columns
+              placeholder: 'Select...'
+              default: 33-3
+              overridable: false
+              options:
+                50: 2 Columns
+                33-3: 3 Columns
+                25: 4 Columns
+            boxHeight:
+              type: input.number
+              label: Box Height (in px)
+              default: 370
+              overridable: false
+            gp_items:
+              type: collection.list
+              array: true
+              label: Create Flip Boxes
+              description: Create each item to appear in the content row.
+              value: name
+              ajax: true
+              overridable: false
+
+              fields:
+                .name:
+                  type: input.text
+                  label: Title
+                .url:
+                  type: input.text
+                  label: Link URL (keep empty to disable)
+                _note_front:
+                  type: separator.note
+                  class: alert alert-info
+                  content: <b>Front content options.</b>
+                .icon:
+                  type: input.icon
+                  label: Select Icon
+                .img:
+                  type: input.imagepicker
+                  label: Or Select Image
+                .imgType:
+                  type: select.select
+                  label: Use image as
+                  placeholder: 'Select...'
+                  default: normal
+                  overridable: false
+                  options:
+                    bg: Background
+                    normal: Normal
+                .title:
+                  type: input.text
+                  label: Title
+                .f_bg:
+                  type: input.colorpicker
+                  label: Background Color
+                .f_txt:
+                  type: input.colorpicker
+                  label: Text Color
+
+                _note_back:
+                  type: separator.note
+                  class: alert alert-info
+                  content: <b>Back content options.</b>
+                .backTitle:
+                  type: input.text
+                  label: Title
+                .desc:
+                  type: textarea.textarea
+                  label: Description
+                .readMore:
+                  type: input.text
+                  label: Read More Text
+                .b_bg:
+                  type: input.colorpicker
+                  label: Background Color
+                .b_txt:
+                  type: input.colorpicker
+                  label: Text Color

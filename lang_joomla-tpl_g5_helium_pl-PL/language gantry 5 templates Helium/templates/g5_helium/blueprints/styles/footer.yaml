@@ -1,0 +1,20 @@
+name: Footer Colors - Kolory stopki
+description: Kolory stopki dla motywu Hydrogen
+type: section
+
+form:
+  fields:
+  
+    _info_common:
+      type: separator.note
+      class: alert alert-info
+      content: '<b>Footer Colors</b> Kolory stopki dla motywu. Poznaj konfigurowanie kolorów w motywie <a href="https://material.io/design/color/#" target="_blank" title="Przykłady zastosowania"><i class="fa fa-external-link"></i> (material.io)</a>  <br><b>Jeśli chcesz, aby ustawienia konturu powróciły do ​​wartości domyślnych, usuń zaznaczenie pola wyboru i zapisz styl.</b>'
+
+    background:
+      type: input.colorpicker
+      label: Background - Tło
+      default: "#312f38"
+    text-color:
+      type: input.colorpicker
+      label: Tekst
+      default: "#ffffff"

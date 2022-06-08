@@ -1,0 +1,52 @@
+.gp_content3 {
+	position: relative;
+	h3, h4 {
+		margin: 0 0 8px;
+	}
+	> .g-grid {
+		&.gp_center {
+			@include align-items(center);
+		}
+	}
+	.gp_content {
+		position: relative;
+	}
+	.gp_buttons {
+		margin-top: 1rem;
+		a {
+			margin-bottom: 10px;
+		}
+	}
+	.gp_text {
+		> div {
+			padding: 1.563rem;
+			> div {
+				margin-bottom: 1.5rem;
+			}
+		}
+		&.gp_img_right {
+			margin-left: auto;
+		}
+		@include breakpoint(large-desktop-range) {
+			max-width: $breakpoints-large-desktop-container/2;
+		}
+		@include breakpoint(desktop-range) {
+			width: $breakpoints-desktop-container/2;
+		}
+	}
+	@media only all and (min-width: 60rem) {
+		.gp_text_left {
+			margin-right: 2rem;
+		}
+		.gp_text_right {
+			margin-left: 2rem;
+		}
+	}
+	@include breakpoint(no-desktop) {
+		.g-block {
+			@include flex-grow(0);
+			@include flex-basis(100%);
+			max-width: 100%;
+		}
+	}
+}

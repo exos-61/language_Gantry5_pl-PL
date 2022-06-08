@@ -1,0 +1,35 @@
+.gp_contactinfo5 {
+	h3 {
+		margin: 0 0 20px;
+	}
+	.gp_desc {
+		margin-bottom: 35px;
+	}
+	.gp_img {
+		display: inline-block;
+		vertical-align: top;
+		~ div {
+			display: inline-block;
+		}
+		img {
+			width: 150px;
+			margin-right: 20px;
+		}
+	}
+	.gp_info {
+		margin-bottom: 25px;
+	}
+	.gp_info_title {
+		font-weight: bold;
+		font-size: 18px;
+	}
+	.gp_info_subtitle {
+		margin-bottom: 15px;
+	}
+	.gp_info_list {
+		i {
+			min-width: 25px;
+			text-align: left;
+		}
+	}
+}

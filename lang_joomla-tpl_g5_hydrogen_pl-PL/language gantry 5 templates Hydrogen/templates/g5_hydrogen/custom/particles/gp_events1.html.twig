@@ -1,0 +1,63 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_events1 {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_heading %}
+    {% if particle.heading_title or particle.heading_desc %}
+        <div class="gp_heading" style="text-align:{{ particle.heading_text_align|e }};">
+            {% if particle.heading_title %}
+                <{{ particle.heading_title_tag|e }} style="margin-top:0;">{{ particle.heading_title|raw }}</{{ particle.heading_title_tag|e }}>
+            {% endif %}
+            {% if particle.heading_desc %}
+                <div>{{ particle.heading_desc|raw|nl2br }}</div>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endset %}
+
+{% set gp_contents %}
+    <div class="gp_items">
+        {% for item in particle.gp_items %}
+            <div class="gp_item">
+                {% if item.eventDate %}
+                    <div class="gp_date">
+                        <span class="gp_day">{{ item.eventDate|date("d") }}</span>
+                        <span class="gp_month">{{ item.eventDate|date("M") }}</span>
+                    </div>
+                {% endif %}
+                <div class="gp_info">
+                    {% if item.title %}
+                        <h3>{{ item.title|raw }}</h3>
+                    {% endif %}
+                    <div class="gp_infos">
+                        {% if item.location %}
+                            <span><i class="fa fa-map-marker"></i> {{ item.location|raw }}</span>
+                        {% endif %}
+                        {% if item.time %}
+                            <span><i class="fa fa-clock-o"></i> {{ item.time|raw }}</span>
+                        {% endif %}
+                        {% if item.url %}
+                            <span><i class="fa fa-external-link"></i> <a href="{{ item.url|e }}" target="{{ item.urlTarget|e }}">{{ item.urlTxt|raw }}</a></span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endset %}
+
+
+{% block particle %}
+	{{ containerblock_start }}
+        {% if particle.gp_items %}
+            {{ gp_heading }}
+            {{ gp_contents }}
+        {% endif %}
+	{{ containerblock_end }}
+{% endblock %}

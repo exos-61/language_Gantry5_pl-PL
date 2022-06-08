@@ -1,0 +1,22 @@
+.gp_partners {
+	text-align: center;
+	h3 {
+		margin: 0 0 30px;
+		font-size: 28px;
+    	line-height: 1.2;
+    	font-weight: 900;
+	}
+	&.gp_title_left {
+		.g-grid {
+			@include align-items(center);
+		}
+		h3 {
+			margin: 0;
+		}
+	}
+	&.gp_title_top {
+		img {
+			margin: 0 50px 0;
+		}
+	}
+}

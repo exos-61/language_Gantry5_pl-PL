@@ -1,0 +1,57 @@
+.gp_testimonials2 {
+    .gp_heading {
+        margin-bottom: 50px;
+    }
+    .gp_items {
+        margin: 0 -10px;
+        > .g-grid.gp_top_level > .g-block {
+            margin-bottom: 20px;
+            @include breakpoint(tablet-range) {
+                width: 100%;
+                max-width: 100%;
+                -webkit-flex-grow: 0;
+                -moz-flex-grow: 0;
+                flex-grow: 0;
+                -ms-flex-positive: 0;
+                -webkit-flex-basis: 100%;
+                -moz-flex-basis: 100%;
+                flex-basis: 100%;
+                -ms-flex-preferred-size: 100%;
+            }
+        }
+    }
+    .gp_item {
+        margin: 0 10px;
+        padding: 30px;
+        height: 100%;
+        background: #f6f6f6;
+        transition: box-shadow 0.2s ease-in-out;
+        -webkit-transition: box-shadow 0.2s ease-in-out;
+        &:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        @include breakpoint(mobile-only) {
+            text-align: center;
+        }
+    }
+    .gp_img {
+        position: relative;
+        overflow: hidden;
+        @include breakpoint(mobile-only) {
+            margin-bottom: 20px;
+        }
+        img {
+            border-radius: 50%;
+            border: 5px solid #ffffff;
+        }
+    }
+    
+    .gp_info {
+        position: relative;
+        .gp_author {
+        	font-weight: 700;
+        	margin-top: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.gp_brands_scroller {
+	.gp_brands {
+	    position: relative;
+	    width: 100%;
+	    min-height: 50px;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    text-align: center;
+	}
+	ul {
+	    position: relative;
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    li {
+	    	float: left;
+		    margin: 0 35px;
+		    padding: 0;
+		    list-style: none;
+		    display: inline-block;
+		    text-align: center;
+		    line-height: 1;
+		    vertical-align: middle;
+		    a {
+		    	display: block;
+    			line-height: 1;
+		    }
+		    img {
+		    	transition: 0.2s ease;
+		    	-webkit-transition: 0.2s ease;
+		    	&:hover {
+		    		opacity: 0.85;
+		    	}
+		    }
+	    }
+	}
+	
+}

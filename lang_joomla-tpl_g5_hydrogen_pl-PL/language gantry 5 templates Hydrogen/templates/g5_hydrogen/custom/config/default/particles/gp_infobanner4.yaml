@@ -1,0 +1,24 @@
+class: ''
+mask: '0.35'
+columns: '50'
+gp_items:
+  -
+    img: 'gantry-media://demo/infoblock/shop-woman.jpg'
+    img_alt: 'Info banner particle'
+    subTitle: 'Latest collection'
+    title: 'Shop on latest winter women collection'
+    description: 'We have best handcrafts design for you'
+    link_url: '#'
+    link_text: 'Shop from $14'
+    class: ''
+    name: 'banner 1'
+  -
+    img: 'gantry-media://demo/infoblock/shop-man1.jpg'
+    img_alt: 'Info banner particle'
+    subTitle: Promotions
+    title: 'Shop on best promotional collections'
+    description: 'We have best handcrafts design for you'
+    link_url: '#'
+    link_text: 'Shop now'
+    class: ''
+    name: 'banner 2'

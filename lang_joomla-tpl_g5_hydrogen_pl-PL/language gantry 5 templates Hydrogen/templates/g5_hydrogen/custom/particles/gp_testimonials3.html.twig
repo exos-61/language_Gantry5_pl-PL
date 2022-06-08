@@ -1,0 +1,92 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_testimonials3 {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_heading %}
+    {% if particle.heading_title or particle.heading_desc %}
+        <div class="gp_heading" style="text-align:{{ particle.heading_text_align|e }};">
+            {% if particle.heading_title %}
+                <{{ particle.heading_title_tag|e }} style="margin-top:0;">{{ particle.heading_title|raw }}</{{ particle.heading_title_tag|e }}>
+            {% endif %}
+            {% if particle.heading_desc %}
+                <div>{{ particle.heading_desc|raw|nl2br }}</div>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endset %}
+
+{% set gp_contents %}
+	{% for item in particle.gp_items %}
+        <div class="g-block size-33-3">
+            <div class="gp_item">
+            	<div class="gp_icon"><i class="fa fa-quote-right"></i></div>
+            	<div class="gp_comment">{{ item.comment|raw }}</div>
+            	<div class="gp_author">{{ item.author|raw }}</div>
+                {% if item.rating != 'disable' %}
+                    <div class="gp_rating">
+                        {% if item.rating == '3' %}
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        {% elseif item.rating == '3-5' %}
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        {% elseif item.rating == '4' %}
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        {% elseif item.rating == '4-5' %}
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        {% elseif item.rating == '5' %}
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        {% endif %}
+                    </div>
+                {% endif %}
+            	<div class="gp_desig">{{ item.desig|raw }}</div>
+                {% if item.url %}<div class="gp_url"><a href="{{ item.url|e }}" target="_blank">{{ item.url|e }}</a></div>{% endif %}
+            </div>
+        </div>
+	{% endfor %}
+{% endset %}
+
+{% block stylesheets %}
+    <style type="text/css">      
+        #{{ id }} .gp_icon, #{{ id }} .gp_rating i {
+            color: {{ particle.color|default('#ffcf29') }};
+        }
+    </style>
+{% endblock %}
+
+{% block particle %}
+	{{ containerblock_start }}
+        {% if particle.gp_items %}
+            {{ gp_heading }}
+            <div class="gp_items">
+                <div class="g-grid">
+                    {{ gp_contents }}
+                </div>
+            </div>
+        {% endif %}
+	{{ containerblock_end }}
+{% endblock %}

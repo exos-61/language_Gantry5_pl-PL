@@ -1,0 +1,48 @@
+class: ''
+dt_bg: '#f6f6f6'
+dt_text: '#959595'
+at_text: '#333333'
+aac_dbg: '#eeeeee'
+aac_dtext: '#363636'
+aac_bg: '#363636'
+aac_text: '#ffffff'
+heading_title: 'Gantry 5 Features'
+heading_title_tag: h1
+heading_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac suscipit nibh, ac vehicula tellus. Morbi tempor dui a auctor ullamcorper. Ut leo nunc, fringilla eget ligula '
+gp_items:
+  -
+    icon: 'fa fa-copy'
+    title: RESPONSIVE
+    content_title: 'Ut sollicitudin a neque eu dignissim hendrerit nisi'
+    desc: 'Duis augue odio, euismod in dictum nec, blandit a tellus. Integer ut orci tristique, molestie nibh in, ornare dui. Fusce aliquet elementum felis, vitae tincidunt massa fermentum a. Aliquam vitae feugiat dui. Fusce malesuada in massa eu dignissim. Cras convallis, sem ac euismod pretium, nulla dui hendrerit magna, sed eleifend arcu arcu viverra urna.'
+    link_url: '#'
+    link_text: 'Read more'
+    link_class: 'ui button mini orange'
+    name: 'item 1'
+  -
+    icon: 'fa fa-file-text-o'
+    title: 'HUGE DOCS'
+    content_title: "Lorem,\nQuisque quis metus tincidunt ornare"
+    desc: 'Fusce malesuada in massa eu dignissim. Cras convallis, sem ac euismod pretium, nulla dui hendrerit magna, sed eleifend arcu arcu viverra urna. Nunc eleifend, lacus quis tempor ullamcorper, erat turpis interdum odio, sed venenatis orci mi eget enim. Suspendisse id consectetur lectus. Praesent rhoncus sagittis nulla vitae bibendum.'
+    link_url: '#'
+    link_text: 'Read more'
+    link_class: 'ui button mini orange'
+    name: 'item 2'
+  -
+    icon: 'fa fa-cube'
+    title: 'CROSS PLATFORM'
+    content_title: "Ipsum,\nQuisque lectus libero, commodo ut convallis"
+    desc: 'Justo at consequat velit. Etiam aliquet mauris odio, sed aliquam enim laoreet eget. Aliquam eros tellus, varius id pretium et, sollicitudin nec lorem. Nulla hendrerit nibh ex, vitae interdum nulla pellentesque ac. Nullam at ante sit amet dolor viverra semper eget vitae neque. Aliquam erat volutpat. Donec ac orci nec sem suscipit accumsan quis.'
+    link_url: '#'
+    link_text: 'Read more'
+    link_class: 'ui button mini orange'
+    name: 'item 3'
+  -
+    icon: 'fa fa-paint-brush'
+    title: 'EASY STYLING'
+    content_title: 'Duis vestibulum rhoncus lectus elementum lobortis'
+    desc: ' Duis eget aliquet sapien. Aliquam dapibus diam vitae molestie viverra. Nullam pharetra ultricies odio, id posuere nulla. Donec est nisl, tempor quis faucibus eu, feugiat nec massa. Vestibulum hendrerit velit nec nulla viverra, ut tempus metus consectetur. Curabitur felis elit, pulvinar eu libero at, mollis porttitor turpis.'
+    link_url: '#'
+    link_text: 'Read more'
+    link_class: 'ui button mini orange'
+    name: 'item 4'

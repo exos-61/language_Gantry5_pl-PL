@@ -1,0 +1,98 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_pricing_table4 {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_heading %}
+    {% if particle.heading_title or particle.heading_desc %}
+        <div class="gp_heading" style="text-align:{{ particle.heading_text_align|e }};">
+            {% if particle.heading_title %}
+                <{{ particle.heading_title_tag|e }} style="margin-top:0;">{{ particle.heading_title|raw }}</{{ particle.heading_title_tag|e }}>
+            {% endif %}
+            {% if particle.heading_desc %}
+                <div>{{ particle.heading_desc|raw|nl2br }}</div>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endset %}
+
+{% set gp_contents %}
+	{% for item in particle.gp_items %}
+        <div class="g-block size-50 gp_table{{ loop.index }}">
+            <div class="gp_item">
+                <div class="g-grid gp_item_grid">
+                    <div class="g-block size-50">
+                        {% if item.title %}
+                            <h4>{{ item.title|raw }}</h4>
+                        {% endif %}
+                        {% if item.price %}
+                            <div class="gp_price">
+                                <span class="gp_amount">{{ item.price|raw }}</span>
+                                {% if item.terms %}<span class="gp_terms">{{ item.terms|raw }}</span>{% endif %}
+                            </div>
+                        {% endif %}
+                        {% if item.link %}
+                            <a href="{{ item.link|e }}" class="gp_btn {{ item.link_class|e }}">{{ item.link_text|raw }}</a>
+                        {% endif %}
+                    </div>
+                    <div class="g-block size-8"></div>
+                    <div class="g-block size-42 gp_fblock">
+                        {% if item.features %}
+                            {% set gp_features %}
+                                <ul>
+                                    {% for feature in item.features|trim|split('\n') %}
+                                        <li>{{ feature }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endset %}
+                            <div class="gp_features">{{ gp_features }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+	{% endfor %}
+{% endset %}
+
+{% set gp_note %}
+    {% if particle.note_title or particle.note_text %}
+        <p class="gp_note">{% if particle.note_title %}<strong>{{ particle.note_title|raw }} </strong>{% endif %}{% if particle.note_text %}{{ particle.note_text|raw|nl2br }}{% endif %}</p>
+    {% endif %}
+{% endset %}
+
+{% block stylesheets %}
+    <style type="text/css">
+        {% if particle.gp_color %}
+            #{{ id }} .gp_item h4, #{{ id }} .gp_features ul li:before {
+                color: {{ particle.gp_color|e }};
+            }
+            #{{ id }} .gp_item {
+                {% if particle.gp_bg %}
+                    background: {{ particle.gp_bg|e }};
+                {% endif %}
+                {% if particle.gp_border %}
+                    border: 1px solid {{ particle.gp_border|e }};
+                {% endif %}
+            }
+        {% endif %}
+    </style>
+{% endblock %}
+
+{% block particle %}
+	{{ containerblock_start }}
+        {% if particle.gp_items %}
+            {{ gp_heading }}
+            <div class="gp_items">
+                <div class="g-grid">
+                    {{ gp_contents }}
+                </div> 
+                {{ gp_note }}   
+            </div>
+        {% endif %}
+	{{ containerblock_end }}
+{% endblock %}

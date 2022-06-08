@@ -1,0 +1,276 @@
+class: ''
+activate_first: '1'
+icon_type: arrow
+qd_bg: '#ffffff'
+qd_text: '#4f4f4f'
+a_bg: '#ffffff'
+a_text: '#4f4f4f'
+heading_title: 'Play schedule for this week'
+heading_title_tag: h1
+heading_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor mi vel nisi finibus\nvitae iaculis nisl pellentesque. Donec mollis tempor lorem eget dictum."
+heading_text_align: left
+gp_items:
+  -
+    title: SATURDAY
+    events:
+      -
+        time: '09:30'
+        title: 'Lorem ipsum dolor sit consectetur'
+        bold: '0'
+        name: 'item 1'
+      -
+        time: '10:30'
+        title: 'Aliquam blandit urna sit amet augue pulvinar'
+        bold: '1'
+        name: 'item 2'
+      -
+        time: '11:30'
+        title: 'Praesent consectetur neque vel fringilla'
+        bold: '0'
+        name: 'item 3'
+      -
+        time: '12:30'
+        title: 'Etiam luctus lorem quis consequat'
+        bold: '1'
+        name: 'item 4'
+      -
+        time: '15:00'
+        title: 'Aenean et diam vel nisi iaculis blandit'
+        bold: '0'
+        name: 'item 5'
+      -
+        time: '16:00'
+        title: 'Vivamus sit amet enim id risus convallis'
+        bold: '0'
+        name: 'item 6'
+      -
+        time: '17:00'
+        title: 'Quisque aliquet massa malesuada dapibus'
+        bold: '1'
+        name: 'item 7'
+      -
+        time: '18:00'
+        title: 'Nulla fringilla libero a mauris lobortis'
+        bold: '0'
+        name: 'item 8'
+    name: saturday
+  -
+    title: SUNDAY
+    events:
+      -
+        time: '09:30'
+        title: 'Lorem ipsum dolor sit consectetur'
+        bold: '0'
+        name: 'item 1'
+      -
+        time: '10:30'
+        title: 'Aliquam blandit urna sit amet augue pulvinar'
+        bold: '1'
+        name: 'item 2'
+      -
+        time: '11:30'
+        title: 'Praesent consectetur neque vel fringilla'
+        bold: '0'
+        name: 'item 3'
+      -
+        time: '12:30'
+        title: 'Etiam luctus lorem quis consequat'
+        bold: '1'
+        name: 'item 4'
+      -
+        time: '15:00'
+        title: 'Aenean et diam vel nisi iaculis blandit'
+        bold: '0'
+        name: 'item 5'
+      -
+        time: '16:00'
+        title: 'Vivamus sit amet enim id risus convallis'
+        bold: '0'
+        name: 'item 6'
+      -
+        time: '17:00'
+        title: 'Quisque aliquet massa malesuada dapibus'
+        bold: '1'
+        name: 'item 7'
+      -
+        time: '18:00'
+        title: 'Nulla fringilla libero a mauris lobortis'
+        bold: '0'
+        name: 'item 8'
+    name: saturday
+  -
+    title: MONDAY
+    events:
+      -
+        time: '09:30'
+        title: 'Lorem ipsum dolor sit consectetur'
+        bold: '0'
+        name: 'item 1'
+      -
+        time: '10:30'
+        title: 'Aliquam blandit urna sit amet augue pulvinar'
+        bold: '1'
+        name: 'item 2'
+      -
+        time: '11:30'
+        title: 'Praesent consectetur neque vel fringilla'
+        bold: '0'
+        name: 'item 3'
+      -
+        time: '12:30'
+        title: 'Etiam luctus lorem quis consequat'
+        bold: '1'
+        name: 'item 4'
+      -
+        time: '15:00'
+        title: 'Aenean et diam vel nisi iaculis blandit'
+        bold: '0'
+        name: 'item 5'
+      -
+        time: '16:00'
+        title: 'Vivamus sit amet enim id risus convallis'
+        bold: '0'
+        name: 'item 6'
+      -
+        time: '17:00'
+        title: 'Quisque aliquet massa malesuada dapibus'
+        bold: '1'
+        name: 'item 7'
+      -
+        time: '18:00'
+        title: 'Nulla fringilla libero a mauris lobortis'
+        bold: '0'
+        name: 'item 8'
+    name: saturday
+  -
+    title: TUESDAY
+    events:
+      -
+        time: '09:30'
+        title: 'Lorem ipsum dolor sit consectetur'
+        bold: '0'
+        name: 'item 1'
+      -
+        time: '10:30'
+        title: 'Aliquam blandit urna sit amet augue pulvinar'
+        bold: '1'
+        name: 'item 2'
+      -
+        time: '11:30'
+        title: 'Praesent consectetur neque vel fringilla'
+        bold: '0'
+        name: 'item 3'
+      -
+        time: '12:30'
+        title: 'Etiam luctus lorem quis consequat'
+        bold: '1'
+        name: 'item 4'
+      -
+        time: '15:00'
+        title: 'Aenean et diam vel nisi iaculis blandit'
+        bold: '0'
+        name: 'item 5'
+      -
+        time: '16:00'
+        title: 'Vivamus sit amet enim id risus convallis'
+        bold: '0'
+        name: 'item 6'
+      -
+        time: '17:00'
+        title: 'Quisque aliquet massa malesuada dapibus'
+        bold: '1'
+        name: 'item 7'
+      -
+        time: '18:00'
+        title: 'Nulla fringilla libero a mauris lobortis'
+        bold: '0'
+        name: 'item 8'
+    name: saturday
+  -
+    title: WEDNESDAY
+    events:
+      -
+        time: '09:30'
+        title: 'Lorem ipsum dolor sit consectetur'
+        bold: '0'
+        name: 'item 1'
+      -
+        time: '10:30'
+        title: 'Aliquam blandit urna sit amet augue pulvinar'
+        bold: '1'
+        name: 'item 2'
+      -
+        time: '11:30'
+        title: 'Praesent consectetur neque vel fringilla'
+        bold: '0'
+        name: 'item 3'
+      -
+        time: '12:30'
+        title: 'Etiam luctus lorem quis consequat'
+        bold: '1'
+        name: 'item 4'
+      -
+        time: '15:00'
+        title: 'Aenean et diam vel nisi iaculis blandit'
+        bold: '0'
+        name: 'item 5'
+      -
+        time: '16:00'
+        title: 'Vivamus sit amet enim id risus convallis'
+        bold: '0'
+        name: 'item 6'
+      -
+        time: '17:00'
+        title: 'Quisque aliquet massa malesuada dapibus'
+        bold: '1'
+        name: 'item 7'
+      -
+        time: '18:00'
+        title: 'Nulla fringilla libero a mauris lobortis'
+        bold: '0'
+        name: 'item 8'
+    name: saturday
+  -
+    title: THURSDAY
+    events:
+      -
+        time: '09:30'
+        title: 'Lorem ipsum dolor sit consectetur'
+        bold: '0'
+        name: 'item 1'
+      -
+        time: '10:30'
+        title: 'Aliquam blandit urna sit amet augue pulvinar'
+        bold: '1'
+        name: 'item 2'
+      -
+        time: '11:30'
+        title: 'Praesent consectetur neque vel fringilla'
+        bold: '0'
+        name: 'item 3'
+      -
+        time: '12:30'
+        title: 'Etiam luctus lorem quis consequat'
+        bold: '1'
+        name: 'item 4'
+      -
+        time: '15:00'
+        title: 'Aenean et diam vel nisi iaculis blandit'
+        bold: '0'
+        name: 'item 5'
+      -
+        time: '16:00'
+        title: 'Vivamus sit amet enim id risus convallis'
+        bold: '0'
+        name: 'item 6'
+      -
+        time: '17:00'
+        title: 'Quisque aliquet massa malesuada dapibus'
+        bold: '1'
+        name: 'item 7'
+      -
+        time: '18:00'
+        title: 'Nulla fringilla libero a mauris lobortis'
+        bold: '0'
+        name: 'item 8'
+    name: saturday

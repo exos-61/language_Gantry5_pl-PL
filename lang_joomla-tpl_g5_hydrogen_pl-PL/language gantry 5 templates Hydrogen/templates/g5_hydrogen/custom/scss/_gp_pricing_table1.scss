@@ -1,0 +1,56 @@
+.gp_pricing_table1 {
+	.gp_heading {
+		margin: 0 0 50px;
+		font-size: 18px;
+	}
+	.gp_item {
+		position: relative;
+		padding: 40px 20px;
+		border-radius: 4px;
+		margin: 15px;
+		text-align: center;
+		h4 {
+			margin: 0 0 30px;
+			font-size: 22px;
+		}
+		.gp_price {
+			font-size: 70px;
+			line-height: 1;
+			font-weight: bold;
+			padding: 0 0 30px;
+			> span {
+				font-size: 30px;
+				font-weight: normal;
+				vertical-align: super;
+				margin-right: 0;
+			}
+		}
+		.gp_features {
+			margin-bottom: 30px;
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+		}
+		.gp_btn {
+			display: inline-block;
+			padding: 11px 20px;
+			font-size: 16px;
+			font-weight: bold;
+			text-transform: uppercase;
+			text-decoration: none;
+			transition: 0.25s ease;
+			-webkit-transition: 0.25s ease;
+			border-radius: 3px;
+		}
+	}
+	.gp_note {
+		text-align: center;
+		margin: 1.5rem 0;
+	}
+	.gp_tablecount2 {
+		max-width: 780px;
+		margin: 0 auto;
+	}
+}

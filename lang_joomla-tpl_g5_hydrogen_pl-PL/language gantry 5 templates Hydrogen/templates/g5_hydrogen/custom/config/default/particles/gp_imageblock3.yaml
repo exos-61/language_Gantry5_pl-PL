@@ -1,0 +1,44 @@
+class: ''
+text_color: ''
+font_size: ''
+text_align: left
+block_text: '#ffffff'
+mask_bg: '#000000'
+mask_opacity: '0.25'
+block_border_radius: 6px
+heading_title: 'Gantry 5 Framework Features'
+heading_title_tag: h1
+heading_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra gravida elementum. Phasellus nunc mauris, cursus sit amet mauris eget, iaculis auctor mauris. Maecenas id nisl maximus, condimentum nibh id, pellentesque augue. Curabitur lobortis vitae ex id consequat. Nulla sed leo in nisi pharetra placerat. Fusce vitae odio purus. Sed et arcu pellentesque nibh lobortis lacinia.'
+heading_text_align: left
+columns: 33-3
+gp_items:
+  -
+    img: 'gantry-media://demo/thumb/img1.jpg'
+    title: 'Responsive Layout'
+    description: 'Duis non dapibus risus, quis rutrum urna. Suspendisse fringilla, massa ac commodo dignissim, eros arcu imperdiet mauris'
+    link_url: '#'
+    link_text: 'Read more'
+    link_class: ''
+    class: ''
+    variations: ''
+    name: 'item 1'
+  -
+    img: 'gantry-media://demo/thumb/img2.jpg'
+    title: 'Drag & Drop Layout Builder'
+    description: 'Duis non dapibus risus, quis rutrum urna. Suspendisse fringilla, massa ac commodo dignissim, eros arcu imperdiet mauris'
+    link_url: '#'
+    link_text: 'Read more'
+    link_class: ''
+    class: ''
+    variations: ''
+    name: 'item 2'
+  -
+    img: 'gantry-media://demo/thumb/img3.jpg'
+    title: 'Ajax Menu Builder'
+    description: 'Duis non dapibus risus, quis rutrum urna. Suspendisse fringilla, massa ac commodo dignissim, eros arcu imperdiet mauris'
+    link_url: '#'
+    link_text: 'Read more'
+    link_class: ''
+    class: ''
+    variations: ''
+    name: 'item 3'

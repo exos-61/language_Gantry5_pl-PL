@@ -1,0 +1,50 @@
+.gp_process_steps1 {
+	.gp_heading {
+		margin: 0 0 50px;
+	}
+	.gp_items {
+		>.g-grid {
+			margin: 0 -12px;
+		}
+		counter-reset: ordered;
+	}
+	.gp_item {
+		position: relative;
+		padding: 55px 20px 30px;
+		margin: 12px;
+		text-align: center;
+		h4 {
+			margin: 0 0 20px;
+			font-size: 16px;
+		}
+	}
+	.gp_count {
+		&:before {
+			display: block;
+			top: 15px;
+			left: 18px;
+			position: absolute;
+			text-align: center;
+			content: counters(ordered, ".")'.';
+			align-self: middle;
+			margin-right: 1rem;
+			font-size: 2.5em;
+			line-height: 1;
+			counter-increment: ordered;
+			font-family: inherit;
+			font-weight: bold;
+			opacity: 0.45;
+		}
+	}
+	.gp_icon {
+		display: block;
+		font-size: 36px;
+		margin: 0;
+		padding: 0 0 30px;
+	}
+	.gp_link {
+		display: block;
+		margin-top: 15px;
+		text-decoration: underline;
+	}
+}

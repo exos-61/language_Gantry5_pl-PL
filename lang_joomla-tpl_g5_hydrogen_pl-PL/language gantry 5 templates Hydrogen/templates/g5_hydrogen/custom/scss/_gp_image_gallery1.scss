@@ -1,0 +1,114 @@
+.gp_imagegallery1 {
+	.gp_heading {
+		margin: 0 0 50px;
+	}
+	.gp_items {
+		&.has_margin {
+			 > .g-grid {
+				margin: 0 -12px;
+			}
+			.gp_img_block {
+				margin: 12px;
+			}
+		}
+	}
+	.gp_img_block {
+		position: relative;
+		&:hover {
+			.gp_img_icon {
+				transition: opacity 0.3s ease-in-out;
+				-webkit-transition: opacity 0.3s ease-in-out;
+				opacity: 1;
+			}
+		}
+		.gp_img_title {
+			margin: 10px 0;
+		}
+		&.gp_img_circular {
+			.gp_img_title {
+				text-align: center;
+			}
+			.gp_img_icon {
+				top: 50%;
+				left: 0;
+				right: 0;
+				text-align: center;
+				margin-top: -8px;
+			}
+			&:hover {
+				.gp_mask {
+					box-shadow: none;
+					-webkit-box-shadow: none;
+					background-color: rgba(0, 0, 0, 0.2);
+					transition: opacity 0.3s ease-in-out;
+					-webkit-transition: opacity 0.3s ease-in-out;
+				}
+			}
+		}
+		&.title_overimage {
+			&:not(.gp_img_circular) {
+				.gp_img_icon {
+					right: 20px;
+					top: 20px;
+				}
+				.gp_mask {
+					opacity: 1;
+				}
+			}
+			&:hover {
+				.gp_mask {
+					box-shadow: none;
+					-webkit-box-shadow: none;
+					background-color: rgba(0, 0, 0, 0.2);
+					transition: opacity 0.3s ease-in-out;
+					-webkit-transition: opacity 0.3s ease-in-out;
+				}
+			}
+			.gp_img_title {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				padding: 20px;
+				margin: 0;
+				color: #fff;
+			}
+		}
+		&.title_bottom {
+			&:not(.gp_img_circular) {
+				.gp_img_icon {
+					right: 20px;
+					bottom: 20px;
+				}
+			}
+			.gp_mask {
+				opacity: 0;
+			}
+			&:hover {
+				.gp_mask {
+					transition: opacity 0.3s ease-in-out;
+					-webkit-transition: opacity 0.3s ease-in-out;
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.gp_img {
+		position: relative;
+		overflow: hidden;
+	}
+	.gp_img_icon {
+		position: absolute;
+		color: #fff;
+		z-index: 1;
+		opacity: 0;
+	}
+	.gp_mask {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		bottom: 0;
+		box-shadow: inset 0 -470px 500px -500px rgba(0, 0, 0, 0.5);
+		-webkit-box-shadow: inset 0 -470px 500px -500px rgba(0, 0, 0, 0.5);
+	}
+}

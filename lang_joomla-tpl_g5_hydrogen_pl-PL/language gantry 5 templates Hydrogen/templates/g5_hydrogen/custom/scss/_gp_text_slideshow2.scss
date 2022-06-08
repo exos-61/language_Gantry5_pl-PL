@@ -1,0 +1,100 @@
+.gp_text_slideshow2 {
+	.gp_slide_block {
+		position: relative;
+		background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+		@include display(flex);
+    	@include align-items(center);
+    	color: $white;
+    	.gp_mask {
+    		position: absolute;
+    		top: 0;
+    		right: 0;
+    		bottom: 0;
+    		left: 0;
+    	}
+    	h1 {
+    		color: $white !important;
+    		line-height: 1.2;
+    		margin: 0 0 11px;
+    		@include breakpoint(large-desktop-range) {
+    			font-size: 4rem;
+    		}
+    		@include breakpoint(desktop-range) {
+    			font-size: 3rem;
+    		}
+    		@include breakpoint(tablet-range) {
+    			font-size: 2rem;
+    		}
+    		@include breakpoint(mobile-only) {
+    			font-size: 1.5rem;
+    		}
+    	}
+    	ul {
+    		list-style: none;
+    		margin: 0;
+    		@include breakpoint(large-desktop-range) {
+    			font-size: 1.625rem;
+    		}
+    		@include breakpoint(desktop-range) {
+    			font-size: 1.5rem;
+    		}
+    		@include breakpoint(tablet-range) {
+    			font-size: 1rem;
+    		}
+    		@include breakpoint(mobile-only) {
+    			font-size: 1rem;
+    		}
+    		&:not(.initialized) {
+    			display: none;
+    		}
+    		&:before {
+    			display: inline-block;
+    		}
+    		li {
+    			display: inline-block;
+    		}
+    	}
+	    .gp_items {
+	    	position: relative;
+	    	margin: 0 auto;
+	    	@include breakpoint(large-desktop-range) {
+	        	width: $breakpoints-large-desktop-container;
+		    }
+		    @include breakpoint(desktop-range) {
+		        width: $breakpoints-desktop-container;
+		    }
+		    @include breakpoint(tablet-range) {
+		        width: $breakpoints-tablet-container;
+		    }
+	    }
+	    .gp_contents {
+	    	padding: 0 1.563rem;
+	    }
+	}
+	.gp_buttons {
+		margin-top: 36px;
+		@include display(flex);
+    	@include align-items(center);
+    	@include breakpoint(small-mobile-range) {
+    		display: block !important;
+    	}
+		a {
+			margin-right: 1rem;
+			&:not(.btn):not(.button) {
+				color: $white;
+				&:hover {
+					opacity: 0.85;
+				}
+			}
+			@include breakpoint(small-mobile-range) {
+				display: block;
+				margin: 0 0 1rem;
+			}
+			&:last-child {
+				margin: 0 !important;
+			}
+		}
+	}
+}

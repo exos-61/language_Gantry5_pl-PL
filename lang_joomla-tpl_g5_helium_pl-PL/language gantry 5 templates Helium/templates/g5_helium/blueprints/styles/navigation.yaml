@@ -1,0 +1,20 @@
+name: Navigation Colors - Kolory nawigacji
+description: Kolory nawigacji dla motywu Hydrogen
+type: section
+
+form:
+  fields:
+  
+    _info_common:
+      type: separator.note
+      class: alert alert-info
+      content: '<b>Navigation Colors</b> Kolory nawigacji dla motywu. Poznaj konfigurowanie kolorów w motywie <a href="https://material.io/design/color/#" target="_blank" title="Przykłady zastosowania"><i class="fa fa-external-link"></i> (material.io)</a>  <br><b>Jeśli chcesz, aby ustawienia konturu powróciły do ​​wartości domyślnych, usuń zaznaczenie pola wyboru i zapisz styl.</b>'
+
+    background:
+      type: input.colorpicker
+      label: Tło
+      default: "#312f38"
+    text-color:
+      type: input.colorpicker
+      label: Tekst
+      default: "#ffffff"

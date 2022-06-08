@@ -1,0 +1,75 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_flipboxes {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_headline %}
+    {% if particle.heading_title or particle.heading_desc %}
+        <div class="gp_heading" style="text-align:{{ particle.textAlign|e }};">
+            {% if particle.heading_title %}
+                <{{ particle.heading_title_tag|e }} style="margin-top:0;">{{ particle.heading_title|raw }}</{{ particle.heading_title_tag|e }}>
+            {% endif %}
+            {% if particle.heading_desc %}
+                <div>{{ particle.heading_desc|raw|nl2br }}</div>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endset %}
+
+{% set gp_content %}
+    <div class="g-grid gp_content">
+        {% for item in particle.gp_items %}
+            <div class="g-block size-{{ particle.cols }}">
+                <div class="gp_flipbox">
+                    <div class="gp_inner">
+                        {% if item.url %}<a href="{{ item.url|e }}">{% endif %}
+                            {% if item.img and item.imgType == 'bg' %}
+                                <div class="gp_front gp_bgimg" style="background-image: url({{ url(item.img)|e }});"></div>
+                            {% else %}
+                                <div class="gp_front" style="{% if item.f_bg %}background-color:{{ item.f_bg|e }};{% endif %}{% if item.f_txt %}color:{{ item.f_txt|e }};{% endif %}">
+                                    <div class="gp_content_inner{% if not item.icon and item.img and item.imgType == 'normal' %} style_img{% endif %}">
+                                      {% if item.icon %}
+                                            <i class="{{ item.icon|e }}"></i>
+                                        {% elseif item.img %}
+                                            <img src="{{ url(item.img)|e }} " alt="{{ item.title|e }}">
+                                        {% endif %}
+                                        {% if item.title %}<h2 style="{% if item.f_txt %}color:{{ item.f_txt|e }};{% endif %}">{{ item.title|raw }}</h2>{% endif %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                            <div class="gp_back" style="{% if item.b_bg %}background-color:{{ item.b_bg|e }};{% endif %}{% if item.b_txt %}color:{{ item.b_txt|e }};{% endif %}">
+                                <div class="gp_content_inner">
+                                    {% if item.backTitle %}<h2 style="{% if item.b_txt %}color:{{ item.b_txt|e }};{% endif %}">{{ item.backTitle|raw }}</h2>{% endif %}
+                                    {% if item.desc %}<div class="gp_desc">{{ item.desc|raw|nl2br }}</div>{% endif %}
+                                    {% if item.readMore %}
+                                        <div class="gp_readmore">{{ item.readMore|raw }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% if item.url %}</a>{% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endset %}
+
+{% block stylesheets %}
+    <style type="text/css">
+        #{{ id }} .gp_flipbox {
+            height: {{ particle.boxHeight|e }}px;
+        }
+    </style>
+{% endblock %}
+
+{% block particle %}
+	{{ containerblock_start }}
+        {{ gp_headline }}
+        {{ gp_content }}
+	{{ containerblock_end }}
+{% endblock %}

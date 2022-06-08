@@ -1,0 +1,21 @@
+class: ''
+bg_color: '#2197ba'
+border_color: ''
+bg_img: ''
+bg_mask: ''
+text_color: '#ffffff'
+padding: '70px 0'
+shadow: ''
+font_size: ''
+text_align: center
+subtitle: 'Gantry 5 is a responsive framework'
+title: 'Start building page with Gantry 5'
+title_tag: h1
+button1_text: 'JOIN US NOW'
+button1_url: '#'
+button1_class: 'ui button teal'
+button1_target: _self
+button2_text: ''
+button2_url: '#'
+button2_class: 'ui button'
+button2_target: _self

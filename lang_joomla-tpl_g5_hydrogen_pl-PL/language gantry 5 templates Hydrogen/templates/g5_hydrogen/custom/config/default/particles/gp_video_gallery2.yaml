@@ -1,0 +1,65 @@
+class: ''
+gallery: '1'
+video_autoplay: '1'
+autoplay: '1'
+pauseOnHover: '1'
+slick: '1'
+heading_title: 'See Inside Gantry 5 Framework'
+heading_title_tag: h3
+heading_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget arcu quis metus luctus imperdiet eu et lorem. Integer eu fringilla lacus. Etiam eget orci diam. Proin lacinia enim urna, eu auctor lacus mattis at. Donec auctor varius mauris, non viverra urna fringilla et. \n\nDuis tincidunt pharetra velit maximus pretium. Aenean quis tempor sem, vitae porttitor enim. Donec eu eleifend nibh."
+content_pos: left
+gp_items:
+  -
+    title: 'Aliquam tempor leo'
+    videoType: youtube
+    yt_img: ''
+    yt_id: RVS2KOv0Nqw
+    local_img: ''
+    mp4: ''
+    webm: ''
+    name: 'item 1'
+  -
+    title: 'Viverra accumsan diam'
+    videoType: youtube
+    yt_img: ''
+    yt_id: xwlqHOVklyk
+    local_img: ''
+    mp4: ''
+    webm: ''
+    name: 'item 2'
+  -
+    title: 'Phasellus quis metus'
+    videoType: youtube
+    yt_img: ''
+    yt_id: Tiz5bqwNcGM
+    local_img: ''
+    mp4: ''
+    webm: ''
+    name: 'item 3'
+  -
+    title: 'Nulla egestas massa'
+    videoType: youtube
+    yt_img: ''
+    yt_id: qbEcbdHMASc
+    local_img: ''
+    mp4: ''
+    webm: ''
+    name: 'item 4'
+  -
+    title: 'Donec turpis tristique'
+    videoType: youtube
+    yt_img: ''
+    yt_id: R7mohZTxacg
+    local_img: ''
+    mp4: ''
+    webm: ''
+    name: 'item 5'
+  -
+    title: 'Aliquam fringilla dui'
+    videoType: youtube
+    yt_img: ''
+    yt_id: u31qwQUeGuM
+    local_img: ''
+    mp4: ''
+    webm: ''
+    name: 'item 6'

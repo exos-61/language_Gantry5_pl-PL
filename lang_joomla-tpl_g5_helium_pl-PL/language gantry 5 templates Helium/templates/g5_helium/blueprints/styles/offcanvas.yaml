@@ -1,0 +1,38 @@
+name: Offcanvas Section - Sekcja ukryta
+description: Parametry sekcji panelu bocznego Off Canvas.
+type: section
+
+form:
+  fields:
+  
+    _info_common:
+      type: separator.note
+      class: alert alert-info
+      content: '<b>Offcanvas Section</b> Sekcja Offcanvas ma na celu umożliwienie umieszczenia modułów i pozycji na specjalnym ukrytym pasku bocznym do momentu otwarcia. Najczęściej jest wykorzystywana do umieszczania Menu Mobile dla urządzeń mobilnych. <a href="http://docs.gantry.org/gantry5/configure/layout-manager#settings-2" target="_blank" title="Przykłady zastosowania"><i class="fa fa-external-link"></i> (Offcanvas Section)</a> Tutaj objaśnione działanie <a href="https://www.youtube.com/watch?v=l0rKBFoquck" target="_blank" title="Przykłady zastosowania"><i class="fa fa-external-link"></i> (InspireTheme)</a> Stosowanie Menu Mobile <a href="http://docs.gantry.org/gantry5/particles/mobile-menu" target="_blank" title="Przykłady zastosowania"><i class="fa fa-external-link"></i> (Menu Mobile)</a>. <br><b>Jeśli chcesz, aby ustawienia konturu powróciły do ​​wartości domyślnych, usuń zaznaczenie pola wyboru i zapisz styl.</b>'
+
+    background:
+      type: input.colorpicker
+      label: Tło
+      default: "#4db2b3"
+    text-color:
+      type: input.colorpicker
+      label: Tekst
+      default: "#eceeef"
+    toggle-color:
+      type: input.colorpicker
+      label: Przełącz kolor
+      default: "#4db2b3"
+    toggle-visibility:
+      type: select.selectize
+      label: Przełącz widoczność
+      description: Wybierz opcję OffCanvas Toggle Visibility, czyli wskaż na jakich urządzeniach ma być wyświetlana zawartość sekcji.
+      default: 1
+      options:
+        1: Mobile Menu
+        2: Zawsze
+    width:
+      type: input.text
+      label: Panel Width
+      description: Set offcanvas size in rem, em, px, or percentage unit values
+      default: "12rem"
+      pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'

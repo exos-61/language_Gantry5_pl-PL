@@ -1,0 +1,115 @@
+.gp_tabs3 {
+	.gp_heading {
+		text-align: center;
+		max-width: 700px;
+		margin: 0 auto 70px;
+	}
+	@include breakpoint(no-mobile) {
+		.gp_tab_accordion {
+			display: none;
+		}
+	}
+	@include breakpoint(mobile-only) {
+		ul.gp_tabs {
+			display: none;
+		}
+		.gp_tab_content_block {
+			padding: 25px 0 35px 0;
+		}
+	}
+	@media only all and (min-width: 1200px) {
+		.gp_hide {
+			display: none !important;
+		}
+		.size-62.gp_ext_width {
+			-webkit-flex: 0 67%;
+			-moz-flex: 0 67%;
+			-ms-flex: 0 67%;
+			flex: 0 67%;
+			width: 67%;
+		}
+	}
+	ul.gp_tabs {
+		margin: 0;
+		padding: 30px 20px;
+		list-style: none;
+		max-width: 275px;
+		li {
+			display: block;
+			&:not(.last-child) {
+				margin-bottom: 32px;
+			}
+			a {
+				display: block;
+				padding: 5px;
+				position: relative;
+				cursor: pointer;
+				font-size: 14px;
+				i {
+					font-size: 25px;
+					width: 47px;
+					text-align: center;
+					margin-right: 4px;
+					float: left;
+					position: relative;
+					top: -1px;
+				}
+			}
+			&.gp_active {
+				a {
+					&:after {
+						content: "\f105";
+						font-family: 'FontAwesome';
+						font-size: 20px;
+						position: absolute;
+						right: 0;
+						top: 50%;
+						transform: translateY(-50%);
+						-webkit-transform: translateY(-50%);
+					}
+				}
+			}
+		}
+	}
+	.gp_tab_accordion {
+		cursor: pointer;
+		padding: 12px 65px 12px 20px;
+		position: relative;
+		margin-top: 4px;
+		i {
+			margin-right: 4px;
+		}
+		&:not(.gp_active) {
+			.gp_tab_arrow {
+				&:before {
+					content: "\f107";
+				}
+			}
+		}
+		&.gp_active {
+			.gp_tab_arrow {
+				&:before {
+					content: "\f106";
+				}
+			}
+		}
+	}
+	.gp_tab_content {
+		display: none;
+		&.gp_active {
+			display: block;
+		}
+	}
+	.gp_tab_arrow {
+		font-family: 'FontAwesome';
+		position: absolute;
+		right: 25px;
+		top: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+	}
+	.gp_tab_link {
+		margin-top: 20px;
+	}
+	
+}

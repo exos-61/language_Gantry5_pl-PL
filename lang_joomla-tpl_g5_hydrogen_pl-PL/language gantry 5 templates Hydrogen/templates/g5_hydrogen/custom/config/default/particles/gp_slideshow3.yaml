@@ -1,0 +1,58 @@
+class: ''
+large_desktop: '75'
+autoplay: '0'
+pauseOnHover: '1'
+slick: '1'
+gp_items:
+  -
+    img: 'gantry-media://demo/slides/slide2.jpg'
+    img_alt: Slideshow
+    text_pos: text_left
+    bg_color: 'rgba(0, 0, 0, 0.85)'
+    title: 'Responsive & premium design'
+    title_color: '#ffffff'
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit nec felis justo.\nPraesent mattis sed quam ac ullamcorper. Maecenas diam."
+    desc_color: '#ffffff'
+    btn1_link: '#'
+    btn1_text: 'READ MORE'
+    btn1_class: 'ui button'
+    name: 'item 1'
+  -
+    img: 'gantry-media://demo/slides/slide1.jpg'
+    img_alt: Slideshow
+    text_pos: text_right
+    bg_color: 'rgba(255, 255, 255, 0.85)'
+    title: 'Lightweight but powerful'
+    title_color: '#333333'
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit nec felis justo.\nPraesent mattis sed quam ac ullamcorper. Maecenas diam."
+    desc_color: '#454545'
+    btn1_link: '#'
+    btn1_text: 'READ MORE'
+    btn1_class: 'ui button blue'
+    name: 'item 2'
+  -
+    img: 'gantry-media://demo/slides/slide3.jpg'
+    img_alt: Slideshow
+    text_pos: text_right
+    bg_color: 'rgba(0, 0, 0, 0.85)'
+    title: 'Drag & drop layout manager'
+    title_color: '#ffffff'
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit nec felis justo.\nPraesent mattis sed quam ac ullamcorper. Maecenas diam."
+    desc_color: '#ffffff'
+    btn1_link: '#'
+    btn1_text: 'READ MORE'
+    btn1_class: 'ui button'
+    name: 'item 3'
+  -
+    img: 'gantry-media://demo/slides/slide5.jpg'
+    img_alt: Slideshow
+    text_pos: text_left
+    bg_color: 'rgba(255, 255, 255, 0.85)'
+    title: 'Huge particles and documentation'
+    title_color: '#424242'
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit nec felis justo.\nPraesent mattis sed quam ac ullamcorper. Maecenas diam."
+    desc_color: '#424242'
+    btn1_link: '#'
+    btn1_text: 'READ MORE'
+    btn1_class: 'ui button teal'
+    name: 'item 4'

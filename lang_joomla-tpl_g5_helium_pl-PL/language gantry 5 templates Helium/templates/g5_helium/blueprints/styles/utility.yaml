@@ -1,0 +1,20 @@
+name: Utility Styles
+description: Utility section styles for the Helium theme
+type: section
+
+form:
+  fields:
+  
+    info_common:
+      type: separator.note
+      class: alert alert-info
+      content: '<b>Utility Styles</b> Style dla sekcji Utility.<br><b>Jeśli chcesz, aby ustawienia konturu powróciły do ​​wartości domyślnych, usuń zaznaczenie pola wyboru i zapisz styl.</b>'
+
+    background:
+      type: input.colorpicker
+      label: Tło
+      default: "#424753"
+    text-color:
+      type: input.colorpicker
+      label: Tekst
+      default: "#ffffff"

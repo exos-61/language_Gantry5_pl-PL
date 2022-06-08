@@ -1,0 +1,121 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_accordion6 {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_heading %}
+	{% if particle.heading_title or particle.heading_desc %}
+		<div class="gp_heading" style="text-align:{{ particle.heading_text_align|e }};">
+			{% if particle.heading_title %}
+				<{{ particle.heading_title_tag|e }} style="margin-top:0;">{{ particle.heading_title|raw }}</{{ particle.heading_title_tag|e }}>
+			{% endif %}
+			{% if particle.heading_desc %}
+				<div>{{ particle.heading_desc|raw|nl2br }}</div>
+			{% endif %}
+		</div>
+	{% endif %}
+{% endset %}
+
+{% set gp_image %}
+	{% if particle.img %}
+		{% if particle.img_pos == 'right' %}
+			<div class="g-block size-6"></div>
+		{% endif %}
+		<div class="g-block size-47">
+			<div class="gp_image">
+				<img src="{{ url(particle.img)|e }}" alt="{{ particle.img_alt|e }}">
+			</div>
+		</div>
+		{% if particle.img_pos == 'left' %}
+			<div class="g-block size-6"></div>
+		{% endif %}
+	{% endif %}
+{% endset %}
+
+{% set gp_contents %}
+	{% for item in particle.gp_items %}
+		{% if item.question %}
+			<h4 class="gp_accordion_question gp_dir_{{ particle.icon_type }}{% if particle.activate_first and loop.first %} gp_active{% endif %}" data-gpaccordion="gp_accordion_{{ loop.index }}">
+				{% if item.icon %}
+					<i class="{{ item.icon }} gp_icon"></i>
+				{% endif %}
+				{{ item.question|raw }}
+				{% if particle.icon_type != 'disable' %}
+					<span class="gp_accordion_dir"></span>
+				{% endif %}
+			</h4>
+			<div id="gp_accordion_{{ loop.index }}" class="gp_accordion_answer{% if particle.activate_first and loop.first %} gp_active{% endif %}">
+				<div class="gp_accordion_answer_text">{{ item.answer|raw|nl2br }}</div>
+				{% if item.link_url %}
+					<div class="gp_accordion_link">
+						<a href="{{ item.link_url|e }}" class="{{ item.link_class|e }}">{{ item.link_text|raw }}</a>
+					</div>
+				{% endif %}
+			</div>
+		{% endif %}
+	{% endfor %}
+{% endset %}
+
+{% block stylesheets %}
+	<style type="text/css">      
+		#{{ id }} .gp_accordion_question {
+			{% if particle.qd_bg %}
+				background-color: {{ particle.qd_bg|e }};
+			{% endif %}
+			{% if particle.qd_text %}
+				color: {{ particle.qd_text|e }};
+			{% endif %}
+		}
+		#{{ id }} .gp_accordion_answer {
+			{% if particle.a_bg %}
+				background-color: {{ particle.a_bg|e }};
+			{% endif %}
+			{% if particle.a_text %}
+				color: {{ particle.a_text|e }};
+			{% endif %}
+		}
+	</style>
+{% endblock %}
+
+{% set gpscript %}
+	jQuery(document).ready(function($) {
+		$("#{{ id }} .gp_accordion_question").click(function() {
+			var $this = $(this);
+			
+			if ($this.hasClass('gp_active')) {
+				$this.removeClass('gp_active');
+				$this.next().slideUp(350);
+			} else {
+				$("#{{ id }} .gp_accordion_answer").slideUp(350);
+				var gp_active = $(this).attr("data-gpaccordion");
+				$("#{{ id }} #"+gp_active).slideToggle(350);
+
+				$("#{{ id }} .gp_accordion_question").removeClass("gp_active");
+				$(this).addClass("gp_active");
+			}
+		});
+	});
+{% endset %}
+
+{% block particle %}
+	{{ containerblock_start }}
+		<div class="g-grid">
+			{% if particle.img_pos == 'left' %}{{ gp_image }}{% endif %}
+			<div class="g-block size-{% if particle.img %}47{% else %}100{% endif %}">
+				{{ gp_heading }}
+				<div class="gp_items">
+					{{ gp_contents }}
+				</div>
+			</div>
+			{% if particle.img_pos == 'right' %}{{ gp_image }}{% endif %}
+		</div>
+	{{ containerblock_end }}
+{% endblock %}
+
+{% do gantry.load('jquery') %}
+{% do gantry.document.addInlineScript(gpscript, 0, 'footer') %}

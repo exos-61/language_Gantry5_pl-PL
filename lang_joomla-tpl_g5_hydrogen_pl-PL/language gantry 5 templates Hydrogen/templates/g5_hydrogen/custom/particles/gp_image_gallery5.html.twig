@@ -1,0 +1,80 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_imagegallery5 {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_content %}
+    {% if particle.heading_title or particle.heading_desc %}
+        <div class="gp_content">
+            {% if particle.heading_title %}
+                <{{ particle.heading_title_tag|e }} style="margin-top:0;">{{ particle.heading_title|raw }}</{{ particle.heading_title_tag|e }}>
+            {% endif %}
+            {% if particle.heading_desc %}
+                <div>{{ particle.heading_desc|raw|nl2br }}</div>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endset %}
+
+{% set gp_images %}
+	{% for item in particle.gp_items %}
+        <div class="gp_block">
+            <div class="gp_img_block">
+                <img src="{{ url(item.img)|e }}" alt="{{ item.img_alt|e }}">
+                <div class="gp_img_content">
+                    {% if item.img_title %}<h4>{{ item.img_title|raw }}</h4>{% endif %}
+                    {% if item.img_desc %}<div>{{ item.img_desc|raw }}</div>{% endif %}
+                </div>
+            </div>
+        </div>
+	{% endfor %}
+{% endset %}
+
+{% set gpscript %}
+    jQuery(document).ready(function($) {
+        $('#{{ id }} .gp_grid').slick({
+            rtl: {% if gantry.page.direction == 'rtl' %}true{% else %}false{% endif %},
+            infinite: true,
+            autoplay: {% if particle.autoplay %}true{% else %}false{% endif %},
+            pauseOnHover: {% if particle.pauseOnHover %}true{% else %}false{% endif %},
+            adaptiveHeight: true
+        });
+    });
+{% endset %}
+
+{% block particle %}
+	{{ containerblock_start }}
+        <div class="g-grid gp_center">
+            {% if particle.content_position == 'left' %}
+                <div class="g-block size-45">
+                    {{ gp_content }}
+                </div>
+                <div class="g-block size-5"></div>
+            {% endif %}
+            <div class="g-block size-50">
+                <div class="gp_items">
+                    <div class="gp_grid">
+                        {{ gp_images }}
+                    </div>    
+                </div>
+            </div>
+            {% if particle.content_position == 'right' %}
+                <div class="g-block size-5"></div>
+                <div class="g-block size-45">
+                    {{ gp_content }}
+                </div>
+            {% endif %}
+        </div>
+	{{ containerblock_end }}
+{% endblock %}
+
+{% do gantry.load('jquery') %}
+{% if particle.slick %}
+    {% do gantry.document.addScript(url('gantry-theme://js/slick.min.js'), 0, 'footer') %}
+{% endif %}
+{% do gantry.document.addInlineScript(gpscript, 0, 'footer') %}

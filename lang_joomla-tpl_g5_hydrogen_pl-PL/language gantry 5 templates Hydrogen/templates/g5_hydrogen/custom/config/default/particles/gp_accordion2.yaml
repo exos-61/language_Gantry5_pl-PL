@@ -1,0 +1,69 @@
+class: ''
+activate_first: '0'
+icon_type: plus
+divider_border: 'rgba(34, 36, 38, 0.15)'
+heading_title: 'Frequently Asked Questions'
+heading_title_tag: h1
+heading_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare neque urna. Vivamus tincidunt euismod ullamcorper. Vestibulum ut elit in turpis mollis suscipit. Morbi pretium tortor vel suscipit semper.'
+heading_text_align: left
+gp_items:
+  -
+    question_title: 'Lorem ipsum dolor sit amet, consectetur adipiscing'
+    question_desc: 'Phasellus magna nisi, porta eleifend dignissim eget, ultrices quis sapien. Ut eget vulputate erat. Nunc molestie lorem ut elit rhoncus.'
+    answer_img: 'gantry-media://demo/thumb/img1.jpg'
+    answer_img_alt: Accordion
+    answer: 'Duis a mollis turpis. Fusce vel condimentum risus. Vivamus ac mi a metus sagittis pellentesque quis et enim. Aliquam quis ligula mi. Nulla sapien ante, vestibulum ac sem sit amet, gravida bibendum sem. Etiam tincidunt luctus ligula, et ultricies sem maximus pulvinar. Sed id elementum velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce id mi vel purus malesuada euismod ornare ac risus.'
+    link_url: '#'
+    link_text: 'Read more'
+    link_class: ''
+    class: ''
+    variations: ''
+    name: 'item 1'
+  -
+    question_title: 'Sed dapibus risus vitae ipsum cursus, sit amet cursus'
+    question_desc: 'Proin quis ligula in ex mattis facilisis nec ultricies dui. Curabitur eu nulla vestibulum nulla posuere pellentesque.'
+    answer_img: 'gantry-media://demo/thumb/img2.jpg'
+    answer_img_alt: Accordion
+    answer: 'Duis a mollis turpis. Fusce vel condimentum risus. Vivamus ac mi a metus sagittis pellentesque quis et enim. Aliquam quis ligula mi. Nulla sapien ante, vestibulum ac sem sit amet, gravida bibendum sem. Etiam tincidunt luctus ligula, et ultricies sem maximus pulvinar. Sed id elementum velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce id mi vel purus malesuada euismod ornare ac risus.'
+    link_url: '#'
+    link_text: 'Read more'
+    link_class: ''
+    class: ''
+    variations: ''
+    name: 'item 2'
+  -
+    question_title: 'Morbi sit amet quam commodo, imperdiet sapien ut'
+    question_desc: 'Aenean semper sem sed sagittis porttitor. Donec commodo tellus eu metus scelerisque lobortis et eget massa.'
+    answer_img: 'gantry-media://demo/thumb/img3.jpg'
+    answer_img_alt: Accordion
+    answer: 'Duis a mollis turpis. Fusce vel condimentum risus. Vivamus ac mi a metus sagittis pellentesque quis et enim. Aliquam quis ligula mi. Nulla sapien ante, vestibulum ac sem sit amet, gravida bibendum sem. Etiam tincidunt luctus ligula, et ultricies sem maximus pulvinar. Sed id elementum velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce id mi vel purus malesuada euismod ornare ac risus.'
+    link_url: '#'
+    link_text: 'Read more'
+    link_class: ''
+    class: ''
+    variations: ''
+    name: 'item 3'
+  -
+    question_title: 'Pellentesque faucibus lorem sit amet purus semper'
+    question_desc: 'Aliquam sollicitudin eleifend ante, a interdum sapien vestibulum sed. Sed aliquam massa a leo tristique, consequat iaculis libero luctus.'
+    answer_img: 'gantry-media://demo/thumb/img4.jpg'
+    answer_img_alt: Accordion
+    answer: 'Duis a mollis turpis. Fusce vel condimentum risus. Vivamus ac mi a metus sagittis pellentesque quis et enim. Aliquam quis ligula mi. Nulla sapien ante, vestibulum ac sem sit amet, gravida bibendum sem. Etiam tincidunt luctus ligula, et ultricies sem maximus pulvinar. Sed id elementum velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce id mi vel purus malesuada euismod ornare ac risus.'
+    link_url: '#'
+    link_text: 'Read more'
+    link_class: ''
+    class: ''
+    variations: ''
+    name: 'item 4'
+  -
+    question_title: 'Maecenas feugiat nunc id lorem venenatis condimentum'
+    question_desc: 'Vestibulum dapibus augue at leo lobortis gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus.'
+    answer_img: 'gantry-media://demo/thumb/img5.jpg'
+    answer_img_alt: Accordion
+    answer: 'Duis a mollis turpis. Fusce vel condimentum risus. Vivamus ac mi a metus sagittis pellentesque quis et enim. Aliquam quis ligula mi. Nulla sapien ante, vestibulum ac sem sit amet, gravida bibendum sem. Etiam tincidunt luctus ligula, et ultricies sem maximus pulvinar. Sed id elementum velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce id mi vel purus malesuada euismod ornare ac risus.'
+    link_url: '#'
+    link_text: 'Read more'
+    link_class: ''
+    class: ''
+    variations: ''
+    name: 'item 5'

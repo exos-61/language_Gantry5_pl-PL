@@ -1,0 +1,69 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set gpimage %}
+	{% if particle.imgPos == 'right' %}
+		<div class="g-block size-6"></div>
+	{% endif %}
+		<div class="g-block size-47">
+			<div class="gp_img">
+				<img src="{{ url(particle.img)|e }} " alt="{{ particle.alt|e }}">
+			</div>
+		</div>
+	{% if particle.imgPos == 'left' %}
+		<div class="g-block size-6"></div>
+	{% endif %}
+{% endset %}
+
+{% set gpcontent %}
+	<div class="g-block size-{% if particle.img %}47{% else %}100{% endif %}">
+		<div class="gp_content">
+			{% if particle.title %}<h3>{{ particle.title|raw|nl2br }}</h3>{% endif %}
+			{% if particle.subTitle %}<h4>{{ particle.subTitle|raw|nl2br }}</h4>{% endif %}
+			{% if particle.desc %}<div class="gp_desc">{{ particle.desc|raw|nl2br }}</div>{% endif %}
+			{% if particle.btnlink %}
+				<div class="gp_btn">
+					<a href="{{ particle.btnlink|e }}" class="{{ particle.btnclass|e }}">{{ particle.btntext|raw }}</a>
+				</div>
+			{% endif %}
+		</div>
+	</div>
+{% endset %}
+
+{% pageblock body_bottom %}
+	<div id="{{ id }}" class="gp_popuponexit{% if particle.class %} {{ particle.class }}{% endif %}">
+		<div class="gp_mask"></div>
+		<div class="gp_modalblock">
+			<div class="gp_inner">
+				<div class="g-grid">
+					{% if particle.img and particle.imgPos == 'left' %}
+						{{ gpimage }}
+					{% endif %}
+					{{ gpcontent }}
+					{% if particle.img and particle.imgPos == 'right' %}
+						{{ gpimage }}
+					{% endif %}
+				</div>
+				{% if particle.noThanks %}
+					<div class="gp_close">{{ particle.noThanks|e }}</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+{% endpageblock %}
+
+{% set gpscript %}
+	{% if particle.showAlways %}
+		gpPopuponExit(document.getElementById('{{ id }}'), { aggressive: true });
+	{% else %}
+		gpPopuponExit(document.getElementById('{{ id }}'));
+	{% endif %}
+	jQuery(document).ready(function($) {
+		$('#{{ id }} .gp_close').on('click', function() {
+        	$('#{{ id }}').hide();
+      	});
+	});
+{% endset %}
+
+{% do gantry.load('jquery') %}
+{% do gantry.document.addScript(url('gantry-theme://js/gp_popuponexit.min.js'), 0, 'footer') %}
+{% do gantry.document.addInlineScript(gpscript, 0, 'footer') %}

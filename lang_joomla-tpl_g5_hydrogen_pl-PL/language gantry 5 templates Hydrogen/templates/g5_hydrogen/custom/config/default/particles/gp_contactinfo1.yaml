@@ -1,0 +1,20 @@
+class: ''
+title: 'Our contact info'
+desc: 'Praesent malesuada cursus fermentum. Pellentesque nunc lorem, aliquam eget ipsum non, faucibus eleifend tellus. Vestibulum luctus sem eu magna volutpat, eu imperdiet libero porttitor. Aenean eu pulvinar magna. Nullam rhoncus dolor id varius dignissim.'
+gpItems:
+  -
+    icon: 'fa fa-map-marker'
+    desc: "205 Lipsum road\nLorem Street, 123456\nUnited States"
+    title: ADDRESS
+  -
+    icon: 'fa fa-phone-square'
+    desc: '012 345 6789'
+    title: PHONE
+  -
+    icon: 'fa fa-envelope'
+    desc: info@yourdomain.com
+    title: EMAIL
+  -
+    icon: 'fa fa-external-link-square'
+    desc: www.yourdomain.com
+    title: WEBSITE

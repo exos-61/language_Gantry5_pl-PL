@@ -1,0 +1,48 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_backgroundvideo {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_content %}
+	<div class="gp_block" style="height:{{ particle.blockHeight|default('550') }}px;">
+		<video autoplay muted loop>
+                {% if particle.video_mp4 %}
+                    <source src="{{ url(particle.video_mp4)|e }}" type="video/mp4" />
+                {% endif %}
+                {% if particle.video_webm %}
+                    <source src="{{ url(particle.video_webm)|e }}" type="video/webm" />
+                {% endif %}
+		</video>
+		<div class="gp_controls">
+      		<span class="gp_play"><i class="fa fa-play-circle"></i></span>
+      		<span class="gp_pause"><i class="fa fa-pause-circle"></i></span>
+    	</div>
+		{% if particle.cover %}
+			<div class="gp_cover" style="background-image: url({{ url(particle.cover)|e }});"></div>
+		{% endif %}
+		{% if particle.mask %}
+    		<div class="gp_mask" style="opacity: {{ particle.mask }};"></div>
+    	{% endif %}
+    	<div class="gp_content">
+    		<div class="gp_content_inner">
+				{% if particle.contenttitle %}<h3>{{ particle.contenttitle|raw }}</h3>{% endif %}
+				{% if particle.content %}<div>{{ particle.content|raw|nl2br }}</div>{% endif %}
+				{% if particle.btnlink %}<a href="{{ particle.btnlink|e }}" target="{{ particle.btntarget|e }}" class="{{ particle.btnclass|e }}">{{ particle.btntext|raw }}</a>{% endif %}
+			</div>
+    	</div>
+	</div>
+{% endset %}
+
+{% block particle %}
+	{{ containerblock_start }}
+        {{ gp_content }}
+	{{ containerblock_end }}
+{% endblock %}
+
+{% do gantry.load('jquery') %}
+{% do gantry.document.addScript(url('gantry-theme://js/gp_backgroundvideo.min.js'), 0, 'footer') %}

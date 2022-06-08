@@ -1,0 +1,70 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_process_steps1 {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_heading %}
+    {% if particle.heading_title or particle.heading_desc %}
+        <div class="gp_heading" style="text-align:{{ particle.heading_text_align|e }};">
+            {% if particle.heading_title %}
+                <{{ particle.heading_title_tag|e }} style="margin-top:0;">{{ particle.heading_title|raw }}</{{ particle.heading_title_tag|e }}>
+            {% endif %}
+            {% if particle.heading_desc %}
+                <div>{{ particle.heading_desc|raw|nl2br }}</div>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endset %}
+
+{% set gp_contents %}
+	{% for item in particle.gp_items %}
+        <div class="g-block size-{{ particle.columns }} gp_step{{ loop.index }}">
+            <div class="gp_item">
+                <div class="gp_count"></div>
+                {% if item.icon %}
+                    <i class="{{ item.icon|e }} gp_icon"></i>
+                {% endif %}
+                {% if item.title %}
+                    <h4>{{ item.title|raw }}</h4>
+                {% endif %}
+                {% if item.desc %}
+                    <div class="gp_desc">{{ item.desc|raw }}</div>
+                {% endif %}
+                {% if item.link %}
+                    <a href="{{ item.link|e }}" class="gp_link">{{ item.link_text|raw }}</a>
+                {% endif %}
+            </div>
+        </div>
+	{% endfor %}
+{% endset %}
+
+{% block stylesheets %}
+    <style type="text/css">
+        #{{ id }} .gp_item {
+            {% if particle.gp_bg %}
+                background: {{ particle.gp_bg|e }};
+            {% endif %}
+            {% if particle.gp_border %}
+                border: 1px solid {{ particle.gp_border|e }};
+            {% endif %}
+        }
+    </style>
+{% endblock %}
+
+{% block particle %}
+	{{ containerblock_start }}
+        {% if particle.gp_items %}
+            {{ gp_heading }}
+            <div class="gp_items">
+                <div class="g-grid">
+                    {{ gp_contents }}
+                </div>   
+            </div>
+        {% endif %}
+	{{ containerblock_end }}
+{% endblock %}

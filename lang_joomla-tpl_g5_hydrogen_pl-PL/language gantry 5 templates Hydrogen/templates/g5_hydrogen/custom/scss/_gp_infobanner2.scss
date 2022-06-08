@@ -1,0 +1,56 @@
+.gp_infobanner2 {
+	> .g-grid {
+		margin: 0 -14px;
+		> .g-block {
+			margin-bottom: 28px;
+			> .gp_content {
+				margin: 0 14px;
+				height: 100%;
+				transition: 0.2s ease;
+				-webkit-transition: 0.2s ease;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				overflow: hidden;
+				position: relative;
+			}
+		}
+	}
+	.gp_inner {
+		padding: 35px 30px;
+		text-align: center;
+		position: relative;
+		> h2 {
+			margin: 0 0 20px;
+			font-size: 2rem;
+			line-height: 1.2;
+			color: #ffffff !important;
+		}
+		> .gp_desc {
+			font-size: 18px;
+			opacity: 0.9;
+			margin-bottom: 20px;
+			color: #ffffff;
+		}
+		> .gp_btn {
+			a {
+				padding: 8px 24px;
+				border-radius: 4px;
+				color: #ffffff;
+				border: 2px solid #ffffff;
+				display: inline-block;
+				&:hover {
+					opacity: 0.85;
+				}
+			}
+		}
+	}
+	.gp_mask {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: #000000;
+	}
+}

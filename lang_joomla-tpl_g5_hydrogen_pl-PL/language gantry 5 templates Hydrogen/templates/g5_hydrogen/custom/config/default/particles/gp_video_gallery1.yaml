@@ -1,0 +1,65 @@
+class: ''
+gallery: '1'
+autoplay: '1'
+margin: '1'
+title_pos: title_bottom
+heading_title: 'Gantry 5 Features in Video'
+heading_title_tag: h1
+heading_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at mauris faucibus, sodales urna quis, aliquam velit. Aliquam ullamcorper tempor eleifend. Nulla vel dapibus arcu. Proin vel convallis leo. Donec in turpis tristique, vestibulum urna quis,'
+heading_text_align: left
+columns: 33-3
+gp_items:
+  -
+    title: 'Aliquam tempor leo'
+    videoType: youtube
+    yt_img: ''
+    yt_id: RVS2KOv0Nqw
+    local_img: ''
+    mp4: ''
+    webm: ''
+    name: 'item 1'
+  -
+    title: 'Viverra accumsan diam'
+    videoType: youtube
+    yt_img: ''
+    yt_id: xwlqHOVklyk
+    local_img: ''
+    mp4: ''
+    webm: ''
+    name: 'item 2'
+  -
+    title: 'Phasellus quis metus'
+    videoType: youtube
+    yt_img: ''
+    yt_id: Tiz5bqwNcGM
+    local_img: ''
+    mp4: ''
+    webm: ''
+    name: 'item 3'
+  -
+    title: 'Nulla egestas massa'
+    videoType: youtube
+    yt_img: ''
+    yt_id: qbEcbdHMASc
+    local_img: ''
+    mp4: ''
+    webm: ''
+    name: 'item 4'
+  -
+    title: 'Donec turpis tristique'
+    videoType: youtube
+    yt_img: ''
+    yt_id: R7mohZTxacg
+    local_img: ''
+    mp4: ''
+    webm: ''
+    name: 'item 5'
+  -
+    title: 'Aliquam fringilla dui'
+    videoType: youtube
+    yt_img: ''
+    yt_id: u31qwQUeGuM
+    local_img: ''
+    mp4: ''
+    webm: ''
+    name: 'item 6'

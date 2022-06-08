@@ -1,0 +1,83 @@
+class: ''
+gp_bg: '#f5f5f5'
+gp_border: '#dee1e6'
+heading_title: 'Our Simple Pricing'
+heading_title_tag: h1
+heading_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium dolor eu luctus volutpat. Class aptent taciti\nsociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+heading_text_align: center
+columns: '25'
+gp_items:
+  -
+    highlight: '0'
+    title: Free
+    price: $0
+    desc: 'Praesent eget porttitor libero. Praesent et dictum nibh. Mauris rutrum mattis dui vitae mattis. Etiam et pellentesque ante.'
+    link: '#'
+    link_text: 'BUY NOW'
+    link_class: 'ui button teal'
+    name: 'table 1'
+  -
+    highlight: '0'
+    title: Basic
+    price: $3
+    desc: 'Praesent eget porttitor libero. Praesent et dictum nibh. Mauris rutrum mattis dui vitae mattis. Etiam et pellentesque ante.'
+    link: '#'
+    link_text: 'BUY NOW'
+    link_class: 'ui button teal'
+    name: 'table 2'
+  -
+    highlight: '1'
+    title: Starter
+    price: $6
+    desc: 'Praesent eget porttitor libero. Praesent et dictum nibh. Mauris rutrum mattis dui vitae mattis. Etiam et pellentesque ante.'
+    link: '#'
+    link_text: 'BUY NOW'
+    link_class: 'ui button teal'
+    name: 'table 3'
+  -
+    highlight: '0'
+    title: Professional
+    price: $9
+    desc: 'Praesent eget porttitor libero. Praesent et dictum nibh. Mauris rutrum mattis dui vitae mattis. Etiam et pellentesque ante.'
+    link: '#'
+    link_text: 'BUY NOW'
+    link_class: 'ui button teal'
+    name: 'table 4'
+  -
+    highlight: '0'
+    title: Business
+    price: $12
+    desc: 'Praesent eget porttitor libero. Praesent et dictum nibh. Mauris rutrum mattis dui vitae mattis. Etiam et pellentesque ante.'
+    link: '#'
+    link_text: 'BUY NOW'
+    link_class: 'ui button teal'
+    name: 'table 5'
+  -
+    highlight: '0'
+    title: Team
+    price: $15
+    desc: 'Praesent eget porttitor libero. Praesent et dictum nibh. Mauris rutrum mattis dui vitae mattis. Etiam et pellentesque ante.'
+    link: '#'
+    link_text: 'BUY NOW'
+    link_class: 'ui button teal'
+    name: 'table 6'
+  -
+    highlight: '0'
+    title: Agencies
+    price: $18
+    desc: 'Praesent eget porttitor libero. Praesent et dictum nibh. Mauris rutrum mattis dui vitae mattis. Etiam et pellentesque ante.'
+    link: '#'
+    link_text: 'BUY NOW'
+    link_class: 'ui button teal'
+    name: 'table 7'
+  -
+    highlight: '0'
+    title: Enterprise
+    price: $21
+    desc: 'Praesent eget porttitor libero. Praesent et dictum nibh. Mauris rutrum mattis dui vitae mattis. Etiam et pellentesque ante.'
+    link: '#'
+    link_text: 'BUY NOW'
+    link_class: 'ui button teal'
+    name: 'table 8'
+note_title: 'Note:'
+note_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna nisi, commodo eu mauris vel, dapibus \ncongue tortor. Fusce interdum consequat erat, nec pharetra felis dapibus ac. Lorem ipsum dolor sit amet."

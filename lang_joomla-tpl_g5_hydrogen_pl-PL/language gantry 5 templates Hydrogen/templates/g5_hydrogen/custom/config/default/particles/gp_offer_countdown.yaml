@@ -1,0 +1,17 @@
+class: ''
+fontSize: '18'
+bgColor: '#f2711c'
+txtColor: '#ffffff'
+txtAlign: center
+txtBefore: 'Happy Black Friday! Enjoy 20% discount before'
+txtAfter: 'Use coupon code <b>BlackFriday</b>'
+dateToCount: '2024-06-09T17:52'
+showDays: '1'
+daysTxt: Days
+showHours: '1'
+hoursTxt: hours
+showMin: '1'
+minTxt: mins
+showSec: '1'
+secTxt: secs
+endTxt: 'Offer Expired!'

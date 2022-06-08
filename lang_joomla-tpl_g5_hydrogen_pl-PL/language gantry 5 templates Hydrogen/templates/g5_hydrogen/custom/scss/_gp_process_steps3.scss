@@ -1,0 +1,140 @@
+.gp_process_steps3 {
+	.gp_heading {
+		margin: 0 0 50px;
+	}
+	.gp_link {
+		display: block;
+		margin-top: 15px;
+		text-decoration: underline;
+	}
+	.gp_step_accordion {
+		cursor: pointer;
+		padding: 8px 60px 8px 20px;
+		position: relative;
+		margin-top: 4px;
+		border: 1px solid rgba(34,36,38,.15);
+		font-weight: bold;
+		&:not(.gp_active) {
+			.gp_step_arrow {
+				&:before {
+					content: "\f107";
+				}
+			}
+		}
+		&.gp_active {
+			background: #f3f4f5;
+			.gp_step_arrow {
+				&:before {
+					content: "\f106";
+				}
+			}
+		}
+	}
+	.gp_step_content {
+		display: none;
+		border: 1px solid rgba(34,36,38,.15);
+		position: relative;
+		background: #fff;
+		padding: 1em;
+		margin: 0;
+		top: -1px;
+		&.gp_active {
+			display: block;
+		}
+	}
+	.gp_step_arrow {
+		font-family: 'FontAwesome';
+		position: absolute;
+		right: 25px;
+		top: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		font-size: 18px;
+	}
+	.gp_steps {
+		@include display(flex);
+		position: relative;
+		overflow-x: auto;
+		overflow-y: hidden;
+		width: 100%;
+		margin: 0 auto 1.5rem auto;
+		white-space: nowrap;
+		li {
+			display: inline-block;
+			-webkit-flex-grow: 1;
+			-ms-flex-positive: 1;
+			flex-grow: 1;
+			padding: 0;
+			margin: 0;
+			text-transform: uppercase;  
+		}
+	}
+	.gp_step {
+		position: relative;
+		background: #fff;
+		color: rgba(0,0,0,.85);
+		-webkit-transition: all .1s ease;
+		transition: all .1s ease;
+		font-size: 1rem;
+		font-weight: bold;
+		text-align: center;
+		cursor: pointer;
+		.gp_icon {
+			position: relative;
+			> i {
+				position: relative;
+				display: block;
+				background: #ffffff;
+				border: 5px solid rgba(34,36,38,.15);
+				border-radius: 50%;
+				width: 80px;
+				height: 80px;
+				margin: 0 auto 9px;
+				font-size: 22px;
+				line-height: 71px;
+				text-align: center;
+				font-weight: normal;
+			}
+			&:before {
+				content: "";
+				background: rgba(34,36,38,.15);
+				height: 3px;
+				width: 100%;
+				position: absolute;
+				top: 50%;
+				margin-top: -1.5px;
+				left: 0;
+				right: 0;
+				-webkit-transition: all .2s ease;
+				transition: all .2s ease;
+			}
+		}
+		> span {
+			display: block;
+		}
+		&.gp_active, {
+			color: rgba(0,0,0,.87);
+		}
+	}
+	li.gp_complete {
+		.gp_icon {
+			&:before {
+				background: #21ba45;
+				width: 100%;
+			}
+			> i {
+				border-color: #21ba45;
+			}
+		}
+	}
+}
+@media only all and (min-width: 768px) {
+	.gp_process_steps3 .gp_step_accordion {
+		display: none !important;
+	}
+}
+@media only all and (max-width: 767px) {
+	.gp_process_steps3 .gp_steps {
+		display: none !important;
+	}
+}

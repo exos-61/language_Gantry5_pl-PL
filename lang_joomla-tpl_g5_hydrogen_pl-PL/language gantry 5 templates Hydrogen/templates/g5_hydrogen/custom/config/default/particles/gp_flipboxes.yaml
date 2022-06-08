@@ -1,0 +1,50 @@
+class: ''
+heading_title: 'Gantry 5 Features'
+heading_title_tag: h1
+heading_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam diam nibh, vulputate a ipsum eget, vestibulum posuere mi. Duis facilisis rhoncus porta. Maecenas sed magna viverra, aliquet massa in, dictum nunc.'
+textAlign: left
+cols: 33-3
+boxHeight: '370'
+gp_items:
+  -
+    url: '#'
+    icon: 'fa fa-cube'
+    img: ''
+    imgType: normal
+    title: 'Responsive Layout'
+    f_bg: '#00b5ad'
+    f_txt: '#ffffff'
+    backTitle: 'Cross Platform'
+    desc: ' Nulla hendrerit vestibulum neque volutpat ultrices. Donec ex enim, varius at felis vitae,'
+    readMore: 'Read more'
+    b_bg: '#00b5ad'
+    b_txt: '#ffffff'
+    name: 'item 1'
+  -
+    url: '#'
+    icon: 'fa fa-cube'
+    img: ''
+    imgType: normal
+    title: 'Drag & drop'
+    f_bg: '#2185d0'
+    f_txt: '#ffffff'
+    backTitle: 'Easy to build'
+    desc: ' Nulla hendrerit vestibulum neque volutpat ultrices. Donec ex enim, varius at felis vitae,'
+    readMore: 'Read more'
+    b_bg: '#2185d0'
+    b_txt: '#ffffff'
+    name: 'item 2'
+  -
+    url: '#'
+    icon: 'fa fa-paint-brush'
+    img: ''
+    imgType: normal
+    title: 'Easy to style'
+    f_bg: '#21ba45'
+    f_txt: '#ffffff'
+    backTitle: 'Design like pro'
+    desc: ' Nulla hendrerit vestibulum neque volutpat ultrices. Donec ex enim, varius at felis vitae,'
+    readMore: 'Read more'
+    b_bg: '#21ba45'
+    b_txt: '#ffffff'
+    name: 'item 3'

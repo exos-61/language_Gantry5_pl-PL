@@ -1,0 +1,28 @@
+class: ''
+color: '#ffcf29'
+heading_title: 'What our users says'
+heading_title_tag: h1
+heading_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit elit nibh, at sollicitudin velit sagittis eu. Proin tristique id purus a vestibulum. Fusce aliquam gravida augue, et pretium elit fringilla non.'
+heading_text_align: center
+gp_items:
+  -
+    comment: ' Vestibulum quis ante diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas nunc non, maximus.'
+    author: 'Soham Hicks'
+    rating: 4-5
+    desig: CO-FOUNDER
+    url: 'https://lipsum.com'
+    name: 'item 1'
+  -
+    comment: 'Curabitur vel libero lectus. Integer a metus ac lorem facilisis vulputate. Vestibulum ac purus ut lorem feugiat ultricies nunc non, maximus.'
+    author: 'Jenny Lambert'
+    rating: '5'
+    desig: CO-FOUNDER
+    url: 'https://lipsum.com'
+    name: 'item 2'
+  -
+    comment: 'Donec urna nisi, maximus sed efficitur et, laoreet ac sapien. Ut tempus arcu ut aliquam iaculis. Sed vel finibus dolor nunc non, maximus.'
+    author: 'Judy Pearson'
+    rating: 3-5
+    desig: CO-FOUNDER
+    url: 'https://lipsum.com'
+    name: 'item 3'

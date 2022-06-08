@@ -1,0 +1,109 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_iconblock8 {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_image %}
+	{% if particle.img %}
+		<div class="gp_image">
+			<img src="{{ url(particle.img)|e }}" alt="{{ particle.img_alt|e }}">
+		</div>
+	{% endif %}
+{% endset %}
+
+{% set gp_heading %}
+	<div class="gp_heading">
+		{% if particle.heading_title %}
+			<{{ particle.heading_title_tag|e }} style="margin-top:0;">{{ particle.heading_title|raw|nl2br }}</{{ particle.heading_title_tag|e }}>
+		{% endif %}
+		{% if particle.heading_desc %}
+			<div>{{ particle.heading_desc|raw|nl2br }}</div>
+		{% endif %}
+	</div>
+{% endset %}
+
+{% set gp_contents %}
+	{% for item in particle.gp_items %}
+		<div class="g-block size-{{ particle.columns }} {{ item.class }} {{ item.variations }}">
+			<div class="gp_content">
+				{% if item.icon %}
+					<i class="{{ item.icon }} gp_icon{% if particle.icon_border %} has_iconborder{% endif %}" style="color: {{ item.icon_color|e }};"></i>
+				{% endif %}
+				{% if item.title %}
+					<div class="gp_title">{{ item.title|raw }}</div>
+				{% endif %}
+				{% if item.description %}
+					<div>{{ item.description|raw }}</div>
+				{% endif %}
+				{% if item.link_url %}
+					<div class="gp_link"><a href="{{ item.link_url|e }}" class="{{ item.link_class|e }}">{{ item.link_text|raw }}</a></div>
+				{% endif %}
+			</div>
+		</div>
+	{% endfor %}
+{% endset %}
+
+{% block stylesheets %}
+	<style type="text/css">
+		@media only all and (max-width: 767px) {
+			{% if particle.mobile_padding %}
+				#{{ id }} {
+					padding: {{ particle.mobile_padding|e }} !important;
+				}
+			{% endif %}
+		}
+		#{{ id }} {
+			{% if particle.text_color %}
+				color: {{ particle.text_color|e }};
+			{% endif %}
+			{% if particle.padding %}
+				padding: {{ particle.padding|e }};
+			{% endif %}
+			{% if particle.font_size %}
+				font-size: {{ particle.font_size|e }};
+			{% endif %}
+			text-align: {{ particle.text_align|e }};
+		}
+		#{{ id }} .gp_heading {
+			text-align: {{ particle.heading_text_align|e }};
+		}
+		#{{ id }} .gp_icon.has_iconborder {
+			border: 3px solid {{ particle.icon_border|e }};
+			background: {{ particle.icon_bg|e }};
+		}
+	</style>
+{% endblock %}
+
+{% block particle %}
+	{{ containerblock_start }}
+		<div class="g-grid gp_aligncenter">
+			{% if particle.img_pos == 'left' %}
+				<div class="g-block size-47">
+					{{ gp_image }}
+				</div>
+				<div class="g-block size-6"></div>
+			{% endif %}
+			<div class="g-block size-47">
+				<div class="gp_list img_{{ particle.img_pos }}">
+					{{ gp_heading }}
+					<div class="g-grid">
+						{% if particle.gp_items %}
+							{{ gp_contents }}
+						{% endif %}
+					</div>
+				</div>
+			</div>
+			{% if particle.img_pos == 'right' %}
+				<div class="g-block size-6"></div>
+				<div class="g-block size-47">
+					{{ gp_image }}
+				</div>
+			{% endif %}
+		</div>
+	{{ containerblock_end }}
+{% endblock %}

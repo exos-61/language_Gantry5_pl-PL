@@ -1,0 +1,91 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_iconblock4 {{ particle.class }}">
+		{% if particle.heading_title or particle.heading_desc %}
+			<div class="gp_heading">
+				{% if particle.heading_title %}
+					<{{ particle.heading_title_tag|e }} style="margin-top:0;">{{ particle.heading_title|raw }}</{{ particle.heading_title_tag|e }}>
+				{% endif %}
+				{% if particle.heading_desc %}
+					<div>{{ particle.heading_desc|raw|nl2br }}</div>
+				{% endif %}
+			</div>
+		{% endif %}
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_contents %}
+	{% for item in particle.gp_items %}
+		<div class="g-block size-{{ particle.columns }} {{ item.class }} {{ item.variations }}">
+			<div class="gp_content">
+				<div class="g-grid">
+					<div class="g-block size-17">
+						{% if item.icon %}
+							<i class="{{ item.icon }} gp_icon" style="color: {{ item.icon_color|e }};"></i>
+						{% endif %}
+					</div>
+					<div class="g-block size-83">
+						<div class="gp_right">
+							{% if item.title %}
+								<h4>{{ item.title|raw }}</h4>
+							{% endif %}
+							{% if item.description %}
+								<div>{{ item.description|raw }}</div>
+							{% endif %}
+							{% if item.link_url %}
+								<div class="gp_link"><a href="{{ item.link_url|e }}" class="{{ item.link_class|e }}">{{ item.link_text|raw }}</a></div>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+{% endset %}
+
+{% block stylesheets %}
+	<style type="text/css">
+		@media only all and (max-width: 767px) {
+			#{{ id }} {
+				text-align: center !important;
+				{% if particle.mobile_padding %}
+					padding: {{ particle.mobile_padding|e }} !important;
+				{% endif %}
+			}
+		}
+		#{{ id }} {
+			{% if particle.text_color %}
+				color: {{ particle.text_color|e }};
+			{% endif %}
+			{% if particle.padding %}
+				padding: {{ particle.padding|e }};
+			{% endif %}
+			{% if particle.font_size %}
+				font-size: {{ particle.font_size|e }};
+			{% endif %}
+			text-align: {{ particle.text_align|e }};
+		}
+		#{{ id }} .gp_heading {
+			text-align: {{ particle.heading_text_align|e }};
+		}
+		{% if particle.text_color %}
+			#{{ id }} h4 {
+				color: {{ particle.text_color|e }};
+			}
+		{% endif %}
+	</style>
+{% endblock %}
+
+{% block particle %}
+	{{ containerblock_start }}
+		<div class="g-grid">
+			{% if particle.gp_items %}
+				{{ gp_contents }}
+			{% endif %}
+		</div>
+	{{ containerblock_end }}
+{% endblock %}

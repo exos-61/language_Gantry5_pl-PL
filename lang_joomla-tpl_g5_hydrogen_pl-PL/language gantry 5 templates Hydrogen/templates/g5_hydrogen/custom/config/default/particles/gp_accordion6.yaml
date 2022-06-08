@@ -1,0 +1,39 @@
+class: ''
+activate_first: '1'
+icon_type: arrow
+qd_bg: '#ffffff'
+qd_text: '#707070'
+a_bg: ''
+a_text: ''
+heading_title: ''
+heading_title_tag: h2
+heading_desc: ''
+heading_text_align: left
+img: 'gantry-media://demo/blur-bottle-bright-12.jpg'
+img_alt: 'Accordion gantry 5'
+img_pos: right
+gp_items:
+  -
+    icon: 'fa fa-diamond'
+    question: 'Lorem ipsum dolor sit amet, consectetur'
+    answer: 'Fusce mi dui, consequat vitae placerat eu, porttitor ut neque. Vivamus vitae vulputate ante. Aliquam interdum pretium quam, sed vulputate nisi sagittis a. Vivamus turpis justo, mollis in fringilla id.'
+    link_url: ''
+    link_text: ''
+    link_class: ''
+    name: 'item 1'
+  -
+    icon: 'fa fa-copy'
+    question: 'Morbi sit amet quam commodo imperdiet'
+    answer: 'Quisque pulvinar, justo nec iaculis cursus, tortor eros efficitur nunc, in tempus enim lorem eget lorem. Curabitur interdum consequat lectus, a maximus orci volutpat ut. Cras non ullamcorper tortor.'
+    link_url: ''
+    link_text: ''
+    link_class: ''
+    name: 'item 2'
+  -
+    icon: 'fa fa-edit'
+    question: 'Maecenas feugiat nunc id lorem'
+    answer: 'Praesent pulvinar purus nec lacus faucibus, id tempus enim lacinia. Ut a nulla faucibus, porta ipsum ac, aliquam nulla. Proin ut nibh vel sem vulputate porttitor. Quisque scelerisque, mauris eget molestie.'
+    link_url: ''
+    link_text: ''
+    link_class: ''
+    name: 'item 3'

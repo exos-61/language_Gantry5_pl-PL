@@ -1,0 +1,58 @@
+name: Copyright
+description: Display copyright information.
+type: particle
+icon: fa-copyright
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true
+
+    date.start:
+      type: input.text
+      label: Rok rozpoczęcia
+      description: Wpisz rok rozpoczęcia praw autorskich.
+      default: now
+
+    date.end:
+      type: input.text
+      label: End Year
+      description: Wpisz rok końcowy praw autorskich, lub nie dokonuj wpisu. Aktualna data automatycznie będzie się aktualizować
+      default: now
+
+    owner:
+      type: input.text
+      label: Właściciel praw autorskich
+      description: Dodaj nazwę właściciela praw autorskich.
+
+    link:
+      type: input.text
+      label: Link właściciela
+      description: Dodaj link dla właściciela.
+
+    target:
+      type: select.select
+      label: Docelowy link właściciela
+      description: Docelowe okno przeglądarki po kliknięciu linku właściciela.
+      placeholder: 'Select...'
+      default: _blank
+      options:
+          _parent: Self
+          _blank: New Window
+
+    additional.text:
+      type: input.text
+      label: Dodatkowy tekst
+      description: Dodatkowy tekst, który chcesz dodać poniżej praw autorskich.
+
+    css.class:
+      type: input.text
+      label: Klasy CSS
+      description: Nazwa klasy CSS dla elementu particle.

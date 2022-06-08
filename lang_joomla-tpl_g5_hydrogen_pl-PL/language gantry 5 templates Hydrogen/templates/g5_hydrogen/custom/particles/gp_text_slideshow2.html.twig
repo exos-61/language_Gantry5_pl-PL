@@ -1,0 +1,81 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_text_slideshow2 {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_contents %}
+    <div class="gp_slide_block">
+        <div class="gp_mask"></div>
+        <div class="gp_items">
+            <div class="gp_contents">
+                {% if particle.title %}
+                    <h1>{{ particle.title|raw }}</h1>
+                {% endif %}
+                <ul id="gp_slides">
+                    {% for item in particle.gp_items %}
+                        <li>{{ item.name|raw }}</li>
+                    {% endfor %}
+                </ul>
+                {% if particle.btn1 or particle.btn2 %}
+                    <div class="gp_buttons">
+                        {% if particle.btn1 %}
+                            <a href="{{ particle.btn1|e }}" class="{{ particle.btn1_class|e }}">{{ particle.btn1_text|raw }}</a>
+                        {% endif %}
+                        {% if particle.btn2 %}
+                            <a href="{{ particle.btn2|e }}" class="{{ particle.btn2_class|e }}">{{ particle.btn2_text|raw }}</a>
+                        {% endif %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endset %}
+
+{% block stylesheets %}
+    <style type="text/css">
+        {% if particle.sub_title %}
+            #{{ id }} ul#gp_slides:before {
+                content: "{{ particle.sub_title|e }}";
+            }
+        {% endif %}
+        #{{ id }} .gp_slide_block {
+            background-image: url({{ url(particle.bg_image)|e }});
+            padding: {{ particle.padding|e }}px 0;
+        }
+        #{{ id }} .gp_mask {
+            background-color: {{ particle.bg_mask|e }};
+        }
+        @media only all and (max-width: 960px) {
+            #{{ id }} .gp_slide_block {
+                padding: {{ (particle.padding|e)/2 }}px 0 !important;
+            }
+        }
+    </style>
+{% endblock %}
+
+{% set gpscript %}
+    jQuery(document).ready(function($) {
+        $('#{{ id }} ul#gp_slides').list_ticker({
+            speed:2000,
+            effect:'{{ particle.animation|default('fade') }}'
+        });
+    });
+{% endset %}
+
+{% block particle %}
+	{{ containerblock_start }}
+        {% if particle.gp_items %}
+            {{ gp_contents }}
+        {% endif %}
+	{{ containerblock_end }}
+{% endblock %}
+
+{% do gantry.load('jquery') %}
+{% do gantry.document.addScript(url('gantry-theme://js/gp_text_slideshow2.min.js'), 0, 'footer') %}
+
+{% do gantry.document.addInlineScript(gpscript, 0, 'footer') %}

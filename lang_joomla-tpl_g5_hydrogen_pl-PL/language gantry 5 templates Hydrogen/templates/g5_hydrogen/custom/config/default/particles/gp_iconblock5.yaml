@@ -1,0 +1,44 @@
+class: ''
+block_bg: '#ffffff'
+text_color: ''
+font_size: ''
+padding: ''
+mobile_padding: ''
+heading_title: 'Building website with Gantry 5 is very easy'
+heading_title_tag: h1
+heading_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat lobortis dolor, sed\nconsequat est sagittis a. Praesent accumsan bibendum ligula ac tempus."
+heading_text_align: center
+columns: '25'
+gp_items:
+  -
+    icon: 'fa fa-file-text-o'
+    icon_color: ''
+    title: 'Read documentation'
+    link_url: '#'
+    class: ''
+    variations: ''
+    name: 'item 1'
+  -
+    icon: 'fa fa-diamond'
+    icon_color: ''
+    title: 'Add contents'
+    link_url: '#'
+    class: ''
+    variations: ''
+    name: 'item 2'
+  -
+    icon: 'fa fa-clone'
+    icon_color: ''
+    title: 'Review contents'
+    link_url: '#'
+    class: ''
+    variations: ''
+    name: 'item 3'
+  -
+    icon: 'fa fa-paper-plane-o'
+    icon_color: ''
+    title: 'You''re done!'
+    link_url: '#'
+    class: ''
+    variations: ''
+    name: 'item 4'

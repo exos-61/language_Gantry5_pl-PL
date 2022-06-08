@@ -1,0 +1,43 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_contactinfo4 {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_content %}
+	<div class="gp_content">
+		<div class="g-grid">
+			{% if particle.img %}
+				<div class="g-block size-40">
+					<img src="{{ url(particle.img)|e }}" alt="{{ particle.alt|e }}">
+				</div>
+				<div class="g-block size-5"></div>
+			{% endif %}
+			<div class="g-block size-{% if particle.img %}55{% else %}100{% endif %}">
+				<div class="gp_inner">
+					{% if particle.title %}<h3>{{ particle.title|raw|nl2br }}</h3>{% endif %}
+					{% if particle.desc %}<div class="gp_desc">{{ particle.desc|raw|nl2br }}</div>{% endif %}
+					{% for item in particle.gpItems %}
+						<div class="gp_info">
+							{% if item.icon %}<div class="gp_icon"><a href="javascript:;"><i class="{{ item.icon }}"></i></a></div>{% endif %}
+							<div class="gp_info_desc">
+								{% if item.title %}<div class="gp_info_title">{{ item.title|raw }}</div>{% endif %}
+								{% if item.desc %}<div class="gp_info_desc">{{ item.desc|raw|nl2br }}</div>{% endif %}
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+{% endset %}
+
+{% block particle %}
+	{{ containerblock_start }}
+		{{ gp_content }}
+	{{ containerblock_end }}
+{% endblock %}

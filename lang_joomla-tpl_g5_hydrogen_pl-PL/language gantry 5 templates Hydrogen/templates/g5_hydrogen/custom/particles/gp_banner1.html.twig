@@ -1,0 +1,43 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_banner1 {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_contents %}
+	<div class="gp_bgimg" style="background-image: url({{ url(particle.img)|e }});height: {{ particle.bannerHeight|default('600') }}px;">
+		{% if particle.mask %}
+			<div class="gp_mask" style="opacity:{{ particle.mask|e }};"></div>
+		{% endif %}
+		<div class="gp_content">
+			<div class="gp_inner">
+				{% if particle.title %}
+					<h1>{{ particle.title|raw|nl2br }}</h1>
+				{% endif %}
+				{% if particle.desc %}
+					<div class="gp_desc">{{ particle.desc|raw|nl2br }}</div>
+				{% endif %}
+				{% if particle.btn1Url or particle.btn2Url %}
+					<div class="gp_btns">
+						{% if particle.btn1Url %}
+							<a href="{{ particle.btn1Url|e }}" class="gp_btnwithbg" style="background:{{ particle.btn1Bg|e }};">{{ particle.btn1Txt|raw }}</a>
+						{% endif %}
+						{% if particle.btn2Url %}
+							<a href="{{ particle.btn2Url|e }}" class="gp_btnwithicon">{% if particle.btn2Icon %}<i class="{{ particle.btn2Icon|e }}"></i> {% endif %}{{ particle.btn2Txt|raw }}</a>
+						{% endif %}
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+{% endset %}
+
+{% block particle %}
+	{{ containerblock_start }}
+		{{ gp_contents }}
+	{{ containerblock_end }}
+{% endblock %}

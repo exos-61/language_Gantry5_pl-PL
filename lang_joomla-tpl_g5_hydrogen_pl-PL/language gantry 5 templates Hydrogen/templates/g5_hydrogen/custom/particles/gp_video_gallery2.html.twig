@@ -1,0 +1,110 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_videogallery2 {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_content %}
+    {% if particle.heading_title or particle.heading_desc %}
+        <div class="gp_content">
+            {% if particle.heading_title %}
+                <{{ particle.heading_title_tag|e }} style="margin-top:0;">{{ particle.heading_title|raw }}</{{ particle.heading_title_tag|e }}>
+            {% endif %}
+            {% if particle.heading_desc %}
+                <div>{{ particle.heading_desc|raw|nl2br }}</div>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endset %}
+
+{% set gp_videos %}
+	{% for item in particle.gp_items %}
+        <div class="gp_block">
+            <div class="gp_item">
+                {% set videoUrl %}
+                    {% if item.videoType == 'youtube' %}href="//www.youtube.com/embed/{{ item.yt_id|e }}?version=3{% if particle.video_autoplay %}&autoplay=1{% endif %}"{% else %}href="javascript:;"{% endif %}
+                    {% if item.videoType == 'local' %} data-lc-href="{% if item.mp4 %}{{ url(item.mp4)|e }}{% endif %}{% if item.webm and not item.mp4 %}{{ url(item.webm)|e }}{% endif %}{% if item.mp4 and item.webm %}, {{ url(item.webm)|e }}{% endif %}"{% endif %}
+                {% endset %}
+                <a {{ videoUrl }} data-rel="gpvideo{% if particle.gallery %}:{{ id }}{% endif %}">
+                    {% set thumbImg %}
+                        {% if item.videoType == 'youtube' %}
+                            {% if item.yt_img %}src="{{ url(item.yt_img)|e }}"{% else %}src="https://img.youtube.com/vi/{{ item.yt_id|e }}/maxresdefault.jpg"{% endif %}
+                        {% else %}
+                            {% if item.local_img %}src="{{ url(item.local_img)|e }}"{% endif %}
+                        {% endif %}
+                    {% endset %}
+                    <div class="gp_image">
+                        <img {{ thumbImg }} alt="{{ item.title|e }}">
+                        <i class="fa fa-play gp_item_icon"></i>
+                    </div>
+                    {% if item.title %}
+                        <h4 class="gp_item_title">{{ item.title|raw }}</h4>
+                    {% endif %}
+                </a>
+            </div>
+        </div>
+	{% endfor %}
+{% endset %}
+
+{% set gpscript %}
+    jQuery(document).ready(function($) {
+        $('#{{ id }} .gp_grid').slick({
+            rtl: {% if gantry.page.direction == 'rtl' %}true{% else %}false{% endif %},
+            infinite: true,
+            autoplay: {% if particle.autoplay %}true{% else %}false{% endif %},
+            pauseOnHover: {% if particle.pauseOnHover %}true{% else %}false{% endif %},
+            adaptiveHeight: true
+        });
+        $('#{{ id }} a[data-rel^=gpvideo').lightcase({
+            maxWidth: 1900,
+            maxHeight: 1400,
+            showSequenceInfo: false,
+            showTitle: false,
+            showCaption: false,
+            video: {
+                width: 1200,
+                height: 675,
+                autoplay : {% if particle.video_autoplay %}true{% else %}false{% endif %}
+            }
+        });
+    });
+{% endset %}
+
+{% block particle %}
+	{{ containerblock_start }}
+        {% if particle.gp_items %}
+            <div class="g-grid gp_center">
+                {% if particle.content_pos == 'left' %}
+                    <div class="g-block size-45">
+                        {{ gp_content }}
+                    </div>
+                    <div class="g-block size-5"></div>
+                {% endif %}
+                <div class="g-block size-50">
+                    <div class="gp_items">
+                        <div class="gp_grid">
+                            {{ gp_videos }}
+                        </div>    
+                    </div>
+                </div>
+                {% if particle.content_pos == 'right' %}
+                    <div class="g-block size-5"></div>
+                    <div class="g-block size-45">
+                        {{ gp_content }}
+                    </div>
+                {% endif %}
+            </div>
+        {% endif %}
+	{{ containerblock_end }}
+{% endblock %}
+
+{% do gantry.load('jquery') %}
+{% if particle.slick %}
+    {% do gantry.document.addScript(url('gantry-theme://js/slick.min.js'), 0, 'footer') %}
+{% endif %}
+{% do gantry.load('lightcase.init') %}
+{% do gantry.document.addInlineScript(gpscript, 0, 'footer') %}

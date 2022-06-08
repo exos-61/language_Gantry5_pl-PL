@@ -1,0 +1,60 @@
+.gp_infobanner1 {
+	> .g-grid {
+		margin: 0 -14px;
+		> .g-block {
+			margin-bottom: 28px;
+			> .gp_content {
+				margin: 0 14px;
+				height: 100%;
+				transition: 0.2s ease;
+				-webkit-transition: 0.2s ease;
+				> .g-grid {
+					height: 100%;
+    				@include align-items(center);
+    				> .g-block {
+    					@include breakpoint(no-desktop) {
+							@include flex-grow(0);
+							@include flex-basis(100%);
+							max-width: 100%;
+							text-align: center;
+							&.gp_desc_block {
+    							order: 1;
+    						}
+    					}
+    				}
+				}
+			}
+		}
+	}
+	.gp_desc_inner {
+		padding: 30px;
+		> h2 {
+			margin: 0 0 20px;
+			font-size: 2rem;
+			line-height: 1.2;
+		}
+		> .gp_desc {
+			font-size: 18px;
+			opacity: 0.9;
+			margin-bottom: 20px;
+		}
+		> .gp_btn {
+			a {
+				padding: 8px 24px;
+				border-radius: 4px;
+				border: 2px solid;
+				display: inline-block;
+				&:hover {
+					opacity: 0.85;
+				}
+			}
+		}
+	}
+	.gp_img {
+		padding-top: 20px;
+		img {
+			margin-top: auto;
+			margin-bottom: 0;
+		}
+	}
+}

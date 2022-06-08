@@ -1,0 +1,60 @@
+class: ''
+text_color: ''
+font_size: ''
+text_align: left
+padding: ''
+mobile_padding: ''
+heading_title: ''
+heading_title_tag: h1
+heading_desc: ''
+heading_text_align: center
+columns: 33-3
+gp_items:
+  -
+    img: ''
+    img_url: ''
+    subtitle: INTRODUCING
+    color: '#000000'
+    bgcolor: '#ffff00'
+    title: 'The Gantry 5 Framework'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada enim nec enim vehicula, ut aliquam enim pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque nec pretium lacus, vitae posuere leo.'
+    link_url: '#'
+    link_text: 'Read more'
+    class: ''
+    variations: ''
+    name: 'Text block 1'
+  -
+    img: 'gantry-media://demo/contemporary-decoration-home-6.jpg'
+    img_url: ''
+    subtitle: ''
+    color: ''
+    bgcolor: ''
+    title: ''
+    description: ''
+    link_url: ''
+    link_text: ''
+    class: ''
+    variations: ''
+    name: 'Image block'
+  -
+    img: ''
+    img_url: ''
+    subtitle: ''
+    color: ''
+    bgcolor: ''
+    title: 'Drag & Drop Layout'
+    description: 'Duis non volutpat turpis. Morbi id dapibus sem. Sed eu iaculis augue. Quisque elementum id nibh in sollicitudin. Aliquam vestibulum, urna sed rhoncus blandit, arcu nisl bibendum est, vel gravida mi elit vel nisi. Phasellus augue eros, dignissim vel enim id, convallis blandit ipsum. Nam eleifend justo eu ipsum convallis volutpat.'
+    link_url: ''
+    link_text: ''
+    class: ''
+    variations: ''
+    name: 'Text block 2'
+btn_text_align: center
+button1_text: ''
+button1_url: '#'
+button1_class: 'ui button'
+button1_target: _self
+button2_text: ''
+button2_url: '#'
+button2_class: 'ui button'
+button2_target: _self

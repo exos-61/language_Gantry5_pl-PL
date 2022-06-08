@@ -1,0 +1,18 @@
+class: ''
+img: 'gantry-media://demo/height/apartment-6.jpg'
+alt: 'Contact Info Particle'
+title: 'Contact Information'
+desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu aliquet diam. In ac dui convallis, hendrerit nunc in, aliquet augue. Nam placerat lobortis risus non rhoncus. Sed porta, velit non auctor bibendum'
+gpItems:
+  -
+    icon: 'fa fa-map-marker'
+    desc: "205 Lipsum road\nLorem Street, 123456\nUnited States"
+    title: 'Office Location'
+  -
+    icon: 'fa fa-envelope'
+    desc: "info@domain.tld\nsupport@domain.tld"
+    title: 'Email Addresses'
+  -
+    icon: 'fa fa-phone-square'
+    desc: "012-345-6789\n098-765-4321 (toll free)"
+    title: 'Phone Numbers'

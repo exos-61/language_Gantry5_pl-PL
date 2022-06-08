@@ -1,0 +1,85 @@
+.gp_backgroundvideo {
+	.gp_block {
+		position: relative;
+		overflow: hidden;
+	}
+	video {
+		position: absolute;
+  		left: 50%;
+  		top: 50%;
+  		transform: translate(-50%, -50%);
+  		object-fit: cover;
+      	height: 100%;
+      	width: 100%;
+	}
+	.gp_cover {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+    }
+    .gp_controls {
+		position: absolute;
+		right: 1.875rem;
+		bottom: 1.875rem;
+		z-index: 11;
+		@include breakpoint(no-mobile) {
+			display: none;
+		}
+		i {
+			font-size: 1.625rem;
+			line-height: 1;
+			padding: 0.3125rem;
+			color: #ffffff;
+			opacity: 0.85;
+			transition: opacity 0.2s ease;
+			-webkit-transition: opacity 0.2s ease;
+			&:hover {
+				opacity: 1;
+			}
+		}
+		.gp_pause {
+			display: none;
+		}
+    }
+	.gp_mask {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #000000;
+	}
+	.gp_content {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		@include display(flex);
+    	@include align-items(center);
+    	-webkit-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+	}
+	.gp_content_inner {
+		position: relative;
+		z-index: 1;
+		text-align: center;
+		padding: 2rem;
+		> h3 {
+			color: #ffffff !important;
+			font-size: 2.25rem;
+			margin: 0 0 1.25rem;
+			@include breakpoint(mobile-only) {
+				font-size: 1.375rem;
+			}
+		}
+		> div {
+			color: #ffffff;
+			margin-bottom: 1.25rem;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+class: ''
+bg_color: ''
+border_color: ''
+bg_img: ''
+bg_mask: ''
+text_color: '#9099aa'
+padding: '100px 0'
+mobile_padding: '30px 0'
+shadow: ''
+font_size: 18px
+text_align: center
+title: 'Gantry 5 is a modern theme framework, <br>helps to build pages quickly.'
+title_tag: h2
+desc: 'By using Gantry 5 framework, you can build layout with drag and drop <br>layout builder and easy to use particles.'
+button1_text: 'BUY NOW FOR $99'
+button1_url: '#'
+button1_class: 'ui button teal'
+button1_target: _self
+button2_text: 'LEARN MORE'
+button2_url: '#'
+button2_class: 'ui button blue'
+button2_target: _self

@@ -1,0 +1,80 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_imagegallery1 {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_heading %}
+	{% if particle.heading_title or particle.heading_desc %}
+		<div class="gp_heading">
+			{% if particle.heading_title %}
+				<{{ particle.heading_title_tag|e }} style="margin-top:0;">{{ particle.heading_title|raw }}</{{ particle.heading_title_tag|e }}>
+			{% endif %}
+			{% if particle.heading_desc %}
+				<div>{{ particle.heading_desc|raw|nl2br }}</div>
+			{% endif %}
+		</div>
+	{% endif %}
+{% endset %}
+
+{% set gp_contents %}
+	{% for item in particle.gp_items %}
+		<div class="g-block size-{{ particle.columns }}">
+			<div class="gp_img_block {{ particle.title_position|e }}{% if particle.border_radius == '50%' %} gp_img_circular{% endif %}">
+				<a href="{{ url(item.img_full)|e }}" data-lc-options='{"maxWidth":1900, "maxHeight":1400}' data-rel="lightcase{% if particle.gallery %}:{{ id }}{% endif %}">
+					<div class="gp_img">
+						<img src="{{ url(item.img_thumb)|e }}" alt="{{ item.img_title|e }}">
+						<div class="gp_mask"></div>
+						<i class="fa fa-search gp_img_icon"></i>
+					</div>
+					{% if particle.title_position == 'title_overimage' %}
+						{% if particle.thumb_title and item.img_title %}
+							<div class="gp_img_title">{{ item.img_title|raw }}</div>
+						{% endif %}
+					{% endif %}
+
+				</a>
+				{% if particle.title_position == 'title_bottom' %}
+					{% if particle.thumb_title and item.img_title %}
+						<div class="gp_img_title">{{ item.img_title|raw }}</div>
+					{% endif %}
+				{% endif %}
+			</div>
+		</div>
+	{% endfor %}
+{% endset %}
+
+
+
+{% block stylesheets %}
+	<style type="text/css">
+		#{{ id }} .gp_heading {
+			text-align: {{ particle.heading_text_align|e }};
+		}
+		{% if particle.border_radius != 'none' %}
+			#{{ id }} .gp_img {
+				border-radius: {{ particle.border_radius|e }};
+			}
+		{% endif %}
+	</style>
+{% endblock %}
+
+{% block particle %}
+	{{ containerblock_start }}
+		{% if particle.gp_items %}
+			{{ gp_heading }}
+			<div class="gp_items{% if particle.img_margin %} has_margin{% endif %}">
+				<div class="g-grid">
+					{{ gp_contents }}
+				</div>    
+			</div>
+		{% endif %}
+	{{ containerblock_end }}
+{% endblock %}
+
+{% do gantry.load('jquery') %}
+{% do gantry.load('lightcase.init') %}

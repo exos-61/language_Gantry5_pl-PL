@@ -1,0 +1,14 @@
+class: ''
+player_color: '#00b5ad'
+boxShadow: '1'
+borderRadius: '1'
+heading_title: 'Welcome to Gantry 5'
+heading_title_tag: h3
+heading_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra ultricies eros, ac placerat nisi ullamcorper id. Pellentesque eget orci bibendum, tempus lorem et, mattis magna.'
+textAlign: left
+videoType: youtube
+html_poster: ''
+html_video_mp4: ''
+html_video_webm: ''
+youtube_id: u31qwQUeGuM
+vimeo_id: '88530628'

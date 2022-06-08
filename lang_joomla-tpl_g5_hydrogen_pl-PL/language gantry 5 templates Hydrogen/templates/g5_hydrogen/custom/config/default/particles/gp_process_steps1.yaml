@@ -1,0 +1,65 @@
+class: ''
+gp_bg: '#ffffff'
+gp_border: '#dee1e6'
+heading_title: 'Learn Gantry 5 in few easy steps'
+heading_title_tag: h1
+heading_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In metus lorem, ornare id arcu eget, maximus laoreet ligula.\nAliquam erat volutpat. In semper diam in neque posuere, sed placerat diam ultrices."
+heading_text_align: center
+columns: '25'
+gp_items:
+  -
+    icon: 'fa fa-bell-o'
+    title: 'Nam bibendum libero'
+    desc: 'In ac felis quis nunc consequat egestas. vestibulum tempor euismod. Integer diam odio.'
+    link: '#'
+    link_text: 'Learn more'
+    name: 'item 1'
+  -
+    icon: 'fa fa-align-left'
+    title: 'Rutrum feugia aenean'
+    desc: 'In ac felis quis nunc consequat egestas. vestibulum tempor euismod. Integer diam odio.'
+    link: '#'
+    link_text: 'Learn more'
+    name: 'item 2'
+  -
+    icon: 'fa fa-clone'
+    title: 'Aliquet scelerisque lacus'
+    desc: 'In ac felis quis nunc consequat egestas. vestibulum tempor euismod. Integer diam odio.'
+    link: '#'
+    link_text: 'Learn more'
+    name: 'item 3'
+  -
+    icon: 'fa fa-code'
+    title: 'Efficitur semper neque'
+    desc: 'In ac felis quis nunc consequat egestas. vestibulum tempor euismod. Integer diam odio.'
+    link: '#'
+    link_text: 'Learn more'
+    name: 'item 4'
+  -
+    icon: 'fa fa-heart-o'
+    title: 'Nam bibendum libero'
+    desc: 'In ac felis quis nunc consequat egestas. vestibulum tempor euismod. Integer diam odio.'
+    link: '#'
+    link_text: 'Learn more'
+    name: 'item 5'
+  -
+    icon: 'fa fa-bookmark-o'
+    title: 'Porta erat mattis non'
+    desc: 'In ac felis quis nunc consequat egestas. vestibulum tempor euismod. Integer diam odio.'
+    link: '#'
+    link_text: 'Learn more'
+    name: 'item 6'
+  -
+    icon: 'fa fa-calendar-check-o'
+    title: 'Sollicitudin diam ut'
+    desc: 'In ac felis quis nunc consequat egestas. vestibulum tempor euismod. Integer diam odio.'
+    link: '#'
+    link_text: 'Learn more'
+    name: 'item 7'
+  -
+    icon: 'fa fa-comments-o'
+    title: 'Mauris porttitor aliquam'
+    desc: 'In ac felis quis nunc consequat egestas. vestibulum tempor euismod. Integer diam odio.'
+    link: '#'
+    link_text: 'Learn more'
+    name: 'item 8'

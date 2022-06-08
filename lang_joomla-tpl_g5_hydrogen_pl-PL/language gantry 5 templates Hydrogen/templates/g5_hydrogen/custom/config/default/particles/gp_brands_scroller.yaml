@@ -1,0 +1,53 @@
+class: ''
+pauseOnHover: '1'
+speed: '70'
+brandsheight: '80'
+gp_items:
+  -
+    img: 'gantry-media://demo/brands/1.png'
+    alt: 'Brands Gantry 5 particle'
+    link: '#'
+    target: _self
+    name: 'brand 1'
+  -
+    img: 'gantry-media://demo/brands/10.png'
+    alt: 'Brands Gantry 5 particle'
+    link: '#'
+    target: _self
+    name: 'brand 2'
+  -
+    img: 'gantry-media://demo/brands/12.png'
+    alt: 'Brands Gantry 5 particle'
+    link: '#'
+    target: _self
+    name: 'brand 3'
+  -
+    img: 'gantry-media://demo/brands/13.png'
+    alt: 'Brands Gantry 5 particle'
+    link: '#'
+    target: _self
+    name: 'brand 4'
+  -
+    img: 'gantry-media://demo/brands/6.png'
+    alt: 'Brands Gantry 5 particle'
+    link: '#'
+    target: _self
+    name: 'brand 5'
+  -
+    img: 'gantry-media://demo/brands/3.png'
+    alt: 'Brands Gantry 5 particle'
+    link: '#'
+    target: _self
+    name: 'brand 6'
+  -
+    img: 'gantry-media://demo/brands/9.png'
+    alt: 'Brands Gantry 5 particle'
+    link: '#'
+    target: _self
+    name: 'brand 7'
+  -
+    img: 'gantry-media://demo/brands/james-and-sons.png'
+    alt: 'Brands Gantry 5 particle'
+    link: '#'
+    target: _self
+    name: 'brand 8'

@@ -1,0 +1,60 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_counters {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_heading %}
+	{% if particle.heading_title or particle.heading_desc %}
+		<div class="gp_heading" style="text-align:{{ particle.heading_text_align|e }};margin-bottom:60px;">
+			{% if particle.heading_title %}
+				<{{ particle.heading_title_tag|e }} style="margin-top:0;">{{ particle.heading_title|raw }}</{{ particle.heading_title_tag|e }}>
+			{% endif %}
+			{% if particle.heading_desc %}
+				<div>{{ particle.heading_desc|raw|nl2br }}</div>
+			{% endif %}
+		</div>
+	{% endif %}
+{% endset %}
+
+{% set gp_contents %}
+	<div class="gp_contents" style="text-align:{{ particle.counterTxtAlign|e }};">
+		{% if particle.useCols %}<div class="g-grid">{% endif %}
+			{% for item in particle.gp_items %}
+				{% if item.countTo %}
+					{% if particle.useCols %}<div class="g-block">{% endif %}
+						<div class="gp_content"{% if not particle.useCols %} style="display:inline-block;margin-right: 11px;"{% endif %}>
+							{% if particle.labelPos == 'top' %}
+								<div class="gp_label_top" style="font-size:{{ particle.labelFont|e }}px;color:{{ item.labelColor|e }};">{{ item.labelTxt|raw }}</div>
+							{% endif %}
+							<div class="gp_number" style="font-size:{{ particle.numberFont|e }}px;color:{{ item.numberColor|e }};">
+								<span class="gp_counter" style="font-weight:bold;">{{ item.countTo|e }}</span>
+								{% if item.showPlus %}<span class="gp_plus"> +</span>{% endif %}
+								{% if particle.labelPos == 'right' %}<span class="gp_label_right" style="font-size:{{ particle.labelFont|e }}px;color:{{ item.labelColor|e }};"> {{ item.labelTxt|raw }}</span>{% endif %}
+							</div>
+							{% if particle.labelPos == 'bottom' %}
+								<div class="gp_label_bottom" style="font-size:{{ particle.labelFont|e }}px;color:{{ item.labelColor|e }};">{{ item.labelTxt|raw }}</div>
+							{% endif %}
+						</div>
+					{% if particle.useCols %}</div>{% endif %}
+				{% endif %}
+			{% endfor %}
+		{% if particle.useCols %}</div>{% endif %}
+	</div>
+{% endset %}   
+
+{% block particle %}
+	{{ containerblock_start }}
+		{% if particle.gp_items %}
+			{{ gp_heading }}
+			{{ gp_contents }}
+		{% endif %}
+	{{ containerblock_end }}
+{% endblock %}
+
+{% do gantry.load('jquery') %}
+{% do gantry.document.addScript(url('gantry-theme://js/gp_counters.min.js'), 0, 'footer') %}

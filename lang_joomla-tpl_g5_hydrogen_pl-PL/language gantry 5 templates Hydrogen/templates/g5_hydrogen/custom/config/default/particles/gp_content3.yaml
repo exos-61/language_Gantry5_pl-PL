@@ -1,0 +1,27 @@
+class: ''
+text_color: ''
+font_size: ''
+text_align: left
+large_desktop: '75'
+desktop: '60'
+v_center: '1'
+image: 'gantry-media://demo/apartment-architecture-chairs-19.jpg'
+image_alt: 'Content 3 particle'
+image_pos: left
+title: 'What is Gantry 5?'
+title_tag: h2
+desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in tempor libero. Sed nec urna purus. Aenean lacinia metus leo. Aliquam consectetur purus sit amet maximus ultrices. Donec sodales mauris nibh, vitae molestie nunc hendrerit euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nDuis imperdiet eros eu nisl molestie faucibus. Mauris turpis diam, tempus vel volutpat at, sagittis sit amet lectus. Nullam dapibus sapien sed sodales maximus."
+title2: ''
+title2_tag: h2
+desc2: ''
+title3: ''
+title3_tag: h2
+desc3: ''
+button1_text: 'JOIN US NOW'
+button1_url: '#'
+button1_class: 'ui button'
+button1_target: _self
+button2_text: ''
+button2_url: '#'
+button2_class: 'ui button'
+button2_target: _self

@@ -1,0 +1,136 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_mailchimp_subscribe2 {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_content %}
+    {% if particle.title %}
+        <h3 class="gp_title" style="color:{{ particle.text_color|e }};">{{ particle.title|raw }}</h3>
+    {% endif %}
+    {% if particle.sub_title %}
+        <div class="gp_subtitle" style="color:{{ particle.text_color|e }};">{{ particle.sub_title|raw }}</div>
+    {% endif %}
+{% endset %}
+
+{% set gp_form %}
+    <div class="gp_form">
+        <form id="gp_form_{{ id }}">
+            <div class="gp_field_block">
+                {% if particle.field_fname %}
+                    <input type="text" name="{{ particle.field_fname_name|e }}" placeholder="{{ particle.field_fname_ph|e }}" style="background-color:{{ particle.input_bg|default('#ffffff') }} !important;color:{{ particle.input_text|default('#333333') }} !important;">
+                {% endif %}
+                {% if particle.field_lname %}
+                    <input type="text" name="{{ particle.field_lname_name|e }}" placeholder="{{ particle.field_lname_ph|e }}" style="background-color:{{ particle.input_bg|default('#ffffff') }} !important;color:{{ particle.input_text|default('#333333') }} !important;">
+                {% endif %}
+                <input type="email" name="EMAIL" placeholder="{{ particle.msg_email_input|e }}" style="background-color:{{ particle.input_bg|default('#ffffff') }} !important;color:{{ particle.input_text|default('#333333') }} !important;">
+                <button type="submit" class="button" name="subscribe">{{ particle.submit_text|e }}</button>
+            </div>
+        </form>
+    </div>
+    <div id="gp_message_{{ id }}" class="gp_message"></div>
+{% endset %}
+
+{% set gp_subscribed %}{% if particle.double_optin %}{{ particle.msg_subscribe_confirm|e('js') }}{% else %}{{ particle.msg_subscribed|e('js') }}{% endif %}{% endset %}
+
+{% set gpscript %}
+    jQuery(document).ready(function($) {
+        JtnAjaxMailchimp($("form#gp_form_{{ id }}"), $("#gp_message_{{ id }}"));
+
+        function JtnAjaxMailchimp($form, $resultElement) {
+            $form.submit(function(e) {
+                e.preventDefault();
+
+                if (!isValidEmail($form)) {
+                    var error =  "{{ particle.msg_invalid_email|e('js') }}";
+                    $resultElement.html(error);
+                    $resultElement.css("color", "{{ particle.color_error|e('js') }}");
+                } else {
+                    $resultElement.css("color", "{{ particle.color_success|e('js') }}");
+                    $resultElement.html("<i class=\"fa fa-spinner fa-pulse\"></i> {{ particle.msg_subscribing|e('js') }}");
+                    submitSubscribeForm($form, $resultElement);
+                }
+            });
+        }
+
+        // Validate the email address in the form
+        function isValidEmail($form) {
+            // If email is empty, show error message.
+            // contains just one @
+            var email = $form.find("input[type=\'email\']").val();
+            if (!email || !email.length) {
+                return false;
+            } else if (email.indexOf("@") == -1) {
+                return false;
+            }
+
+            return true;
+        }
+
+        // Submit the form with an ajax/jsonp request.
+        function submitSubscribeForm($form, $resultElement) {
+            var userUrl = "{{ particle.formUrl|e('js') }}";
+            var url = userUrl.replace("/subscribe?", "/subscribe/post-json?");
+            $.ajax({
+                type: "GET",
+                url: url,
+                data: $form.serialize(),
+                cache: false,
+                dataType: "jsonp",
+                jsonp: "c",
+                contentType: "application/json; charset=utf-8",
+                success: function(data){
+                    if (data.result != "success") {
+                        var message = data.msg || "{{ particle.msg_error|e('js') }}";
+                        $resultElement.css("color", "{{ particle.color_error|e('js') }}");
+
+                        if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
+                            message = "{{ particle.msg_already_subscribed|e('js') }}";
+                            $resultElement.css("color", "{{ particle.color_success|e('js') }}");
+                        }
+
+                        $resultElement.html(message);
+
+                    } else {
+                        $resultElement.css("color", "{{ particle.color_success|e('js') }}");
+                        $resultElement.html("{{ gp_subscribed }}");
+                    }
+                }
+            });
+        }
+    });
+{% endset %}
+
+{% block stylesheets %}
+    <style type="text/css">
+        @media only all and (min-width: 768px) {
+            #{{ id }} .gp_bg {
+                background-image: url({{ url(particle.bg_img)|e }});
+            }
+        }
+    </style>
+{% endblock %}
+
+{% block particle %}
+	{{ containerblock_start }}
+        <div class="gp_block" style="background-color:{{ particle.bg_color|e }};">
+            <div class="gp_bg"></div>
+            <div class="g-grid">
+                <div class="g-block size-50"></div>
+                <div class="g-block size-50">
+                    <div class="gp_content">
+                        {{ gp_content }}
+                        {{ gp_form }}
+                    </div>
+                </div>
+            </div>
+        </div>    
+	{{ containerblock_end }}
+{% endblock %}
+
+{% do gantry.load('jquery') %}
+{% do gantry.document.addInlineScript(gpscript, 0, 'footer') %}

@@ -1,0 +1,24 @@
+class: ''
+heading_title: 'Learn Gantry 5 in few easy steps'
+heading_title_tag: h1
+heading_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In metus lorem, ornare id arcu eget, maximus laoreet ligula.\nAliquam erat volutpat. In semper diam in neque posuere, sed placerat diam ultrices."
+heading_text_align: center
+gp_items:
+  -
+    title: 'Browse items'
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel venenatis dolor. Aliquam ultrices justo placerat enim iaculis, et laoreet erat semper. Praesent non accumsan magna. Nulla congue nulla quis sem suscipit vestibulum nec in dolor. Mauris finibus lobortis massa a porta. Morbi vulputate, eros vitae mollis ultricies, neque odio facilisis nunc, et volutpat dui urna vel erat. Quisque fringilla dolor in nulla maximus, non porta nisl vulputate.\n\nMorbi eros mi, lobortis at ante eget, imperdiet scelerisque turpis. Sed finibus ipsum bibendum libero ullamcorper, luctus bibendum arcu efficitur. Cras ligula purus, sollicitudin a lorem a, dapibus sollicitudin nulla."
+    link: '#'
+    link_text: 'Read more'
+    name: 'item 1'
+  -
+    title: 'Pay bill'
+    desc: "Nunc a ipsum non nunc vulputate mattis. Donec tincidunt turpis a metus egestas, vitae sagittis metus consequat. Etiam pulvinar lectus non magna viverra interdum. Phasellus ac ante mauris. Sed non libero finibus mauris congue iaculis vitae eget enim. Quisque nibh ante, blandit ac bibendum at, rutrum ut erat. Curabitur lobortis lobortis orci non hendrerit. Sed id egestas nulla. Fusce feugiat a nisi non luctus.\n\nInteger fermentum mauris mi, ut eleifend risus eleifend ut. Donec tincidunt ex nec finibus aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+    link: '#'
+    link_text: 'Read more'
+    name: 'item 2'
+  -
+    title: 'Receive products'
+    desc: "Nunc interdum urna vel tortor feugiat gravida. Suspendisse a ultricies eros, eu dignissim arcu. Aliquam pellentesque nisi nec felis accumsan tincidunt. Proin nibh ligula, aliquet id urna vitae, tincidunt maximus massa. Cras id efficitur mi, sit amet sollicitudin turpis. Nunc ac diam bibendum, luctus enim at, ornare magna. Aliquam ornare lacus quam, non ultricies erat bibendum in. Nam mi odio, tempor eu tristique vel, maximus eget augue.\n\nNam rhoncus diam sit amet lacus malesuada, at tristique ante auctor. Vestibulum quis lacus ultricies, euismod massa ut, consequat lorem. Donec vitae accumsan nisl."
+    link: '#'
+    link_text: 'Read more'
+    name: 'item 3'

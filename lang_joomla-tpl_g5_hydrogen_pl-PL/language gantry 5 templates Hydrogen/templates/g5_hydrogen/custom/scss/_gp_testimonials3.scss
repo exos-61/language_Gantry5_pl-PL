@@ -1,0 +1,34 @@
+.gp_testimonials3 {
+	.gp_heading {
+        margin-bottom: 50px;
+    }
+    .gp_items {
+    	margin: 0 -15px;
+    }
+    .gp_item {
+    	margin: 15px;
+    	text-align: center;
+    	box-shadow: 0 0 3px rgba(0, 0, 0, .10);
+    	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .10);
+    	padding: 45px 35px;
+    	background: #ffffff;
+    }
+	.gp_icon {
+		margin-bottom: 1.125rem;
+		> i {
+			font-size: 1.875rem;
+		}
+	}
+	.gp_comment {
+		margin-bottom: 1.5rem;
+	}
+	.gp_rating {
+		margin-bottom: 0.5rem;
+		> i {
+			margin: 0 2px;
+		}
+	}
+	.gp_author {
+		font-weight: 700;
+	}
+}

@@ -1,0 +1,73 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_stickymenu gp_icon_{{ particle.iconPos|e }} {{ particle.class }}">
+{% endset %}
+
+{% set containerblock_end %}
+	</div>
+{% endset %}
+
+{% set gp_contents %}
+	<div class="gp_contents">
+		{% for item in particle.gp_items %}
+			<a href="{{ item.url|e }}" class="gp_stickymenu_item"><i class="{{ item.icon|e }}"></i>{{ item.text|e }}</a>
+		{% endfor %}
+	</div>
+{% endset %}
+
+{% block stylesheets %}
+	<style type="text/css">
+		#{{ id }} .gp_contents {
+			background-color:{{ particle.bgColor|e }};
+			{% if particle.borderColor %}border:1px solid {{ particle.borderColor|e }};{% endif %}
+		}
+		#{{ id }} .gp_stickymenu_item {
+			background-color:{{ particle.d_menuBg|e }};
+			color:{{ particle.d_menuColor|e }};
+			font-size:{{ particle.fontSize|e }}px;
+		}
+		#{{ id }} .gp_stickymenu_item:hover{
+			background-color:{{ particle.h_menuBg|e }};
+			color:{{ particle.h_menuColor|e }};
+		}
+		#{{ id }} .gp_stickymenu_item:before{
+			background:{{ particle.d_menuBorder|e }};
+		}
+	</style>
+{% endblock %}
+
+{% set gpscript %}
+    jQuery(document).ready(function($) {
+        $('#{{ id }}').gpStickyMenu({
+			{% if particle.offset %}
+			offset: {{ particle.offset|e }},
+			{% endif %}
+			{% if particle.bottomOffset %}
+			bottomOffset: {{ particle.bottomOffset|e }},
+			{% endif %}
+		});
+		$('a.gp_stickymenu_item[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+						scrollTop: target.offset().top
+					}, 500);
+					return false;
+				}
+			}
+		});
+    });
+{% endset %}
+
+{% block particle %}
+	{{ containerblock_start }}
+        {{ gp_contents }}
+	{{ containerblock_end }}
+{% endblock %}
+
+{% do gantry.load('jquery') %}
+{% do gantry.document.addScript(url('gantry-theme://js/gp_stickymenu.min.js'), 0, 'footer') %}
+{% do gantry.document.addInlineScript(gpscript, 0, 'footer') %}

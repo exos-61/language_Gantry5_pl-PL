@@ -1,0 +1,24 @@
+class: ''
+text_color: '#636363'
+font_size: ''
+text_align: left
+padding: '70px 0'
+mobile_padding: '40px 0'
+v_center: '1'
+image: 'gantry-media://demo/bedroom-690129_640.jpg'
+image_alt: 'Content 1 particle'
+image_pos: left
+image_bg: '#ffffff'
+image_border: '#edeaea'
+image_border_radius: 4px
+title: 'The Gantry 5 Framework'
+title_tag: h3
+desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed mattis nibh, ut tempor turpis. Integer vel erat a mauris tincidunt tempor ac id sem. Nulla iaculis, quam placerat accumsan tempor, lorem nisl sodales libero, nec euismod nisl est rutrum felis. Integer consectetur rhoncus arcu. Cras eget maximus augue.'
+button1_text: 'JOIN US NOW'
+button1_url: '#'
+button1_class: 'ui button teal'
+button1_target: _self
+button2_text: 'READ MORE'
+button2_url: '#'
+button2_class: 'ui button blue'
+button2_target: _self

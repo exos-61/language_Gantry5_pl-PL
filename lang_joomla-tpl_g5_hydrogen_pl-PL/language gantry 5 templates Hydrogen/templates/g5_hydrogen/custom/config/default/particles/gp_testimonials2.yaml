@@ -1,0 +1,34 @@
+class: ''
+heading_title: 'What our users says'
+heading_title_tag: h1
+heading_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit elit nibh, at sollicitudin velit sagittis eu. Proin tristique id purus a vestibulum. Fusce aliquam gravida augue, et pretium elit fringilla non.'
+heading_text_align: center
+gp_items:
+  -
+    comment: 'Quisque eu tempor odio, vel tincidunt ligula. Nullam vel augue vitae arcu efficitur accumsan. Mauris ipsum risus, tincidunt vitae lacus sed, rutrum consequat enim.'
+    img: 'gantry-media://demo/team/N5PLzyan.jpg'
+    author: 'Soham Hicks'
+    desig: CO-FOUNDER
+    url: 'https://lipsum.com'
+    name: 'item 1'
+  -
+    comment: 'Quisque eu tempor odio, vel tincidunt ligula. Nullam vel augue vitae arcu efficitur accumsan. Mauris ipsum risus, tincidunt vitae lacus sed, rutrum consequat enim.'
+    img: 'gantry-media://demo/team/cQkGbpRO.jpg'
+    author: ' Judy Pearson'
+    desig: CO-FOUNDER
+    url: 'https://lipsum.com'
+    name: 'item 2'
+  -
+    comment: 'Quisque eu tempor odio, vel tincidunt ligula. Nullam vel augue vitae arcu efficitur accumsan. Mauris ipsum risus, tincidunt vitae lacus sed, rutrum consequat enim.'
+    img: 'gantry-media://demo/team/Bl2JvdG_.png'
+    author: 'Rita Wood'
+    desig: CO-FOUNDER
+    url: 'https://lipsum.com'
+    name: 'item 3'
+  -
+    comment: 'Quisque eu tempor odio, vel tincidunt ligula. Nullam vel augue vitae arcu efficitur accumsan. Mauris ipsum risus, tincidunt vitae lacus sed, rutrum consequat enim.'
+    img: 'gantry-media://demo/team/e-3MyGW3.jpg'
+    author: 'Jenny Lambert'
+    desig: CO-FOUNDER
+    url: 'https://lipsum.com'
+    name: 'item 4'

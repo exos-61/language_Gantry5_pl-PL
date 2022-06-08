@@ -1,0 +1,27 @@
+class: ''
+autoplay: '1'
+pauseOnHover: '1'
+slick: '1'
+heading_title: 'What our users says'
+heading_title_tag: h1
+heading_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit elit nibh, at sollicitudin velit sagittis eu. Proin tristique id purus a vestibulum. Fusce aliquam gravida augue, et pretium elit fringilla non.'
+heading_text_align: center
+gp_items:
+  -
+    comment: 'Duis eleifend massa odio, at finibus urna auctor id. Vivamus non fermentum metus. Curabitur mollis, tellus ac pharetra feugiat, orci augue sodales augue, sed rhoncus elit quam a quam. Nam consequat convallis consequat. Aliquam non tempus libero.'
+    author: 'Soham Hicks'
+    desig: CO-FOUNDER
+    url: 'https://lipsum.com'
+    name: 'item 1'
+  -
+    comment: 'Aliquam vel purus vel enim ornare sodales. Mauris porta rhoncus nulla, eu bibendum nisl rutrum eget. Proin semper lacus at velit finibus, et pellentesque leo viverra. Fusce ornare id eros vitae bibendum. Cras sit amet venenatis sem, et eleifend nisi.'
+    author: 'Jenny Lambert'
+    desig: CO-FOUNDER
+    url: 'https://lipsum.com'
+    name: 'item 2'
+  -
+    comment: 'Morbi id posuere ligula. Morbi commodo metus quis lacus pharetra aliquam. Nullam neque elit, rutrum ut tristique vel, ullamcorper in urna. Nunc sit amet justo risus. Proin quis massa neque. Morbi iaculis massa auctor tincidunt varius.'
+    author: 'Judy Pearson'
+    desig: CO-FOUNDER
+    url: 'https://lipsum.com'
+    name: 'item 3'

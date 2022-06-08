@@ -1,0 +1,97 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set containerblock_start %}
+	<div id="{{ id }}" class="gp_content3 {{ particle.class }}">
+		<div class="g-grid{% if particle.v_center %} gp_center{% endif %}">
+{% endset %}
+
+{% set containerblock_end %}
+	   </div>
+	</div>
+{% endset %}
+
+{% set gp_image %}
+	{% if particle.image %}
+		<div class="g-block size-50">
+			<div class="gp_content gp_img">
+				<img src="{{ url(particle.image)|e }}" alt="{{ particle.image_alt|e }}">
+			</div>
+		</div>
+	{% endif %}
+{% endset %}
+
+{% set gp_content %}
+	{% if particle.title %}
+		<{{ particle.title_tag|e }} style="margin-top: 0;">{{ particle.title|raw }}</{{ particle.title_tag|e }}>
+	{% endif %}
+	{% if particle.desc %}
+		<div>{{ particle.desc|raw|nl2br }}</div>
+	{% endif %}
+
+	{% if particle.title2 %}
+		<{{ particle.title2_tag|e }}>{{ particle.title2|raw }}</{{ particle.title2_tag|e }}>
+	{% endif %}
+	{% if particle.desc2 %}
+		<div>{{ particle.desc2|raw|nl2br }}</div>
+	{% endif %}
+
+	{% if particle.title3 %}
+		<{{ particle.title3_tag|e }}>{{ particle.title3|raw }}</{{ particle.title3_tag|e }}>
+	{% endif %}
+	{% if particle.desc3 %}
+		<div>{{ particle.desc3|raw|nl2br }}</div>
+	{% endif %}
+{% endset %}
+
+{% set gp_buttons %}
+	{% if particle.button1_text or particle.button2_text %}
+		<div class="gp_buttons">
+			{% if particle.button1_text %}
+				<a href="{{ particle.button1_url|e }}" target="{{ particle.button1_target }}" class="{{ particle.button1_class|e }}">{{ particle.button1_text|raw }} </a>
+			{% endif %}
+			{% if particle.button2_text %}
+				&nbsp;&nbsp;<a href="{{ particle.button2_url|e }}" target="{{ particle.button2_target }}" class="{{ particle.button2_class|e }}">{{ particle.button2_text|raw }} </a>
+			{% endif %}
+		</div>
+	{% endif %}
+{% endset %}
+
+{% block stylesheets %}
+	<style type="text/css">      
+		#{{ id }} {
+			{% if particle.text_color %}
+				color: {{ particle.text_color|e }};
+			{% endif %}
+			{% if particle.font_size %}
+				font-size: {{ particle.font_size|e }};
+			{% endif %}
+			text-align: {{ particle.text_align|e }};
+		}
+		{% if particle.text_color %}
+			#{{ id }} h1, #{{ id }} h2, #{{ id }} h3, #{{ id }} h4 {
+				color: {{ particle.text_color|e }};
+			}
+		{% endif %}
+	</style>
+{% endblock %}
+
+{% block particle %}
+	{{ containerblock_start }}
+		{% if particle.image_pos == 'left' %}
+			{{ gp_image }}
+		{% endif %}
+		{% if particle.title or particle.desc or particle.title2 or particle.desc2 or  particle.title3 or particle.desc3 %}
+			<div class="g-block size-50">
+				<div class="gp_content gp_text gp_img_{{ particle.image_pos }}">
+					<div class="gp_text_{% if particle.image_pos == 'left' %}right{% else %}left{% endif %}">
+						{{ gp_content }}
+						{{ gp_buttons }}
+					</div>
+				</div>
+			</div>
+		{% endif %}
+		{% if particle.image_pos == 'right' %}
+			{{ gp_image }}
+		{% endif %}
+	{{ containerblock_end }}
+{% endblock %}

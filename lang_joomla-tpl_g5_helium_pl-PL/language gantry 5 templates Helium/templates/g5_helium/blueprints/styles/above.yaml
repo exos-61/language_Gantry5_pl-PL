@@ -1,0 +1,20 @@
+name: Above Styles
+description: Above section styles for the Helium theme
+type: section
+
+form:
+  fields:
+  
+    info_common:
+      type: separator.note
+      class: alert alert-info
+      content: '<b>Above Styles</b> Style dla sekcji Above.<br><b>Jeśli chcesz, aby ustawienia konturu powróciły do ​​wartości domyślnych, usuń zaznaczenie pola wyboru i zapisz styl.</b>'
+
+    background:
+      type: input.colorpicker
+      label: Tło
+      default: "#f4f5f7"
+    text-color:
+      type: input.colorpicker
+      label: Tekst
+      default: "#424753"

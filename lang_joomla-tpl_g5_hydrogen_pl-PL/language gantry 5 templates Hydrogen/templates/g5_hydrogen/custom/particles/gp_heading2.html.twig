@@ -1,0 +1,17 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+	<div class="gp_header2" style="text-align:{{ particle.textAlign|e }};margin-bottom:{{ particle.margin|e }}px;">
+		{% if particle.image %}
+			<div style="margin-bottom:20px;">
+				<img src="{{ url(particle.image)|e }}" alt="{{ particle.headline|e }}">
+			</div>
+		{% endif %}
+		{% if particle.headline %}
+			<{{ particle.tag|e }}>{% if particle.icon %}<i class="{{ particle.icon|e }}"></i> {% endif %}{{ particle.headline|raw }}</{{ particle.tag|e }}>
+		{% endif %}
+		{% if particle.description %}
+			<div>{{ particle.description|raw|nl2br }}{% if particle.link %} <a href="{{ particle.link|e }}">{{ particle.linktext|raw }}</a>{% endif %}</div>
+		{% endif %}
+	</div>
+{% endblock %}

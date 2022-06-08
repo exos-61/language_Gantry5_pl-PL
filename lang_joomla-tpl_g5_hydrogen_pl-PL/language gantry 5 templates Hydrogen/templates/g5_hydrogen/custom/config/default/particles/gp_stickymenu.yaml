@@ -1,0 +1,45 @@
+class: ''
+offset: '30'
+bottomOffset: '0'
+fontSize: '14'
+bgColor: '#1b1c1d'
+borderColor: 'rgba(255, 255, 255, 0.08)'
+d_menuBg: '#1b1c1d'
+d_menuColor: '#ffffff'
+d_menuBorder: 'rgba(255, 255, 255, 0.08)'
+iconPos: left
+h_menuBg: '#2d2e2f'
+h_menuColor: '#ffffff'
+gp_items:
+  -
+    icon: 'fa fa-leaf'
+    url: '#brand'
+    text: 'Brand Identity'
+  -
+    icon: 'fa fa-briefcase'
+    url: '#corporate'
+    text: 'Corporate Services'
+  -
+    icon: 'fa fa-globe'
+    url: '#web'
+    text: 'Web Development'
+  -
+    icon: 'fa fa-mars-double'
+    url: '#marketing'
+    text: 'Digital Marketing'
+  -
+    icon: 'fa fa-cube'
+    url: '#app'
+    text: 'App Development'
+  -
+    icon: 'fa fa-cart-plus'
+    url: '#ecommerce'
+    text: E-commerce
+  -
+    icon: 'fa fa-money'
+    url: '#payment'
+    text: 'Payment Processing'
+  -
+    icon: 'fa fa-phone-square'
+    url: '#'
+    text: 'Contact Us'

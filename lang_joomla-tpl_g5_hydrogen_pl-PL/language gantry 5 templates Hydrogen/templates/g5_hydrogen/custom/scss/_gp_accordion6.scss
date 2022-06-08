@@ -1,0 +1,51 @@
+.gp_accordion6 {
+	.gp_heading {
+		margin-bottom: 50px;
+	}
+	.gp_accordion_question {
+		cursor: pointer;
+		display: block;
+		margin: 15px 0 0;
+		font-size: 16px;
+		padding: 19px 35px 19px 25px;
+		position: relative;
+		&.gp_dir_arrow {
+			&:not(.gp_active) .gp_accordion_dir:before {
+				content: "\f107";
+			}
+			&.gp_active .gp_accordion_dir:before {
+				content: "\f106";
+			}
+		}
+		&.gp_dir_plus {
+			&:not(.gp_active) .gp_accordion_dir:before {
+				content: "\2b";
+			}
+			&.gp_active .gp_accordion_dir:before {
+				content: "\2212";
+			}
+		}
+		.gp_accordion_dir {
+			font-family: 'FontAwesome';
+			font-size: 25px;
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);
+		}
+	}
+	.gp_accordion_answer {
+		display: none;
+		padding: 25px 25px 30px 25px;
+		&.gp_active {
+			display: block;
+		}
+	}
+	.gp_accordion_link {
+		margin-top: 15px;
+	}
+	.gp_icon {
+		margin-right: 11px;
+	}
+}

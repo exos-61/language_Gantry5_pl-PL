@@ -1,0 +1,13 @@
+class: ''
+img: 'gantry-media://demo/contemporary-design-illuminated-19.jpg'
+mask: '0.6'
+title: "Welcome to Gantry 5\nTheme Framework"
+desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit nam sed\nsem id lorem sollicitudin feugiat."
+btn1Url: '#'
+btn1Txt: 'See live demo'
+btn1Bg: '#00b5ad'
+btn2Icon: 'fa fa-arrow-circle-o-right'
+btn2Url: '#'
+btn2Txt: 'Join now'
+contentImg: 'gantry-media://demo/infoblock/infobanner-woman.png'
+contentImgAlt: 'Banner particle'

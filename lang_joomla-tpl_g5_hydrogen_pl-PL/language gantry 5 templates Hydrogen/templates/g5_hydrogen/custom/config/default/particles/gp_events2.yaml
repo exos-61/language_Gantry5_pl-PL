@@ -1,0 +1,46 @@
+class: ''
+heading_title: 'Our Upcoming Events'
+heading_title_tag: h1
+heading_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum mi ante sit amet.\nUt ac ex sit amet est tempor dictum. Nam porttitor iaculis congue. "
+heading_text_align: left
+columns: 33-3
+gp_items:
+  -
+    bgColor: '#1a69a4'
+    img: 'gantry-media://demo/thumb/img12.jpg'
+    imgAlt: 'Event particle'
+    title: 'Joomla! pro training camp'
+    desc: 'Integer sit amet purus in justo posuere semper quis at dolor.'
+    localtion: 'Lipsum venue, #12 Lorem street, City, Country'
+    eventDate: '2019-07-24T09:00'
+    dateFormate: 12hrs
+    url: '#'
+    urlTxt: 'Buy Ticket'
+    urlTarget: _blank
+    name: 'event 1'
+  -
+    bgColor: '#c71f7e'
+    img: 'gantry-media://demo/thumb/img8.jpg'
+    imgAlt: 'Events particle'
+    title: 'Learn digital marketing'
+    desc: 'Integer sit amet purus in justo posuere semper quis at dolor.'
+    localtion: 'Lipsum venue, #12 Lorem street, City, Country'
+    eventDate: '2019-06-28T11:30'
+    dateFormate: 12hrs
+    url: '#'
+    urlTxt: 'Buy Ticket'
+    urlTarget: _blank
+    name: 'event 2'
+  -
+    bgColor: '#6435c9'
+    img: 'gantry-media://demo/thumb/img9.jpg'
+    imgAlt: 'Events particle'
+    title: 'Worlds Coders Conference'
+    desc: 'Integer sit amet purus in justo posuere semper quis at dolor.'
+    localtion: 'Lipsum venue, #12 Lorem street, City, Country'
+    eventDate: '2019-08-14T14:00'
+    dateFormate: 24hrs
+    url: '#'
+    urlTxt: 'Buy Ticket'
+    urlTarget: _blank
+    name: 'event 3'

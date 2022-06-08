@@ -1,0 +1,51 @@
+class: ''
+gp_bg: '#ffffff'
+gp_border: '#dee1e6'
+heading_title: 'Our Simple Pricing'
+heading_title_tag: h1
+heading_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium dolor eu luctus volutpat. Class aptent taciti\nsociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+heading_text_align: center
+columns: '25'
+gp_items:
+  -
+    color: '#aa3939'
+    title: PERSONAL
+    sub_title: '1 user license'
+    price: $7.59
+    terms: 'Per month'
+    features: "1 user license\n15 GB dedicated space\nCustom domain\nFree apps\n24/7 phone support"
+    link: '#'
+    link_text: 'JOIN NOW'
+    name: 'table 1'
+  -
+    color: '#aa6c39'
+    title: PROFESSIONAL
+    sub_title: '5 user license'
+    price: $14.54
+    terms: 'Per month'
+    features: "3 user license\n15 GB dedicated space\nCustom domain\nFree apps\n24/7 phone support"
+    link: '#'
+    link_text: 'JOIN NOW'
+    name: 'table 2'
+  -
+    color: '#226666'
+    title: BUSINESS
+    sub_title: '50 user license'
+    price: $24.99
+    terms: 'Per month'
+    features: "10 user license\n50 GB dedicated space\nCustom domain\nFree apps\n24/7 phone support"
+    link: '#'
+    link_text: 'JOIN NOW'
+    name: 'table 3'
+  -
+    color: '#2D882D'
+    title: ENTERPRISE
+    sub_title: 'unlimited user license'
+    price: $55.99
+    terms: 'Per month'
+    features: "Unlimited user license\n50 GB dedicated space\nCustom domain\nFree apps\n24/7 phone support"
+    link: '#'
+    link_text: 'JOIN NOW'
+    name: 'table 4'
+note_title: 'Note:'
+note_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna nisi, commodo eu mauris vel, dapibus \ncongue tortor. Fusce interdum consequat erat, nec pharetra felis dapibus ac. Lorem ipsum dolor sit amet."

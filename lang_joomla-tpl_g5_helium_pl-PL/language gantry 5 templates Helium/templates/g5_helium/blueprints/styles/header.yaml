@@ -1,0 +1,33 @@
+name: Header Styles
+description: Style sekcji nagłówka dla motywu Helium
+type: section
+
+form:
+  fields:
+  
+    _info_common:
+      type: separator.note
+      class: alert alert-info
+      content: '<b>Header Colors</b> Kolory nagłówka dla motywu. Poznaj konfigurowanie kolorów w motywie <a href="https://material.io/design/color/#" target="_blank" title="Przykłady zastosowania"><i class="fa fa-external-link"></i> (material.io)</a>  <br><b>Jeśli chcesz, aby ustawienia konturu powróciły do ​​wartości domyślnych, usuń zaznaczenie pola wyboru i zapisz styl.</b>'
+
+    background:
+      type: input.colorpicker
+      label: Tło
+      default: "#312f38"
+    background-image:
+      type: input.imagepicker
+      label: Zdjęcie w tle
+      default: 'gantry-media://header/img01.jpg'
+    background-overlay:
+      type: select.select
+      label: Nakładka tła
+      description: 'Umożliwia nakładanie gradientu liniowego z akcentowanych kolorów.'
+      placeholder: 'Select...'
+      default: enabled
+      options:
+        enabled: Enabled
+        disabled: Disabled
+    text-color:
+      type: input.colorpicker
+      label: Tekst
+      default: "#eceeef"

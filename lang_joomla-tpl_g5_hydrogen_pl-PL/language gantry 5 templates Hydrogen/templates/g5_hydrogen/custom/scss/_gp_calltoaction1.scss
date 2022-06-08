@@ -1,0 +1,35 @@
+.gp_cta1 {
+	position: relative;
+	@include breakpoint(no-mobile) {
+		.gp_content {
+			@include display(flex);
+			@include align-items(center);
+		}
+		.gp_content_center {
+			padding: 0 1rem;
+			margin: 0 0 0 auto;
+			&.has_btn {
+				margin: 0 auto;
+			}
+		}
+		.gp_content_right {
+			margin-left: auto;
+		}
+	}
+	@include breakpoint(mobile-only) {
+		text-align: center;
+		.gp_content_right {
+			margin-top: 1rem;
+		}
+	}
+	.gp_content {
+		position: relative;
+	}
+	.gp_mask {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}

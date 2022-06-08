@@ -1,0 +1,21 @@
+class: ''
+numberFont: '42'
+labelFont: '16'
+labelPos: bottom
+heading_title: 'New products coming in'
+heading_title_tag: h1
+heading_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim imperdiet nisl at convallis.\nNullam aliquet metus id porttitor rhoncus. In eget tincidunt lectus."
+heading_text_align: center
+footer_desc: 'Quisque sit amet faucibus arcu, sit amet lobortis risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.'
+footer_text_align: center
+dateToCount: '2040-06-09T17:52'
+count_text_align: center
+showDays: '1'
+daysTxt: Days
+showHours: '1'
+hoursTxt: Hours
+showMin: '1'
+minTxt: Minutes
+showSec: '1'
+secTxt: Seconds
+endTxt: 'Countdown Expired'
