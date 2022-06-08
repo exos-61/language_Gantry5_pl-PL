@@ -15,15 +15,29 @@
     <fileset>
 
         <!-- back-end -->
-        <files folder="admin/pl-PL" target="administrator/language/pl-PL">
+        <files folder="admin/pl-PL" target="administrator/components/com_gantry5/language/pl-PL">
             <filename>pl-PL.com_gantry5.ini</filename>
             <filename>pl-PL.com_gantry5.sys.ini</filename>
+        </files>
+
+        <files folder="admin/pl-PL" target="administrator/language/pl-PL">
             <filename>pl-PL.plg_gantry5_preset.sys.ini</filename>
             <filename>pl-PL.plg_quickicon_gantry5.sys.ini</filename>
             <filename>pl-PL.plg_system_gantry5.sys.ini</filename>
         </files>
 
         <!-- front-end -->
+        <files folder="site/pl-PL" target="language/pl-PL">
+            <filename>pl-PL.files_gantry5_nucleus.ini</filename>
+            <filename>pl-PL.files_gantry5_nucleus.sys.ini</filename>
+            <filename>pl-PL.lib_gantry5.sys.ini</filename>
+            <filename>pl-PL.pkg_gantry5.sys.ini</filename>
+        </files>
+
+        <files folder="site/pl-PL" target="modules/mod_gantry5_particle/language/pl-PL">
+            <filename>pl-PL.mod_gantry5_particle.ini</filename>
+            <filename>pl-PL.mod_gantry5_particle.sys.ini</filename>
+        </files>
         <files folder="site/pl-PL" target="language/pl-PL">
             <filename>pl-PL.files_gantry5_nucleus.ini</filename>
             <filename>pl-PL.files_gantry5_nucleus.sys.ini</filename>
