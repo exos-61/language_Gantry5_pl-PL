@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="file" version="2.5" method="upgrade">
 
-    <name>lang_joomla_gantry5_pl-PL</name>
+    <name>Spolszczenie pakietu Gantry 5</name>
     <author>Zbigniew Sokal</author>
     <creationDate>07 June 2022</creationDate>
     <copyright>(C) 2018-2022 Poradniki Dziadka</copyright>
@@ -20,30 +20,31 @@
             <filename>pl-PL.com_gantry5.sys.ini</filename>
         </files>
 
-        <files folder="admin/pl-PL" target="administrator/language/pl-PL">
+        <files folder="admin/pl-PL" target="plugins/gantry5/preset/language/pl-PL">
             <filename>pl-PL.plg_gantry5_preset.sys.ini</filename>
+        </files>
+
+        <files folder="admin/pl-PL" target="plugins/quickicon/gantry5/language/pl-PL">
             <filename>pl-PL.plg_quickicon_gantry5.sys.ini</filename>
+        </files>
+
+        <files folder="admin/pl-PL" target="plugins/system/gantry5/language/pl-PL">
             <filename>pl-PL.plg_system_gantry5.sys.ini</filename>
         </files>
 
         <!-- front-end -->
-        <files folder="site/pl-PL" target="language/pl-PL">
-            <filename>pl-PL.files_gantry5_nucleus.ini</filename>
-            <filename>pl-PL.files_gantry5_nucleus.sys.ini</filename>
-            <filename>pl-PL.lib_gantry5.sys.ini</filename>
-            <filename>pl-PL.pkg_gantry5.sys.ini</filename>
-        </files>
-
         <files folder="site/pl-PL" target="modules/mod_gantry5_particle/language/pl-PL">
             <filename>pl-PL.mod_gantry5_particle.ini</filename>
             <filename>pl-PL.mod_gantry5_particle.sys.ini</filename>
         </files>
+
+        <files folder="site/pl-PL" target="libraries/gantry5/language/pl-PL">
+            <filename>pl-PL.lib_gantry5.sys.ini</filename>
+        </files>
+
         <files folder="site/pl-PL" target="language/pl-PL">
             <filename>pl-PL.files_gantry5_nucleus.ini</filename>
             <filename>pl-PL.files_gantry5_nucleus.sys.ini</filename>
-            <filename>pl-PL.lib_gantry5.sys.ini</filename>
-            <filename>pl-PL.mod_gantry5_particle.ini</filename>
-            <filename>pl-PL.mod_gantry5_particle.sys.ini</filename>
             <filename>pl-PL.pkg_gantry5.sys.ini</filename>
         </files>
     </fileset>

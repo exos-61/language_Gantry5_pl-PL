@@ -1,6 +1,6 @@
-# Polish language for package Gantry5
+# Polish language for package Gantry5, Helium and Hydrogen templates
 
-Spolszczenie pakietu Gantry 5, wraz z darmowymi szablonami Helium i Hydrogen.
+Spolszczenie pakietu Gantry 5, oraz darmowych szablonów Helium i Hydrogen.
 
 Aby zainstalować polski pakiet językowy dla pakietu Gantry 5 zastosuj instalator Joomla z opcją **Instaluj z URL** i wklej poniższy adres URL:
 
@@ -18,43 +18,58 @@ Ponieważ nazwy cząsteczki (particles) i atomy (atoms) w języku polskim nie ko
 
 Zostały spolszczone pliki językowe pakietu w lokalizacjach:
 
+### Back-End
+
 * Komponent
+
   `administrator/components/com_gantry5/language`
 
   * en-GB.com_gantry5.ini > pl-PL.com_gantry5.ini
   * en-GB.com_gantry5.sys.ini > pl-PL.com_gantry5.sys.ini
 
-* Moduł Particle
- `modules/mod_gantry5_particle/language`
-
-  * en-GB.mod_gantry5_particle.ini > pl-PL.mod_gantry5_particle.ini
-  * en-GB.mod_gantry5_particle.sys.ini > pl-PL.mod_gantry5_particle.sys.ini
-
 * Wtyczka Preset
+
   `plugins/gantry5/preset/language`
 
   * en-GB.plg_gantry5_preset.sys.ini > pl-PL.plg_gantry5_preset.sys.ini
 
 * Wtyczka Quickicon
+
   `plugins/quickicon/gantry5/language`
 
   * en-GB.plg_quickicon_gantry5.sys.ini > pl-PL.plg_quickicon_gantry5.sys.ini
 
 * Wtyczka systemowa
+
   `plugins/system/gantry5/language`
 
   * en-GB.plg_system_gantry5.sys.ini > pl-PL.plg_system_gantry5.sys.ini
 
+### Front-End
+
+* Moduł Particle
+
+ `modules/mod_gantry5_particle/language`
+
+  * en-GB.mod_gantry5_particle.ini > pl-PL.mod_gantry5_particle.ini
+  * en-GB.mod_gantry5_particle.sys.ini > pl-PL.mod_gantry5_particle.sys.ini
+
 * Wtyczka biblioteki
+
   `libraries/gantry5/language`
 
   * en-GB.lib_gantry5.sys.ini > pl-PL.lib_gantry5.sys.ini
 
 * W site language
+
   `language`
 
   * en-GB.files_gantry5_nucleus.ini > pl-PL.files_gantry5_nucleus.ini
   * en-GB.files_gantry5_nucleus.sys.ini > pl-PL.files_gantry5_nucleus.sys.ini
   * en-GB.pkg_gantry5.sys.ini > pl-PL.pkg_gantry5.sys.ini
 
-Niestety pliki językowe nie zawierają wszystkich wyrażeń użytych do konfiguracji elementów Gantry 5. Elementy Moduły-G5, Wtyczki-G5 i Pozycje-G5 są dostępne tylko w języku angielskim. Aby je spolszczyć na chwilę obecną należałoby ingerować w pliki YAML i tłumaczyć każdą pozycję osobno. Programiści RocketTheme zachęcają użytkowników do samodzielnego podjęcia się rozwiązania problemu. Chętnie podjąłbym się tego, ale nie będąc programistą nie wiem jak się do tego zabrać. Zacząłem tłumaczyć elementy gantry oparte na plikach YAML i stworzyłem sygnatury dla wyrażeń, może jakieś rozwiązanie znajdę.
+Niestety pliki językowe nie zawierają wszystkich wyrażeń użytych do konfiguracji elementów Gantry 5. Elementy Moduły-G5, Wtyczki-G5 i Pozycje-G5 są dostępne tylko w języku angielskim. Aby je spolszczyć na chwilę obecną należałoby ingerować w pliki YAML i tłumaczyć każdą pozycję osobno. Programiści RocketTheme zachęcają użytkowników do samodzielnego podjęcia się rozwiązania problemu. Chętnie podjąłbym się tego, ale nie będąc programistą nie wiem jak się do tego zabrać. Zacząłem tłumaczyć elementy gantry oparte na plikach YAML i stworzyłem sygnatury dla wyrażeń.
+
+Bardzo dobrym przykładem jest rozwiązanie zastosowane przez programistów RocketTheme w kilku miejscach elementów pakietu. Moduł-G5 (Particle) składa się z dwóch plików: YAML i TWIG i w przypadku pliku menu.yaml (media/gantry5/engines/nucleus/particles) w sekcji **_info** i polu **content** zastosowano sygnaturę językową **GANTRY5_PARTICLE_MENU_INFO**, która pobiera zawartość wpisaną w pliku językowym **.ini**, a zastosowanie takich sygnatur w innych polach nie działa. Tu jest potrzebna wiedza programistyczna.
+
+
