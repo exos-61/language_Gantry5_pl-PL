@@ -4,7 +4,7 @@ Spolszczenie pakietu Gantry 5, oraz darmowych szablonów Helium i Hydrogen.
 
 Aby zainstalować polski pakiet językowy dla pakietu Gantry 5 zastosuj instalator Joomla z opcją **Instaluj z URL** i wklej poniższy adres URL:
 
-`http://upgrade.dziadek.guide/upgrade/gantry-5-lang/lang_joomla_gantry5_pl-PL.zip`
+`http://upgrade.dziadek.guide/gantry-5-lang/lang_joomla_gantry5_pl-PL.zip`
 
 ## Zastosowana terminologia
 
