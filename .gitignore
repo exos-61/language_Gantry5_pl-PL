@@ -58,6 +58,7 @@ $RECYCLE.BIN/
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
+.gitignore
 language_Gantry5_pl-PL/
 lang_joomla_gantry5_pl-PL/gantry5_v5.5.13/
 lang_joomla_gantry5_pl-PL/gantry5_v5.5.13_PL/
