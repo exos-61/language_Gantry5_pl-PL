@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extensionset name="Spolszczenia dla Gantry 5" description="Aktualizacje językowe pl-PL komponentu Gantry 5, szablonów RocketTheme i rozszerzeń dla Joomla.">
+	<extension name="Spolszczenie dla Gantry 5" element="lang_joomla_gantry5_pl-PL" type="file" version="5.5.13" detailsurl="http://upgrade.dziadek.guide/details/lang_joomla_gantry5_pl-PL.xml"/>
+	<extension name="Spolszczenie Helium szablonu Gantry 5" element="lang_joomla-tpl_g5_helium_pl-PL" type="file" version="5.5.13" detailsurl="http://upgrade.dziadek.guide/details/lang_joomla-tpl_g5_helium_pl-PL.xml"/>
+	<extension name="Spolszczenie Hydrogen szablonu Gantry 5" element="lang_joomla-tpl_g5_hydrogen_pl-PL" type="file" version="5.5.12" detailsurl="http://upgrade.dziadek.guide/details/lang_joomla-tpl_g5_hydrogen_pl-PL.xml"/>
+	<extension name="Spolszczenie plików yaml dla Gantry 5" element="lang_files-yaml_joomla_gantry5_pl-PL" type="file" version="5.5.12" detailsurl="http://upgrade.dziadek.guide/details/lang_files-yaml_joomla_gantry5_pl-PL.xml"/>
+	<extension name="Spolszczenie plików yaml szablonu Helium" element="lang_files-yaml_joomla-tpl_g5_helium_pl-PL" type="file" version="5.5.13" detailsurl="http://upgrade.dziadek.guide/details/lang_files-yaml_joomla-tpl_g5_helium_pl-PL.xml"/>
+	<extension name="Spolszczenie plików yaml szablonu Hydrogen" element="lang_files-yaml_joomla-tpl_g5_hydrogen_pl-PL" type="file" version="5.5.13" detailsurl="http://upgrade.dziadek.guide/details/lang_files-yaml_joomla-tpl_g5_hydrogen_pl-PL.xml"/>
+</extensionset>
