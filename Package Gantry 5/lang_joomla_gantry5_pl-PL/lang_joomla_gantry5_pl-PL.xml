@@ -49,6 +49,6 @@
         </files>
     </fileset>
     <updateservers>
-        <server type="collection" priority="1" name="lang_gantry5_pl-PL">https://dziadek.guide/upgrade/translationlist.xml</server>
+        <server type="collection" priority="1" name="lang_joomla_gantry5_pl-PL">https://dziadek.guide/upgrade/translationlist.xml</server>
     </updateservers>
 </extension>
