@@ -91,6 +91,6 @@
         </files>
     </fileset>
     <updateservers>
-        <server type="collection" priority="1" name="lang_files_yaml_joomla_gantry5_pl-PL.xml">http://upgrade.dziadek.guide/translationlist.xml</server>
+        <server type="collection" priority="1" name="lang_files_yaml_joomla_gantry5_pl-PL.xml">httpc://dziadek.guide/langpack/translationlist.xml</server>
     </updateservers>
 </extension>

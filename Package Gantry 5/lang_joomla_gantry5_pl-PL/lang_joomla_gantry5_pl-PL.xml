@@ -3,13 +3,13 @@
 
     <name>Spolszczenie pakietu Gantry 5</name>
     <author>Zbigniew Sokal</author>
-    <creationDate>07 June 2022</creationDate>
+    <creationDate>03 January 2023</creationDate>
     <copyright>(C) 2018-2022 Poradniki Dziadka</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
     <authorEmail>admin@dziadek.guide</authorEmail>
     <authorUrl>https://dziadek.guide</authorUrl>
-    <version>5.5.13</version>
-    <description>Polski (pl-PL) pakiet językowy dla pakietu Joomla Gantry 5</description>
+    <version>5.5.15</version>
+    <description>Polski pakiet językowy dla pakietu Joomla Gantry 5</description>
 
     <!-- Fileset definition -->
     <fileset>
@@ -49,6 +49,6 @@
         </files>
     </fileset>
     <updateservers>
-        <server type="collection" priority="1" name="lang_joomla_gantry5_pl-PL">https://dziadek.guide/upgrade/translationlist.xml</server>
+        <server type="collection" priority="1" name="lang_joomla_gantry5_pl-PL">https://dziadek.guide/langpack/translationlist.xml</server>
     </updateservers>
 </extension>
