@@ -1,9 +1,0 @@
-class: ''
-img: 'gantry-media://demo/contemporary-design-illuminated-19.jpg'
-mask: '0.6'
-heightType: window
-customHeight: '600'
-subtitle: 'Welcome to Gantry 5'
-title: 'SEE WHAT IT CAN DO'
-idAtt: '#g-grey1'
-icon: icon3

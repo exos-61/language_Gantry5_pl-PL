@@ -1,0 +1,38 @@
+name: 32
+timestamp: 1672995192
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1672995192
+positions:
+  footer: Footer
+sections:
+  header: Header
+  navigation: Navigation
+  showcase: Showcase
+  feature: Feature
+  subfeature: Subfeature
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  menu:
+    menu-2001: Menu
+  sample:
+    sample-1: 'Gantry 5'
+    sample-2: 'Getting Started'
+    sample-3: 'Key Features'
+  messages:
+    system-messages-8305: 'System Messages'
+  position:
+    position-footer: Footer
+  copyright:
+    copyright-1845: Copyright
+  social:
+    social-7747: Social
+  branding:
+    branding-3068: Branding
+  mobile-menu:
+    mobile-menu-6901: 'Mobile Menu'
+inherit: {  }

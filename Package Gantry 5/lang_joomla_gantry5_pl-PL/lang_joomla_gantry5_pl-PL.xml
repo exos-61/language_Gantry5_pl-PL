@@ -47,6 +47,78 @@
             <filename>pl-PL.files_gantry5_nucleus.sys.ini</filename>
             <filename>pl-PL.pkg_gantry5.sys.ini</filename>
         </files>
+        <!-- Custom -->
+        <!-- administrator -> custom/admin -->
+        <files folder="custom/admin/blueprints/gantry/theme" target="TEMPLATE_DIR/custom/admin/blueprints/gantry/theme">
+            <filename>configuration.yaml</filename>
+            <filename>details.yaml</filename>
+        </files>
+
+        <files folder="custom/admin/blueprints/menu" target="TEMPLATE_DIR/custom/admin/blueprints/menu">
+            <filename>menu.yaml</filename>
+            <filename>menuitem.yaml</filename>
+        </files>
+
+        <!-- media -> custom/engine -->
+        <files folder="custom/engine/admin/blueprints/layout/inheritance/messages" target="TEMPLATE_DIR/custom/engine/admin/blueprints/layout/inheritance/messages">
+            <filename>default.yaml</filename>
+            <filename>empty.yaml</filename>
+            <filename>inherited.yaml</filename>
+        </files>
+
+        <files folder="custom/engine/admin/blueprints/layout/inheritance" target="TEMPLATE_DIR/custom/engine/admin/blueprints/layout/inheritance">
+            <filename>atom.yaml</filename>
+            <filename>offcanvas.yaml</filename>
+            <filename>particle.yaml</filename>
+            <filename>position.yaml</filename>
+            <filename>section.yaml</filename>
+            <filename>system.yaml</filename>
+        </files>
+
+        <files folder="custom/engine/admin/blueprints/layout" target="TEMPLATE_DIR/custom/engine/admin/blueprints/layout">
+            <filename>block.yaml</filename>
+            <filename>container.yaml</filename>
+            <filename>offcanvas.yaml</filename>
+            <filename>section.yaml</filename>
+        </files>
+
+        <files folder="custom/engine/admin/blueprints/menu" target="TEMPLATE_DIR/custom/engine/admin/blueprints/menu">
+            <filename>block.yaml</filename>
+        </files>
+
+        <files folder="custom/engine/admin/blueprints/position" target="TEMPLATE_DIR/custom/engine/admin/blueprints/position">
+            <filename>chrome.yaml</filename>
+        </files>
+
+        <files folder="custom/engine/blueprints/page" target="TEMPLATE_DIR/custom/engine/blueprints/page">
+            <filename>assets.yaml</filename>
+            <filename>body.yaml</filename>
+            <filename>fontawesome.yaml</filename>
+            <filename>head.yaml</filename>
+        </files>
+
+        <files folder="custom/engine/particles" target="TEMPLATE_DIR/custom/engine/particles">
+            <filename>analytics.yaml</filename>
+            <filename>assets.yaml</filename>
+            <filename>branding.yaml</filename>
+            <filename>content.yaml</filename>
+            <filename>contentarray.yaml</filename>
+            <filename>copyright.yaml</filename>
+            <filename>custom.yaml</filename>
+            <filename>date.yaml</filename>
+            <filename>frameworks.yaml</filename>
+            <filename>lightcase.yaml</filename>
+            <filename>logo.yaml</filename>
+            <filename>menu.yaml</filename>
+            <filename>messages.yaml</filename>
+            <filename>mobile-menu.yaml</filename>
+            <filename>module.yaml</filename>
+            <filename>position.yaml</filename>
+            <filename>social.yaml</filename>
+            <filename>spacer.yaml</filename>
+            <filename>totop.yaml</filename>
+        </files>
+
     </fileset>
     <updateservers>
         <server type="collection" priority="1" name="lang_joomla_gantry5_pl-PL">https://dziadek.guide/langpack/translationlist.xml</server>

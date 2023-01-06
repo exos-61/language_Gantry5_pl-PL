@@ -1,0 +1,37 @@
+name: Dziedziczenie
+description: Zakładka dziedziczenie Wtyczek-G5
+type: atom.inheritance
+
+form:
+  fields:
+    mode:
+      type: input.radios
+      label: Tryb
+      description: Czy sklonować czy odziedziczyć właściwości Wtyczki-G5
+      default: inherit
+      options:
+        clone: Klonuj
+        inherit: Dziedzicz
+
+    outline:
+      type: gantry.outlines
+      label: Szablon
+      description: Szablon z którego należy dziedziczyć.
+      selectize:
+        allowEmptyOption: true
+      options:
+        '': Brak dziedziczenia
+
+    atom:
+      type: gantry.atoms
+      id: g-inherit-atom
+      outline_field: outline
+      label: Instancja Wtyczki-G5
+      description: Wtyczka-G5, z której należy dziedziczyć
+
+    include:
+      type: input.multicheckbox
+      label: Zastąpić
+      description: Które części Wtyczki-G5 odziedziczyć?
+      options:
+        attributes: Atrybuty Wtyczki-G5
