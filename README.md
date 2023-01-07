@@ -76,23 +76,23 @@ Zgodnie z [dokumentacją](https://docs.gantry.org/gantry5/advanced/customizing-t
   * configuration.yaml
   * details.yaml
 * administrator/components/com_gantry5/blueprints/menu
-  * menu.yaml
-  * menuitem.yaml
+  * menu.yaml - <small>ustawienia menu, koło zębate na prawo.</small>
+  * menuitem.yaml - <small>ustawienia elementu menu</small>
 
 **engine**
 
 * media/gantry5/engines/nucleus/admin/blueprints/layout
-  * block.yaml
-  * container.yaml
-  * offcanvas.yaml
-  * section
+  * block.yaml - <small></small>
+  * container.yaml - <small></small>
+  * offcanvas.yaml - <small></small>
+  * section - <small></small>
 * media/gantry5/engines/nucleus/admin/blueprints/layout/inheritance
-  * atom.yaml
-  * offcanvas.yaml
-  * particle.yaml
-  * position.yaml
-  * section.yaml
-  * system.yaml
+  * atom.yaml - <small></small>
+  * offcanvas.yaml - <small></small>
+  * particle.yaml - <small></small>
+  * position.yaml - <small></small>
+  * section.yaml - <small></small>
+  * system.yaml - <small></small>
 * media/gantry5/engines/nucleus/admin/blueprints/layout/inheritance/messages
   * default.yaml
   * empty.yaml
