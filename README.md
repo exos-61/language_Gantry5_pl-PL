@@ -1,10 +1,8 @@
-# Polish language for package Gantry5, Helium and Hydrogen templates
+# Polish language for Gantry5 package and RocketTheme templates
 
-Spolszczenie pakietu Gantry 5, oraz darmowych szablonów Helium i Hydrogen.
+Spolszczenie pakietu Gantry 5, darmowych szablonów Helium i Hydrogen oraz szablonów komercyjnych.
 
-Aby zainstalować polski pakiet językowy dla pakietu Gantry 5 zastosuj instalator Joomla z opcją **Instaluj z URL** i wklej poniższy adres URL:
-
-`http://upgrade.dziadek.guide/gantry-5-lang/lang_joomla_gantry5_pl-PL.zip`
+Wszystkie przetłumaczone pakiety instalacyjne są dostępne w sekcji Releases
 
 ## Zastosowana terminologia
 
@@ -14,11 +12,9 @@ Ponieważ nazwy cząsteczki (particles) i atomy (atoms) w języku polskim nie ko
 * Atoms - Wtyczki-G5
 * Positions - Pozycje-G5
 
-## Co zostało spolszczone?
+## Co zostało spolszczone w pakiecie Gantry 5 odnośnie plików .ini?
 
 Zostały spolszczone pliki językowe pakietu w lokalizacjach:
-
-### Back-End
 
 * Komponent
 
@@ -45,8 +41,6 @@ Zostały spolszczone pliki językowe pakietu w lokalizacjach:
 
   * en-GB.plg_system_gantry5.sys.ini > pl-PL.plg_system_gantry5.sys.ini
 
-### Front-End
-
 * Moduł Particle
 
  `modules/mod_gantry5_particle/language`
@@ -68,31 +62,30 @@ Zostały spolszczone pliki językowe pakietu w lokalizacjach:
   * en-GB.files_gantry5_nucleus.sys.ini > pl-PL.files_gantry5_nucleus.sys.ini
   * en-GB.pkg_gantry5.sys.ini > pl-PL.pkg_gantry5.sys.ini
 
-## Niedostępne pliki językowe .ini
+## Niedostępne tłumaczenia plików yaml
 
-Niestety pliki językowe **.ini** nie zawierają wszystkich wyrażeń użytych przy konfigurowaniu elementów Gantry 5. Elementy Moduły-G5, Wtyczki-G5 i Pozycje-G5 są dostępne tylko w języku angielskim. Aby je spolszczyć na chwilę obecną należałoby ingerować w pliki YAML i tłumaczyć każde pole osobno. Programiści RocketTheme zachęcają użytkowników do samodzielnego podjęcia się rozwiązania problemu. Chętnie podjąłbym się tego, ale nie będąc programistą nie wiem jak się do tego zabrać. Zacząłem tłumaczyć elementy gantry oparte na plikach YAML i stworzyłem sygnatury dla wyrażeń.
+Niestety pliki językowe **.ini** nie zawierają wszystkich wyrażeń użytych przy konfigurowaniu elementów Gantry 5. Elementy Moduły-G5, Wtyczki-G5 i Pozycje-G5 są dostępne tylko w języku angielskim i wymagają przetłumaczenia plików konfiguracyjnych .yaml.
 
-Bardzo dobrym przykładem jest rozwiązanie zastosowane przez programistów RocketTheme w kilku miejscach elementów pakietu. Moduł-G5 (Particle) składa się z dwóch plików: YAML i TWIG i w przypadku pliku menu.yaml (media/gantry5/engines/nucleus/particles) w sekcji **_info** i polu **content** zastosowano sygnaturę językową **GANTRY5_PARTICLE_MENU_INFO**, która pobiera zawartość wpisaną w pliku językowym **.ini**, a zastosowanie takich sygnatur w innych polach nie działa. Tu jest potrzebna wiedza programistyczna.
+Zgodnie z [dokumentacją](https://docs.gantry.org/gantry5/advanced/customizing-theme-files#theme-directory-matrix) katalog **custom** w lokalizacji *templates/Twój_szablon* służy do nadpisywania wszystkich plików znajdujących się w *administrator/components/com_gantry5* w pliku **admin**, *media/gantry5/engines/nucleus* w pliku **engine** oraz pliki szablonu zgodnie z hierarchią katalogów. Aby pakiet Gantry 5 był całkowicie przetłumaczony pliki yaml muszą być zainstalowane w wymienionych lokalizacjach szablonu. Jeżeli Twój szablon nie został jeszcze przetłumaczony to pobierz jakikolwiek z dostępnych, rozpakuj na komputerze i przy pomocy FTP wrzuć katalogi **admin** i **engine** do katalogu custom Twojego szablonu co spowoduje że pakiet Gantry 5 będzie całościowo przetłumaczony. W razie problemów wystarczy pliki usunąć. Baw sie dobrze i Twórz niesamowite strony, bo teraz masz taką możliwość bez znajomości kodowania.
 
-## Rozwiązanie tymczasowe
+### Jakie pliki yaml zostały przetłumaczone?
 
-Na chwilę obecną postanowiłem tłumaczyć komendy i opisy w plikach YAML i instalować poprzez podmianę plików en-GB.yaml na pl-PL.yaml.
+**admin**
 
-### Jakie pliki będą przetłumaczone?
+* administrator/components/com_gantry5/blueprints/gantry/theme
+  * configuration.yaml
+  * details.yaml
+* administrator/components/com_gantry5/blueprints/menu
+  * menu.yaml
+  * menuitem.yaml
 
-Pliki YAML pakietu Gantry 5 znajdują się w katalogu Joomla **media/gantry5/engines/nucleus/** katalogach: **admin**, **blueprints** i **particles**.
+**engine**
 
-#### Pliki yaml konfiguracji szablonu (blueprints)
-
-Lokalizacja plików core:
-
-`media/gantry5/engines/nucleus/admin`\
-`media/gantry5/engines/nucleus/blueprints`
-
-* media/gantry5/engines/nucleus/admin/blueprints/layout/inheritance/messages
-  * default.yaml
-  * empty.yaml
-  * inherited
+* media/gantry5/engines/nucleus/admin/blueprints/layout
+  * block.yaml
+  * container.yaml
+  * offcanvas.yaml
+  * section
 * media/gantry5/engines/nucleus/admin/blueprints/layout/inheritance
   * atom.yaml
   * offcanvas.yaml
@@ -100,46 +93,36 @@ Lokalizacja plików core:
   * position.yaml
   * section.yaml
   * system.yaml
-* media/gantry5/engines/nucleus/admin/blueprints/layout
+* media/gantry5/engines/nucleus/admin/blueprints/layout/inheritance/messages
+  * default.yaml
+  * empty.yaml
+  * inherited.yaml
+* media/gantry5/engines/nucleus/admin/blueprints/menu
   * block.yaml
-  * container.yaml
-  * offcanvas.yaml
-  * section.yaml
-* media/gantry5/engines/nucleus/admin/menu
-  * block.yaml
-* media/gantry5/engines/nucleus/admin/position
-  * chrome
+* media/gantry5/engines/nucleus/admin/blueprints/position
+  * chrome.yaml
 * media/gantry5/engines/nucleus/blueprints/page
   * assets.yaml
   * body.yaml
-  * fontawesome.yaml
-  * head.yaml
-
-
-#### Pliki yaml konfiguracji Modułów-G5 (Particles), Wtyczek-G5 (Atoms) i Pozycji-g5 (Positions)
-
-Lokalizacja plików core:
-
-`media/gantry5/engines/nucleus/particles`
-
-* analytics.yaml
-* assets.yaml
-* branding.yaml
-* content.yaml
-* contentarray.yaml
-* copyright.yaml
-* custom.yaml
-* date.yaml
-* frameworks.yaml
-* lightcase.yaml
-* logo.yaml
-* menu.yaml
-* messages.yaml
-* mobile-menu.yaml
-* module.yaml
-* position.yaml
-* social.yaml
-* spacer.yaml
-* totop.yaml
-
-
+  * fontawesome
+  * head
+* media/gantry5/engines/nucleus/particles
+  * analytics.yaml
+  * assets.yaml
+  * branding.yaml
+  * content.yaml
+  * contentarray.yaml
+  * copyright.yaml
+  * custom.yaml
+  * date.yaml
+  * frameworks.yaml
+  * lightcase.yaml
+  * logo.yaml
+  * menu.yaml
+  * messages.yaml
+  * mobile-menu.yaml
+  * module.yaml
+  * position.yaml
+  * social.yaml
+  * spacer.yaml
+  * totop.yaml
