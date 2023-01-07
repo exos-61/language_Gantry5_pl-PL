@@ -1,0 +1,20 @@
+name: Kolory głównej sekcji - Main
+description: Main content colors for the Ambrosia theme
+type: section
+
+form:
+  fields:
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_MAIN_INFO
+
+    background:
+      type: input.colorpicker
+      label: Kolor tła
+      default: "#ffffff"
+    text-color:
+      type: input.colorpicker
+      label: Kolor tekstu
+      default: "#888888"

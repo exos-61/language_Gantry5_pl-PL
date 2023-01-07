@@ -1,31 +1,36 @@
 name: Menu
-description: Set menu style configuration options.
+description: Ustaw opcje konfiguracji stylu menu.
 type: configuration
 
 form:
   fields:
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_MENU_INFO
+
     col-width:
       type: input.text
-      label: Simple Dropdown Width
-      description: 'Specify the default width of menu dropdowns for simple mode in rem, em or px units. This width can be overridden on each individual menu item from the menu editor.'
+      label: Prosta szerokość rozwijania
+      description: 'Określ domyślną szerokość rozwijanych menu dla trybu prostego w jednostkach rem, em lub px. Ta szerokość może być nadpisana na każdej indywidualnej pozycji menu w edytorze menu.'
       default: "180px"
       pattern: '\d+(\.\d+){0,1}(rem|em|px)'
 
     animation:
-      type: select.select
-      label: Dropdown Animation
-      description: Select the dropdown animation.
+      type: select.selectize
+      label: Animacja rozwijania
+      description: Wybierz animację rozwijania menu.
       default: g-fade
       options:
-        g-no-animation: No Animation
-        g-fade: Fade
-        g-zoom: Zoom
-        g-fade-in-up: Fade In Up
+        g-no-animation: Brak animacji
+        g-fade: Zanikanie
+        g-zoom: Powiększenie
+        g-fade-in-up: Zanikanie w górę
 
     hide-on-mobile:
       type: input.checkbox
-      label: Hide on Mobile
-      description: Check this field to completely hide the dropdown menu on mobile devices. This prevents menu flickering but you might end with no menu when JS is not supported by the respective device.
-      placeholder: 'Select...'
+      label: Ukryj w telefonie komórkowym
+      description: Zaznacz to pole, aby całkowicie ukryć menu rozwijane na urządzeniach mobilnych. Zapobiega to migotaniu menu, ale menu może się nie wyświetlać, gdy JS nie jest obsługiwany przez dane urządzenie..
+      placeholder: 'Wybierz...'
       default: 0

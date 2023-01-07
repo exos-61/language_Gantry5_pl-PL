@@ -1,15 +1,20 @@
-name: Utility Styles
+name: Styl sekcji Utility
 description: Utility section styles for the Helium theme
 type: section
 
 form:
   fields:
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_UTILITY_INFO
+
     background:
       type: input.colorpicker
-      label: Background
+      label: Kolor tła
       default: "#424753"
     text-color:
       type: input.colorpicker
-      label: Text
+      label: Kolor tekstu
       default: "#ffffff"

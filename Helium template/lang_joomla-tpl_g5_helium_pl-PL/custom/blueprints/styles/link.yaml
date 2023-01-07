@@ -1,4 +1,4 @@
-name: Link Colors
+name: Kolory linków
 description: Link colors for the Helium theme
 type: core
 
@@ -7,9 +7,9 @@ form:
 
     regular:
       type: input.colorpicker
-      label: Link Color
+      label: Kolor łącza
       default: "#4db2b3"
     hover:
       type: input.colorpicker
-      label: Hover Color
+      label: Kolor odwiedzonego łącza
       default: "#424753"

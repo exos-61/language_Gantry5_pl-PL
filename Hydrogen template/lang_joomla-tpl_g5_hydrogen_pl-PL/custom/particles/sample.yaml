@@ -1,5 +1,5 @@
-name: Sample Content
-description: Displays Sample Content
+name: Przykładowa treść
+description: Wyświetla przykładową zawartość
 type: particle
 icon: far fa-edit
 
@@ -11,47 +11,47 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
-      description: Globally enable the particle.
+      label: Włączone
+      description: Globalnie włącza Moduł-G5 Przykładowa treść.
       default: true
 
     image:
       type: input.imagepicker
-      label: Image
-      description: Select the main image.
+      label: Obraz
+      description: Wybierz główny obraz.
       overridable: false
 
     headline:
       type: input.text
-      label: Headline
-      description: Customize the headline text.
-      placeholder: Enter headline
+      label: Nagłówek
+      description: Dostosuj tekst nagłówka.
+      placeholder: Wpisz nagłówek
       overridable: false
 
     description:
       type: textarea.textarea
-      label: Description
-      description: Customize the description.
-      placeholder: Enter short description
+      label: Opis
+      description: Dostosuj opis.
+      placeholder: Podaj krótki opis
       overridable: false
 
     link:
       type: input.text
       label: Link
-      description: Specify the link address.
+      description: Określenie adresu łącza.
       overridable: false
 
     linktext:
       type: input.text
       label: Link Text
-      description: Customize the link text.
+      description: Dostosuj tekst linku.
       overridable: false
 
     samples:
       type: collection.list
       array: true
-      label: Sample Items
-      description: Create each item to appear in the content row.
+      label: Przykładowe pozycje
+      description: Utwórz każdy element, aby pojawił się w wierszu zawartości.
       value: title
       ajax: true
       overridable: false
@@ -59,30 +59,30 @@ form:
       fields:
         .icon:
           type: input.icon
-          label: Icon
+          label: Ikona
 
         .title:
           type: input.text
-          label: Title
+          label: Tytuł
 
         .subtitle:
           type: input.text
-          label: Sub Title
+          label: Podtytuł
 
         .description:
           type: textarea.textarea
-          label: Description
+          label: Opis
 
         .id:
           type: input.text
           label: CSS ID
-          description: 'Enter the ID for the block without the hash (#) (ie. <code>your-id</code>. You can then reference the element via CSS as <code>#your-id</code>'
+          description: 'Wprowadź ID bloku bez hasha (#) (np. <code>your-id</code>. Możesz wtedy odwołać się do elementu poprzez CSS jako <code>#your-id</code>.'
           default:
 
         .class:
           type: input.selectize
-          label: CSS Classes
-          description: Enter CSS class names.
+          label: Klasy CSS
+          description: Wprowadź nazwy klas CSS.
           default:
 
         .variations:

@@ -1,0 +1,10 @@
+name: Dziedziczenie
+description: Zakładka dziedziczona
+type: inherited.inheritance
+
+form:
+  fields:
+    _note:
+      type: separator.note
+      class: 'alert alert-success blocksize-note'
+      content: 'Ten %s został odziedziczony przez następujące szablony: %s'

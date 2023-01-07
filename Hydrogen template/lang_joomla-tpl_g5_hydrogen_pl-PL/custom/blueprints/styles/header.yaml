@@ -1,15 +1,20 @@
-name: Header Colors
+name: Kolory nagłówka - Header
 description: Header colors for the Hydrogen theme
 type: section
 
 form:
   fields:
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_HEADER_INFO
+
     background:
       type: input.colorpicker
-      label: Background
+      label: Kolor tła
       default: "#2a816d"
     text-color:
       type: input.colorpicker
-      label: Text
+      label: Kolor tekstu
       default: "#ffffff"

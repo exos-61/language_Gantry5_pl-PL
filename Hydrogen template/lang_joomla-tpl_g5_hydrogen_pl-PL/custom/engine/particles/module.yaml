@@ -1,0 +1,33 @@
+name: Instancja modułu
+description: Wyświetlenie Modułu-G5 Module Instance (Instancja modułu).
+type: position
+icon: fa-object-ungroup
+hidden: false
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Włączone
+      description: Globalne włączenie pozycji Modułu-G5 Module Instance.
+      default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: 'Aby zamontować moduł należy skorzystać z <a href="index.php?option=com_modules" target="_blank" data-g-urltemplate="index.php?option=com_modules&view=module&task=module.edit&id=#ID#" href="#">Menedżera modułów Joomla</a>.'
+
+    module_id:
+      type: gantry.module
+      label: Id modułu
+      class: g-urltemplate input-small
+      picker_label: Wybierz moduł
+      description: Wprowadź ID modułu.
+      pattern: '\d+'
+      overridable: false
+
+    chrome:
+      type: input.text
+      label: Chrome
+      description: Module chrome.
+      placeholder: gantry

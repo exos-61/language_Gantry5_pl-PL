@@ -1,0 +1,65 @@
+name: 'Logo / Obraz'
+description: Wyświetl logo lub obraz.
+type: particle
+icon: far fa-file-image
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Włączone
+      description: Globalnie włączony Dodatek-G5 Logo / Obraz.
+      default: true
+
+    url:
+      type: input.text
+      label: Url
+      description: Url dla obrazu. Pozostaw pusty, aby przejść do strony głównej.
+
+    target:
+      type: select.select
+      label: Docelowe okno
+      description: Docelowe okno przeglądarki po kliknięciu logo.
+      placeholder: 'Wybierz...'
+      default: _self
+      options:
+          _self: Ta sama ramka (domyślnie)
+          _parent: Ramka nadrzędna
+          _blank: Nowe okno lub karta
+
+    image:
+      type: input.imagepicker
+      label: Obraz
+      description: Wybierz żądany obraz logo.
+
+    height:
+      type: input.text
+      label: Maksymalna wysokość
+      description: Ustaw maksymalną wysokość obrazu w rem, em, px, lub wartości jednostki procentowej. Pozostaw puste, aby użyć domyślnej wysokości.
+      pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'
+
+    link:
+      type: input.checkbox
+      label: Link
+      description: 'Renderuje logo/obraz z linkiem.'
+      default: true
+
+    svg:
+      type: textarea.textarea
+      label: Kod SVG
+      description: Twój kod SVG, który zostanie dodany inline do strony.
+      placeholder: 'Umieść tutaj swój kod <svg>.'
+
+    text:
+      type: input.text
+      label: Tekst
+      description: Wprowadź tekst opisu logo.
+
+    class:
+      type: input.selectize
+      label: Klasy CSS
+      description: Ustawienie określonej klasy CSS dla niestandardowej stylizacji.

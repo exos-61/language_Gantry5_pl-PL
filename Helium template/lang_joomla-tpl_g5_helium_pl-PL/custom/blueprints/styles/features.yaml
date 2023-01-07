@@ -1,4 +1,4 @@
-name: Features Styles
+name: Kolory sekcji funkcji Feature
 description: Features section styles for the Helium theme
 type: section
 
@@ -7,9 +7,9 @@ form:
 
     background:
       type: input.colorpicker
-      label: Background
+      label: Kolor tła
       default: "#ffffff"
     text-color:
       type: input.colorpicker
-      label: Text
+      label: Kolor tekstu
       default: "#424753"

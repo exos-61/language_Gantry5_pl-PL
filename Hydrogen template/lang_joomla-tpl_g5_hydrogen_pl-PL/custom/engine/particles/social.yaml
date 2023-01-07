@@ -1,0 +1,81 @@
+name: Społeczność
+description: Wyświetla przyciski społecznościowe.
+type: particle
+icon: fa-share-alt
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Włączone
+      description: Globalnie włącz Moduł-G5 Social.
+      default: true
+
+    css.class:
+      type: input.selectize
+      label: Klasy CSS
+      description: 'Nazwa klasy CSS dla Modułu-G5 Social (media społecznościowe).'
+      default: social
+
+    title:
+      type: input.text
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
+
+    target:
+      type: select.select
+      label: Target
+      description: Docelowe okno przeglądarki po kliknięciu elementu.
+      placeholder: 'Wybierz...'
+      default: ''
+      options:
+          '': Brak
+          _self: To samo okno
+          _parent: Parent
+          _top: U góry
+          _blank: Nowe okno
+
+    display:
+      type: input.radios
+      label: Wyświetl
+      description: Jak wyświetlić ikony społecznościowe
+      default: both
+      options:
+        icons_only: Tylko ikony
+        text_only: Tylko tekst
+        both: Both
+
+    items:
+      type: collection.list
+      array: true
+      label: Elementy społeczne
+      description: Utwórz każdy element społecznościowy do wyświetlenia.
+      value: name
+      ajax: true
+
+      fields:
+        .name:
+          type: input.text
+          label: Nazwa
+          skip: true
+
+        .icon:
+          type: input.icon
+          label: Ikona
+
+        .text:
+          type: input.text
+          label: Tekst
+
+        .title:
+          type: input.text
+          label: Tytuł
+
+        .link:
+          type: input.text
+          label: Link

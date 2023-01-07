@@ -1,4 +1,4 @@
-name: Base Styles
+name: Style podstawowe
 description: Base styles for the Helium theme
 type: core
 
@@ -7,9 +7,9 @@ form:
 
     background:
       type: input.colorpicker
-      label: Base Background
+      label: Podstawowy kolor tła
       default: "#ffffff"
     text-color:
       type: input.colorpicker
-      label: Base Text Color
+      label: Podstawowy kolor tekstu
       default: "#424753"

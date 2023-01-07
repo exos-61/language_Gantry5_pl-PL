@@ -1,13 +1,18 @@
-name: Showcase Colors
+name: Kolory sekcji prezentacji - Showcase
 description: Showcase colors for the Hydrogen theme
 type: section
 
 form:
   fields:
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_SHOWCASE_INFO
+
     background:
       type: input.colorpicker
-      label: Background
+      label: Kolor tła
       default: "#354d59"
     image:
       type: input.imagepicker
@@ -15,5 +20,5 @@ form:
       default: ""
     text-color:
       type: input.colorpicker
-      label: Text
+      label: Kolor tekstu
       default: "#ffffff"

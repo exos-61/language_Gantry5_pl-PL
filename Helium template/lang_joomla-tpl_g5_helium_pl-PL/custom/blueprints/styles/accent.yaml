@@ -1,15 +1,20 @@
-name: Accent Colors
+name: Kolory akcentujące
 description: Accent colors for the Helium theme
 type: core
 
 form:
   fields:
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_ACCENT_INFO
+
     color-1:
       type: input.colorpicker
-      label: Accent Color 1
+      label: Kolor akcentujący 1
       default: "#4db2b3"
     color-2:
       type: input.colorpicker
-      label: Accent Color 2
+      label: Kolor akcentujący 2
       default: "#8f4dae"

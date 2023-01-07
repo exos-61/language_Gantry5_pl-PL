@@ -1,0 +1,14 @@
+name: Dziedziczenie
+description: Nie ma nic do odziedziczenia.
+type: empty.inheritance
+
+form:
+  fields:
+    _note:
+      type: separator.note
+      class: 'alert alert-info blocksize-note'
+      content: 'Możesz dziedziczyć sekcje i Moduły-G5 z szablonu bazowego (Base Outline).'
+    _note2:
+      type: separator.note
+      class: 'alert alert-success blocksize-note'
+      content: 'Żaden szablon nie dziedziczy obecnie tego elementu.'

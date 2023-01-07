@@ -1,28 +1,33 @@
-name: Header Styles
+name: Kolory nagłówka - Header
 description: Header section styles for the Helium theme
 type: section
 
 form:
   fields:
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_HEADER_INFO
+
     background:
       type: input.colorpicker
-      label: Background
+      label: Kolor tła
       default: "#312f38"
     background-image:
       type: input.imagepicker
-      label: Background Image
+      label: Obraz tła
       default: 'gantry-media://header/img01.jpg'
     background-overlay:
       type: select.select
-      label: Background Overlay
-      description: 'Enables the linear gradient overlay made of accent colors.'
-      placeholder: 'Select...'
+      label: Nakładka na tło
+      description: 'Włącza liniową nakładkę gradientową złożoną z kolorów akcentowych.'
+      placeholder: 'Wybierz...'
       default: enabled
       options:
-        enabled: Enabled
-        disabled: Disabled
+        enabled: Włączone
+        disabled: Wyłączone
     text-color:
       type: input.colorpicker
-      label: Text
+      label: Kolor tekstu
       default: "#eceeef"

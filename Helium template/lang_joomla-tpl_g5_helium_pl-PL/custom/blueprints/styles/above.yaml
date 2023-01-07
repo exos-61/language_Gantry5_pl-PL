@@ -1,4 +1,4 @@
-name: Above Styles
+name: Styl dla prawej kolumny
 description: Above section styles for the Helium theme
 type: section
 
@@ -7,9 +7,9 @@ form:
 
     background:
       type: input.colorpicker
-      label: Background
+      label: Kolor tła
       default: "#f4f5f7"
     text-color:
       type: input.colorpicker
-      label: Text
+      label: Kolor tekstu
       default: "#424753"

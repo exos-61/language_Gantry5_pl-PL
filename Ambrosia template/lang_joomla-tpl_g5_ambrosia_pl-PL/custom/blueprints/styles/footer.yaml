@@ -1,0 +1,20 @@
+name: Kolory stopki - Footer
+description: Footer colors for the Ambrosia theme
+type: section
+
+form:
+  fields:
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_FOOTER_INFO
+
+    background:
+      type: input.colorpicker
+      label: Kolor tła
+      default: "#000000"
+    text-color:
+      type: input.colorpicker
+      label: Kolor tekstu
+      default: "#585858"

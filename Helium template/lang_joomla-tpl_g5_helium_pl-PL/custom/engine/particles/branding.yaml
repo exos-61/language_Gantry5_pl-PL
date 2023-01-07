@@ -1,0 +1,28 @@
+name: Branding
+description: Displays powered by link to Gantry Framework
+type: particle
+icon: fa-trademark
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Włączone
+      description: Włączenie globalnie Modułu-G5.
+      default: true
+
+    content:
+      type: textarea.textarea
+      label: Treść
+      description: Twórz lub modyfikuj niestandardowe treści firmowe.
+      default: 'Powered by <a href="https://dziadek.guide/" title="Gantry Framework" class="g-powered-by">Gantry Framework po Polsku</a>'
+
+    css.class:
+      type: input.selectize
+      label: Klasy CSS
+      description: Nazwa klasy CSS dla Modułu-G5. Domyślnie <strong>branding</strong>
+      default: branding

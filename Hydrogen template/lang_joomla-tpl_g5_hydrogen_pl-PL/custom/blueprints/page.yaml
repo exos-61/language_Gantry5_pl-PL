@@ -1,15 +1,15 @@
-name: Page Settings
-description: Settings that can be applied to the page.
+name: Ustawienia strony
+description: Ustawienia, które można zastosować do strony.
 
 form:
   fields:
 
     doctype:
       type: input.text
-      label: Doctype
+      label: Deklaracji dokumentu html
       default: html
 
     body.class:
       type: input.text
-      label: Body Class
+      label: Klasa sekcji Body
       default: gantry

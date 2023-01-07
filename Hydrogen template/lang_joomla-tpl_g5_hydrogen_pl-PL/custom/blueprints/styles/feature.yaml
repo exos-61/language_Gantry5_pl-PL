@@ -1,4 +1,4 @@
-name: Feature Colors
+name: Kolory sekcji funkcji Feature
 description: Feature colors for the Hydrogen theme
 type: section
 
@@ -7,9 +7,9 @@ form:
 
     background:
       type: input.colorpicker
-      label: Background
+      label: Kolor tła
       default: "#ffffff"
     text-color:
       type: input.colorpicker
-      label: Text
+      label: Kolor tekstu
       default: "#666666"

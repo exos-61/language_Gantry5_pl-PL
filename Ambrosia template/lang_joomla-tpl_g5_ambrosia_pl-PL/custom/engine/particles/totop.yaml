@@ -1,0 +1,39 @@
+name: Do góry
+description: Przewijanie z powrotem do góry.
+type: particle
+icon: fa-chevron-up
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: checkbox
+      label: Włączone
+      description: Globalnie włączony Moduł-G5 ToTop (Do góry).
+      default: true
+
+    css.class:
+      type: input.selectize
+      label: Klasy CSS
+      description: 'Nazwa klasy CSS dla tego Modułu-G5. Domyślnie <strong>particle_gantry_totop</strong>'
+      default: totop
+
+    icon:
+      type: input.icon
+      label: Ikona
+      description: Ikona Font Awesome, która ma być wyświetlana dla linku.
+
+    content:
+      type: input.text
+      label: Tekst
+      description: Tekst, który ma być wyświetlany dla linku. Dozwolony jest HTML.
+      placeholder: Do góry
+
+    title:
+      type: input.text
+      label: Tytuł
+      description: Tytuł, który ma być zastosowany w linku. Jeśli nie ustawiono tutaj żadnego tytułu, ale zdefiniowano tekst powyżej, tekst jest używany automatycznie dla <code>tytuł</code>.
+      placeholder: przejdź na górę

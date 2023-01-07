@@ -1,15 +1,20 @@
-name: Font Families
+name: Rodziny czcionek
 description: Font families for the Helium theme
 type: core
 
 form:
   fields:
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_FONT_INFO
+
     family-default:
       type: input.fonts
-      label: Body Font
+      label: Czcionka strony
       default: 'Raleway, Helvetica, Tahoma, Geneva, Arial, sans-serif'
     family-title:
       type: input.fonts
-      label: Title Font
+      label: Czcionka tytułu
       default: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'

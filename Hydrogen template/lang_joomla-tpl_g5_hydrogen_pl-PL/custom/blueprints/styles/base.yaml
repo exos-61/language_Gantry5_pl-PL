@@ -1,4 +1,4 @@
-name: Base Styles
+name: Style podstawowe
 description: Base styles for the Hydrogen theme
 type: core
 
@@ -7,17 +7,17 @@ form:
 
     background:
       type: input.colorpicker
-      label: Base Background
+      label: Podstawowy kolor tła
       default: "#ffffff"
     text-color:
       type: input.colorpicker
-      label: Base Text Color
+      label: Podstawowy kolor tekstu
       default: "#666666"
     body-font:
       type: input.fonts
-      label: Body Font
+      label: Czcionka strony
       default: 'roboto, sans-serif'
     heading-font:
       type: input.fonts
-      label: Heading Font
+      label: Czcionka nagłówka
       default: 'roboto, sans-serif'

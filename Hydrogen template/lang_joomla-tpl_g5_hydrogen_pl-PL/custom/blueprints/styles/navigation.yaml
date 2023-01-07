@@ -1,20 +1,25 @@
-name: Navigation Colors
+name: Kolory sekcji nawigacji - Navigation
 description: Navigation colors for the Hydrogen theme
 type: section
 
 form:
   fields:
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_NAVIGATION_INFO
+
     background:
       type: input.colorpicker
-      label: Background
+      label: Kolor tła
       default: "#439a86"
     text-color:
       type: input.colorpicker
-      label: Text
+      label: Kolor tekstu
       default: "#ffffff"
     overlay:
       type: input.colorpicker
-      label: Overlay
-      description: Set the color of the page overlay when the certain menu modes are active.
+      label: Nakładka
+      description: Ustawienie koloru nakładki strony, gdy aktywne są określone tryby menu.
       default: "rgba(0, 0, 0, 0.4)"

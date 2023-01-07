@@ -1,0 +1,15 @@
+name: Feature Colors
+description: Feature colors for the Ambrosia theme
+type: section
+
+form:
+  fields:
+
+    background:
+      type: input.colorpicker
+      label: Kolor tła
+      default: "#ffffff"
+    text-color:
+      type: input.colorpicker
+      label: Kolor tekstu
+      default: "#888888"

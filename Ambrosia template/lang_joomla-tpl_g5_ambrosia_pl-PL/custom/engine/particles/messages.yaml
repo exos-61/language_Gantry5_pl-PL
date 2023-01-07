@@ -1,0 +1,23 @@
+name: Komunikat systemu
+description: Wyświetlanie komunikatów systemowych.
+type: system
+icon: fa-exclamation-circle
+hidden: false
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Włączone
+      description: Globalne włączenie komunikatów systemowych.
+      default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: Wyświetla komunikaty systemowe w Twoim układzie strony.
+
+    _alert:
+      type: separator.note
+      class: alert alert-warning
+      content: Zawsze dołączaj ten moduł-G5 do wszystkich swoich układów stron. W przeciwnym razie użytkownicy nie zobaczą ważnych komunikatów systemowych, takich jak niepowodzenia w logowaniu.

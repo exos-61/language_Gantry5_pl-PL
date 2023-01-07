@@ -1,0 +1,22 @@
+name: Lightcase
+description: Elastyczna i responsywna wtyczka Lightbox.
+type: atom
+icon: fa-image
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Włączone
+      description: Globalnie włącza Dodatek-G5 Lightcase.
+      default: true
+
+    _instructions:
+      type: separator.note
+      class: alert alert-info
+      content: 'Podstawowe użycie: <pre>&lt;a href="path/to/media.jpg"<br /> data-rel="lightcase"<br /> title="Twój tytuł"<br />><br /> Twój opis linku<br />&lt;/a></pre>.'
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: 'Więcej informacji na temat używania tego Dodatku-G5 można znaleźć w <a href="http://cornel.bopp-art.com/lightcase/documentation/" target="_blank">dokumentacji lightcase</a> lub na <a href="https://github.com/cbopp-art/lightcase" target="blank">GitHubie</a>'
