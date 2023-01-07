@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="file" version="2.5" method="upgrade">
 
-    <name>lang_joomla-tpl_g5_hydrogen_pl-PL</name>
+    <name>lang_joomla-tpl_g5_helium_pl-PL</name>
     <author>Zbigniew Sokal</author>
     <creationDate>07 January 2022</creationDate>
     <copyright>(C) 2018-2023 Poradniki Dziadka</copyright>
@@ -9,41 +9,47 @@
     <authorEmail>admin@dziadek.guide</authorEmail>
     <authorUrl>https://dziadek.guide</authorUrl>
     <version>5.5.15</version>
-    <description>Polski pakiet językowy dla szablonu Hydrogen Joomla Gantry 5 i plików yaml pakietu Gantry 5</description>
+    <description>Polski pakiet językowy dla szablonu Helium Joomla Gantry 5 i plików yaml pakietu Gantry 5</description>
 
     <fileset>
         <!-- templates -->
-        <files folder="custom/blueprints" target="templates/g5_hydrogen/custom/blueprints">
-            <filename>page.yaml</filename>
-        </files>
 
         <files folder="custom/blueprints/styles" target="templates/g5_hydrogen/custom/blueprints/styles">
+            <filename>above.yaml</filename>
             <filename>accent.yaml</filename>
             <filename>base.yaml</filename>
             <filename>breakpoints.yaml</filename>
-            <filename>feature.yaml</filename>
+            <filename>expanded.yaml</filename>
+            <filename>features.yaml</filename>
+            <filename>font.yaml</filename>
             <filename>footer.yaml</filename>
             <filename>header.yaml</filename>
-            <filename>main.yaml</filename>
+            <filename>intro.yaml</filename>
+            <filename>link.yaml</filename>
             <filename>menu.yaml</filename>
             <filename>navigation.yaml</filename>
             <filename>offcanvas.yaml</filename>
-            <filename>showcase.yaml</filename>
-            <filename>subfeature.yaml</filename>
-        </files>
-
-        <files folder="language/pl-PL" target="templates/g5_hydrogen/language/pl-PL">
-            <filename>pl-PL.tpl_g5_hydrogen.ini</filename>
-            <filename>pl-PL.tpl_g5_hydrogen.sys.ini</filename>
+            <filename>testimonials.yaml</filename>
+            <filename>utility.yaml</filename>
         </files>
 
         <files folder="custom/layouts" target="templates/g5_hydrogen/custom/layouts">
-            <filename>home.yaml</filename>
+            <filename>home_-_particles.yaml</filename>
         </files>
 
         <files folder="custom/particles" target="templates/g5_hydrogen/custom/particles">
-            <filename>sample.yaml</filename>
+            <filename>contentcubes.yaml</filename>
+            <filename>contenttabs.yaml</filename>
+            <filename>copyright.yaml</filename>
+            <filename>horizontalmenu.yaml</filename>
+            <filename>owlcarousel.yaml</filename>
         </files>
+
+        <files folder="language/pl-PL" target="templates/g5_hydrogen/language/pl-PL">
+            <filename>pl-PL.tpl_g5_helium.ini</filename>
+            <filename>pl-PL.tpl_g5_helium.sys.ini</filename>
+        </files>
+
         <!-- Gantry 5 -->
         <!-- administrator -> custom/admin -->
         <files folder="custom/admin/blueprints/gantry/theme" target="templates/g5_hydrogen/custom/admin/blueprints/gantry/theme">
@@ -117,6 +123,6 @@
         </files>
     </fileset>
     <updateservers>
-        <server type="collection" priority="1" name="lang_joomla-tpl_g5_hydrogen_pl-PL">https://dziadek.guide/langpack/translationlist.xml</server>
+        <server type="collection" priority="1" name="lang_joomla-tpl_g5_helium_pl-PL">https://dziadek.guide/langpack/translationlist.xml</server>
     </updateservers>
 </extension>

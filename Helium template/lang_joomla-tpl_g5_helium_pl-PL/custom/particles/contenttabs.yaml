@@ -1,5 +1,5 @@
-name: Content Tabs
-description: Displays Content Tabs.
+name: Zawartość blokowa
+description: Wyświetla karty treści.
 type: particle
 icon: fa-table
 
@@ -11,49 +11,49 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
-      description: Globally enable Content Tabs particle.
+      label: Włączone
+      description: Globalnie włącz Moduł-G5 Content Tabs.
       default: true
 
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Nazwa klasy CSS dla Modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the particle title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu Modułu-G5.
+      placeholder: Podaj tytuł
 
     animation:
       type: select.select
-      label: Animation Type
-      description: Set the animation type.
+      label: Rodzaj animacji
+      description: Ustawić typ animacji.
       default: slide
       options:
-        left: Slide Left
-        right: Slide Right
-        up: Slide Up
-        down: Slide Down
-        fade: Fade
+        left: Przesuń w lewo
+        right: Przesuń w prawo
+        up: Przesuń w górę
+        down: Przesuń w dół
+        fade: Zanikanie
         toggle: Toggle
 
     items:
       type: collection.list
       array: true
-      label: Content Tabs Items
-      description: Content Tabs item to display.
+      label: Elementy zawartości kart
+      description: Element karty zawartości do wyświetlenia.
       value: title
       ajax: true
 
       fields:
         .title:
           type: input.text
-          label: Title
-          description: Enter the title
+          label: Tytuł
+          description: Wpisz tytuł
         .content:
           type: textarea.textarea
-          label: Tab Content
-          description: Customize the tab content.
-          placeholder: Enter your custom content here.
+          label: Zawartość karty
+          description: Dostosuj zawartość karty.
+          placeholder: Wprowadź tutaj swoją niestandardową treść.

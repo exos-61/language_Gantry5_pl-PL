@@ -11,106 +11,106 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable icon menu particles.
       default: true
 
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Nazwa klasy CSS dla Modułu-G5
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: 'Enter title'
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: 'Podaj tytuł'
 
     nav:
       type: select.select
-      label: 'Prev / Next'
-      description: 'Enable or disable the Prev / Next navigation.'
+      label: 'Poprzedni / Następny'
+      description: 'Włączenie lub wyłączenie nawigacji Prev / Next.'
       default: disable
       options:
-        enable: Enable
-        disable: Disable
+        enable: Włącz
+        disable: Wyłącz
 
     dots:
       type: select.select
       label: Dots
-      description: Enable or disable the Dots navigation.
+      description: Włączenie lub wyłączenie nawigacji Dots.
       default: enable
       options:
-        enable: Enable
-        disable: Disable
+        enable: Włącz
+        disable: Wyłącz
 
     autoplay:
       type: select.select
-      label: Autoplay
-      description: Enable or disable the Autoplay.
+      label: Auto odtwarzanie
+      description: Włączenie lub wyłączenie funkcji Autoodtwarzania.
       default: disable
       options:
-        enable: Enable
-        disable: Disable
+        enable: Włącz
+        disable: Wyłącz
 
     autoplaySpeed:
       type: input.text
-      label: Autoplay Speed
-      description: Set the speed of the Autoplay, in milliseconds.
+      label: Szybkość auto odtwarzania
+      description: Ustaw prędkość auto odtwarzania, w milisekundach.
       placeholder: 5000
 
     imageOverlay:
       type: select.select
-      label: Image Overlay
-      description: Enable or disable the image overlay.
+      label: Nakładka na obraz
+      description: Włączenie lub wyłączenie nakładki na obraz.
       default: enable
       options:
-        enable: Enable
-        disable: Disable
+        enable: Włącz
+        disable: Wyłącz
 
     items:
       type: collection.list
       array: true
-      label: Owl Carousel Items
-      description: Create each Owl Carousel item to display.
+      label: Elementy
+      description: Utwórz każdy element do wyświetlenia.
       value: name
       ajax: true
 
       fields:
         .class:
           type: input.selectize
-          label: CSS Classes
-          description: CSS class names for the individual item.
+          label: Klasy CSS
+          description: Nazwy klas CSS dla poszczególnych elementów.
         .name:
           type: input.text
         .image:
           type: input.imagepicker
-          label: Image
-          description: Select desired image.
+          label: Obraz
+          description: Wybierz żądany obraz.
         .title:
           type: input.text
-          label: Title
-          description: Enter the title
+          label: Tytuł
+          description: Wpisz tytuł
         .desc:
           type: textarea.textarea
-          label: Description
-          description: Customize the description.
-          placeholder: Enter short description
+          label: Opis
+          description: Dostosuj opis.
+          placeholder: Wprowadź krótki opis
         .link:
           type: input.text
           label: Link
-          description: Input the item link.
+          description: Wprowadź link do elementu.
         .linktext:
           type: input.text
-          label: Link Text
-          description: Input the text for the item link.
+          label: Tekst łącza
+          description: Wprowadź tekst dla linku do elementu.
         .buttonclass:
           type: input.text
-          label: Button Class
-          description: Input the button class.
+          label: Klasa przycisków
+          description: Wprowadź klasę przycisku.
           default: 'button-outline'
         .disable:
           type: input.checkbox
-          label: Disable
-          description: Disables the item on the front end.
+          label: Wyłącz
+          description: Wyłącza element na froncie.
           default: false

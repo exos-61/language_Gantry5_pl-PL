@@ -1,5 +1,5 @@
-name: Horizontal Menu
-description: Display horizontal menu.
+name: Menu poziome
+description: Wyświetlanie menu poziomego.
 type: particle
 icon: fa-forward
 
@@ -11,41 +11,41 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable icon menu particles.
       default: true
 
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Nazwa klasy CSS dla Modułu-G5
 
     target:
       type: select.select
-      label: Target
+      label: Strona docelowa
       description: Target browser window when item is clicked.
-      placeholder: 'Select...'
+      placeholder: 'Wybierz...'
       default: _blank
       options:
-          _parent: Self
-          _blank: New Window
+          _parent: To samo okno
+          _blank: Nowe okno
 
     items:
       type: collection.list
       array: true
-      label: Menu Items
-      description: Create each menu item to display.
+      label: Elementy menu
+      description: Utwórz każdą pozycję menu do wyświetlenia.
       value: name
       ajax: true
 
       fields:
         .name:
           type: input.text
-          label: Name
+          label: Nazwa
           skip: true
         .text:
           type: input.text
-          label: Text
+          label: Tekst
         .link:
           type: input.text
           label: Link

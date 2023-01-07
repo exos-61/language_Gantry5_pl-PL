@@ -76,36 +76,36 @@ Zgodnie z [dokumentacją](https://docs.gantry.org/gantry5/advanced/customizing-t
   * configuration.yaml
   * details.yaml
 * administrator/components/com_gantry5/blueprints/menu
-  * menu.yaml - *ustawienia menu, koło zębate na prawo.*
-  * menuitem.yaml - *ustawienia elementu menu*
+  * menu.yaml - *Główne stawienia menu, koło zębate na prawo.*
+  * menuitem.yaml - *Ustawienia elementu menu.*
 
 **engine**
 
 * media/gantry5/engines/nucleus/admin/blueprints/layout
-  * block.yaml - *Zakładka Blok (Block)*
-  * container.yaml - *Zakładka Kontener (Container)*
-  * offcanvas.yaml - *Zakładka Offcanvas*
-  * section - *zakładka Sekcja (Section)*
+  * block.yaml - *Zakładka Blok (Block).*
+  * container.yaml - *Zakładka Kontener (Container).*
+  * offcanvas.yaml - *Zakładka Offcanvas.*
+  * section - *zakładka Sekcja (Section).*
 * media/gantry5/engines/nucleus/admin/blueprints/layout/inheritance
-  * atom.yaml - *Zakładka Dziedziczenie Wtyczka-G5*
-  * offcanvas.yaml - *Zakładka Dziedziczenie sekcja Offcanvas*
-  * particle.yaml - *Zakładka Dziedziczenie Moduł-G5*
-  * position.yaml - *Zakładka Dziedziczenie Pozycja-G5*
-  * section.yaml - *Zakładka Dziedziczenie Sekcja*
-  * system.yaml - *Zakładka Dziedziczenie Komunikat systemu*
+  * atom.yaml - *Zakładka Dziedziczenie Wtyczka-G5.*
+  * offcanvas.yaml - *Zakładka Dziedziczenie sekcja Offcanvas.*
+  * particle.yaml - *Zakładka Dziedziczenie Moduł-G5.*
+  * position.yaml - *Zakładka Dziedziczenie Pozycja-G5.*
+  * section.yaml - *Zakładka Dziedziczenie Sekcja.*
+  * system.yaml - *Zakładka Dziedziczenie Komunikat systemu.*
 * media/gantry5/engines/nucleus/admin/blueprints/layout/inheritance/messages
-  * default.yaml - *Komunikat informuje że element może być dziedziczony z szablonu bazowego*
-  * empty.yaml - *Komunikat w przypadku braku podobnych elementów do dziedziczenia*
-  * inherited.yaml - *Komunikat informuje które szablony dziedziczą dany element*
+  * default.yaml - *Komunikat informuje że element może być dziedziczony z szablonu bazowego.*
+  * empty.yaml - *Komunikat w przypadku braku podobnych elementów do dziedziczenia.*
+  * inherited.yaml - *Komunikat informuje które szablony dziedziczą dany element.*
 * media/gantry5/engines/nucleus/admin/blueprints/menu
   * block.yaml - *Zakładka Blok w menu blokowym z Modułami-G5. Układ (Layout) bloku.*
 * media/gantry5/engines/nucleus/admin/blueprints/position
   * chrome.yaml
 * media/gantry5/engines/nucleus/blueprints/page
-  * assets.yaml - *Ustawienia strony - Assets - dodatkowe zasoby*
-  * body.yaml - *Ustawienia strony - Atrybuty sekcji body*
-  * fontawesome - *Ustawienia strony - Ustawienia Font Awesome*
-  * head - *Ustawienia strony - Właściwości sekcji Head*
+  * assets.yaml - *Ustawienia strony - Assets - dodatkowe zasoby.*
+  * body.yaml - *Ustawienia strony - Atrybuty sekcji body.*
+  * fontawesome - *Ustawienia strony - Ustawienia Font Awesome.*
+  * head - *Ustawienia strony - Właściwości sekcji Head.*
 * media/gantry5/engines/nucleus/particles
   * analytics.yaml - *Wtyczka-G5 (Atom) - Konfiguracja Google Analytics.*
   * assets.yaml - *Wtyczka-G5 (Atom) - Konfiguracja niestandardowego CSS i Javascript.*
@@ -120,9 +120,13 @@ Zgodnie z [dokumentacją](https://docs.gantry.org/gantry5/advanced/customizing-t
   * logo.yaml - *Moduł-G5 (Particle) - Wyświetla logo strony*
   * menu.yaml - *Moduł-G5 (Particle) - Menu Gantry*
   * messages.yaml - *Pozycja-G5 (Particle) - Wyświetlanie komunikatów systemowych.*
-  * mobile-menu.yaml - *Moduł-G5 (Particle) - Renderuje kontener menu mobilnego dla sekcji offcanvas. Mobile Menu*
+  * mobile-menu.yaml - *Moduł-G5 (Particle) - Renderuje kontener menu mobilnego dla sekcji offcanvas. Mobile Menu.*
   * module.yaml - *Pozycja-G5 (Particle) - Wyświetlanie Modułów-G5 i Joomla w określonym położeniu w układzie strony. Module Instance (Instancja modułu).*
   * position.yaml - *Pozycja-G5 (Particle) - Pozycje do umieszczania modułów w Joomla.*
   * social.yaml - *Moduł-G5 (Particle) - Wyświetla przyciski społecznościowe.*
   * spacer.yaml - *Pozycja-G5 (Particle) - Dodaje pustą kolumnę do wiersza.*
   * totop.yaml - *Moduł-G5 (Particle) - Umożliwia powrót na górę strony.*
+
+### Dodatkowa treść poza projektem
+
+Do przetłumaczonych plików konfiguracyjnych .yaml dodałem sygnatury językowe dla, których treść znajduje się w głównym pliku językowym  **pl-PL.com_gantry5.ini** na końcu arkusza. Sygnatury umieściłem w **_info** i **_alert** plików yaml.

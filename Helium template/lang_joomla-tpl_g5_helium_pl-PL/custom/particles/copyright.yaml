@@ -1,5 +1,5 @@
-name: Copyright
-description: Display copyright information.
+name: Prawa autorskie
+description: Wyświetlanie informacji o prawach autorskich.
 type: particle
 icon: fa-copyright
 
@@ -11,48 +11,48 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable the particle.
       default: true
 
     date.start:
       type: input.text
-      label: Start Year
-      description: Select the copyright start year.
+      label: Rok rozpoczęcia
+      description: Wybierz rok rozpoczęcia obowiązywania praw autorskich.
       default: now
 
     date.end:
       type: input.text
-      label: End Year
-      description: Select the copyright end year.
+      label: Rok zakończenia
+      description: Wybierz rok zakończenia praw autorskich.
       default: now
 
     owner:
       type: input.text
-      label: Copyright owner
-      description: Add copyright owner name.
+      label: Właściciel praw autorskich
+      description: Dodaj nazwę właściciela praw autorskich.
 
     link:
       type: input.text
-      label: Owner Link
-      description: Add link for owner.
+      label: Link do właściciela
+      description: Dodaj link dla właściciela.
 
     target:
       type: select.select
-      label: Owner Link Target
-      description: Target browser window when owner link is clicked.
-      placeholder: 'Select...'
+      label: Cel połączenia
+      description: Docelowe okno przeglądarki po kliknięciu linku właściciela.
+      placeholder: 'Wybierz...'
       default: _blank
       options:
-          _parent: Self
-          _blank: New Window
+          _parent: To samo okno
+          _blank: Nowe okno
 
     additional.text:
       type: input.text
-      label: Additional Text
-      description: Additional text that you'd like to add below the copyright.
+      label: Tekst dodatkowy
+      description: Dodatkowy tekst, który chciałbyś dodać poniżej praw autorskich.
 
     css.class:
       type: input.text
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Nazwa klasy CSS dla cząsteczki.

@@ -1,5 +1,5 @@
-name: Content Cubes
-description: Display content in side-by-side cubes.
+name: Zawartość blokowa
+description: Wyświetlanie treści w blokach obok siebie.
 type: particle
 icon: fa-cube
 
@@ -11,26 +11,26 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
-      description: Globally enable the particle.
+      label: Włączone
+      description: Globalnie włącz Moduł-G5
       default: true
 
     css.class:
       type: input.text
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Nazwa klasy CSS dla Modułu-G5
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
       placeholder: Enter title
 
     items:
       type: collection.list
       array: true
-      label: Content Items
-      description: Create each item to display.
+      label: Elementy treści
+      description: Utwórz każdy element do wyświetlenia.
       value: name
       ajax: true
 
@@ -39,76 +39,76 @@ form:
           type: input.text
         .image:
           type: input.imagepicker
-          label: Image
-          description: Select desired image.
+          label: Obraz
+          description: Wybierz żądane zdjęcie.
         .imageposition:
           type: select.select
-          label: Image Position
-          description: Should the image appear on the left or right of the content.
+          label: Pozycja obrazu
+          description: Czy obraz powinien pojawiać się po lewej czy po prawej stronie treści.
           default: left
           options:
-            left: Left
-            right: Right
+            left: Z lewej strony
+            right: Z prawej strony
         .label:
           type: input.text
-          label: Label
-          description: Enter the label that appears on top of the title
+          label: Etykieta
+          description: Wpisz etykietę, która pojawi się na górze tytułu
         .title:
           type: input.text
-          label: Title
-          description: Enter the title
+          label: Tytuł
+          description: Wpisz tytuł
         .tags:
           type: collection.list
           array: true
-          label: Tags
-          description: Create each tag to display.
+          label: Tagi
+          description: Utwórz każdy tag do wyświetlenia.
           value: text
           ajax: true
 
           fields:
             .text:
               type: input.text
-              label: Tag Text
-              description: Input the text to be used as tag.
+              label: Tekst tagu
+              description: Wprowadź tekst, który ma być użyty jako tag.
             .icon:
               type: input.icon
-              label: Tag Icon
-              description: Input the icon.
+              label: Ikona tagu
+              description: Wprowadź ikonę.
               default: 'fa fa-tag'
             .link:
               type: input.text
-              label: Tag Link
-              description: Specify the tag link.
+              label: Link tagu
+              description: Określenie odnośnika do znacznika.
             .target:
               type: select.selectize
-              label: Target
-              description: Target browser window when item is clicked.
-              placeholder: 'Select...'
+              label: Strona docelowa
+              description: Docelowe okno przeglądarki po kliknięciu elementu.
+              placeholder: 'Wybierz...'
               default: _self
               options:
-                  _self: Self
-                  _blank: New Window
+                  _self: To samo okno
+                  _blank: Nowe okno
 
         .link:
           type: input.text
           label: Link
-          description: Input the item link.
+          description: Wprowadź link do elementu.
         .linktext:
           type: input.text
-          label: Link Text
-          description: Input the text for the item link.
+          label: Tekst odnośnika
+          description: Wprowadź tekst dla linku do elementu.
           default: '&rarr;'
         .buttonclass:
           type: input.text
-          label: Button Class
-          description: Input the button class.
+          label: Klasa przycisków
+          description: Wprowadź klasę przycisku.
           default: ''
         .buttontarget:
           type: select.selectize
-          label: Button Target
-          description: Target browser window when item is clicked.
-          placeholder: 'Select...'
+          label: Cel przycisku
+          description: Docelowe okno przeglądarki po kliknięciu elementu.
+          placeholder: 'Wybierz...'
           default: _self
           options:
-              _self: Self
-              _blank: New Window
+              _self: To samo okno
+              _blank: Nowe okno
