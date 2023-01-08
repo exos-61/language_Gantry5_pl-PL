@@ -1,5 +1,5 @@
-name: Artukuły Joomla
-description: Display Joomla Articles.
+name: Artykuły Joomla
+description: Wyświetl artykuły Joomla.
 type: particle
 icon: fa-joomla fab
 
@@ -15,61 +15,61 @@ form:
       type: container.tabs
       fields:
         _tab_articles:
-          label: Articles
+          label: Artykuły
           overridable: false
           fields:
 
             title:
                 type: input.text
-                label: Title
-                description: Customize the title text.
-                placeholder: Enter title
+                label: Tytuł
+                description: Dostosuj tekst tytułu.
+                placeholder: Podaj tytuł
 
             article.filter.categories:
               type: joomla.categories
-              label: Categories
-              description: Select the categories the articles should be taken from.
+              label: Kategorie
+              description: Wybierz kategorie, z których mają być pobierane artykuły.
               overridable: false
 
             article.filter.articles:
               type: input.text
-              label: Articles
-              description: 'Enter the Joomla articles that should be shown. It should be a list of article IDs separated with a comma (i.e. 1,2,3,4,5).'
+              label: Artykuły
+              description: 'Wprowadź artykuły Joomla, które powinny być wyświetlane. Powinna to być lista identyfikatorów artykułów oddzielonych przecinkiem (np: 1,2,3,4,5).'
               overridable: false
 
             article.filter.featured:
               type: select.select
-              label: Featured Articles
-              description: Select how Featured articles should be filtered.
+              label: Polecane artykuły
+              description: Wybierz, w jaki sposób powinny być filtrowane artykuły polecane.
               default: ''
               options:
-                include: Include Featured
-                exclude: Exclude Featured
-                only: Only Featured
+                include: Zawiera polecane
+                exclude: Wyklucz polecane
+                only: Tylko polecane
               overridable: false
 
             article.limit.total:
               type: input.text
-              label: Number of Articles
-              description: Enter the maximum number of articles to display.
+              label: Liczba artykułów
+              description: Wprowadź maksymalną liczbę artykułów do wyświetlenia.
               default: 2
               pattern: '\d{1,2}'
               overridable: false
 
             article.display.pagination_buttons:
               type: select.select
-              label: Pagination
-              description: Select if the pagination buttons should be shown to allow users to see more articles.
+              label: Paginacja
+              description: Wybierz, czy przyciski paginacji powinny być wyświetlane, aby użytkownicy mogli zobaczyć więcej artykułów.
               default: ''
               options:
-                show: Show
-                '': Hide
+                show: Pokaż
+                '': Ukryj
               overridable: false
 
             article.limit.columns:
               type: select.select
-              label: Number of columns
-              description: Select the number of columns that you want articles to appear in.
+              label: Liczba kolumn
+              description: Wybierz liczbę kolumn, w których mają się pojawiać artykuły.
               default: 2
               options:
                 1: 1
@@ -82,119 +82,119 @@ form:
 
             article.limit.start:
               type: input.text
-              label: Start From
-              description: Enter offset specifying the first article to return. The default is '0' (the first article).
+              label: Zacznij od
+              description: Wprowadź offset określający pierwszy artykuł do zwrócenia. Domyślnie jest to '0' (pierwszy artykuł).
               default: 0
               pattern: '\d{1,2}'
               overridable: false
 
             article.sort.orderby:
               type: select.select
-              label: Order By
-              description: Select how the articles should be ordered by.
+              label: Porządkuj według
+              description: Wybierz, jak artykuły mają być uporządkowane.
               default: publish_up
               options:
-                publish_up: Published Date
-                created: Created Date
-                modified: Last Modified Date
-                title: Title
-                ordering: Ordering
-                hits: Hits
+                publish_up: Data publikacji
+                created: Data utworzenia
+                modified: Data ostatniej modyfikacji
+                title: Tytuł
+                ordering: Kolejność
+                hits: Popularność
                 id: ID
                 alias: Alias
               overridable: false
 
             article.sort.ordering:
               type: select.select
-              label: Ordering Direction
-              description: Select the direction the articles should be ordered by.
+              label: Kierunek
+              description: Wybierz kierunek, według którego mają być uporządkowane artykuły.
               default: ASC
               options:
-                ASC: Ascending
-                DESC: Descending
-                RANDOM: Random
+                ASC: Rosnący
+                DESC: Malejący
+                RANDOM: Losowo
               overridable: false
 
         _tab_display:
-          label: Display
+          label: Wyświetlanie
           fields:
             article.display.image.enabled:
               type: select.select
-              label: Image
-              description: Select if and what image of the article should be shown.
+              label: Obraz
+              description: Wybierz czy i jakie zdjęcie artykułu mają być pokazane.
               default: intro
               options:
-                intro: Intro
-                full: Full
-                '': None
+                intro: Wprowadzenia
+                full: Wszystkie
+                '': Brak
             article.display.text.type:
               type: select.select
-              label: Article Text
-              description: Select if and how the article text should be shown.
+              label: Tekst artykułu
+              description: Wybierz, czy i jak powinien być wyświetlany tekst artykułu.
               default: intro
               options:
-                intro: Introduction
-                full: Full Article
-                '': Hide
+                intro: Wprowadzenie
+                full: Pełny artykuł
+                '': Ukryj
 
             article.display.text.limit:
               type: input.text
-              label: Text Limit
-              description: Type in the number of characters the article text should be limited to.
+              label: Limit tekstu
+              description: Wpisz liczbę znaków, do której powinien być ograniczony tekst artykułu.
               default: ''
               pattern: '\d+'
 
             article.display.text.formatting:
               type: select.select
-              label: Text Formatting
-              description: Select the formatting you want to use to display the article text.
+              label: Formatowanie tekstu
+              description: Wybierz formatowanie, którego chcesz użyć do wyświetlenia tekstu artykułu.
               default: text
               options:
-                text: Plain Text
+                text: Zwykły tekst
                 html: HTML
 
             article.display.text.prepare:
               type: input.checkbox
-              label: Prepare Content
-              description: Use Joomla Content Plugins
+              label: Przygotuj zawartość
+              description: Użyj wtyczek treści Joomla
               default: false
 
             article.display.edit:
               type: input.checkbox
-              label: Show Edit Link
-              description: Display a link to the article edit form
+              label: Pokaż łącze edycji
+              description: Wyświetl link do formularza edycji artykułu
               default: false
 
             article.display.title.enabled:
               type: select.select
-              label: Title
-              description: Select if the article title should be shown.
+              label: Tytuł
+              description: Wybierz, czy tytuł artykułu ma być pokazywany.
               default: show
               options:
-                show: Show
-                '': Hide
+                show: Pokaż
+                '': Ukryj
 
             article.display.title.limit:
               type: input.text
-              label: Title Limit
-              description: Enter the maximum number of characters the article title should be limited to.
+              label: Limit tytułu
+              description: Wpisz maksymalną liczbę znaków, do której powinien być ograniczony tytuł artykułu.
               pattern: '\d+(\.\d+){0,1}'
 
             article.display.date.enabled:
               type: select.select
-              label: Date
-              description: Select if the article date should be shown.
+              label: Data
+              description: Wybierz, czy data artykułu ma być wyświetlana.
               default: published
               options:
-                created: Show Created Date
-                published: Show Published Date
-                modified: Show Modified Date
-                '': Hide
+                created: Pokaż datę utworzenia
+                published: Pokaż datę publikacji
+                modified: Pokaż datę modyfikacji
+                '': Ukryj
 
             article.display.date.format:
               type: select.date
-              label: Date Format
-              description: Select preferred date format. Leave empty not to display a date.
+              label: Format daty
+              description: Wybierz preferowany format daty. Pozostawić puste, aby nie wyświetlać daty.
               default: 'l, F d, Y'
               selectize:
                   allowEmptyOption: true
@@ -213,68 +213,68 @@ form:
                   'F d, Y': Date12
 
         _tab_readmore:
-          label: Read More
+          label: Czytaj więcej
           fields:
             article.display.read_more.enabled:
               type: select.select
-              label: Read More
-              description: "Select if the article 'Read More' button should be shown."
+              label: Czytaj więcej
+              description: "Wybierz, czy przycisk <strong>Czytaj więcej</strong> artykułu ma być wyświetlany."
               default: show
               options:
-                show: Show
-                '': Hide
+                show: Pokaż
+                '': Ukryj
 
             article.display.read_more.label:
               type: input.text
-              label: Read More Label
-              description: "Type in the label for the 'Read More' button."
-              placeholder: 'Read More...'
+              label: Etykieta Czytaj więcej
+              description: "Wpisz etykietę dla przycisku <strong>Czytaj więcej</strong>"
+              placeholder: 'Czytaj więcej...'
 
             article.display.read_more.css:
               type: input.selectize
-              label: Button CSS Classes
-              description: "CSS class name for the 'Read More' button."
+              label: Klasy CSS dla przycisków
+              description: "Nazwa klasy CSS dla przycisku <strong>Czytaj więcej</strong>"
 
         _tab_extras:
-          label: Extras
+          label: Dodaj
           fields:
             article.display.author.enabled:
               type: select.select
               label: Autor
-              description: Select if the article author should be shown.
+              description: Wybierz, czy autor artykułu ma być pokazany.
               default: show
               options:
-                show: Show
-                '': Hide
+                show: Pokaż
+                '': Ukryj
 
             article.display.category.enabled:
               type: select.select
-              label: Category
-              description: Select if and how the article category should be shown.
+              label: Kategoria
+              description: Wybierz czy i jak ma być pokazana kategoria artykułu.
               default: link
               options:
-                show: Show
-                link: Show with Link
-                '': Hide
+                show: Pokaż
+                link: Pokaż z linkiem
+                '': Ukryj
 
             article.display.hits.enabled:
               type: select.select
-              label: Hits
-              description: Select if the article hits should be shown.
+              label: Popularność
+              description: Wybierz, czy mają być pokazywane popularne artykuły.
               default: show
               options:
-                show: Show
-                '': Hide
+                show: Pokaż
+                '': Ukryj
 
     css.class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Nazwa klasy CSS dla Modułu-G5.
 
     extra:
       type: collection.keyvalue
-      label: Tag Attributes
-      description: Extra Tag attributes.
+      label: Atrybuty znaczników
+      description: Dodatkowe atrybuty tagów.
       key_placeholder: 'Key (data-*, style, ...)'
       value_placeholder: Wartość
       exclude: ['id', 'class']

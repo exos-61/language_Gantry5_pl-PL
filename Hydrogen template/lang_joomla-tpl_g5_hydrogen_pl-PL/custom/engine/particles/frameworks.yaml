@@ -14,7 +14,7 @@ form:
     _info:
       type: separator.note
       class: alert alert-info
-      content: '<strong>UWAGA</strong>: Włącz następujące frameworki tylko wtedy, gdy potrzebujesz ich we własnych cząstkach lub w swojej treści.'
+      content: '<strong>UWAGA</strong>: Włącz następujące frameworki tylko wtedy, gdy potrzebujesz ich we własnych cząstkach lub w swojej treści. Przykładowo jeżeli używasz Bootstrap w treści'
 
     jquery:
       type: container.set
