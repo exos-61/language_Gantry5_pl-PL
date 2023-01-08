@@ -1,5 +1,5 @@
-name: Animate On Scroll
-description: Add animations on scroll
+name: Animacja przewijania
+description: Dodaj animacje podczas przewijania
 type: atom
 
 configuration:
@@ -10,20 +10,20 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable particle.
       default: true
 
     duration:
       type: input.text
-      label: Duration
-      description: Values from 0 to 3000, with step 50ms
+      label: Czas trwania
+      description: Wartości od 0 do 3000, z krokiem co 50ms
       default: '1000'
 
-    once: 
+    once:
       type: select.select
-      label: Once
-      description: Whether animation should happen only once - while scrolling down
+      label: Raz
+      description: Czy animacja ma się zdarzyć tylko raz - podczas przewijania w dół
       default: 1
       options:
         1: 'true'
@@ -31,23 +31,23 @@ form:
 
     delay:
       type: input.text
-      label: Delay
-      description: Values from 0 to 3000, with step 50ms
-      default: '0'      
+      label: Opóźnienie
+      description: Wartości od 0 do 3000, z krokiem co 50ms
+      default: '0'
 
     easing:
       type: input.text
-      label: Easing
-      description: Default easing for AOS animations
+      label: Wygładzanie
+      description: Domyślne wygładzanie animacji AOS.
       default: ease
 
     offset:
       type: input.text
-      label: Offset
-      description: Offset (in px) from the original trigger point
-      default: '120'    
+      label: Przesunięcie
+      description: Przesunięcie (w px) względem oryginalnego punktu zaczepienia
+      default: '120'
 
     info:
       type: separator.note
       class: alert alert-info
-      content: 'For more information on how to use this atom, see <a href="https://www.rockettheme.com/docs/joomla/templates/ambrosia/aos.md">AOS documentation<i class="fa fa-external-link" aria-hidden="true"></i></a>.'       
+      content: 'Więcej informacji na temat używania tej Wtyczki-G5 można znaleźć w <a href="https://rockettheme.com/docs/joomla/templates/ambrosia/atom_aos.md" target="_blank">dokumentacji systemu AOS</a>.'

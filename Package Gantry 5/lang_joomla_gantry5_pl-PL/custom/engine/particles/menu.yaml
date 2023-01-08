@@ -24,7 +24,7 @@ form:
     menu:
       type: menu.list
       label: Menu
-      description: Wybierz menu, które ma być używane z Modułem-G5.Wybierz menu, które ma być używane z Modułem-G5.
+      description: Wybierz menu, które ma być używane z Modułem-G5.
       default: ''
       selectize:
           allowEmptyOption: true
@@ -38,7 +38,7 @@ form:
       description: "Wybierz pozycję menu, która ma być zawsze używana jako podstawa do wyświetlania menu."
       default: '/'
       options:
-        '/': Active
+        '/': Aktywny
 
     startLevel:
       type: input.text
@@ -66,12 +66,12 @@ form:
 
     mobileTarget:
       type: input.checkbox
-      label: Wuślij do Mobile Menu
+      label: Wyślij do Mobile Menu
       description: Zaznacz to pole, jeśli chcesz, aby to menu dołączyć do Mobile Menu i pojawiło się w Offcanvas
       default: 0
 
     forceTarget:
       type: input.checkbox
-      label: Force Target Attribute
+      label: Wymuś otwieranie w tym samym oknie
       description: "Dodaje atrybut 'target=&quot;_self&quot;' do wszystkich linków menu zamiast pomijać wartość domyślną. Naprawia problem z przypiętymi kartami w Firefoksie, gdzie linki zewnętrzne zawsze otwierały się w nowej karcie."
       default: 0

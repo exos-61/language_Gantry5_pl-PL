@@ -129,4 +129,4 @@ Zgodnie z [dokumentacją](https://docs.gantry.org/gantry5/advanced/customizing-t
 
 ### Dodatkowa treść poza projektem
 
-Do przetłumaczonych plików konfiguracyjnych .yaml dodałem sygnatury językowe dla, których treść znajduje się w głównym pliku językowym  **pl-PL.com_gantry5.ini** na końcu arkusza. Sygnatury umieściłem w **_info** i **_alert** plików yaml.
+Do przetłumaczonych plików konfiguracyjnych .yaml dodałem sygnatury językowe dla których treść znajduje się w głównym pliku językowym  **pl-PL.com_gantry5.ini** na końcu arkusza. Sygnatury umieściłem w **_info** i **_alert** plików yaml.

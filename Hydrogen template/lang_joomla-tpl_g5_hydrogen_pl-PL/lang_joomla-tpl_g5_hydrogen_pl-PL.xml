@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="file" version="2.5" method="upgrade">
 
-    <name>lang_joomla-tpl_g5_hydrogen_pl-PL</name>
+    <name>Spolszczenie szablonu Hydrogen</name>
     <author>Zbigniew Sokal</author>
     <creationDate>07 January 2022</creationDate>
     <copyright>(C) 2018-2023 Poradniki Dziadka</copyright>

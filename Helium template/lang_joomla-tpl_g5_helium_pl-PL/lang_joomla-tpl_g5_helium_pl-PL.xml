@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="file" version="2.5" method="upgrade">
 
-    <name>lang_joomla-tpl_g5_helium_pl-PL</name>
+    <name>Spolszczenie szablonu Helium</name>
     <author>Zbigniew Sokal</author>
     <creationDate>07 January 2022</creationDate>
     <copyright>(C) 2018-2023 Poradniki Dziadka</copyright>
@@ -14,7 +14,7 @@
     <fileset>
         <!-- templates -->
 
-        <files folder="custom/blueprints/styles" target="templates/g5_hydrogen/custom/blueprints/styles">
+        <files folder="custom/blueprints/styles" target="templates/g5_helium/custom/blueprints/styles">
             <filename>above.yaml</filename>
             <filename>accent.yaml</filename>
             <filename>base.yaml</filename>
@@ -33,11 +33,11 @@
             <filename>utility.yaml</filename>
         </files>
 
-        <files folder="custom/layouts" target="templates/g5_hydrogen/custom/layouts">
+        <files folder="custom/layouts" target="templates/g5_helium/custom/layouts">
             <filename>home_-_particles.yaml</filename>
         </files>
 
-        <files folder="custom/particles" target="templates/g5_hydrogen/custom/particles">
+        <files folder="custom/particles" target="templates/g5_helium/custom/particles">
             <filename>contentcubes.yaml</filename>
             <filename>contenttabs.yaml</filename>
             <filename>copyright.yaml</filename>
@@ -45,31 +45,31 @@
             <filename>owlcarousel.yaml</filename>
         </files>
 
-        <files folder="language/pl-PL" target="templates/g5_hydrogen/language/pl-PL">
+        <files folder="language/pl-PL" target="templates/g5_helium/language/pl-PL">
             <filename>pl-PL.tpl_g5_helium.ini</filename>
             <filename>pl-PL.tpl_g5_helium.sys.ini</filename>
         </files>
 
         <!-- Gantry 5 -->
         <!-- administrator -> custom/admin -->
-        <files folder="custom/admin/blueprints/gantry/theme" target="templates/g5_hydrogen/custom/admin/blueprints/gantry/theme">
+        <files folder="custom/admin/blueprints/gantry/theme" target="templates/g5_helium/custom/admin/blueprints/gantry/theme">
             <filename>configuration.yaml</filename>
             <filename>details.yaml</filename>
         </files>
 
-        <files folder="custom/admin/blueprints/menu" target="templates/g5_hydrogen/custom/admin/blueprints/menu">
+        <files folder="custom/admin/blueprints/menu" target="templates/g5_helium/custom/admin/blueprints/menu">
             <filename>menu.yaml</filename>
             <filename>menuitem.yaml</filename>
         </files>
 
         <!-- media -> custom/engine -->
-        <files folder="custom/engine/admin/blueprints/layout/inheritance/messages" target="templates/g5_hydrogen/custom/engine/admin/blueprints/layout/inheritance/messages">
+        <files folder="custom/engine/admin/blueprints/layout/inheritance/messages" target="templates/g5_helium/custom/engine/admin/blueprints/layout/inheritance/messages">
             <filename>default.yaml</filename>
             <filename>empty.yaml</filename>
             <filename>inherited.yaml</filename>
         </files>
 
-        <files folder="custom/engine/admin/blueprints/layout/inheritance" target="templates/g5_hydrogen/custom/engine/admin/blueprints/layout/inheritance">
+        <files folder="custom/engine/admin/blueprints/layout/inheritance" target="templates/g5_helium/custom/engine/admin/blueprints/layout/inheritance">
             <filename>atom.yaml</filename>
             <filename>offcanvas.yaml</filename>
             <filename>particle.yaml</filename>
@@ -78,29 +78,29 @@
             <filename>system.yaml</filename>
         </files>
 
-        <files folder="custom/engine/admin/blueprints/layout" target="templates/g5_hydrogen/custom/engine/admin/blueprints/layout">
+        <files folder="custom/engine/admin/blueprints/layout" target="templates/g5_helium/custom/engine/admin/blueprints/layout">
             <filename>block.yaml</filename>
             <filename>container.yaml</filename>
             <filename>offcanvas.yaml</filename>
             <filename>section.yaml</filename>
         </files>
 
-        <files folder="custom/engine/admin/blueprints/menu" target="templates/g5_hydrogen/custom/engine/admin/blueprints/menu">
+        <files folder="custom/engine/admin/blueprints/menu" target="templates/g5_helium/custom/engine/admin/blueprints/menu">
             <filename>block.yaml</filename>
         </files>
 
-        <files folder="custom/engine/admin/blueprints/position" target="templates/g5_hydrogen/custom/engine/admin/blueprints/position">
+        <files folder="custom/engine/admin/blueprints/position" target="templates/g5_helium/custom/engine/admin/blueprints/position">
             <filename>chrome.yaml</filename>
         </files>
 
-        <files folder="custom/engine/blueprints/page" target="templates/g5_hydrogen/custom/engine/blueprints/page">
+        <files folder="custom/engine/blueprints/page" target="templates/g5_helium/custom/engine/blueprints/page">
             <filename>assets.yaml</filename>
             <filename>body.yaml</filename>
             <filename>fontawesome.yaml</filename>
             <filename>head.yaml</filename>
         </files>
 
-        <files folder="custom/engine/particles" target="templates/g5_hydrogen/custom/engine/particles">
+        <files folder="custom/engine/particles" target="templates/g5_helium/custom/engine/particles">
             <filename>analytics.yaml</filename>
             <filename>assets.yaml</filename>
             <filename>branding.yaml</filename>
