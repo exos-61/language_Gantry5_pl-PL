@@ -1,0 +1,20 @@
+name: Kolory górnej sekcji głównej - MainTop
+description: MainTop colors for the Audacity theme
+type: section
+
+form:
+  fields:
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_MAIN_INFO
+
+    background:
+      type: input.colorpicker
+      label: Kolor tła
+      default: "#ffffff"
+    text-color:
+      type: input.colorpicker
+      label: Kolor tekstu
+      default: "#8f8f8f"

@@ -1,0 +1,24 @@
+name: Rodziny czcionek
+description: Font families for the Ethereal theme
+type: core
+
+form:
+  fields:
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_FONT_INFO
+
+    family-default:
+      type: input.fonts
+      label: Czcionka strony
+      default: 'asap, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+    family-title:
+      type: input.fonts
+      label: Czcionka tytułu
+      default: 'poly, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+    family-promo:
+      type: input.fonts
+      label: Czcionka promo (ozdobna)
+      default: 'aguafinascript, Helvetica, Tahoma, Geneva, Arial, sans-serif'

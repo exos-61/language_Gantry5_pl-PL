@@ -1,0 +1,15 @@
+name: Style podstawowe
+description: Base styles for the Audacity theme
+type: core
+
+form:
+  fields:
+
+    background:
+      type: input.colorpicker
+      label: Podstawowy kolor tła
+      default: "#e8e8e8"
+    text-color:
+      type: input.colorpicker
+      label: Podstawowy kolor tekstu
+      default: "#686868"

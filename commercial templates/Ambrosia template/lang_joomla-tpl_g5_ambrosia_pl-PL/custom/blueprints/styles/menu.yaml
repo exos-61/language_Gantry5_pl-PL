@@ -1,5 +1,5 @@
-name: Menu
-description: Set menu style configuration options.
+name: Style menu
+description: Ustaw opcje konfiguracji stylu menu.
 type: configuration
 
 form:

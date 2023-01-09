@@ -9,6 +9,12 @@ configuration:
 
 form:
   fields:
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_CORE_PARTICLE_LOGO_INFO
+
     enabled:
       type: input.checkbox
       label: Włączone

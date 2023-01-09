@@ -1,0 +1,15 @@
+name: Kolory sekcji powroty na górę - Top
+description: Top colors for the Ethereal theme
+type: section
+
+form:
+  fields:
+
+    background:
+      type: input.colorpicker
+      label: Kolor tła
+      default: "#dfdfdf"
+    text-color:
+      type: input.colorpicker
+      label: Kolor tekstu
+      default: "#787878"

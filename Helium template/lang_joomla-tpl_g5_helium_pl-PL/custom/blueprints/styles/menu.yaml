@@ -1,5 +1,5 @@
-name: Menu
-description: Set menu style configuration options.
+name: Style menu
+description: Ustaw opcje konfiguracji stylu menu.
 type: configuration
 
 form:
@@ -12,8 +12,8 @@ form:
 
     col-width:
       type: input.text
-      label: Simple Dropdown Width
-      description: 'Specify the default width of menu dropdowns for simple mode in rem, em or px units. This width can be overridden on each individual menu item from the menu editor.'
+      label: Prosta szerokość rozwijania
+      description: 'Określ domyślną szerokość rozwijanych menu dla trybu prostego w jednostkach rem, em lub px. Ta szerokość może być nadpisana na każdej indywidualnej pozycji menu w edytorze menu.'
       default: "180px"
       pattern: '\d+(\.\d+){0,1}(rem|em|px)'
 

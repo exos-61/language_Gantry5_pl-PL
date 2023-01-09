@@ -26,4 +26,4 @@ form:
     _info:
       type: separator.note
       class: alert alert-info
-      content: DZIADEK_GUIDE_GANTRY5_PARTICLE_ANALYTICS_INFO
+      content: DZIADEK_GUIDE_GANTRY5_CORE_PARTICLE_ANALYTICS_INFO

@@ -1,9 +1,14 @@
-name: Kolory sekcji funkcji Feature
+name: Kolory sekcji funkcji - Feature
 description: Features section styles for the Helium theme
 type: section
 
 form:
   fields:
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_FEATURE_INFO
 
     background:
       type: input.colorpicker

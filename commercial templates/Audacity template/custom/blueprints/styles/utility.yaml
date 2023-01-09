@@ -1,0 +1,15 @@
+name: Kolory sekcji Utility
+description: Utility colors for the Audacity theme
+type: section
+
+form:
+  fields:
+
+    background:
+      type: input.colorpicker
+      label: Kolor tła
+      default: "#e10a30"
+    text-color:
+      type: input.colorpicker
+      label: Kolor tekstu
+      default: "#ffffff"

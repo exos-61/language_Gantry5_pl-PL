@@ -1,5 +1,5 @@
-name: Block Content
-description: Displays Block Content
+name: Blok Treści
+description: Wyświetla zawartość bloku
 type: particle
 icon: fa-th-large
 
@@ -12,150 +12,155 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable particle.
       default: true
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_BLOCKCONTENT_INFO
+
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Nazwa klasy CSS dla Modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     icon:
       type: input.icon
-      label: Icon
-      description: Select the icon.
+      label: Ikona
+      description: Wybierz ikonę.
 
     image:
       type: input.imagepicker
-      label: Image
-      description: Select the main image.
+      label: Obraz
+      description: Wybierz główny obraz.
 
     headline:
       type: input.text
-      label: Headline
-      description: Customize the headline text.
-      placeholder: Enter headline
+      label: Nagłówek
+      description: Dostosuj tekst nagłówka.
+      placeholder: Wpisz nagłówek
 
     description:
       type: textarea.textarea
-      label: Description
-      description: Customize the description.
-      placeholder: Enter short description
+      label: Opis
+      description: Dostosuj opis.
+      placeholder: Wprowadź krótki opis
 
     linktext:
       type: input.text
-      label: Button Label
-      description: Customize the button label.
+      label: Etykieta przycisku
+      description: Dostosuj etykietę przycisku.
 
     link:
       type: input.text
-      label: Button Link
-      description: Specify the button link address.
+      label: Link Przycisku
+      description: Określ adres łącza dla przycisku.
 
     linkclass:
       type: input.selectize
-      label: Button Classes
-      description: CSS class names for the button.
+      label: Klasy przycisku
+      description: Nazwy klas CSS dla przycisku.
 
     linktarget:
       type: select.selectize
-      label: Target
-      description: Target browser window when item is clicked.
-      placeholder: 'Select...'
+      label: Docelowe okno
+      description: Docelowe okno przeglądarki po kliknięciu elementu.
+      placeholder: 'Wybierz...'
       default: _self
       options:
-          _self: Self
-          _blank: New Window
+          _self: W tym samym oknie
+          _blank: Nowe okno
 
     subcontents:
       type: collection.list
       array: true
-      label: Content Items
-      description: Create each item to appear in the content row.
+      label: Elementy treści
+      description: Utwórz każdy element, aby pojawił się w wierszu zawartości.
       value: title
       ajax: true
 
       fields:
         .name:
           type: input.text
-          label: Title
-          description: Enter title.
-              
+          label: Tytuł
+          description: Podaj tytuł.
+
         .accent:
           type: select.selectize
-          label: Accent
-          description: Select preferred block accent color.
+          label: Akcent
+          description: Wybierz preferowany kolor akcentujący bloku.
           placeholder: 'Select...'
           default: none
           options:
-              none: None
-              accent1: Accent Color 1
-              accent2: Accent Color 2
-              accent3: Accent Color 3
+              none: Brak
+              accent1: Kolor akcentujący 1
+              accent2: Kolor akcentujący 2
+              accent3: Kolor akcentujący 3
         .icon:
           type: input.icon
-          label: Icon
-          description: Select the icon.
+          label: Ikona
+          description: Wybierz ikonę.
 
         .img:
           type: input.imagepicker
-          label: Image
-          description: Select the image.
+          label: Obraz
+          description: Wybierz obraz.
 
         .rokboximage:
           type: input.imagepicker
-          label: Lightcase Image
-          description: Select the Lightcase image.
+          label: Obraz Lightcase
+          description: Wybierz zdjęcie dla funkcji Lightcase. Lightcase to elastyczna i rozszerzalna aplikacja internetowa do prezentacji różnych formatów multimediów.
 
         .rokboxcaption:
           type: input.text
-          label: Caption
-          description: Customize the Lightcase caption.
-          placeholder: Enter caption
+          label: Podpis
+          description: Dostosowanie podpisu obrazka w funkcji Lightcase.
+          placeholder: Wpisz podpis
 
         .subtitle:
           type: input.text
-          label: Subtitle
-          description: Enter subtitle.
+          label: Podtytuł
+          description: Wprowadź podtytuł.
 
         .description:
           type: textarea.textarea
-          label: Description
-          description: Enter the descriptiopn.
+          label: Opis
+          description: Wprowadź opis.
 
         .class:
           type: input.selectize
-          label: CSS Classes
-          description: CSS class name for the particle.
+          label: Klasy CSS
+          description: Nazwa klasy CSS dla Modułu-G5.
 
         .button:
           type: input.text
-          label: Button Label
-          description: Specify the button label.
+          label: Etykieta przycisku
+          description: Określenie etykiety przycisku.
 
         .buttonlink:
           type: input.text
-          label: Button Link
-          description: Specify the button link.
+          label: Link do przycisku
+          description: Określenie łącza do przycisku.
 
         .buttonclass:
           type: input.selectize
-          label: Button Classes
-          description: CSS class names for the button.
+          label: Klasy przycisków
+          description: Nazwy klas CSS dla przycisku.
 
         .buttontarget:
           type: select.selectize
-          label: Target
-          description: Target browser window when item is clicked.
-          placeholder: 'Select...'
+          label: Okno docelowe
+          description: Okno docelowe przeglądarki po kliknięciu elementu.
+          placeholder: 'Wybierz...'
           default: _self
           options:
-              _self: Self
-              _blank: New Window
+              _self: W tym samym oknie
+              _blank: Nowe okno

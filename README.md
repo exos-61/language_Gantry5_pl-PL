@@ -89,10 +89,10 @@ Zgodnie z [dokumentacją](https://docs.gantry.org/gantry5/advanced/customizing-t
 * media/gantry5/engines/nucleus/admin/blueprints/layout/inheritance
   * atom.yaml - *Zakładka Dziedziczenie Wtyczka-G5.*
   * offcanvas.yaml - *Zakładka Dziedziczenie sekcja Offcanvas.*
-  * particle.yaml - *Zakładka Dziedziczenie Moduł-G5.*
-  * position.yaml - *Zakładka Dziedziczenie Pozycja-G5.*
-  * section.yaml - *Zakładka Dziedziczenie Sekcja.*
-  * system.yaml - *Zakładka Dziedziczenie Komunikat systemu.*
+  * particle.yaml - *Zakładka Dziedziczenie w ustawieniach Modułu-G5.*
+  * position.yaml - *Zakładka Dziedziczenie w ustawieniach pozycji Pozycji-G5.*
+  * section.yaml - *Zakładka Dziedziczenie w ustawieniach Sekcji (Section).*
+  * system.yaml - *Zakładka Dziedziczenie w ustawieniach pozycji Komunikatów systemu (System Messenger).*
 * media/gantry5/engines/nucleus/admin/blueprints/layout/inheritance/messages
   * default.yaml - *Komunikat informuje że element może być dziedziczony z szablonu bazowego.*
   * empty.yaml - *Komunikat w przypadku braku podobnych elementów do dziedziczenia.*
@@ -109,7 +109,7 @@ Zgodnie z [dokumentacją](https://docs.gantry.org/gantry5/advanced/customizing-t
 * media/gantry5/engines/nucleus/particles
   * analytics.yaml - *Wtyczka-G5 (Atom) - Konfiguracja Google Analytics.*
   * assets.yaml - *Wtyczka-G5 (Atom) - Konfiguracja niestandardowego CSS i Javascript.*
-  * branding.yaml - **Moduł-G5 (Particle) - Konfiguracja informacji branżowych*
+  * branding.yaml - *Moduł-G5 (Particle) - Wyświetlanie linku do informacji branżowych*
   * content.yaml - *Pozycja-G5 (Particle) - Wyświetlanie zawartości strony w określonym położeniu w układzie strony.*
   * contentarray.yaml - *Moduł-G5 (Particle) -*
   * copyright.yaml - *Moduł-G5 (Particle) - Wyświetlanie informacji o prawach autorskich.*

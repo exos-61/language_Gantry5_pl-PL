@@ -1,0 +1,15 @@
+name: Style podstawowe
+description: Base styles for the Ethereal theme
+type: core
+
+form:
+  fields:
+
+    background:
+      type: input.colorpicker
+      label: Podstawowy kolor tła
+      default: "#ffffff"
+    text-color:
+      type: input.colorpicker
+      label: Podstawowy kolor tekstu
+      default: "#888888"

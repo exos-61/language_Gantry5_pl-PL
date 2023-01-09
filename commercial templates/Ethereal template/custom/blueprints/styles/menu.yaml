@@ -1,0 +1,22 @@
+name: Style menu
+description: Ustaw opcje konfiguracji stylu menu.
+type: configuration
+
+form:
+  fields:
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_MENU_INFO
+
+    animation:
+      type: select.selectize
+      label: Animacja rozwijania
+      description: Wybierz animację rozwijania menu.
+      default: g-fade
+      options:
+        g-no-animation: No Animation
+        g-fade: Zanikanie
+        g-zoom: Powiększenie
+        g-fade-in-up: Zanikanie w górę

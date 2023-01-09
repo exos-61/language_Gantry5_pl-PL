@@ -1,15 +1,20 @@
-name: Subfeature Colors
+name: Kolory sekcji Subfeature
 description: Subfeature colors for the Hydrogen theme
 type: section
 
 form:
   fields:
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_STYLE_SUBFEATURE_INFO
+
     background:
       type: input.colorpicker
-      label: Background
+      label: Kolor tła
       default: "#f0f0f0"
     text-color:
       type: input.colorpicker
-      label: Text
+      label: Kolor tekstu
       default: "#666666"

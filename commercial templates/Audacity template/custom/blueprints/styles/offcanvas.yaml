@@ -1,0 +1,39 @@
+name: Sekcja elementów w tle - Offcanvas
+description: Paramters for the Off Canvas sidepanel section.
+type: section
+
+form:
+  fields:
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_OFFCANVAS_INFO
+
+    background:
+      type: input.colorpicker
+      label: Kolor tła
+      default: "#efefef"
+    text-color:
+      type: input.colorpicker
+      label: Kolor tekstu
+      default: "#e10a30"
+    width:
+      type: input.text
+      label: Szerokość panelu
+      description: Ustaw rozmiar offcanvas w wartościach rem, em, px lub jednostkach procentowych
+      default: "12rem"
+      pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'
+    toggle-color:
+      type: input.colorpicker
+      label: Kolor przełącznika
+      description: Ustaw kolor dla przełącznika (przycisku) który ujawnia na stronie element umieszczony w sekcji Offcanvas np. Menu na telefonie komórkowym.
+      default: "#e10a30"
+    toggle-visibility:
+      type: select.selectize
+      label: Widoczność przełącznika
+      description: Ustaw jak ma być widoczny przełącznik (przycisk) który ujawnia na stronie element umieszczony w sekcji Offcanvas. Czy tylko urządzeniach mobilnych czy na wszystkich urządzeniach.
+      default: 1
+      options:
+        1: Mobile Menu
+        2: Wszędzie

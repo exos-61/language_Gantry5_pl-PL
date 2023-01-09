@@ -1,0 +1,24 @@
+name: Rodziny czcionek
+description: Font families for the Audacity theme
+type: core
+
+form:
+  fields:
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_FONT_INFO
+
+    family-default:
+      type: input.fonts
+      label: Czcionka strony
+      default: 'ptserif, Verdana, Helvetica, Arial, sans-serif'
+    family-alt:
+      type: input.fonts
+      label: Czcionka Alt 1 (demonstracyjna)
+      default: 'playfairdisplay, Verdana, Helvetica, Arial, sans-serif'
+    family-alt2:
+      type: input.fonts
+      label: Czcionka Alt 2
+      default: 'roboto, Verdana, Helvetica, Arial, sans-serif'

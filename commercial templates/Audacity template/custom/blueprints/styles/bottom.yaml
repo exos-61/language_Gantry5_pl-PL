@@ -1,0 +1,20 @@
+name: Kolory dolnej sekcji - Bottom
+description: Bottom colors for the Audacity theme
+type: section
+
+form:
+  fields:
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_BOTTOM_INFO
+
+    background:
+      type: input.colorpicker
+      label: Kolor tła
+      default: "#ffffff"
+    text-color:
+      type: input.colorpicker
+      label: Kolor tekstu
+      default: "#8f8f8f"

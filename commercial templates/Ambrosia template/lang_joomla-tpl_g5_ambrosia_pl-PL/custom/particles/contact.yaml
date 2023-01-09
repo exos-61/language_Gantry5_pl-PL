@@ -1,5 +1,5 @@
-name: Contact
-description: Display contact.
+name: Kontakt
+description: Wyświetl kontakt.
 type: particle
 icon: fa-envelope-o
 
@@ -11,36 +11,42 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable particles.
       default: true
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_CONTACT_INFO
+
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tytułowy tekst.
+      placeholder: Podaj tytuł
 
     contactitems:
       type: collection.list
       array: true
-      label: Contact Items
-      description: Create each item to appear in the content row.
+      label: Pozycje kontaktowe
+      description: Utwórz każdy element oraz wprowadź nazwę, którą chcesz przypisać do elementu. Nazwa pojawi się na front-end.
       value: label
       ajax: true
 
       fields:
         .icon:
           type: input.icon
-          label: Icon
+          label: Ikona
         .label:
           type: input.text
-          label: Label
+          label: Etykieta
         .text:
           type: input.text
-          label: Value
+          label: Wartość
+          description: Wprowadź informacje, które składają się na wartość elementu np. dla telefonu - <code>+1 (555) 555 555</code> lub adres <code>88-100 Inowrocław ul. Pileckiego 5/6</code>.

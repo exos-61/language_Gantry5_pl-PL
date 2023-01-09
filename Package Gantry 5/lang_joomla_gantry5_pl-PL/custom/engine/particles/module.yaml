@@ -1,5 +1,5 @@
 name: Instancja modułu
-description: Wyświetlenie Modułu-G5 Module Instance (Instancja modułu).
+description: Wyświetlenie Pozycji-G5 Module Instance (Instancja modułu).
 type: position
 icon: fa-object-ungroup
 hidden: false
@@ -15,7 +15,7 @@ form:
     _info:
       type: separator.note
       class: alert alert-info
-      content: 'Aby zamontować moduł należy skorzystać z <a href="index.php?option=com_modules" target="_blank" data-g-urltemplate="index.php?option=com_modules&view=module&task=module.edit&id=#ID#" href="#">Menedżera modułów Joomla</a>.'
+      content: 'Aby zamontować moduł joomla należy skorzystać z <a href="index.php?option=com_modules" target="_blank" data-g-urltemplate="index.php?option=com_modules&view=module&task=module.edit&id=#ID#" href="#">Menedżera modułów Joomla</a>.'
 
     module_id:
       type: gantry.module

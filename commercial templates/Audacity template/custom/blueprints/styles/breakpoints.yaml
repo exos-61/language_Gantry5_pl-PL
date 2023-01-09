@@ -1,0 +1,42 @@
+name: Punkty przerwania - Breakpoint
+description: Breakpoint container sizes for different viewports
+type: configuration
+
+form:
+  fields:
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_STYLE_BREAKPOINTS_INFO
+
+    large-desktop-container:
+      type: input.text
+      label: Large Desktop
+      description: Ustaw rozmiar punktu przerwania w jednostkach rem, em, lub px dla dużych wyświetlaczy jak np. TV
+      default: "75rem"
+      pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'
+    desktop-container:
+      type: input.text
+      label: Desktop
+      description: Ustaw rozmiar punktu przerwania w jednostkach rem, em, lub px dla monitorów komputerowych.
+      default: "60rem"
+      pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'
+    tablet-container:
+      type: input.text
+      label: Tablet
+      description: Ustaw rozmiar punktu przerwania w jednostkach rem, em, lub px dla wyświetlaczy tabletów.
+      default: "48rem"
+      pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'
+    large-mobile-container:
+      type: input.text
+      label: Mobile
+      description: Ustaw rozmiar punktu przerwania w jednostkach rem, em, lub px dla telefonów komórkowych.
+      default: "30rem"
+      pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'
+    mobile-menu-breakpoint:
+      type: input.text
+      label: Mobile Menu
+      description: Ustaw rozmiar punktu przerwania w jednostkach rem, em, lub px do wyświetlania menu na urządzeniach przenośnych.
+      default: "48rem"
+      pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'

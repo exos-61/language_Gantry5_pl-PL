@@ -1,0 +1,166 @@
+name: Blok Treści
+description: Wyświetla zawartość bloku
+type: particle
+icon: fa-th-large
+
+configuration:
+  caching:
+    type: static
+
+form:
+  overrideable: false
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Włączone
+      description: Globally enable particle.
+      default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_BLOCKCONTENT_INFO
+
+    class:
+      type: input.selectize
+      label: Klasy CSS
+      description: Nazwa klasy CSS dla Modułu-G5.
+
+    title:
+      type: input.text
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
+
+    icon:
+      type: input.icon
+      label: Ikona
+      description: Wybierz ikonę.
+
+    image:
+      type: input.imagepicker
+      label: Obraz
+      description: Wybierz główny obraz.
+
+    headline:
+      type: input.text
+      label: Nagłówek
+      description: Dostosuj tekst nagłówka.
+      placeholder: Wpisz nagłówek
+
+    description:
+      type: textarea.textarea
+      label: Opis
+      description: Dostosuj opis.
+      placeholder: Wprowadź krótki opis
+
+    linktext:
+      type: input.text
+      label: Etykieta przycisku
+      description: Dostosuj etykietę przycisku.
+
+    link:
+      type: input.text
+      label: Link Przycisku
+      description: Określ adres łącza dla przycisku.
+
+    linkclass:
+      type: input.selectize
+      label: Klasy przycisku
+      description: Nazwy klas CSS dla przycisku.
+
+    linktarget:
+      type: select.selectize
+      label: Docelowe okno
+      description: Docelowe okno przeglądarki po kliknięciu elementu.
+      placeholder: 'Wybierz...'
+      default: _self
+      options:
+          _self: W tym samym oknie
+          _blank: Nowe okno
+
+    subcontents:
+      type: collection.list
+      array: true
+      label: Elementy treści
+      description: Utwórz każdy element, aby pojawił się w wierszu zawartości.
+      value: name
+      ajax: true
+
+      fields:
+        .title:
+          type: input.text
+          label: Tytuł
+          description: Podaj tytuł.
+
+        .accent:
+          type: select.selectize
+          label: Akcent
+          description: Wybierz preferowany kolor akcentujący bloku.
+          placeholder: 'Select...'
+          default: none
+          options:
+              none: Brak
+              accent1: Kolor akcentujący 1
+              accent2: Kolor akcentujący 2
+              accent3: Kolor akcentujący 3
+        .icon:
+          type: input.icon
+          label: Ikona
+          description: Wybierz ikonę.
+
+        .img:
+          type: input.imagepicker
+          label: Obraz
+          description: Wybierz obraz.
+
+        .rokboximage:
+          type: input.imagepicker
+          label: Obraz Lightcase
+          description: Wybierz zdjęcie dla funkcji Lightcase. Lightcase to elastyczna i rozszerzalna aplikacja internetowa do prezentacji różnych formatów multimediów.
+
+        .rokboxcaption:
+          type: input.text
+          label: Podpis
+          description: Dostosowanie podpisu obrazka w funkcji Lightcase.
+          placeholder: Wpisz podpis
+
+        .subtitle:
+          type: input.text
+          label: Podtytuł
+          description: Wprowadź podtytuł.
+
+        .description:
+          type: textarea.textarea
+          label: Opis
+          description: Wprowadź opis.
+
+        .class:
+          type: input.selectize
+          label: Klasy CSS
+          description: Nazwa klasy CSS dla Modułu-G5.
+
+        .button:
+          type: input.text
+          label: Etykieta przycisku
+          description: Określenie etykiety przycisku.
+
+        .buttonlink:
+          type: input.text
+          label: Link do przycisku
+          description: Określenie łącza do przycisku.
+
+        .buttonclass:
+          type: input.selectize
+          label: Klasy przycisków
+          description: Nazwy klas CSS dla przycisku.
+
+        .buttontarget:
+          type: select.selectize
+          label: Okno docelowe
+          description: Okno docelowe przeglądarki po kliknięciu elementu.
+          placeholder: 'Wybierz...'
+          default: _self
+          options:
+              _self: W tym samym oknie
+              _blank: Nowe okno
