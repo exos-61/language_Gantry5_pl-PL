@@ -1,5 +1,5 @@
-name: Progress Bar
-description: Display progressbar.
+name: Pasek postępu
+description: Wyświetlanie paska postępu.
 type: particle
 icon: fa-expand
 
@@ -12,27 +12,32 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable the particle.
       default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_PROGRESSBAR_INFO
 
     progressbar:
       type: collection.list
       array: true
-      label: Progress Bars
-      description: Create each item to appear in the content row.
+      label: Paski postępu
+      description: Utwórz każdy element, aby pojawił się w sekcji zawartości strony.
       value: name
       ajax: true
 
-      fields:        
+      fields:
         .title:
           type: input.text
-          label: Item Title
-          description: Customize the item title text.
-          placeholder: Enter item title       
+          label: Tytuł pozycji
+          description: Dostosuj tekst tytułu elementu.
+          placeholder: Wpisz tytuł pozycji
         .progress:
           type: input.number
-          label: Progress Amount
-          description: Specify the progress amount.
+          label: Wartość postępu
+          description: Określenie wartości postępu.
           max: 100
           default: 0

@@ -1,5 +1,5 @@
 name: Ethereal Block
-description: Display content in the Ethereal Block.
+description: Wyświetlanie zawartości w bloku Ethereal.
 type: particle
 icon: fa-indent
 
@@ -11,20 +11,25 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable particles.
       default: true
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_ETHEREALBLOCK_INFO
+
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     left:
       type: input.text

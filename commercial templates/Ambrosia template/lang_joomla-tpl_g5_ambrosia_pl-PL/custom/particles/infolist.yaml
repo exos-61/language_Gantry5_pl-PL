@@ -1,5 +1,5 @@
-name: Info List
-description: Displays Info List
+name: Lista Info
+description: Wyświetla listę informacji
 type: particle
 icon: fa-info-circle
 
@@ -11,116 +11,121 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable the particle.
       default: true
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_INFOLIST_INFO
+
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     intro:
       type: textarea.textarea
       label: Intro
-      description: Customize the intro text.
-      placeholder: Enter short description
+      description: Dostosuj tekst wprowadzający.
+      placeholder: Podaj krótki opis
 
     cols:
       type: select.select
-      label: Grid Column
-      description: Select the grid column amount for the list items
-      placeholder: 'Select...'
+      label: Kolumna siatki
+      description: Wybierz ilość kolumn siatki dla elementów listy
+      placeholder: 'Wybierz...'
       default: g-1cols
       options:
-        g-1cols: 1 Column
-        g-2cols: 2 Columns
-        g-3cols: 3 Columns
-        g-4cols: 4 Columns
-        g-5cols: 5 Columns
+        g-1cols: 1 Kolumna
+        g-2cols: 2 Kolumny
+        g-3cols: 3 Kolumny
+        g-4cols: 4 Kolumny
+        g-5cols: 5 Kolumn
 
     infolists:
       type: collection.list
       array: true
-      label: Info Lists
-      description: Create each item to appear in the content row.
+      label: Listy informacyjne
+      description: Utwórz każdy element, aby pojawił się w wierszu zawartości.
       value: title
       ajax: true
 
       fields:
         .title:
           type: input.text
-          label: Item Title
-          description: Customize the item title text.
-          placeholder: Enter item title
+          label: Tytuł elementu
+          description: Dostosuj tekst tytułu elementu.
+          placeholder: Wpisz tytuł pozycji
         .image:
           type: input.imagepicker
-          label: Image
-          description: Select desired image.
+          label: Obraz
+          description: Wybierz żądany obraz.
         .imageloc:
           type: select.select
-          label: Image Location
-          description: Select the location for the image
-          placeholder: 'Select...'
+          label: Lokalizacja obrazu
+          description: Wybierz lokalizację dla obrazu
+          placeholder: 'Wybierz...'
           default: left
           options:
-            left: Left
-            right: Right
+            left: Z lewej strony
+            right: Z prawej strony
         .textstyle:
           type: select.select
-          label: Text Style
-          description: Select the style for the text
-          placeholder: 'Select...'
+          label: Styl tekstu
+          description: Wybierz styl dla tekstu
+          placeholder: 'Wybierz...'
           default: compact
           options:
-            compact: Compact
-            large: Large
-            bold: Bold
+            compact: Kompaktowy
+            large: Duży
+            bold: Pogrubiony
         .imagestyle:
           type: select.select
-          label: Image Style
-          description: Select the style for the image
-          placeholder: 'Select...'
+          label: Styl obrazu
+          description: Wybierz styl dla obrazu
+          placeholder: 'Wybierz...'
           default: compact
           options:
-            compact: Compact
-            large: Large
-            browser: Browser
+            compact: Kompaktowy
+            large: Duży
+            bold: Pogrubiony
         .desc:
           type: textarea.textarea
-          label: Description
-          description: Customize the description.
-          placeholder: Enter short description
+          label: Opis
+          description: Dostosuj opis.
+          placeholder: Podaj krótki opis
         .tag:
           type: input.text
           label: Tag
-          description: Customize the tag
-          placeholder: Enter tag
+          description: Dostosuj tag
+          placeholder: Podaj tag
         .subtag:
           type: input.text
-          label: Sub Tag
-          description: Customize the sub tag
-          placeholder: Enter sub tag
+          label: Tag podrzędny
+          description: Dostosuj tag podrzędny
+          placeholder: Wprowadź tag podrzędny
         .label:
           type: input.text
-          label: Label
-          description: Customize the read more label
-          placeholder: Enter read more label
+          label: Etykieta
+          description: Dostosowanie etykiety Czytaj więcej
+          placeholder: Wpisz etykietę Czytaj więcej
         .link:
           type: input.text
           label: Link
-          description: Specify the link address.
+          description: Określenie adresu łącza.
         .icon:
           type: input.icon
-          label: Icon
-          description: Specify the read more icon.
+          label: Ikona
+          description: Określenie ikony dla Czytaj więcej.
         .readmoreclass:
           type: input.selectize
-          label: CSS Classes
-          description: CSS class name for the read more.
+          label: Klasy CSS
+          description: Nazwa klasy CSS dla czytaj więcej.

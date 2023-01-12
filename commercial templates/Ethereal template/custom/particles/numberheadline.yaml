@@ -1,5 +1,5 @@
-name: Number Headline
-description: Display number headline content.
+name: Numerowane nagłówki
+description: Wyświetlanie treści jako numerowane nagłówki.
 type: particle
 icon: fa-newspaper-o
 
@@ -12,97 +12,102 @@ form:
     enabled:
       type: input.checkbox
       label: Enabled
-      description: Globally enable particles.
+      description: Globalne włączenie Modułu-G5.
       default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_NUMBERHEADLINE_INFO
 
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     readmore:
       type: input.text
-      label: Readmore Text
-      description: Specify the readmore text.
+      label: Tekst Czytaj więcej
+      description: Określenie tekstu czytaj więcej.
 
     readmoreicon:
       type: input.icon
-      label: Readmore Icon
-      description: Specify the readmore icon.
+      label: Ikona Czytaj więcej
+      description: Określenie ikony czytaj więcej.
 
     link:
       type: input.text
-      label: Readmore Link
-      description: Specify the readmore link address.
+      label: Link Czytaj więcej
+      description: Określenie adresu łącza Czytaj więcej.
 
     cols:
       type: select.select
-      label: Grid Column
-      description: Select the grid column amount for the list items
-      placeholder: 'Select...'
+      label: Siatka kolumn
+      description: Wybierz ilość kolumn siatki dla elementów listy
+      placeholder: 'Wybierz...'
       default: g-listgrid-3cols
       options:
-        g-listgrid-2cols: 2 Columns
-        g-listgrid-3cols: 3 Columns
-        g-listgrid-4cols: 4 Columns
-        g-listgrid-5cols: 5 Columns
+        g-listgrid-2cols: 2 Kolumny
+        g-listgrid-3cols: 3 Kolumny
+        g-listgrid-4cols: 4 Kolumny
+        g-listgrid-5cols: 5 Kolumn
 
     listgriditems:
       type: collection.list
       array: true
-      label: Content Lists
-      description: Create each item to appear in the content row.
+      label: Listy zawartości
+      description: Utwórz każdy element, aby pojawił się w sekcji zawartości strony.
       value: title
       ajax: true
 
       fields:
         .title:
           type: input.text
-          label: Title
+          label: Tytuł
           skip: true
         .style:
           type: select.select
-          label: Accent Style
-          description: Select the accent color
-          placeholder: 'Select...'
+          label: Styl akcentu
+          description: Wybierz kolor akcentujący
+          placeholder: 'Wybierz...'
           default: 2
           options:
-            1: Accent 1
-            2: Accent 2
-            3: Accent 3
+            1: Kolor akcentujący 1
+            2: Kolor akcentujący 2
+            3: Kolor akcentujący 3
         .number:
           type: input.number
-          label: Number
+          label: Numer
         .headline:
           type: input.text
-          label: Headline
+          label: Nagłówek
         .tag:
           type: input.text
           label: Tag
         .desc:
           type: input.text
-          label: Description
+          label: Opis
         .icon1:
           type: input.icon
-          label: Icon 1
+          label: Ikona 1
         .text1:
           type: input.text
-          label: Icon 1 Text
+          label: Ikona 1 Tekst
         .icon2:
           type: input.icon
-          label: Icon 2
+          label: Ikona 2
         .text2:
           type: input.text
-          label: Icon 2 Text
+          label: Ikona 2 Tekst
         .variation:
           type: input.block-variations
-          label: Block Variation
+          label: Zmienne bloku
         .class:
           type: input.selectize
-          label: CSS Classes
+          label: Klasy CSS

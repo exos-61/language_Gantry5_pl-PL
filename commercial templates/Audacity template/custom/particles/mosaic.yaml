@@ -1,5 +1,5 @@
-name: Mosaic
-description: Display content dynamically in blocks
+name: Mozaika
+description: Dynamiczne wyświetlanie treści w blokach
 type: particle
 icon: fa-address-book
 
@@ -11,83 +11,88 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable particles.
       default: true
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_MOSAIC_INFO
+
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     allitems:
       overridable: false
       type: input.text
-      label: '"All" Label'
-      description: Enter all items button label.
+      label: '"Wszystkie" Etykieta'
+      description: Wprowadź etykietę przycisku Wszystko dla elementów.
       placeholder: 'All'
 
     allposition:
       type: select.select
-      label: All Position
-      description: Select All button position or hide.
+      label: Wszystkie pozycje
+      description: Wybierz pozycję albo ukryj przycisk Wszystkie pozycje.
       default: left
       options:
-        left: Left
-        right: Right
-        '': Hide
+        left: Z lewej strony
+        right: Z prawej strony
+        '': Ukryj
 
     selected:
       type: select.select
-      label: Selected
-      description: Choose Selected Nav Item
+      label: Wybierz
+      description: Wybierz wybrany element nawigacji
       default: all
       options:
-        all: All
-        first: First
-        last: Last
+        all: Wszystkie
+        first: Pierwsza
+        last: Ostatnia
 
     cols:
       type: select.select
-      label: Grid Column
-      description: Select the grid column amount
-      placeholder: 'Select...'
+      label: Siatka Kolumn
+      description: Wybierz ilość kolumn siatki
+      placeholder: 'Wybierz...'
       default: 2cols
       options:
-        cols-2: 2 Columns
-        cols-3: 3 Columns
-        cols-4: 4 Columns
-        cols-5: 5 Columns
+        cols-2: 2 Kolumny
+        cols-3: 3 Kolumny
+        cols-4: 4 Kolumny
+        cols-5: 5 Kolumn
 
     overlay:
       type: select.select
-      label: Overlay
-      description: Enable or disable overlay.
+      label: Nakładka
+      description: Włączenie lub wyłączenie nakładki.
       default: enabled
       options:
-        enabled: Enabled
-        disabled: Disabled
+        enabled: Włączona
+        disabled: Wyłączona
 
     tag:
       type: select.select
       label: Tag
-      description: Enable or disable tag.
+      description: Włączenie lub wyłączenie tagu.
       default: disabled
       options:
-        enabled: Enabled
-        disabled: Disabled
+        enabled: Włączona
+        disabled: Wyłączona
 
     cases:
       type: collection.list
       array: true
       label: Cases
-      description: Create categories.
+      description: Utwórz kategorie.
       overridable: false
       value: title
       ajax: true
@@ -95,49 +100,49 @@ form:
       fields:
         .title:
           type: input.text
-          label: Title
-          description: Enter category title
+          label: Tytuł
+          description: Wpisz tytuł kategorii
         .items:
           type: collection.list
           array: true
-          label: Items
-          description: Create mosaic items.
+          label: Elementy
+          description: Tworzenie elementów mozaiki.
           value: name
           ajax: true
 
           fields:
             .image:
               type: input.imagepicker
-              label: Image
-              description: Select desired image.
+              label: Obraz
+              description: Wybierz żądany obraz.
             .title:
               type: input.text
-              label: Title
-              description: Enter title
+              label: Tytuł
+              description: Podaj tytuł
             .subtitle:
               type: input.text
-              label: Subtitle
-              description: Enter subtitle
+              label: Podtytuł
+              description: Wprowadź podtytuł
             .linklabel:
               type: input.text
-              label: Read More Text
-              description: Specify the read more text.
-              placeholder: 'Read More'
+              label: Tekst Czytaj więcej
+              description: Określenie tekstu czytaj więcej.
+              placeholder: 'Czytaj więcej'
             .url:
               type: input.text
               label: Url
-              description: Customize url.
+              description: Dostosuj adres url.
             .target:
               type: select.select
-              label: Target
-              description: Target browser window when item is clicked.
-              placeholder: 'Select...'
+              label: Okno docelowe
+              description: Okno docelowe przeglądarki po kliknięciu elementu.
+              placeholder: 'Wybierz...'
               default: _blank
               options:
-                  _self: Self
-                  _blank: New Window
+                  _self: W tym samym oknie
+                  _blank: Nowe okno
             .buttonclass:
               type: input.text
-              label: Button Class
-              description: Input the button class.
-              default: 'readon' 
+              label: Klasa przycisku
+              description: Wprowadź klasę przycisku.
+              default: 'readon'

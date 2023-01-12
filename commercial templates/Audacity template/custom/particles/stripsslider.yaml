@@ -1,5 +1,5 @@
-name: Strips Slider
-description: Display Strips Slider.
+name: Suwak pasków
+description: Suwak do wyświetlania pasków.
 type: particle
 icon: fa-columns
 
@@ -12,31 +12,36 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable particle.
       default: true
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_STRIPSSLIDER_INFO
+
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     description:
       type: textarea.textarea
-      label: Description
-      description: Customize the description.
-      placeholder: Enter short description
+      label: Opis
+      description: Dostosuj opis.
+      placeholder: Podaj krótki opis
 
     displayitems:
       type: select.select
-      label: Display at Once
-      description: Number of items to display at once.
+      label: Wyświetlaj jednocześnie
+      description: Liczba elementów do jednoczesnego wyświetlenia.
       default: 5
       options:
         8: 8
@@ -45,7 +50,7 @@ form:
         5: 5
         4: 4
         3: 3
-        2: 2 
+        2: 2
 
     mobiledisplayitems:
       type: select.select
@@ -59,106 +64,106 @@ form:
         5: 5
         4: 4
         3: 3
-        2: 2 
-        1: 1       
+        2: 2
+        1: 1
 
     nav:
       type: select.select
-      label: Prev / Next
-      description: Enable or disable the Prev / Next navigation.
+      label: Poprzedni / Następny
+      description: Włączenie lub wyłączenie nawigacji "Poprzedni / Następny".
       default: enabled
       options:
-        enabled: Enabled
-        disabled: Disabled
-        
+        enabled: Włączone
+        disabled: Wyłączone
+
     dots:
       type: select.select
       label: Dots
-      description: Enable or disable the Dots navigation.
+      description: Włączenie lub wyłączenie nawigacji Dots.
       default: enabled
       options:
-        enabled: Enabled
-        disabled: Disabled        
+        enabled: Włączone
+        disabled: Wyłączone
 
     loop:
       type: select.select
-      label: Loop
-      description: Enable or disable the Inifnity loop. Duplicate last and first items to get loop illusion.
-      default: disabled
+      label: Pętla
+      description: Włączenie lub wyłączenie pętli Inifnity. Powiel ostatnie i pierwsze elementy, aby uzyskać iluzję pętli.
+      default: enabled
       options:
-        enabled: Enabled
-        disabled: Disabled
+        enabled: Włączone
+        disabled: Wyłączone
 
     autoplay:
       type: select.select
-      label: Autoplay
-      description: Enable or disable the Autoplay.
+      label: Auto odtwarzanie
+      description: Włączenie lub wyłączenie auto odtwarzania.
       default: disabled
       options:
-        enabled: Enabled
-        disabled: Disabled
+        enabled: Włączone
+        disabled: Wyłączone
 
     autoplaySpeed:
       type: input.text
-      label: Autoplay Speed
-      description: Set the speed of the Autoplay, in milliseconds.
+      label: Prędkość autoplay
+      description: Ustaw prędkość auto odtwarzania, w milisekundach.
       placeholder: 5000
 
     pauseOnHover:
       type: select.select
-      label: Pause on Hover
-      description: Pause the slideshow when hovering over slider, then resume when no longer hovering.
+      label: Wstrzymanie po najechaniu
+      description: Wstrzymaj pokaz slajdów po najechaniu na suwak, a następnie wznów go, gdy nie będzie już na nim ruchu.
       default: enabled
       options:
-        enabled: Enabled
-        disabled: Disabled       
+        enabled: Włączone
+        disabled: Wyłączone
 
     items:
       type: collection.list
       array: true
-      label: Slider Items
-      description: Create each slider item to display.
+      label: Pozycje suwaka
+      description: Utwórz każdy element suwaka do wyświetlenia.
       value: name
       ajax: true
 
       fields:
         .image:
           type: input.imagepicker
-          label: Image
-          description: Select desired image.   
+          label: Obraz
+          description: Wybierz żądany obraz.
         .title:
           type: input.text
-          label: Title
-          description: Enter title. 
+          label: Tytuł
+          description: Wpisz tytuł
         .titletag:
           type: input.text
-          label: Title Tag
-          description: Enter title tag.  
+          label: Tag tytułu
+          description: Wprowadź tag tytułu.
         .desc:
           type: textarea.textarea
-          label: Description
-          description: Customize the description.
-          placeholder: Enter short description
+          label: Opis
+          description: Dostosuj opis.
+          placeholder: Podaj krótki opis
         .link:
           type: input.text
           label: Link
-          description: Input the item link. 
+          description: Wprowadź link do elementu.
         .linklabel:
           type: input.text
-          label: Read More Text
-          description: Specify the read more text.
-          placeholder: 'Read More'
+          label: Tekst łącza
+          description: Wprowadź tekst dla linku do elementu.
+          placeholder: 'Czytaj więcej'
         .target:
           type: select.select
-          label: Target
-          description: Target browser window when item is clicked.
-          placeholder: 'Select...'
+          label: Okno docelowe
+          description: Okno docelowe przeglądarki po kliknięciu elementu.
+          placeholder: 'Wybierz...'
           default: _self
           options:
-              _self: Self
-              _blank: New Window
+              _self: W tym samym oknie
+              _blank: Nowe okno
         .buttonclass:
           type: input.selectize
-          label: Button Class
-          description: Input the button class.
-          default: 'readon'    
+          label: Klasa przycisku
+          description: Wprowadź klasę przycisku.
+          default: 'readon'

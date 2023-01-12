@@ -1,5 +1,5 @@
-name: Link Tabs
-description: Displays Link Tabs.
+name: Zakładki linków
+description: Wyświetla zakładki linków.
 type: particle
 icon: fa-table
 
@@ -11,41 +11,46 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
-      description: Globally enable particle.
+      label: Włączone
+      description: Globalnie włączony moduł-G5.
       default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_LINKTABS_INFO
 
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the particle title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     layout:
       type: select.select
-      label: Layout
-      description: Customize the particle layout
+      label: Układ
+      description: Dostosuj układ Modułu-G5
       default: layout-left
       options:
-        layout-left: Left
-        layout-right: Right
+        layout-left: Z lewej strony
+        layout-right: Z prawej strony
 
     items:
       type: collection.list
       array: true
-      label: Content Tabs Items
-      description: Content Tabs item to display.
+      label: Zawartość kart
+      description: Element zawartości do wyświetlenia.
       value: title
       ajax: true
 
-      fields:  
+      fields:
         .content:
           type: textarea.textarea
-          label: Tab Content
-          description: Customize the tab content.
-          placeholder: Enter your custom content here.         
+          label: Treść zakładki
+          description: Dostosuj zawartość karty.
+          placeholder: Wprowadź tutaj swoją niestandardową treść.

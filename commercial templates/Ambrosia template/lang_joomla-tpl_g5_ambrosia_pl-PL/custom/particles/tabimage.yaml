@@ -1,5 +1,5 @@
-name: Tab Image
-description: Display tab image content.
+name: Karty
+description: Wyświetlanie obrazów w kartach.
 type: particle
 icon: fa-server
 
@@ -11,59 +11,64 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
-      description: Globally enable particles.
+      label: Włączone
+      description: Globalnie włączony moduł-G5.
       default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_TABIMAGE_INFO
 
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     tabimages:
       type: collection.list
       array: true
-      label: Tab Images
-      description: Create each item to appear in the content row.
+      label: Zakładka Obrazy
+      description: Utwórz każdy element, aby pojawił się w sekcji zawartości strony.
       value: title
       ajax: true
 
       fields:
         .title:
           type: input.text
-          label: Title
+          label: Tytuł
           skip: true
         .image:
           type: input.imagepicker
-          label: Image
+          label: Obraz
           description: Select desired image.
         .link:
            type: input.text
            label: Link
-           description: Specify the link.
+           description: Określenie łącza.
         .label:
           type: input.text
-          label: Label
-          description: Customize the read more text.
-          placeholder: Enter read more label
+          label: Etykieta
+          description: Dostosuj tekst czytaj więcej.
+          placeholder: Wpisz etykietę Czytaj więcej
         .text:
           type: textarea.textarea
-          label: Text
-          description: Customize the text.
-          placeholder: Enter short text
+          label: Tekst
+          description: Dostosuj tekst.
+          placeholder: Wprowadź krótki tekst
         .tag:
           type: input.text
           label: Tag
-          description: Customize the tag
-          placeholder: Enter tag
+          description: Dostosuj tag
+          placeholder: Wpisz tag
         .subtag:
           type: input.text
-          label: Sub Tag
-          description: Customize the sub tag
-          placeholder: Enter sub tag
+          label: Tag podrzędny
+          description: Dostosuj tag podrzędny
+          placeholder: Wprowadź tag podrzędny

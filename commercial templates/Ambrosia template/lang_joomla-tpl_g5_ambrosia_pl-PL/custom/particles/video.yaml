@@ -1,5 +1,5 @@
 name: Video
-description: Embed videos from YouTube, Vimeo, Local, or External URL.
+description: Osadzaj filmy z serwisów YouTube, Vimeo, lokalnych lub zewnętrznych adresów URL.
 type: particle
 icon: fa-video-camera
 
@@ -8,125 +8,130 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
-      description: Globally enable particle.
+      label: Włączone
+      description: Globalnie włączony moduł-G5.
       default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_VIDEO_INFO
 
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     columns:
       type: select.selectize
-      label: Columns
-      description: Select columns amount.
+      label: Kolumny
+      description: Wybierz ilość kolumn.
       default: 1
       options:
-          1: 1 column
-          2: 2 columns
-          3: 3 columns
-          4: 4 columns
+          1: 1 kolumna
+          2: 2 kolumny
+          3: 3 kolumny
+          4: 4 kolumny
 
     items:
       type: collection.list
       array: true
-      label: Blocks
-      description: Create each item to appear in the content row.
+      label: Bloki
+      description: Utwórz każdy element, aby pojawił się w sekcji zawartości strony.
       value: title
       ajax: true
       fields:
         .caption:
           type: input.text
-          label: Caption
-          description: Video caption
+          label: Podpis
+          description: Napis na filmie
         .source:
           type: select.selectize
-          label: Source
-          description: Video Source
-          placeholder: 'Select...'
+          label: Źródło
+          description: Źródło wideo
+          placeholder: 'Wybierz...'
           default: local
           options:
-              preset: Slideshow Preset
-              vimeo: Vimeo Url
-              youtube: YouTube Url
-              local: Local Video
-              external: External Url
+              preset: Ustawienia wstępne pokazu slajdów
+              vimeo: Url do Vimeo
+              youtube: Url do YouTube
+              local: Lokalne wideo
+              external: Url zewnętrzny
         .video:
           type: input.text
           label: Url
-          description: URL from YouTube, Vimeo, or External
+          description: URL z YouTube, Vimeo lub z zewnątrz
         .local:
           type: collection.list
           array: true
-          label: Local Video Sources
-          description: Serve your video in multiple formats.
+          label: Lokalne źródła wideo
+          description: Podawaj swoje wideo w wielu formatach.
           value: title
           ajax: true
           fields:
             .file:
               type: input.videopicker
-              label: Local Video
-              description: Select desired video.
+              label: Lokalne wideo
+              description: Wybierz żądany film.
         .posterimage:
           type: input.imagepicker
-          label: Poster Image
-          description: Select the poster image for Local or External Video.
+          label: Obraz plakatu
+          description: Wybierz obraz plakatu dla lokalnego lub zewnętrznego obrazu wideo.
         .loop:
           type: select.select
-          label: Loop
-          description: Enable or disable video looping.
-          default: enabled
+          label: Pętla
+          description: Włączanie lub wyłączanie zapętlania wideo.
+          default: włączony
           options:
-            enabled: Enable
-            disabled: Disable
+            enabled: Włącz
+            disabled: Wyłącz
         .autoplay:
           type: select.select
-          label: Autoplay
-          description: Enable or disable video autoplay.
-          default: enabled
+          label: Auto odtwarzanie
+          description: Włączanie lub wyłączanie automatycznego odtwarzania wideo.
+          default: włączony
           options:
-            enabled: Enable
-            disabled: Disable
+            enabled: Włącz
+            disabled: Wyłącz
         .controls:
           type: select.select
-          label: Show Controls (YouTube, Local, and External)
-          description: Enable or disable play bar (applies to YouTube, Local, and External videos).
-          default: disabled
+          label: Sterowanie pokazami (YouTube, lokalne i zewnętrzne)
+          description: Włączanie lub wyłączanie paska odtwarzania (dotyczy filmów z YouTube, lokalnych i zewnętrznych).
+          default: wyłączony
           options:
-            enabled: Enable
-            disabled: Disable
+            enabled: Włącz
+            disabled: Wyłącz
         .info:
           type: select.select
-          label: Show Info (YouTube)
-          description: Enable or disable top info bar (applies to YouTube only).
-          default: disabled
+          label: Informacje o programie (YouTube)
+          description: Włączanie lub wyłączanie górnego paska informacyjnego (dotyczy tylko YouTube).
+          default: wyłączony
           options:
-            enabled: Enable
-            disabled: Disable
+            enabled: Włącz
+            disabled: Wyłącz
         .related:
           type: select.select
-          label: Related Videos (YouTube)
-          description: Enable or disable displaying related videos when Youtube video is paused or has ended.
-          default: disabled
+          label: Powiązane filmy (YouTube)
+          description: Włączanie lub wyłączanie wyświetlania powiązanych filmów, gdy film Youtube jest wstrzymany lub zakończył się.
+          default: wyłączony
           options:
-            enabled: Enable
-            disabled: Disable                 
+            enabled: Włącz
+            disabled: Wyłącz
         .muted:
           type: select.select
-          label: Muted
-          description: Videos must be Muted in order for Autoplay to work in Chrome.
-          default: enabled
+          label: Wyciszony
+          description: Aby auto odtwarzanie działało w Chrome, filmy muszą być wyciszone.
+          default: włączony
           options:
-            enabled: Enable
-            disabled: Disable
+            enabled: Włącz
+            disabled: Wyłącz
         .start:
           type: input.number
-          label: Start Time (YouTube)
-          description: Determine start time of YouTube video (in seconds).
+          label: Godzina rozpoczęcia (YouTube)
+          description: Określenie czasu rozpoczęcia filmu z YouTube (w sekundach).

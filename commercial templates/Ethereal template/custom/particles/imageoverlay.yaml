@@ -1,5 +1,5 @@
-name: Image Overlay
-description: Display image with overlay.
+name: Nakładka obrazu
+description: Wyświetlanie obrazu z nakładką.
 type: particle
 icon: fa-adjust
 
@@ -11,40 +11,45 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
-      description: Globally enable particles.
+      label: Włączone
+      description: Globalnie włączony moduł-G5.
       default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_IMAGEOVERLAY_INFO
 
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     image:
       type: input.imagepicker
-      label: Image
-      description: Select desired image.
+      label: Obraz
+      description: Wybierz żądany obraz.
 
     imagetitle:
       type: input.text
-      label: Image Title
-      description: Customize the image title text.
-      placeholder: Enter the image title
+      label: Tytuł obrazu
+      description: Dostosuj tekst tytułu obrazu.
+      placeholder: Wprowadź tytuł zdjęcia
 
     imagetag:
       type: input.text
-      label: Image Tag
-      description: Customize the image tag.
-      placeholder: Enter the image tag
+      label: Tag obrazu
+      description: Dostosuj tag obrazu.
+      placeholder: Wprowadź tag obrazu
 
     desc:
       type: textarea.textarea
-      label: Description
-      description: Customize the description.
-      placeholder: Enter short description
+      label: Opis
+      description: Dostosuj opis.
+      placeholder: Podaj krótki opis

@@ -1,5 +1,5 @@
 name: Logo
-description: Display a logo.
+description: Wyświetlanie logo.
 type: particle
 icon: fa-file-image-o
 
@@ -17,31 +17,31 @@ form:
 
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable logo particles.
       default: true
 
     url:
       type: input.text
       label: Url
-      description: Url for the image. Leave empty to go to home page.
+      description: Url dla obrazu. Pozostaw pusty, aby przejść do strony głównej.
 
     image:
       type: input.imagepicker
-      label: Image
-      description: Select desired logo image.
+      label: Obraz
+      description: Wybierz żądany obraz logo.
 
     alt:
       type: input.text
       label: Alt
-      description: Logo image alt / description text.
+      description: Alt dla obrazu logo (alt / tekst opisu). Opis widoczny w przypadku niewyświetlenia obrazu.
 
     text:
       type: input.text
-      label: Text
-      description: Input logo text.
+      label: Tekst
+      description: Wprowadź tekst logo.
 
     class:
       type: input.selectize
-      label: CSS Classes
-      description: Set a specific CSS class for custom styling.
+      label: Klasy CSS
+      description: Ustawienie określonej klasy CSS dla niestandardowej stylizacji.

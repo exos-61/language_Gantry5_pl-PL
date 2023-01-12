@@ -1,5 +1,5 @@
-name: Social
-description: Display social buttons.
+name: Społeczność
+description: Wyświetl przyciski społecznościowe.
 type: particle
 icon: fa-facebook
 
@@ -11,37 +11,42 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
-      description: Globally enable social particles.
+      label: Włączone
+      description: Globalne włączenie Modułu-G5.
       default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_SOCIAL_INFO
 
     css.class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
       default: social
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     target:
       type: select.select
-      label: Target
-      description: Target browser window when item is clicked.
-      placeholder: 'Select...'
+      label: Okno docelowe
+      description: Okno docelowe przeglądarki po kliknięciu elementu.
+      placeholder: 'Wybierz...'
       default: _blank
       options:
-          _parent: Self
-          _blank: New Window
+          _parent: W tym samym oknie
+          _blank: Nowe okno
 
     items:
       type: collection.list
       array: true
-      label: Social Items
-      description: Create each social item to display.
+      label: Pozycje społeczne
+      description: Utwórz każdy element społecznościowy do wyświetlenia.
       value: name
       ajax: true
 
@@ -49,16 +54,16 @@ form:
 
         .name:
           type: input.text
-          label: Name
+          label: Nazwa
           skip: true
 
         .icon:
           type: input.icon
-          label: Icon
+          label: Ikona
 
         .text:
           type: input.text
-          label: Text
+          label: Tekst
 
         .link:
           type: input.text

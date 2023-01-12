@@ -1,5 +1,5 @@
-name: Swiper
-description: Swiper JS
+name: Karuzela
+description: Karuzela JS
 type: particle
 icon: fa-sliders
 
@@ -8,251 +8,256 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
-      description: Globally enable particle.
+      label: Włączone
+      description: Globalnie włączony moduł-G5.
       default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_SWIPER_INF
 
     _tabs:
       type: container.tabs
       fields:
         _tab_settings:
-          label: Settings
+          label: Ustawienia
           overridable: false
           fields:
             class:
               type: input.selectize
-              label: CSS Classes
-              description: CSS class name for the particle.
+              label: Klasy CSS
+              description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
             source:
               type: select.select
-              label: Content Source
-              description: Choose if the content should be loaded from the platform or particle itself.
+              label: Źródło treści
+              description: Wybierz, czy zawartość ma być ładowana z platformy Joomla czy z samego Modułu-G5.
               default: particle
               options:
-                particle: Particle
+                particle: Moduł-G5
                 joomla: Joomla
 
             image:
               type: select.select
-              label: Image
-              description: Choose if the image should be a background or img tag.
+              label: Obraz
+              description: Wybierz, czy obrazek powinien być przypisany do tła czy img.
               default: background
               options:
-                background: Background
+                background: Kolor tła
                 img: IMG
 
             height:
               type: input.text
-              label: Slide Height
-              description: Set slide height
+              label: Wysokość przesuwania
+              description: Ustawianie wysokości przesuwania (slide)
               placeholder: 70vh
               default: "70vh"
               pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'
 
             heightMobile:
               type: input.text
-              label: Mobile Height
-              description: Set slide height in mobile
+              label: Wysokość
+              description: Ustaw wysokość przesuwania (slide) w telefonie
               placeholder: 400px
               default: "400px"
               pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'
 
             nav:
               type: select.select
-              label: Prev / Next
-              description: Enable or disable the Prev / Next navigation. Arrows will not appear unless they are actually required (i.e. more items than currently visible).
+              label: Poprzedni / Następny
+              description: Włączenie lub wyłączenie nawigacji "Poprzedni / Następny". Strzałki nie będą się pojawiać, chyba że są rzeczywiście wymagane (tj. więcej elementów niż aktualnie widoczne).
               default: enabled
               options:
-                enabled: Enable
-                disabled: Disable
+                enabled: Włącz
+                disabled: Wyłącz
 
             pagination:
               type: select.select
-              label: Pagination
-              description: Enable or disable the pagination. 
+              label: Paginacja
+              description: Włączenie lub wyłączenie paginacji.
               default: bullets
               options:
-                bullets: Dots
-                progressbar: Progress Bar 
-                '': None
+                bullets: Kropki
+                progressbar: Pasek postępu
+                '': Brak
 
             autoplay:
               type: select.select
-              label: Autoplay
-              description: Decide if you want your slideshow to autoplay or not.
+              label: Auto odtwarzanie
+              description: Zdecyduj, czy chcesz, aby Twój pokaz slajdów był automatycznie odtwarzany czy nie.
               default: enabled
               options:
-                enabled: Enable
-                disabled: Disable
+                enabled: Włącz
+                disabled: Wyłącz
 
             autoplayTimeout:
               type: input.number
-              label: Autoplay Timeout
-              description: The time between each auto transition
+              label: Czas autoplay
+              description: Czas pomiędzy każdym przejściem automatycznym
               default: 8000
 
             loop:
               type: select.select
-              label: Loop
-              description: Decide if you want your slideshow to loop or not.
+              label: Pętla
+              description: Zdecyduj, czy chcesz, aby Twój pokaz slajdów był zapętlony czy nie.
               default: enabled
               options:
-                enabled: Enable
-                disabled: Disable
+                enabled: Włącz
+                disabled: Wyłącz
 
             speed:
               type: input.number
-              label: Speed
-              description: Transition speed
+              label: Prędkość
+              description: Prędkość przejścia
               default: 800
 
             slides_linkable:
               type: select.select
-              label: Slides Linkable
-              description: Decide if you want to slides to be linkable.
+              label: Możliwość przesuwania
+              description: Zdecyduj, czy chcesz, aby przesuwanie było linkowalne.
               default: disabled
               options:
-                enabled: Enable
-                disabled: Disable
+                enabled: Włącz
+                disabled: Wyłącze
 
             touchmove:
               type: select.select
               label: Touch Move
-              description: Decide if you want to be able to move slides using touch.
+              description: Zdecyduj, czy chcesz mieć możliwość przenoszenia slajdów za pomocą dotyku.
               default: enabled
               options:
-                enabled: Enable
-                mobile: Mobile Only
-                disabled: Disable
+                enabled: Włącz
+                mobile: Tylko telefon
+                disabled: Wyłącz
 
             overlaycolor:
               type: input.colorpicker
-              label: Overlay Color
+              label: Kolor nakładki
               default: "rgba(9, 13, 15, 0.5)"
 
             direction:
               type: select.select
-              label: Direction
-              description: Slides move vertically or horizontally.
+              label: Kierunek
+              description: Przesuwanie odbywa się w pionie lub poziomie.
               default: horizontal
               options:
-                vertical: Vertical
-                horizontal: Horizontal
+                vertical: Pionowo
+                horizontal: Poziomo
 
             effect:
               type: select.select
-              label: Effect
-              description: Pick slideshow effect.
+              label: Efekt
+              description: Wybierz efekt pokazu slajdów.
               default: slide
               options:
-                slide: Slide
-                fade: Fade
-                coverflow: Cover Flow
+                slide: Przesuwanie
+                fade: Zanikanie
+                coverflow: Pływająca okładka
                 flip: Flip
 
         _tab_collection:
-          label: Items
+          label: Elementy
           overridable: false
           fields:
             items:
               type: collection.list
               array: true
-              label: Slides
-              description: Create slideshow items.
+              label: Slajdy
+              description: Tworzenie elementów pokazu slajdów.
               value: name
               ajax: true
               fields:
                 .name:
                   type: input.text
-                  label: Title
-                  description: Enter slide title
+                  label: Tytuł
+                  description: Wprowadź tytuł slajdu
 
                 .class:
                   type: input.selectize
-                  label: CSS Classes
-                  description: CSS class name for the item.
+                  label: Klasy CSS
+                  description: Nazwa klasy CSS dla elementu.
 
                 .image:
                   type: input.imagepicker
-                  label: Image
-                  description: Select image for slider
-                  placeholder: Pick an image
+                  label: Obraz
+                  description: Wybierz obraz do pokazu slajdów
+                  placeholder: Wybierz obraz
 
                 .imageMobile:
                   type: input.imagepicker
-                  label: Mobile Image
-                  description: Select a mobile image for slider
-                  placeholder: Pick an image
+                  label: Obraz telefon
+                  description: Wybierz obraz na telefon do pokazu slajdów.
+                  placeholder: Wybierz obraz
 
                 .bgcolor:
                   type: input.colorpicker
-                  label: BG Color
-                  description: Select background color for item if not using image / video
+                  label: Kolor BG
+                  description: Wybierz kolor tła dla elementu, jeśli nie używasz obrazu / wideo.
 
                 .kb:
                   type: select.select
-                  label: Animation
-                  description: Background Image Animation
+                  label: Animacja
+                  description: Animacja obrazu w tle
                   default: ''
                   options:
-                    '': None
-                    kenburns: Center
-                    kenburnsLeft: Left
-                    kenburnsRight: Right
-                    kenburnsDown: Down
-                    kenburnsDownLeft: Down Left
-                    kenburnsDownRight: Down Right
-                    kenburnsUp: Up
-                    kenburnsUpLeft: Up Left
-                    kenburnsUpRight: Up Right
+                    '': Brak
+                    kenburns: Środek
+                    kenburnsLeft: Z lewej strony
+                    kenburnsRight: Z prawej strony
+                    kenburnsDown: W dół
+                    kenburnsDownLeft: W dół w lewo
+                    kenburnsDownRight: W dół w prawo
+                    kenburnsUp: W górę
+                    kenburnsUpLeft: W górę w lewo
+                    kenburnsUpRight: W górę w prawo
 
                 .duration:
                   type: input.number
-                  label: Duration
+                  label: Czas trwania
                   default: 7000
-                  description: Duration of animation (ms)
+                  description: Czas trwania animacji (ms)
 
-                .video: 
+                .video:
                   type: input.videopicker
-                  label: Video Background
-                  description: Select desired video or enter external URL.
+                  label: Kolor tła wideo
+                  description: Wybierz żądane wideo lub wprowadź zewnętrzny adres URL.
 
                 .title:
                   type: type.text
-                  label: Title
-                  description: Enter Slide Title
+                  label: Tytuł
+                  description: Wprowadź tytuł slajdu
 
                 .text:
                   type: type.text
-                  label: Text
-                  description: Enter Slide Text
+                  label: Tekst
+                  description: Wprowadź tekst przesuwania
 
                 .thumbClass:
                   type: input.selectize
-                  label: Thumb Class
-                  description: Enter Thumb Class
+                  label: Klasa miniatur
+                  description: Wprowadź klasę miniatur
 
                 .thumb_title:
                   type: type.text
-                  label: Thumb Title
-                  description: Enter Thumb Title
+                  label: Tytuł miniatury
+                  description: Wpisz tytuł miniatury
 
                 .imageThumb:
                   type: input.imagepicker
-                  label: Thumb Image
-                  description: Select a thumb image for slider
-                  placeholder: Pick an image
+                  label: Miniatura
+                  description: Wybierz zdjęcie miniatury dla suwaka
+                  placeholder: Wybierz obraz
 
                 .button_class:
                   type: input.selectize
-                  label: Button Class
-                  description: Enter Button Class
+                  label: Klasa przycisku
+                  description: Wprowadź klasę przycisku
 
                 .button_text:
                   type: type.text
-                  label: Button Text
-                  default: 'Explore Now'
+                  label: Tekst przycisku
+                  default: 'Pokaż teraz'
 
                 .button_link:
                   type: input.text
@@ -261,64 +266,64 @@ form:
 
                 .linktarget:
                   type: select.selectize
-                  label: Link Target
-                  description: Target browser window when the title is clicked.
-                  placeholder: 'Select...'
+                  label: Okno docelowe
+                  description: Okno docelowe przeglądarki po kliknięciu tytułu.
+                  placeholder: 'Wybierz...'
                   default: _self
                   options:
-                      _self: Self
-                      _blank: New Window
+                      _self: W tym samym oknie
+                      _blank: Nowe okno
 
         _tab_slides:
-          label: Slides
+          label: Slajdy
           overridable: false
           fields:
             effectinfo:
               type: separator.note
               class: alert
-              content: 'Slide / Cover Flow Effect Only for Multiple Slides and Groups'
+              content: 'Efekt przepływu slajdów / okładek tylko dla wielu slajdów i grup'
             largedesktopinfo:
               type: separator.note
               class: alert alert-info
-              content: 'Large Desktop'
+              content: 'Duży ekran'
             largedesktopslides:
               type: input.number
-              label: Slides Per View
-              description: Number of slides per view
+              label: Widok slajdów
+              description: Liczba slajdów na jeden widok
               default: 1
               min: 1
             largedesktopgroup:
               type: input.number
-              label: Slides Per Group
-              description: Number of slides per transition
+              label: Przesuwanie grupy
+              description: Liczba slajdów na przejście
               default: 1
               min: 1
             largedesktopspace:
               type: input.number
-              label: Space Between
-              description: Amount of space between each thumb (px)
+              label: Przestrzeń między
+              description: Ilość miejsca pomiędzy każdą miniaturką (px)
               default: 0
               min: 0
             desktopinfo:
               type: separator.note
               class: alert alert-info
-              content: 'Desktop' 
+              content: 'Monitor'
             desktopslides:
               type: input.number
-              label: Slides Per View
-              description: Number of slides per view
+              label: Widok slajdów
+              description: Liczba slajdów na jeden widok
               default: 1
               min: 1
             desktopgroup:
               type: input.number
-              label: Slides Per Group
-              description: Number of slides per transition
+              label: Przesuwanie grupy
+              description: Liczba slajdów na przejście
               default: 1
               min: 1
             desktopspace:
               type: input.number
-              label: Space Between
-              description: Amount of space between each thumb (px)
+              label: Przestrzeń między
+              description: Ilość miejsca pomiędzy każdą miniaturką (px)
               default: 0
               min: 0
             tabletinfo:
@@ -327,20 +332,20 @@ form:
               content: 'Tablet'
             tabletslides:
               type: input.number
-              label: Slides Per View
-              description: Number of slides per view
+              label: Widok slajdów
+              description: Liczba slajdów na jeden widok
               default: 1
               min: 1
             tabletgroup:
               type: input.number
-              label: Slides Per Group
-              description: Number of slides per transition
+              label: Przesuwanie grupy
+              description: Liczba slajdów na przejście
               default: 1
               min: 1
             tabletspace:
               type: input.number
-              label: Space Between
-              description: Amount of space between each thumb (px)
+              label: Przestrzeń między
+              description: Ilość miejsca pomiędzy każdą miniaturką (px)
               default: 0
               min: 0
             mobileinfo:
@@ -349,95 +354,95 @@ form:
               content: 'Mobile'
             mobileslides:
               type: input.number
-              label: Slides Per View
-              description: Number of slides per view
+              label: Widok slajdów
+              description: Liczba slajdów na jeden widok
               default: 1
               min: 1
             mobilegroup:
               type: input.number
-              label: Slides Per Group
-              description: Number of slides per transition
+              label: Przesuwanie grupy
+              description: Liczba slajdów na przejście
               default: 1
               min: 1
             mobilespace:
               type: input.number
-              label: Space Between
-              description: Amount of space between each thumb (px)
+              label: Przestrzeń między
+              description: Ilość miejsca pomiędzy każdą miniaturką (px)
               default: 0
               min: 0
 
         _tab_thumbs:
-          label: Thumbs
+          label: Miniatury
           overridable: false
           fields:
             thumbs:
               type: select.select
-              label: Thumbs
-              description: Enable or disable the thumbnails. 
-              default: disabled
+              label: Miniatury
+              description: Włączenie lub wyłączenie miniatur.
+              default: wyłączony
               options:
-                enabled: Enable
-                disabled: Disable
+                enabled: Włącz
+                disabled: Wyłącz
             thumbsHeight:
               type: input.text
-              label: Thumbs Height
-              description: Set thumbs height
+              label: Wysokość miniatur
+              description: Ustawianie wysokości miniatur
               placeholder: 15vh
               default: "15vh"
               pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'
             thumbsMobileHeight:
               type: input.text
-              label: Mobile Height
-              description: Set thumbs height in mobile
+              label: Wysokość telefon
+              description: Ustaw wysokość miniatur w telefonie komórkowym
               placeholder: 150px
               default: "150px"
               pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'
             thumbsnav:
               type: select.select
-              label: Thumbs Nav
-              description: Enable or disable the Prev / Next navigation for Thumbs.
-              default: disabled
+              label: Nawigacja
+              description: Włączenie lub wyłączenie nawigacji "Poprzedni / Następny" dla miniatur.
+              default: wyłączony
               options:
-                enabled: Enable
-                disabled: Disable
+                enabled: Włącz
+                disabled: Wyłącz
             thumbslayout:
               type: select.select
-              label: Thumbs Layout
-              description: Top or Bottom
+              label: Układ miniatur
+              description: Góra czy dół
               default: bottom
               options:
-                top: Top
-                bottom: Bottom
+                top: Góra
+                bottom: Dół
             largedesktopinfo:
               type: separator.note
               class: alert alert-info
-              content: 'Large Desktop'
+              content: 'Duży ekran'
             largedesktopthumbs:
               type: input.number
-              label: Thumbs Per View
-              description: Number of thumbs per view
+              label: Widoczne miniatury
+              description: Liczba widocznych miniatur
               default: 5
               min: 1
             largedesktopthumbspace:
               type: input.number
-              label: Space Between
-              description: Amount of space between each thumb (px)
+              label: Przestrzeń między
+              description: Ilość miejsca pomiędzy każdą miniaturą (px)
               default: 50
               min: 0
             desktopinfo:
               type: separator.note
               class: alert alert-info
-              content: 'Desktop' 
+              content: 'Monitor'
             desktopthumbs:
               type: input.number
-              label: Thumbs Per View
-              description: Number of thumbs per view
+              label: Widoczne miniatury
+              description: Liczba widocznych miniatur
               default: 4
               min: 1
             desktopthumbspace:
               type: input.number
-              label: Space Between
-              description: Amount of space between each thumb (px)
+              label: Przestrzeń między
+              description: Ilość miejsca pomiędzy każdą miniaturą (px)
               default: 40
               min: 0
             tabletinfo:
@@ -446,166 +451,166 @@ form:
               content: 'Tablet'
             tabletthumbs:
               type: input.number
-              label: Thumbs Per View
-              description: Number of thumbs per view
+              label: Widoczne miniatury
+              description: Liczba widocznych miniatur
               default: 3
               min: 1
             tabletthumbspace:
               type: input.number
-              label: Space Between
-              description: Amount of space between each thumb (px)
+              label: Przestrzeń między
+              description: Ilość miejsca pomiędzy każdą miniaturą (px)
               default: 30
               min: 0
             mobileinfo:
               type: separator.note
               class: alert alert-info
-              content: 'Mobile'
+              content: 'Telefon'
             mobilethumbs:
               type: input.number
-              label: Thumbs Per View
-              description: Number of thumbs per view
+              label: Widoczne miniatury
+              description: Liczba widocznych miniatur
               default: 2
               min: 1
             mobilethumbspace:
               type: input.number
-              label: Space Between
-              description: Amount of space between each thumb (px)
+              label: Przestrzeń między
+              description: Ilość miejsca pomiędzy każdą miniaturą (px)
               default: 20
               min: 0
 
         _tab_articles:
-          label: Articles
+          label: Artykuły
           overridable: false
           fields:
             article.filter.categories:
               type: joomla.categories
-              label: Categories
-              description: Select the categories the articles should be taken from.
+              label: Kategorie
+              description: Wybierz kategorie, z których mają być pobierane artykuły.
               overridable: false
 
             article.filter.articles:
               type: input.text
-              label: Articles
-              description: Enter the Joomla articles that should be shown. It should be a list of article IDs separated with a comma (i.e. 1,2,3,4,5).
+              label: Artykuły
+              description: Wpisz artykuły Joomla, które powinny być pokazane. Powinna to być lista identyfikatorów artykułów oddzielonych przecinkiem (np. 1,2,3,4,5).
               overridable: false
 
             article.filter.featured:
               type: select.select
-              label: Featured Articles
-              description: Select how Featured articles should be filtered.
+              label: Polecane artykuły
+              description: Wybierz, w jaki sposób powinny być filtrowane polecane artykuły.
               default: ''
               options:
-                include: Include Featured
-                exclude: Exclude Featured
-                only: Only Featured
+                include: Obejmuje polecane
+                exclude: Wyklucza polecane
+                only: Tylko polecane
               overridable: false
 
             article.limit.total:
               type: input.text
-              label: Number of Articles
-              description: Enter the maximum number of articles to display.
+              label: Liczba artykułów
+              description: Wprowadź maksymalną liczbę artykułów do wyświetlenia.
               default: 5
               pattern: '\d{1,2}'
               overridable: false
 
             article.limit.start:
               type: input.text
-              label: Start From
-              description: Enter offset specifying the first article to return. The default is '0' (the first article).
+              label: Rozpocząć od
+              description: Wprowadź przesunięcie określające pierwszy artykuł, który ma zostać wyświetlony. Domyślnie jest to '0' (pierwszy artykuł).
               default: 0
               pattern: '\d{1,2}'
               overridable: false
 
             article.sort.orderby:
               type: select.select
-              label: Order By
-              description: Select how the articles should be ordered by.
+              label: Uporządkuj według
+              description: Wybierz, jak artykuły mają być uporządkowane według.
               default: publish_up
               options:
-                publish_up: Published Date
-                created: Created Date
-                modified: Last Modified Date
-                title: Title
-                ordering: Ordering
-                hits: Hits
+                publish_up: Data publikacji
+                created: Data utworzenia
+                modified: Data ostatniej modyfikacji
+                title: Tytuł
+                ordering: Kolejność
+                hits: Odsłony
                 id: ID
                 alias: Alias
               overridable: false
 
             article.sort.ordering:
               type: select.select
-              label: Ordering Direction
-              description: Select the direction the articles should be ordered by.
+              label: Kolejność sortowania
+              description: Wybierz kierunek, według którego mają być uporządkowane artykuły.
               default: ASC
               options:
-                ASC: Ascending
-                DESC: Descending
+                ASC: Rosnąca
+                DESC: Malejąca
               overridable: false
 
         _tab_display:
-          label: Articles Display
+          label: Wyświetlanie artykułów
           overridable: false
           fields:
             article.display.image.enabled:
               type: select.select
-              label: Image
-              description: Select if and what image of the article should be shown.
+              label: Obraz
+              description: Wybierz czy i jakie zdjęcie artykułu ma być pokazane.
               options:
-                intro: Intro
-                full: Full
-                '': None
+                intro: Wprowadzenie
+                full: Pełny artykuł
+                '': Brak
 
             article.display.text.type:
               overridable: false
               type: select.select
-              label: Article Text
-              description: Select if and how the article text should be shown.
+              label: Tekst artykułu
+              description: Wybierz, czy i jak powinien być wyświetlany tekst artykułu.
               options:
-                intro: Introduction
-                full: Full Article
-                '': Hide
+                intro: Wprowadzenie
+                full: Pełny artykuł
+                '': Ukryj
 
             article.display.text.limit:
               overridable: false
               type: input.text
-              label: Text Limit
-              description: Type in the number of characters the article text should be limited to.
+              label: Limit tekstu
+              description: Wpisz liczbę znaków, do której powinien być ograniczony tekst artykułu.
               pattern: '\d+'
 
             article.display.title.enabled:
               type: select.select
-              label: Title
-              description: Select if the article title should be shown.
+              label: Tytuł
+              description: Wybierz, czy tytuł artykułu ma być pokazywany.
               options:
-                show: Show
-                '': Hide
+                show: Pokaż
+                '': Ukryj
 
             article.display.title.limit:
               type: input.text
-              label: Title Limit
-              description: Enter the maximum number of characters the article title should be limited to.
+              label: Limit tytułu
+              description: Wpisz maksymalną liczbę znaków, do której powinien być ograniczony tytuł artykułu.
               pattern: '\d+(\.\d+){0,1}'
 
             article.display.link.enabled:
               type: select.select
-              label: Button Link
-              description: Select if the button should link to the page.
+              label: Link przycisku
+              description: Wybierz, czy przycisk ma linkować do strony.
               options:
-                show: Show
-                '': Hide
+                show: Pokaż
+                '': Ukryj
 
             article.display.link.label:
               type: input.text
-              label: Button Label
-              description: Type in the label for the button.
-              placeholder: 'Read More'
+              label: Etykieta przycisku
+              description: Wpisz etykietę dla przycisku.
+              placeholder: 'Czytaj więcej'
 
             article.display.link.target:
               type: select.selectize
-              label: Button Target
-              description: Target browser window when the button is clicked.
-              placeholder: 'Select...'
+              label: Okno docelowe
+              description: Okno docelowe przeglądarki po kliknięciu przycisku.
+              placeholder: 'Wybierz...'
               default: _self
               options:
-                  _self: Self
-                  _blank: New Window
+                  _self: W tym samym oknie
+                  _blank: Nowe okno

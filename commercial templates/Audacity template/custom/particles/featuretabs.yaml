@@ -1,5 +1,5 @@
-name: Feature Tabs
-description: Displays Feature Tabs.
+name: Zakładki kart
+description: Wyświetla zakładki kart
 type: particle
 icon: fa-table
 
@@ -11,77 +11,82 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable particle.
       default: true
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_FEATURETABS_INFO
+
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the particle title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     items:
       type: collection.list
       array: true
-      label: Feature Tabs Items
-      description: Feature Tabs item to display.
+      label: Zakładki kart
+      description: Element zakładki karty do wyświetlenia.
       value: name
       ajax: true
 
       fields:
         .class:
           type: input.selectize
-          label: Class
-          description: CSS class name for the item.
+          label: Klasa
+          description: Nazwa klasy CSS dla elementu.
         .title:
           type: input.text
-          label: Title
-          description: Customize the item title text.
-          placeholder: Enter title
+          label: Tytuł
+          description: Dostosuj tekst tytułu elementu.
+          placeholder: Podaj tytuł
         .titletag:
           type: input.text
-          label: Title Tag
-          description: Customize the item title tag text.
-          placeholder: Enter title tag
+          label: Tag tytułu
+          description: Dostosuj tekst znacznika tytułu elementu.
+          placeholder: Wprowadź tag tytułu
         .image:
           type: input.imagepicker
-          label: Image
-          description: Select desired image.
+          label: Obraz
+          description: Wybierz żądany obraz.
         .alt:
           type: input.text
-          label: Image Alt
-          description: Enter image alt.   
+          label: Podpis
+          description: Wpisz podpis obrazu.
         .content:
           type: textarea.textarea
-          label: Tab Content
-          description: Customize the tab content.
-          placeholder: Enter your custom content here.  
+          label: Treść zakładki
+          description: Dostosuj zawartość karty.
+          placeholder: Wprowadź tutaj swoją niestandardową treść.
         .linklabel:
           type: input.text
-          label: Read More Text
-          description: Specify the read more text.
-          placeholder: 'Read More'
+          label: Tekst Czytaj więcej
+          description: Określenie tekstu czytaj więcej.
+          placeholder: 'Czytaj więcej'
         .link:
           type: input.text
-          label: Read More Link
-          description: Specify the Read More link address. 
+          label: Link Czytaj więcej
+          description: Określ adres łącza Czytaj więcej.
         .buttontarget:
           type: select.selectize
-          label: Target
-          description: Target browser window when item is clicked.
-          placeholder: 'Select...'
+          label: Okno docelowe
+          description: Okno docelowe przeglądarki po kliknięciu elementu.
+          placeholder: 'Wybierz...'
           default: _self
           options:
-              _self: Self
-              _blank: New Window
+              _self: W tym samym oknie
+              _blank: Nowe okno
         .buttonclass:
           type: input.selectize
-          label: Button Class
-          description: Input the button class.
-          default: 'readon'          
+          label: Klasa przycisków
+          description: Wprowadź klasę przycisku.
+          default: 'readon'

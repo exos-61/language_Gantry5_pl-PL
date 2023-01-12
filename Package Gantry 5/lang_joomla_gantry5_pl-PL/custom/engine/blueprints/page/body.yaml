@@ -5,6 +5,11 @@ type: global
 form:
   fields:
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_CORE_PAGE_SETTINGS_BODY_INFO
+
     attribs.id:
       type: input.text
       label: Body Id

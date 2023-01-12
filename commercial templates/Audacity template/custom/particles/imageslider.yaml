@@ -1,5 +1,5 @@
-name: Image Slider
-description: Display Image Slider.
+name: Suwak obrazów
+description: Wyświetlanie suwaka obrazu.
 type: particle
 icon: fa-sliders
 
@@ -12,31 +12,36 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
-      description: Globally enable particle.
+      label: Włączone
+      description: Globalnie włączony moduł-G5.
       default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_IMAGESLIDER_INFO
 
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     animateIn:
       type: select.select
-      label: In Animation
-      description: Customize the In Animation from animate css class.
+      label: Animacja In
+      description: Dostosuj In Animation z klasy animate css.
       default: fadeIn
       options:
-        default: default
-        bounce: bounce
-        flash: flash
-        pulse: pulse
+        default: domyślnie
+        bounce: odbicie
+        flash: błysk
+        pulse: puls
         rubberBand: rubberBand
-        shake: shake
-        swing: swing
+        shake: trząść
+        swing: kołyska
         tada: tada
-        wobble: wobble
-        jello: jello
+        wobble: chybotliwy
+        jello: galaretka
         bounceIn: bounceIn
         bounceInDown: bounceInDown
         bounceInLeft: bounceInLeft
@@ -106,20 +111,20 @@ form:
 
     animateOut:
       type: select.select
-      label: Out Animation
-      description: Customize the Out Animation from animate css class.
+      label: Animacja Out
+      description: Dostosuj animację Out z klasy animate css.
       default: fadeOut
       options:
-        default: default
-        bounce: bounce
-        flash: flash
-        pulse: pulse
+        default: domyślnie
+        bounce: odbicie
+        flash: błysk
+        pulse: puls
         rubberBand: rubberBand
-        shake: shake
-        swing: swing
+        shake: trząść
+        swing: kołyska
         tada: tada
-        wobble: wobble
-        jello: jello
+        wobble: chybotliwy
+        jello: galaretka
         bounceIn: bounceIn
         bounceInDown: bounceInDown
         bounceInLeft: bounceInLeft
@@ -190,95 +195,96 @@ form:
     dots:
       type: select.select
       label: Dots
-      description: Enable or disable the Dots navigation.
+      description: Włączenie lub wyłączenie nawigacji Dots.
       default: enabled
       options:
-        enabled: Enabled
-        disabled: Disabled
+        enabled: Włączone
+        disabled: Wyłączone
+
 
     loop:
       type: select.select
-      label: Loop
-      description: Enable or disable the Inifnity loop. Duplicate last and first items to get loop illusion.
+      label: Pętla
+      description: Włączenie lub wyłączenie pętli Inifnity. Powiel ostatnie i pierwsze elementy, aby uzyskać iluzję pętli.
       default: enabled
       options:
-        enabled: Enabled
-        disabled: Disabled
+        enabled: Włączone
+        disabled: Wyłączone
 
     autoplay:
       type: select.select
-      label: Autoplay
-      description: Enable or disable the Autoplay.
+      label: Auto odtwarzanie
+      description: Włączenie lub wyłączenie auto odtwarzania.
       default: disabled
       options:
-        enabled: Enabled
-        disabled: Disabled
+        enabled: Włączone
+        disabled: Wyłączone
 
     autoplaySpeed:
       type: input.text
-      label: Autoplay Speed
-      description: Set the speed of the Autoplay, in milliseconds.
+      label: Prędkość autoplay
+      description: Ustaw prędkość auto odtwarzania, w milisekundach.
       placeholder: 5000
 
     pauseOnHover:
       type: select.select
-      label: Pause on Hover
-      description: Pause the slideshow when hovering over it, then resume when no longer hovering.
+      label: Wstrzymanie po najechaniu
+      description: Wstrzymaj pokaz slajdów po najechaniu na suwak, a następnie wznów go, gdy nie będzie już na nim ruchu.
       default: enabled
       options:
-        enabled: Enabled
-        disabled: Disabled    
+        enabled: Włączone
+        disabled: Wyłączone
 
     items:
       type: collection.list
       array: true
-      label: Slider Items
-      description: Create each slider item to display.
+      label: Pozycje suwaka
+      description: Utwórz każdy element suwaka do wyświetlenia.
       value: name
       ajax: true
 
       fields:
         .image:
           type: input.imagepicker
-          label: Image
-          description: Select desired image.  
+          label: Obraz
+          description: Wybierz żądany obraz.
         .title:
           type: textarea.textarea
-          label: Title
-          description: Enter the title
+          label: Tytuł
+          description: Wpisz tytuł
         .desc:
           type: textarea.textarea
-          label: Description
-          description: Customize the description.
-          placeholder: Enter short description                             
+          label: Opis
+          description: Dostosuj opis.
+          placeholder: Wprowadź krótki opis
         .linktitle:
           type: select.select
-          label: Link Title
-          description: Enable or disable linked title.
+          label: Tytuł łącza
+          description: Włączenie lub wyłączenie powiązanego tytułu.
           default: disabled
           options:
-            enabled: Enabled
-            disabled: Disabled
+            enabled: Włączone
+            disabled: Wyłączone
         .link:
           type: input.text
           label: Link
-          description: Input the item link.
+          description: Wprowadź link do elementu.
         .linktext:
           type: input.text
-          label: Link Text
-          description: Input the text for the item link.
-          placeholder: 'Read More'
+          label: Tekst łącza
+          description: Wprowadź tekst dla linku do elementu.
+          placeholder: 'Czytaj więcej'
         .buttontarget:
           type: select.selectize
-          label: Target
-          description: Target browser window when item is clicked.
-          placeholder: 'Select...'
+          label: Okno docelowe
+          description: Okno docelowe przeglądarki po kliknięciu elementu.
+          placeholder: 'Wybierz...'
           default: _self
           options:
-              _self: Self
-              _blank: New Window
+              _self: W tym samym oknie
+              _blank: Nowe okno
         .buttonclass:
           type: input.selectize
-          label: Button Class
-          description: Input the button class.
+          label: Klasa przycisku
+          description: Wprowadź klasę przycisku.
           default: 'button'

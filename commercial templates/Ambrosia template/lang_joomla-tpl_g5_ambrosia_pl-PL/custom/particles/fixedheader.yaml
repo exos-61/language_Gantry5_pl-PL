@@ -1,5 +1,5 @@
-name: Fixed Header
-description: Add fixed header to your site.
+name: Stały nagłówek
+description: Dodaj stały nagłówek do swojej strony.
 type: atom
 
 configuration:
@@ -10,72 +10,77 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable particle.
-      default: true     
+      default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_FIXEDHEADER_INFO
 
     section:
       type: input.text
-      label: Section
-      description: Define the ID or class of the section that you want to set as fixed.
+      label: Sekcja
+      description: Określ ID lub klasę sekcji, którą chcesz ustawić jako stałą.
       default: '#g-navigation'
 
     pinnedbg:
       type: select.selectize
-      label: Background to Use
-      description: Choose if the Pinned background should be set below or if it should come from the section styling.
+      label: Kolor tła
+      description: Wybierz, czy tło ma być ustawione w opcji poniżej, czy ma pochodzić ze stylizacji sekcji.
       default: section
       options:
-        section: Section
-        custom: Custom
+        section: Sekcja
+        custom: Niestandardowe
 
     custombg:
       type: input.colorpicker
-      label: Custom Background
+      label: Tło niestandardowe
       default: "#ffffff"
 
     autohide:
       type: select.selectize
-      label: Autohide
-      description: Choose if the fixed section should autohide on scroll.
+      label: Auto ukrycie
+      description: Wybierz, czy stała sekcja ma się automatycznie ukrywać przy przewijaniu.
       default: enabled
       options:
-        enabled: Enabled
-        disabled: Disabled 
+        enabled: Włączone
+        disabled: Wyłączone
 
     mobile:
       type: select.selectize
-      label: Mobile
-      description: Enable or disable fixed header in mobile 
+      label: Telefon
+      description: Włączenie lub wyłączenie stałego nagłówka w telefonie komórkowym
       default: disabled
       options:
-        enabled: Enabled
-        disabled: Disabled  
+        enabled: Włączone
+        disabled: Wyłączone
 
     padding:
       type: input.number
-      label: Padding Top
-      description: Top padding in px for adjacent section / header
+      label: Padding Góra
+      description: Górny padding w px dla sąsiedniej sekcji / nagłówka. Właściwości CSS padding służą do generowania przestrzeni wokół zawartości elementu, wewnątrz dowolnych zdefiniowanych granic.
       min: 0
-      default: 80  
+      default: 80
 
     mobilepadding:
       type: input.number
-      label: Mobile Padding Top
-      description: Top padding in px for adjacent section / header in mobile
+      label: Telefon Padding Góra
+      description: Górny padding w px dla sąsiedniej sekcji / nagłówka w telefonie komórkowym. Właściwości CSS padding służą do generowania przestrzeni wokół zawartości elementu, wewnątrz dowolnych zdefiniowanych granic.
       min: 0
-      default: 80 
+      default: 80
 
     offset:
       type: input.number
-      label: Offset
-      description: Vertical offset in px before element is first unpinned
+      label: Przesunięcie
+      description: Przesunięcie pionowe w px przed pierwszym odpięciem elementu
       min: 0
       default: 100
 
     tolerance:
       type: input.number
-      label: Tolerance
-      description: Scroll tolerance in px before state changes
+      label: Tolerancja
+      description: Tolerancja przewijania w px przed zmianą stanu
       min: 0
       placeholder: 0

@@ -11,68 +11,73 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
-      description: Globally enable particles.
+      label: Włączone
+      description: Globalnie włączony moduł-G5.
       default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_IMAGEBLOCK_INFO
 
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     cols:
       type: select.select
-      label: Grid Column
-      description: Select the grid column amount for the list items
-      placeholder: 'Select...'
+      label: Siatka kolumn
+      description: Wybierz ilość kolumn siatki dla elementów listy
+      placeholder: 'Wybierz...'
       default: g-listgrid-3cols
       options:
-        g-listgrid-2cols: 2 Columns
-        g-listgrid-3cols: 3 Columns
-        g-listgrid-4cols: 4 Columns
-        g-listgrid-5cols: 5 Columns
+        g-listgrid-2cols: 2 Kolumny
+        g-listgrid-3cols: 3 Kolumny
+        g-listgrid-4cols: 4 Kolumny
+        g-listgrid-5cols: 5 Kolumn
 
     listgriditems:
       type: collection.list
       array: true
-      label: Content Lists
-      description: Create each item to appear in the content row.
+      label: Listy treści
+      description: Utwórz każdy element, aby pojawił się w sekcji zawartości strony.
       value: title
       ajax: true
 
       fields:
         .title:
           type: input.text
-          label: Title
+          label: Tytuł
           skip: true
         .image:
           type: input.imagepicker
-          label: Image
+          label: Obraz
         .icon:
           type: input.icon
-          label: Icon
+          label: Ikona
         .link:
           type: input.text
-          label: Item Link
-          description: Specify the item link address.          
+          label: Link do przedmiotu
+          description: Określenie adresu łącza elementu.
         .headline:
           type: input.text
-          label: Headline
+          label: Nagłówek
         .titlebottom:
           type: input.text
-          label: Title Bottom
+          label: Tytuł Dół
         .tag:
           type: input.text
           label: Tag
         .variation:
           type: input.block-variations
-          label: Block Variation
+          label: Zmienne bloku
         .class:
           type: input.selectize
-          label: CSS Classes
+          label: Klasy CSS

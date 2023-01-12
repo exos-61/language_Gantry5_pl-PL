@@ -1,5 +1,5 @@
-name: Image Grid
-description: Display image grid.
+name: Siatka obrazów
+description: Wyświetlanie siatki zdjęć.
 type: particle
 icon: fa-picture-o
 
@@ -11,67 +11,82 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable particles.
       default: true
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_IMAGEGRID_INFO
+
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     desc:
       type: textarea.textarea
-      label: Description
-      description: Customize the description.
-      placeholder: Enter short description
+      label: Opis
+      description: Dostosuj opis.
+      placeholder: Podaj krótki opis
 
     cols:
       type: select.select
-      label: Grid Column
-      description: Select the grid column amount
-      placeholder: 'Select...'
+      label: Kolumna siatki
+      description: Wybierz ilość kolumn siatki
+      placeholder: 'Wybierz...'
       default: g-imagegrid-2cols
       options:
-        g-imagegrid-2cols: 2 Columns
-        g-imagegrid-3cols: 3 Columns
-        g-imagegrid-4cols: 4 Columns
-        g-imagegrid-5cols: 5 Columns
+        g-imagegrid-2cols: 2 Kolumny
+        g-imagegrid-3cols: 3 Kolumny
+        g-imagegrid-4cols: 4 Kolumny
+        g-imagegrid-5cols: 5 Kolumn
 
     album:
       type: input.text
-      label: Album Name
-      description: Customize the album name.
-      placeholder: Enter album name
+      label: Nazwa albumu
+      description: Dostosuj nazwę albumu.
+      placeholder: Wprowadź nazwę albumu
+
+    sqinfo:
+      type: select.select
+      label: Sequence Info
+      description: Show or hide number of slides in album.
+      default: ''
+      options:
+        '': Hide
+        show: Show
 
     imagegriditems:
       type: collection.list
       array: true
-      label: Images
-      description: Create each item to appear in the content row.
+      label: Obrazy
+      description: Utwórz każdy element, aby pojawił się w jednym wierszu na Twojej stronie.
       value: title
       ajax: true
 
       fields:
         .title:
           type: input.text
-          label: Title
-          skip: true        
+          label: Tytuł
+          skip: true
         .image:
           type: input.imagepicker
-          label: Promo Image
-          description: Select desired promo image.
+          label: Obraz promujący
+          description: Wybierz żądane obrazy promocyjne.
         .caption:
           type: input.text
-          label: Caption
-          description: Customize the image caption.
-          placeholder: Enter caption
+          label: Podpis
+          description: Dostosuj podpis pod obrazem.
+          placeholder: Wpisz podpis
+
 
 
 

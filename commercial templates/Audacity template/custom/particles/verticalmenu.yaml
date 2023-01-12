@@ -1,45 +1,50 @@
-name: Vertical Menu
-description: Display simple vertical menu.
+name: Menu pionowe
+description: Wyświetl proste pionowe menu.
 type: particle
 icon: fa-bars
 
 form:
-  overrideable: false  
+  overrideable: false
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
-      description: Globally enable the particle.
+      label: Włączone
+      description: Globalnie włączony moduł-G5.
       default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_VERTICALMENU_INFO
 
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the particle title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     items:
       type: collection.list
       array: true
-      label: Vertical Menu Items
-      description: Vertical menu item to display.
+      label: Elementy menu pionowego
+      description: Pozycja menu pionowego do wyświetlenia.
       value: name
       ajax: true
 
       fields:
         .title:
           type: input.text
-          label: Link Label
-          description: Enter the link label
+          label: Etykieta łącza
+          description: Wprowadź etykietę linku
         .type:
           type: select.selectize
-          label: Type
-          description: Select Menu to be Link or Separator.
+          label: Typ
+          description: Wybierz menu, które ma być łącznikiem lub separatorem.
           default: link
           options:
               link: Link
@@ -47,46 +52,46 @@ form:
         .link:
           type: input.text
           label: Link
-          description: Specify the link address.
+          description: Określenie adresu łącza.
         .target:
           type: select.selectize
-          label: Target
-          description: Target browser window when link is clicked.
+          label: Okno docelowe
+          description: Okno docelowe przeglądarki po kliknięciu na link.
           default: _self
           options:
-              _self: Self
-              _blank: New Window
+              _self: W tym samym oknie
+              _blank: Nowe okno
         .class:
           type: input.text
-          label: Link Class
-          description: Input the class.
+          label: Klasa łącząca
+          description: Wprowadzić klasę.
 
         children:
           type: collection.list
           array: true
-          label: Children
-          description: Create child item.
+          label: Menu podrzędne
+          description: Utwórz menu podrzędne.
           value: name
           ajax: true
 
           fields:
             .title:
               type: input.text
-              label: Link Label
-              description: Enter the link label
+              label: Etykieta łącza
+              description: Wprowadź etykietę linku
             .link:
               type: input.text
               label: Link
-              description: Specify the link address.
+              description: Określenie adresu łącza.
             .target:
               type: select.selectize
-              label: Target
-              description: Target browser window when link is clicked.
+              label: Okno docelowe
+              description: Okno docelowe przeglądarki po kliknięciu na link.
               default: _self
               options:
-                  _self: Self
-                  _blank: New Window
+                  _self: W tym samym oknie
+                  _blank: Nowe okno
             .class:
               type: input.text
-              label: Link Class
-              description: Input the class.          
+              label: Klasa łącząca
+              description: Wprowadzić klasę.

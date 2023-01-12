@@ -6,9 +6,9 @@ form:
   fields:
 
     _info:
-          type: separator.note
-          class: alert alert-info
-          content: DZIADEK_GUIDE_GANTRY5_BLUEPRINTS_DOC
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_CORE_PAGE_SETTINGS_HEAD_INFO
 
     meta:
       type: collection.keyvalue

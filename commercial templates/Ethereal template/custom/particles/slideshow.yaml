@@ -1,5 +1,5 @@
-name: Slideshow
-description: Display slideshow.
+name: Pokaz slajdów
+description: Wyświetlanie pokazu slajdów.
 type: particle
 
 configuration:
@@ -10,59 +10,64 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
-      description: Globally enable particles.
+      label: Włączone
+      description: Globalnie włączony moduł-G5.
       default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_SLIDESHOW_INFO
 
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     prevbuttontext:
       type: input.text
-      label: Prev Button Text
-      description: Customize the Prev Button Text.
-      placeholder: Prev      
+      label: Tekst przycisku Poprzedni
+      description: Dostosowanie tekstu Poprzedni.
+      placeholder: Poprzedni
 
     nextbuttontext:
       type: input.text
-      label: Next Button Text
-      description: Customize the Next Button Text.
-      placeholder: Next  
+      label: Tekst przycisku Następny
+      description: Dostosuj tekst przycisku Następny.
+      placeholder: Następny
 
     items:
       type: collection.list
       array: true
-      label: Slideshow Items
-      description: Create each slideshow item to display.
+      label: Elementy pokazu slajdów
+      description: Utwórz każdy element pokazu slajdów do wyświetlenia.
       value: name
       ajax: true
 
       fields:
         .image:
           type: input.imagepicker
-          label: Image
-          description: Select desired image.
+          label: Obraz
+          description: Wybierz żądany obraz.
         .title:
           type: input.text
           label: Text
         .desc:
           type: textarea.textarea
-          label: Description
-          description: Customize the description.
-          placeholder: Enter short description  
+          label: Opis
+          description: Dostosuj opis.
+          placeholder: Wprowadź krótki opis
         .linktext:
           type: input.text
-          label: Button Text
-          description: Specify the button link text.                  
+          label: Tekst przycisku
+          description: Określenie tekstu odnośnika do przycisku.
         .link:
           type: input.text
-          label: Button Link
-          description: Specify the button link address.
+          label: Łącze przycisku
+          description: Określenie adresu łącza przycisku.

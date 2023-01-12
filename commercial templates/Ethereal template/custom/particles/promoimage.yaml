@@ -1,5 +1,5 @@
-name: Promo Image
-description: Display promo image.
+name: Obraz promo.
+description: Wyświetl obrazek promocyjny.
 type: particle
 icon: fa-camera
 
@@ -11,58 +11,63 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable particles.
       default: true
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_PROMOIMAGE_INFO
+
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     image:
       type: input.imagepicker
-      label: Promo Image
-      description: Select desired promo image.
+      label: Obraz promocyjny
+      description: Wybierz żądany obraz promocyjny.
 
     promoimagetitle:
       type: input.text
-      label: Promo Image Title
-      description: Customize the promo image title text.
-      placeholder: Enter the promo image title
+      label: Tytuł obrazu
+      description: Dostosuj tekst tytułu obrazu promocyjnego.
+      placeholder: Wprowadź tytuł
 
     desc:
       type: textarea.textarea
-      label: Description
-      description: Customize the description.
-      placeholder: Enter short description
+      label: Opis
+      description: Dostosuj opis.
+      placeholder: Wprowadź krótki opis
 
     iconbutton:
       type: input.icon
-      label: Icon Button
+      label: Ikona przycisku
 
     promoimageicons:
       type: collection.list
       array: true
-      label: Icons
-      description: Create each item to appear in the content row.
+      label: Ikony
+      description: Utwórz każdy element, aby pojawił się w sekcji zawartości strony.
       value: title
       ajax: true
 
       fields:
         .title:
           type: input.text
-          label: Title
-          skip: true      
+          label: Tytuł
+          skip: true
         .icon:
           type: input.icon
-          label: Icon
+          label: Ikona
         .link:
           type: input.text
           label: Link

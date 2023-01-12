@@ -1,5 +1,5 @@
-name: Info List
-description: Displays Info List
+name: Lista Info
+description: Wyświetla listę informacji
 type: particle
 icon: fa-info-circle
 
@@ -11,41 +11,46 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable the particle.
       default: true
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_INFOLIST_INFO
+
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     infolists:
       type: collection.list
       array: true
-      label: Info Lists
-      description: Create each item to appear in the content row.
+      label: Listy info
+      description: Utwórz każdy element, aby pojawił się w wierszu zawartości Twojej witryny.
       value: title
       ajax: true
 
       fields:
         .title:
           type: input.text
-          label: Item Title
-          description: Customize the item title text.
-          placeholder: Enter item title
+          label: Tytuł elementu
+          description: Dostosuj tekst tytułu elementu.
+          placeholder: Wpisz tytuł pozycji
         .link:
           type: input.text
           label: Link
-          description: Specify the link address.
+          description: Określenie adresu łącza.
         .description:
           type: textarea.textarea
-          label: Description
-          description: Customize the description.
-          placeholder: Enter short description
+          label: Opis
+          description: Dostosuj opis.
+          placeholder: Podaj krótki opis

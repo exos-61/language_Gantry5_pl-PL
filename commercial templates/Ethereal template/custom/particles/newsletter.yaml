@@ -1,5 +1,5 @@
 name: Newsletter
-description: Display newsletter form.
+description: Wyświetl formularz newslettera.
 type: particle
 icon: fa-file-text-o
 
@@ -11,46 +11,51 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
-      description: Globally enable particles.
+      label: Włączony
+      description: Globalne włączenie modułów-G5.
       default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_NEWSLETTER_INFO
 
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     headtext:
       type: textarea.textarea
-      label: Heading Text
-      description: Customize the heading text.
-      placeholder: Enter short heading text
+      label: Tekst nagłówka
+      description: Dostosuj tekst nagłówka.
+      placeholder: Wprowadź krótki tekst nagłówka
 
     inputboxtext:
       type: input.text
-      label: InputBox Text
-      description: Customize the InputBox text.
-      placeholder: Email Address
+      label: Tekst InputBox
+      description: Dostosuj tekst pola wejściowego.
+      placeholder: Adres e-mail
 
     buttontext:
       type: input.text
-      label: Button Text
-      description: Customize the Button text.
+      label: Tekst przycisku
+      description: Dostosuj tekst przycisku np. <code>Subskrybuj</code>.
       default: Join
 
     uri:
       type: input.text
       label: Feedburner URI
-      description: Please put your Feedburner Email Subscriptions URI here.
+      description: Proszę umieścić tutaj swój Feedburner Email Subscriptions URI.
       placeholder: Feedburner URI
 
     buttonclass:
       type: input.selectize
-      label: Button Classes
-      description: CSS class name for the join button.
+      label: Klasy przycisku
+      description: Nazwa klasy CSS dla przycisku subskrypcji newslettera.

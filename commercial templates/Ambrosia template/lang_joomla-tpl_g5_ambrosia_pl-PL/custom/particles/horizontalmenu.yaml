@@ -1,5 +1,5 @@
-name: Horizontal Menu
-description: Display horizontal menu.
+name: Menu poziome
+description: Wyświetlanie menu poziomego.
 type: particle
 icon: fa-forward
 
@@ -11,30 +11,35 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable particles.
       default: true
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_HORIZONTALMENU_INFO
+
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     target:
       type: select.select
-      label: Target
-      description: Target browser window when item is clicked.
-      placeholder: 'Select...'
+      label: Okno docelowe
+      description: Okno docelowe przeglądarki po kliknięciu elementu.
+      placeholder: 'Wybierz...'
       default: _blank
       options:
-          _parent: Self
-          _blank: New Window
+          _parent: W tym samym oknie
+          _blank: Nowe okno
 
     items:
       type: collection.list
       array: true
-      label: Menu Items
-      description: Create each menu item to display.
+      label: Elementy menu
+      description: Utwórz każdy element menu do wyświetlenia.
       value: name
       ajax: true
 
@@ -42,13 +47,17 @@ form:
 
         .name:
           type: input.text
-          label: Name
+          label: Nazwa
           skip: true
 
         .text:
           type: input.text
-          label: Text
+          label: Tekst
 
         .link:
           type: input.text
           label: Link
+
+        .class:
+          type: input.selectize
+          label: Klasa

@@ -1,5 +1,5 @@
-name: Content Tabs
-description: Displays Content Tabs.
+name: Karty treści
+description: Wyświetla karty treści.
 type: particle
 icon: fa-table
 
@@ -11,58 +11,63 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable particle.
       default: true
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_CONTENTTABS_INFO
+
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the particle title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu modułu-G5.
+      placeholder: Podaj tytuł
 
     animation:
       type: select.select
-      label: Animation Type
-      description: Set the animation type.
+      label: Typ animacji
+      description: Ustaw typ animacji.
       default: right
       options:
-        left: Slide Left
-        right: Slide Right
-        up: Slide Up
-        down: Slide Down
-        fade: Fade
-        toggle: Toggle
+        left: Przesuwanie w lewo
+        right: Przesuwanie w prawo
+        up: Przesuwanie w górę
+        down: Przesuwanie w dół
+        fade: Zanikanie
+        toggle: Przełączanie
 
     items:
       type: collection.list
       array: true
-      label: Content Tabs Items
-      description: Content Tabs item to display.
+      label: Elementy kart zawartości
+      description: Element kart zawartości do wyświetlenia.
       value: title
       ajax: true
 
       fields:
         .title:
           type: input.text
-          label: Title
-          description: Enter the title
+          label: Tytuł
+          description: Wpisz tytuł
         .linklabel:
           type: input.text
-          label: Read More Text
-          description: Specify the read more text.
-          placeholder: 'Read More'
+          label: Tekst dla Czytaj...
+          description: Określ tekst dla Czytaj więcej...
+          placeholder: 'Czytaj więcej'
         .link:
           type: input.text
-          label: Read More Link
-          description: Specify the Read More link address.
+          label: Link dla Czytaj...
+          description: Określ adres łącza Czytaj więcej.
         .content:
           type: textarea.textarea
-          label: Tab Content
-          description: Customize the tab content.
-          placeholder: Enter your custom content here.
+          label: Zakładka Treść
+          description: Dostosuj zawartość karty.
+          placeholder: Wprowadź tutaj swoją niestandardową treść.

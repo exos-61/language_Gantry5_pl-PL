@@ -1,5 +1,5 @@
-name: To Top
-description: Scroll back to top.
+name: Do góry
+description: Przewiń z powrotem do góry.
 type: particle
 icon: fa-chevron-up
 
@@ -12,11 +12,11 @@ form:
     enabled:
       type: checkbox
       label: Enabled
-      description: Globally enable to top particles.
+      description: Globalne włączenie Modułu-G5.
       default: true
 
     css.class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Nazwa klasy CSS dla modułu-G5.
       default: totop

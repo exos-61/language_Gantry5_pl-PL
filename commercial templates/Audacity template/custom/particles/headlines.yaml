@@ -1,5 +1,5 @@
-name: Headlines
-description: Display Headlines.
+name: Nagłówki
+description: Wyświetl nagłówki.
 type: particle
 icon: fa-bookmark
 
@@ -12,85 +12,90 @@ form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globally enable particle.
       default: true
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_HEADLINES_INFO
+
     class:
       type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+      label: Klasy CSS
+      description: Ustaw klasy CSS, które chcesz zastosować na poziomie modułu-G5.
 
     title:
       type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      label: Tytuł
+      description: Dostosuj tekst tytułu.
+      placeholder: Podaj tytuł
 
     description:
       type: textarea.textarea
-      label: Description
-      description: Customize the description.
-      placeholder: Enter short description
+      label: Opis
+      description: Dostosuj opis.
+      placeholder: Podaj krótki opis
 
     nav:
       type: select.select
-      label: Prev / Next
-      description: Enable or disable the Prev / Next navigation.
+      label: Poprzedni / Następny
+      description: Włączenie lub wyłączenie nawigacji Poprzedni / Następny.
       default: enabled
       options:
-        enabled: Enabled
-        disabled: Disabled
+        enabled: Włączone
+        disabled: Wyłączone
 
     autoplay:
       type: select.select
-      label: Autoplay
-      description: Enable or disable the Autoplay.
+      label: Auto odtwarzanie
+      description: Włączenie lub wyłączenie funkcji Auto odtwarzania.
       default: disabled
       options:
-        enabled: Enabled
-        disabled: Disabled
+        enabled: Włączone
+        disabled: Wyłączone
 
     autoplaySpeed:
       type: input.text
-      label: Autoplay Speed
-      description: Set the speed of the Autoplay, in milliseconds.
+      label: Prędkość auto...
+      description: Ustaw prędkość auto odtwarzania, w milisekundach.
       placeholder: 5000
 
     pauseOnHover:
       type: select.select
-      label: Pause on Hover
-      description: Pause the slideshow when hovering over slider, then resume when no longer hovering.
+      label: Pauza po najechaniu
+      description: Wstrzymaj pokaz slajdów po najechaniu na suwak, a następnie wznów go, gdy nie będzie już na nim ruchu.
       default: enabled
       options:
-        enabled: Enabled
-        disabled: Disabled
+        enabled: Włączone
+        disabled: Wyłączone
 
     label:
       type: input.text
-      label: Label
-      description: Customize the label text.
+      label: Etykieta
+      description: Dostosuj tekst etykiety.
       default: Newsflash:
 
     items:
       type: collection.list
       array: true
-      label: Slider Items
-      description: Create each slider item to display.
+      label: Elementy suwaka
+      description: Utwórz każdy element suwaka do wyświetlenia.
       value: name
       ajax: true
 
       fields:
         .image:
           type: input.imagepicker
-          label: Image
-          description: Select desired image.
+          label: Obraz
+          description: Wybierz żądany obraz.
         .desc:
           type: textarea.textarea
-          label: Description
-          description: Customize the description.
-          placeholder: Enter short description
+          label: Opis
+          description: Dostosuj opis.
+          placeholder: Podaj krótki opis
         .link:
           type: input.text
           label: Link
-          description: Input the item link.
+          description: Wprowadź link do elementu.
