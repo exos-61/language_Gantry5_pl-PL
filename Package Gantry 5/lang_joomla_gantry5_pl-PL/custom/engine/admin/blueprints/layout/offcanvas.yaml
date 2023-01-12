@@ -4,6 +4,12 @@ type: offcanvas
 
 form:
   fields:
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_CORE_LAYOUT_OFFCANVAS_CSS_INFO
+
     position:
       type: select.selectize
       label: Pozycja

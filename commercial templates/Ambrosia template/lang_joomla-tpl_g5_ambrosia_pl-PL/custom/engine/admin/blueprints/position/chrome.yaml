@@ -8,7 +8,7 @@ form:
     display_title:
       type: enable.enable
       label: Wyświetlaj tytuł
-      description: Display title.
+      description: Wyświetlaj tytuł
       default: 1
 
     class:

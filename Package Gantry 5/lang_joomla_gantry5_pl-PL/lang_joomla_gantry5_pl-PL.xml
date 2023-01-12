@@ -3,13 +3,13 @@
 
     <name>Spolszczenie pakietu Gantry 5</name>
     <author>Zbigniew Sokal</author>
-    <creationDate>03 January 2023</creationDate>
+    <creationDate>12 January 2023</creationDate>
     <copyright>(C) 2018-2022 Poradniki Dziadka</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
     <authorEmail>admin@dziadek.guide</authorEmail>
     <authorUrl>https://dziadek.guide</authorUrl>
     <version>5.5.15</version>
-    <description>Spolszczone pliki językowe dla pakietu Joomla Gantry 5</description>
+    <description>Spolszczenie pakietu Joomla Gantry 5</description>
 
     <!-- Fileset definition -->
     <fileset>
@@ -47,26 +47,30 @@
             <filename>pl-PL.files_gantry5_nucleus.sys.ini</filename>
             <filename>pl-PL.pkg_gantry5.sys.ini</filename>
         </files>
+        <!-- Readme -->
+        <files folder="CZYTAJ" target="SPOLSZCZENIE_GANTRY5_SZABLON/CZYTAJ">
+            <filename>CZYTAJ.txt</filename>
+        </files>
         <!-- Custom -->
         <!-- administrator -> custom/admin -->
-        <files folder="custom/admin/blueprints/gantry/theme" target="TEMPLATE_DIR/custom/admin/blueprints/gantry/theme">
+        <files folder="custom/admin/blueprints/gantry/theme" target="SPOLSZCZENIE_GANTRY5_SZABLON/custom/admin/blueprints/gantry/theme">
             <filename>configuration.yaml</filename>
             <filename>details.yaml</filename>
         </files>
 
-        <files folder="custom/admin/blueprints/menu" target="TEMPLATE_DIR/custom/admin/blueprints/menu">
+        <files folder="custom/admin/blueprints/menu" target="SPOLSZCZENIE_GANTRY5_SZABLON/custom/admin/blueprints/menu">
             <filename>menu.yaml</filename>
             <filename>menuitem.yaml</filename>
         </files>
 
         <!-- media -> custom/engine -->
-        <files folder="custom/engine/admin/blueprints/layout/inheritance/messages" target="TEMPLATE_DIR/custom/engine/admin/blueprints/layout/inheritance/messages">
+        <files folder="custom/engine/admin/blueprints/layout/inheritance/messages" target="SPOLSZCZENIE_GANTRY5_SZABLON/custom/engine/admin/blueprints/layout/inheritance/messages">
             <filename>default.yaml</filename>
             <filename>empty.yaml</filename>
             <filename>inherited.yaml</filename>
         </files>
 
-        <files folder="custom/engine/admin/blueprints/layout/inheritance" target="TEMPLATE_DIR/custom/engine/admin/blueprints/layout/inheritance">
+        <files folder="custom/engine/admin/blueprints/layout/inheritance" target="SPOLSZCZENIE_GANTRY5_SZABLON/custom/engine/admin/blueprints/layout/inheritance">
             <filename>atom.yaml</filename>
             <filename>offcanvas.yaml</filename>
             <filename>particle.yaml</filename>
@@ -75,29 +79,29 @@
             <filename>system.yaml</filename>
         </files>
 
-        <files folder="custom/engine/admin/blueprints/layout" target="TEMPLATE_DIR/custom/engine/admin/blueprints/layout">
+        <files folder="custom/engine/admin/blueprints/layout" target="SPOLSZCZENIE_GANTRY5_SZABLON/custom/engine/admin/blueprints/layout">
             <filename>block.yaml</filename>
             <filename>container.yaml</filename>
             <filename>offcanvas.yaml</filename>
             <filename>section.yaml</filename>
         </files>
 
-        <files folder="custom/engine/admin/blueprints/menu" target="TEMPLATE_DIR/custom/engine/admin/blueprints/menu">
+        <files folder="custom/engine/admin/blueprints/menu" target="SPOLSZCZENIE_GANTRY5_SZABLON/custom/engine/admin/blueprints/menu">
             <filename>block.yaml</filename>
         </files>
 
-        <files folder="custom/engine/admin/blueprints/position" target="TEMPLATE_DIR/custom/engine/admin/blueprints/position">
+        <files folder="custom/engine/admin/blueprints/position" target="SPOLSZCZENIE_GANTRY5_SZABLON/custom/engine/admin/blueprints/position">
             <filename>chrome.yaml</filename>
         </files>
 
-        <files folder="custom/engine/blueprints/page" target="TEMPLATE_DIR/custom/engine/blueprints/page">
+        <files folder="custom/engine/blueprints/page" target="SPOLSZCZENIE_GANTRY5_SZABLON/custom/engine/blueprints/page">
             <filename>assets.yaml</filename>
             <filename>body.yaml</filename>
             <filename>fontawesome.yaml</filename>
             <filename>head.yaml</filename>
         </files>
 
-        <files folder="custom/engine/particles" target="TEMPLATE_DIR/custom/engine/particles">
+        <files folder="custom/engine/particles" target="SPOLSZCZENIE_GANTRY5_SZABLON/custom/engine/particles">
             <filename>analytics.yaml</filename>
             <filename>assets.yaml</filename>
             <filename>branding.yaml</filename>

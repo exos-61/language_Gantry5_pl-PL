@@ -4,16 +4,16 @@
     <div class="g-grid overview-header">
         <div class="g-block">
             <h2 class="theme-title">
-                {% if gantry.theme.icon %}<i class="fa fa-{{ gantry.theme.icon }}"></i>{% endif %} {{ gantry.theme.title }}
+                {% if gantry.theme.icon %}<i class="fa fa-{{ gantry.theme.icon }}" aria-hidden="true"></i>{% endif %} {{ gantry.theme.title }}
             </h2>
             <span class="theme-version">v{{ gantry.theme.version }}</span>
-            <div>By <a href="{{ gantry.theme.author.link }}">{{ gantry.theme.author.name }}</a></div>
+            <div>{{ 'GANTRY5_PLATFORM_BY'|trans }} <a href="{{ gantry.theme.author.link }}" aria-label="Template Author's Website" tabindex="1">{{ gantry.theme.author.name }}</a></div>
         </div>
         <div class="g-block">
             <span class="float-right">
-                <button class="button button-back-to-conf"><i class="fa fa-fw fa-arrow-left"></i> <span>Powrót do ustawień</span></button>
-                <a href="{{ gantry.theme.support.link }}" class="button button-primary"><i class="fa fa-support"></i> <span>Wsparcie</span></a>
-                <a href="{{ gantry.theme.documentation.link }}" class="button button-primary"><i class="fa fa-book"></i> <span>Dokumentacja</span></a>
+                <button class="button button-back-to-conf"><i class="fa fa-fw fa-arrow-left" aria-hidden="true"></i> <span>{{ 'GANTRY5_PLATFORM_BACK_SETUP'|trans }}</span></button>
+                <a href="{{ gantry.theme.support.link }}" class="button button-primary"><i class="fa fa-support" aria-hidden="true"></i> <span>{{ 'GANTRY5_PLATFORM_SUPPORT'|trans }}</span></a>
+                <a href="{{ gantry.theme.documentation.link }}" class="button button-primary"><i class="fa fa-book" aria-hidden="true"></i> <span>{{ 'GANTRY5_PLATFORM_DOCUMENTATION'|trans }}</span></a>
             </span>
         </div>
     </div>
@@ -24,11 +24,12 @@
         </div>
 
         <div class="g-block">
-            <p>Ambrosia to współczesny, płaski projekt, idealny dla strony skoncentrowanej na treści, która charakteryzuje się dużą ilością tekstu, np. dla magazynu lub gazety. Istnieje kolekcja uzupełniającej typografii, aby wzmocnić i dodać ostrości do elementów treści.</p>
+            <p>Hydrogen jest domyślnym motywem dla frameworka Gantry 5. Charakteryzuje się lekkim wyglądem i podstawowymi ustawieniami konfiguracyjnymi, aby pomóc zapoznać się z wieloma funkcjami i opcjami Gantry 5.</p>
             <ul class="overview-list">
-                <li><i class="fa fa-asterisk"></i>Płaski, współczesny design</li>
-                <li><i class="fa fa-asterisk"></i>Wiele niestandardowych Modułów-G5</li>
-                <li><i class="fa fa-asterisk"></i>Sześć konfigurowalnych, wstępnie ustawionych wariantów stylu</li>
+                <li><i class="fa fa-asterisk" aria-hidden="true"></i>Czysty, minimalistyczny wygląd</li>
+                <li><i class="fa fa-asterisk" aria-hidden="true"></i>Szybki i lekki</li>
+                <li><i class="fa fa-asterisk" aria-hidden="true"></i>Zawiera wstępnie ustawione style i kontury szablonów</li>
+                <li><i class="fa fa-asterisk" aria-hidden="true"></i><a href=\"https://gantry.org/downloads\" target=\"_blank\">Pobierz szablon</a> i <a href=\"https://github.com/exos-61/language_Gantry5_pl-PL/releases\" target=\"_blank\">Spolszczenie</a></li>
             </ul>
         </div>
     </div>

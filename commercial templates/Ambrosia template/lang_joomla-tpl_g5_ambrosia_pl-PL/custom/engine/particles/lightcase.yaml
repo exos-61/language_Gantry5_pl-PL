@@ -14,9 +14,9 @@ form:
     _instructions:
       type: separator.note
       class: alert alert-info
-      content: 'Podstawowe użycie: <pre>&lt;a href="path/to/media.jpg"<br /> data-rel="lightcase"<br /> title="Twój tytuł"<br />><br /> Twój opis linku<br />&lt;/a></pre>.'
+      content: 'Podstawowe użycie w elemencie przeznaczonym do wyświetlenia mediów: <pre>&lt;a href="path/to/media.jpg"<br /> data-rel="lightcase"<br /> title="Twój tytuł"<br /><br /> Twój opis linku<br />&lt;/a></pre>.'
 
     _info:
       type: separator.note
       class: alert alert-info
-      content: 'Więcej informacji na temat używania tego Dodatku-G5 można znaleźć w <a href="http://cornel.bopp-art.com/lightcase/documentation/" target="_blank">dokumentacji lightcase</a> lub na <a href="https://github.com/cbopp-art/lightcase" target="blank">GitHubie</a>'
+      content: 'Więcej informacji na temat używania tego Dodatku-G5 można znaleźć w <a href="http://cornel.bopp-art.com/lightcase/documentation/" target="_blank">dokumentacji lightcase</a>, na <a href="https://github.com/cbopp-art/lightcase" target="blank">GitHubie</a> i <a href="https://www.jqueryscript.net/lightbox/Versatile-Responsive-jQuery-LightBox-Plugin-lightcase-js.html" target="blank">JQuery script</a>'

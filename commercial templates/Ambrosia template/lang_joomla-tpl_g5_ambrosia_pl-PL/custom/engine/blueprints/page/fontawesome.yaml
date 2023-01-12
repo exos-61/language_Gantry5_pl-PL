@@ -7,8 +7,8 @@ form:
 
     _info:
       type: separator.note
-      condition: override
-      content: DZIADEK_GUIDE_GANTRY5_BLUEPRINTS_FONTAWESOME_INFO
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_CORE_PAGE_SETTINGS_FONTAWESOME_INFO
 
     enable:
       type: enable.enable
@@ -41,7 +41,7 @@ form:
     html_css_import:
       type: textarea.textarea
       label: CSS Link HTML (ręczne nadpisywanie)
-      description: Wprowadź swój HTML, aby ręcznie załadować pliki CSS biblioteki Font Awesome. Ta opcja zastępuje wersję biblioteki z Gantry.
+      description: Wprowadź swój HTML, aby ręcznie załadować pliki CSS biblioteki Font Awesome. Ta opcja zastępuje wersję biblioteki w Gantry.
 
     html_js_import:
       type: textarea.textarea

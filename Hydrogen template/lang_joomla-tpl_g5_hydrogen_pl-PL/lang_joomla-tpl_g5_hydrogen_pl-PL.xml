@@ -3,20 +3,35 @@
 
     <name>Spolszczenie szablonu Hydrogen</name>
     <author>Zbigniew Sokal</author>
-    <creationDate>07 January 2022</creationDate>
+    <creationDate>12 January 2022</creationDate>
     <copyright>(C) 2018-2023 Poradniki Dziadka</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
     <authorEmail>admin@dziadek.guide</authorEmail>
     <authorUrl>https://dziadek.guide</authorUrl>
     <version>5.5.15</version>
-    <description>Polski pakiet językowy dla szablonu Hydrogen Joomla Gantry 5 i plików yaml pakietu Gantry 5</description>
+    <description>Spolszczenie szablonu Hydrogen Joomla i plików yaml pakietu Gantry 5</description>
 
     <fileset>
-        <!-- templates -->
-        <files folder="custom/blueprints" target="templates/g5_hydrogen/custom/blueprints">
+        <!-- TEMPLATES -->
+        <!-- templates/g5_hydrogen/language -->
+        <files folder="language/pl-PL" target="templates/g5_hydrogen/language/pl-PL">
+            <filename>pl-PL.tpl_g5_hydrogen.ini</filename>
+            <filename>pl-PL.tpl_g5_hydrogen.sys.ini</filename>
+        </files>
+        <!-- templates/g5_hydrogen/admin/templates/ajax-->
+        <files folder="custom/admin/templates/ajax" target="templates/g5_hydrogen/admin/templates/ajax">
+            <filename>icons.html.twig</filename>
+            <filename>outline-new.html.twig</filename>
+        </files>
+        <!-- templates/g5_hydrogen/admin/templates/pages/about-->
+        <files folder="custom/admin/templates/pages/about" target="templates/g5_hydrogen/admin/templates/pages/about">
+            <filename>about.html.twig</filename>
+        </files>
+        <!-- templates/g5_hydrogen/blueprints-->
+        <files folder="custom/blueprints" target="templates/g5_hydrogen/blueprints">
             <filename>page.yaml</filename>
         </files>
-
+        <!-- templates/g5_hydrogen/blueprints/styles-->
         <files folder="custom/blueprints/styles" target="templates/g5_hydrogen/custom/blueprints/styles">
             <filename>accent.yaml</filename>
             <filename>base.yaml</filename>
@@ -31,27 +46,22 @@
             <filename>showcase.yaml</filename>
             <filename>subfeature.yaml</filename>
         </files>
-
-        <files folder="language/pl-PL" target="templates/g5_hydrogen/language/pl-PL">
-            <filename>pl-PL.tpl_g5_hydrogen.ini</filename>
-            <filename>pl-PL.tpl_g5_hydrogen.sys.ini</filename>
-        </files>
-
-        <files folder="custom/layouts" target="templates/g5_hydrogen/custom/layouts">
+        <!-- templates/g5_hydrogen/layouts-->
+        <files folder="custom/layouts" target="templates/g5_hydrogen/layouts">
             <filename>home.yaml</filename>
         </files>
-
+        <!-- templates/g5_hydrogen/particles-->
         <files folder="custom/particles" target="templates/g5_hydrogen/custom/particles">
             <filename>sample.yaml</filename>
         </files>
-        <!-- Gantry 5 -->
+        <!-- GANTRY 5 -->
         <!-- administrator -> custom/admin -->
-        <files folder="custom/admin/blueprints/gantry/theme" target="templates/g5_hydrogen/custom/admin/blueprints/gantry/theme">
+        <files folder="custom/admin/blueprints_g5/gantry/theme" target="templates/g5_hydrogen/custom/admin/blueprints/gantry/theme">
             <filename>configuration.yaml</filename>
             <filename>details.yaml</filename>
         </files>
 
-        <files folder="custom/admin/blueprints/menu" target="templates/g5_hydrogen/custom/admin/blueprints/menu">
+        <files folder="custom/admin/blueprints_g5/menu" target="templates/g5_hydrogen/custom/admin/blueprints/menu">
             <filename>menu.yaml</filename>
             <filename>menuitem.yaml</filename>
         </files>

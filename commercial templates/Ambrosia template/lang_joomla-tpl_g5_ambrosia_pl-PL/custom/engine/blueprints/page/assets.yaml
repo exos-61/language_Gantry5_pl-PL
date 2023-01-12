@@ -47,7 +47,7 @@ form:
         _info:
           type: separator.note
           class: alert alert-info
-          content: DZIADEK_GUIDE_GANTRY5_BLUEPRINTS_ASSETS_CSS_INFO
+          content: DZIADEK_GUIDE_GANTRY5_CORE_PAGE_SETTINGS_ASSETS_CSS_INFO
 
         .extra:
           type: collection.keyvalue
@@ -95,7 +95,7 @@ form:
         _info:
           type: separator.note
           class: alert alert-info
-          content: DZIADEK_GUIDE_GANTRY5_BLUEPRINTS_ASSETS_JS_INFO
+          content: DZIADEK_GUIDE_GANTRY5_CORE_PAGE_SETTINGS_ASSETS_JS_INFO
 
         .in_footer:
           type: input.checkbox

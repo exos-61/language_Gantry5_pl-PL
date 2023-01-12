@@ -4,6 +4,12 @@ type: container
 
 form:
   fields:
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_CORE_LAYOUT_CONTAINER_CSS_INFO
+
     boxed:
       type: select.selectize
       label: Układ kontenera

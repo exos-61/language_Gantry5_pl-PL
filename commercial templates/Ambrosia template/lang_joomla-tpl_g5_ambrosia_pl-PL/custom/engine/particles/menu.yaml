@@ -19,12 +19,12 @@ form:
     _info:
       type: separator.note
       class: alert alert-info
-      content: GANTRY5_PARTICLE_MENU_INFO
+      content: DZIADEK_GUIDE_GANTRY5_CORE_PARTICLE_MENU_INFO
 
     menu:
       type: menu.list
       label: Menu
-      description: Wybierz menu, które ma być używane z Modułem-G5.
+      description: Wybierz menu, które ma być używane z Modułem-G5 Menu.
       default: ''
       selectize:
           allowEmptyOption: true

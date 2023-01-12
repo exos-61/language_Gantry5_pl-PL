@@ -1,0 +1,26 @@
+name: Pozycja modułu
+description: Wyświetlanie pozycji dla modułów.
+type: position
+icon: fa-object-group
+hidden: false
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Włączone
+      description: Globalnie włączony Moduł-G5 Position Module (Pozycja modułów).
+      default: true
+
+    key:
+      type: input.text
+      label: Klucz
+      description: Nazwa pozycji. Tylko cyfry i litery alfabetu angielskiego. Nie używaj ogonków jak na przykładzie.
+      pattern: '[A-Za-z0-9-]+'
+      overridable: false
+
+    chrome:
+      type: input.text
+      label: Chrome
+      description: Module chrome in this position.
+      placeholder: gantry

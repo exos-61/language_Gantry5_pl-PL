@@ -1,0 +1,22 @@
+name: Odstępy
+description: Dodaje pustą kolumnę do wiersza.
+type: spacer
+icon: fa-arrows-h fa-arrows-alt-h
+hidden: false
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Włączone
+      description: Globalne włączenie odstępu.
+      default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: Dodaj pustą kolumnę odstępu do wiersza. Pokazuje się jako puste miejsce w twoim układzie strony.

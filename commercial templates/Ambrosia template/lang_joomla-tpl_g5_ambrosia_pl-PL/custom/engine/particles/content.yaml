@@ -15,7 +15,7 @@ form:
     _info:
       type: separator.note
       class: alert alert-info
-      content: Wyświetla główną zawartość w Twoim układzie strony.
+      content: Wyświetla główną zawartość w Twoim układzie (layout) strony.
 
     _alert:
       type: separator.note

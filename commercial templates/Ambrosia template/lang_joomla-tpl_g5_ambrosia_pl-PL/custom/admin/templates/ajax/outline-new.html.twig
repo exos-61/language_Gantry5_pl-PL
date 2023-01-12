@@ -5,11 +5,11 @@
     <div class="inner-params" id="g-modal-describedby">
         <div class="settings-param input-text">
             <span class="settings-param-title float-left">
-                <span data-tip="Outline Title" data-tip-place="top-right" aria-label="Outline Title" data-title="Outline Title">Title</span>
+                <span data-tip="Podaj nazwę dla tworzonego szablonu" data-tip-place="top-right" aria-label="Podaj nazwę dla tworzonego szablonu" data-title="Podaj nazwę dla tworzonego szablonu">Nazwa</span>
             </span>
             <div class="settings-param-field">
                 <div class="input-group">
-                    <input type="text" name="title" placeholder="{{ duplicate ? 'Auto generate' : 'Untitled' }}" aria-label="Outline Title Field" pattern="[A-Za-z0-9-\s]+">
+                    <input type="text" name="title" placeholder="{{ duplicate ? 'Automatyczne generowanie' : 'Bez tytułu' }}" aria-label="Podaj nazwę dla tworzonego szablonu" pattern="[A-Za-z0-9-\s]+">
                 </div>
             </div>
         </div>
@@ -17,7 +17,7 @@
         {% if presets %}
         <div class="settings-param input-radios">
             <span class="settings-param-title float-left">
-                <span data-tip="Create from a Preset or from an Outline" data-tip-place="top-right" aria-label="Create from a Preset or from an Outline" data-title="Create from a Preset or from an Outline">Create From</span>
+                <span data-tip="Tworzenie z ustawienia wstępnego lub z szablonu" data-tip-place="top-right" aria-label="Tworzenie z ustawienia wstępnego lub z szablonu" data-title="Tworzenie z ustawienia wstępnego lub z szablonu">Utwórz z</span>
             </span>
             <div class="settings-param-field">
                 <span class="radios">
@@ -26,18 +26,18 @@
                 </span>
                 <span class="radios">
                     <input type="radio" id="from-outline" value="outline" name="from" />
-                    <label for="from-outline">Outline</label>
+                    <label for="from-outline">Szablon</label>
                 </span>
             </div>
         </div>
 
         <div class="settings-param input-text g-create-from g-create-from-preset">
             <span class="settings-param-title float-left">
-                <span data-tip="Outline Preset" data-tip-place="top-right" aria-label="Outline Preset" data-title="Outline Preset">Preset</span>
+                <span data-tip="Podaj wstępne ustawienie szablonu" data-tip-place="top-right" aria-label="Podaj wstępne ustawienie szablonu" data-title="Podaj wstępne ustawienie szablonu">Wstępne ustawienia</span>
             </span>
             <div class="settings-param-field">
                 <div class="input-group">
-                    <select name="preset" value="Untitled" {{ duplicate ? 'disabled="disabled"' : '' }} aria-label="Outline Preset Field" data-selectize="">
+                    <select name="preset" value="Bez nazwy" {{ duplicate ? 'disabled="disabled"' : '' }} aria-label="Outline Preset Field" data-selectize="">
                         {% for group, options in presets %}
                             <optgroup label="{{ group|title }}">
                                 {% for key, option in options %}
@@ -53,7 +53,7 @@
 
         <div class="settings-param input-text g-create-from g-create-from-outline" style="display: none;">
             <span class="settings-param-title float-left">
-                <span data-tip="Outline" data-tip-place="top-right" aria-label="Outline" data-title="Outline">Outline</span>
+                <span data-tip="Wybierz szkielet szablonu" data-tip-place="top-right" aria-label="Wybierz szkielet szablonu" data-title="Szablon">Szablon</span>
             </span>
             <div class="settings-param-field">
                 <div class="input-group">
@@ -70,13 +70,13 @@
 
         <div class="settings-param input-multicheckbox g-create-from g-create-from-outline"{% if presets %} style="display: none;"{% endif %}>
             <span class="settings-param-title float-left">
-                <span data-tip="Inherit every Section and Children of the selected Outline. If left unchecked they will be cloned." data-tip-place="top-right" aria-label="Inherit every Section and Children of the selected Outline. If left unchecked they will be cloned." data-title="Inherit every Section and Children of the selected Outline. If left unchecked they will be cloned.">Inherit</span>
+                <span data-tip="Dziedziczenie każdej sekcji i zawartości wybranego szablonu. Jeśli pozostawimy to bez zaznaczenia, zostaną one sklonowane." data-tip-place="top-right" aria-label="Dziedziczenie każdej sekcji i zawartości wybranego szablonu. Jeśli pozostawimy to bez zaznaczenia, zostaną one sklonowane." data-title="Dziedziczenie każdej sekcji i zawartości wybranego szablonu. Jeśli pozostawimy to bez zaznaczenia, zostaną one sklonowane.">Dziedziczenie</span>
             </span>
             <div class="settings-param-field">
                 <div class="input-group">
                     <label>
                         <input type="checkbox" name="inherit" value="1" aria-label="Inherit" checked="checked">
-                        <span>Inherit every Section and Children of the selected Outline. If left unchecked they will be cloned.</span>
+                        <span>Dziedziczenie każdej sekcji i zawartości wybranego szablonu. Jeśli pozostawimy to bez zaznaczenia, zostaną one sklonowane.</span>
                     </label>
                 </div>
             </div>

@@ -18,6 +18,11 @@ form:
       description: Globalnie włącz Moduł-G5
       default: true
 
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_CORE_PARTICLE_CUSTOM_INFO
+
     html:
       type: textarea.textarea
       label: Własny HTML

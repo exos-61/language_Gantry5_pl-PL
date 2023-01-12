@@ -13,7 +13,7 @@ form:
     enabled:
       type: input.checkbox
       label: Włączone
-      description: Globalne włączenie Moduł-G5.
+      description: Globalne włączenie Modułu-G5 Mobile Menu.
       default: true
 
     _note:

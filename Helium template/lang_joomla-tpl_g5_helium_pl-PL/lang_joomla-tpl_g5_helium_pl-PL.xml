@@ -3,17 +3,27 @@
 
     <name>Spolszczenie szablonu Helium</name>
     <author>Zbigniew Sokal</author>
-    <creationDate>07 January 2022</creationDate>
+    <creationDate>12 January 2022</creationDate>
     <copyright>(C) 2018-2023 Poradniki Dziadka</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
     <authorEmail>admin@dziadek.guide</authorEmail>
     <authorUrl>https://dziadek.guide</authorUrl>
     <version>5.5.15</version>
-    <description>Polski pakiet językowy dla szablonu Helium Joomla Gantry 5 i plików yaml pakietu Gantry 5</description>
+    <description>Spolszczenie szablonu Helium Joomla i plików yaml pakietu Gantry 5</description>
 
     <fileset>
-        <!-- templates -->
 
+        <!-- TEMPLATES -->
+        <!-- templates/g5_helium/language -->
+        <files folder="language/pl-PL" target="templates/g5_helium/language/pl-PL">
+            <filename>pl-PL.tpl_g5_helium.ini</filename>
+            <filename>pl-PL.tpl_g5_helium.sys.ini</filename>
+        </files>
+        <!-- templates/g5_helium/admin/templates/pages/about-->
+        <files folder="custom/admin/templates/pages/about" target="templates/g5_helium/admin/templates/pages/about">
+            <filename>about.html.twig</filename>
+        </files>
+        <!-- templates/g5_helium/blueprints/styles-->
         <files folder="custom/blueprints/styles" target="templates/g5_helium/custom/blueprints/styles">
             <filename>above.yaml</filename>
             <filename>accent.yaml</filename>
@@ -32,11 +42,11 @@
             <filename>testimonials.yaml</filename>
             <filename>utility.yaml</filename>
         </files>
-
-        <files folder="custom/layouts" target="templates/g5_helium/custom/layouts">
+        <!-- templates/g5_helium/layouts-->
+        <files folder="custom/layouts" target="templates/g5_helium/layouts">
             <filename>home_-_particles.yaml</filename>
         </files>
-
+        <!-- templates/g5_helium/particles-->
         <files folder="custom/particles" target="templates/g5_helium/custom/particles">
             <filename>contentcubes.yaml</filename>
             <filename>contenttabs.yaml</filename>
@@ -45,19 +55,14 @@
             <filename>owlcarousel.yaml</filename>
         </files>
 
-        <files folder="language/pl-PL" target="templates/g5_helium/language/pl-PL">
-            <filename>pl-PL.tpl_g5_helium.ini</filename>
-            <filename>pl-PL.tpl_g5_helium.sys.ini</filename>
-        </files>
-
-        <!-- Gantry 5 -->
+        <!-- GANTRY 5 -->
         <!-- administrator -> custom/admin -->
-        <files folder="custom/admin/blueprints/gantry/theme" target="templates/g5_helium/custom/admin/blueprints/gantry/theme">
+        <files folder="custom/admin/blueprints_g5/gantry/theme" target="templates/g5_helium/custom/admin/blueprints/gantry/theme">
             <filename>configuration.yaml</filename>
             <filename>details.yaml</filename>
         </files>
 
-        <files folder="custom/admin/blueprints/menu" target="templates/g5_helium/custom/admin/blueprints/menu">
+        <files folder="custom/admin/blueprints_g5/menu" target="templates/g5_helium/custom/admin/blueprints/menu">
             <filename>menu.yaml</filename>
             <filename>menuitem.yaml</filename>
         </files>

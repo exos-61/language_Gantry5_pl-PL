@@ -9,6 +9,12 @@ form:
       id: g-settings-block-attributes
 
       fields:
+
+        _info:
+          type: separator.note
+          class: alert alert-info
+          content: DZIADEK_GUIDE_GANTRY5_CORE_LAYOUT_BLOCK_CSS_INFO
+
         id:
           type: input.text
           label: CSS ID

@@ -1,0 +1,33 @@
+name: Prawa autorskie
+description: Wyświetlanie informacji o prawach autorskich.
+type: particle
+icon: fa-copyright
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Włączone
+      description: Globally enable the particle.
+      default: true
+
+    date.start:
+      type: input.text
+      label: Rok rozpoczęcia
+      description: Wybierz rok rozpoczęcia obowiązywania praw autorskich.
+      default: now
+
+    date.end:
+      type: input.text
+      label: Rok końcowy
+      description: Wybierz rok zakończenia praw autorskich.
+      default: now
+
+    owner:
+      type: input.text
+      label: Właściciel praw autorskich
+      description: Dodaj nazwę właściciela praw autorskich.

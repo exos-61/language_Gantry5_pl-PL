@@ -4,6 +4,12 @@ type: section
 
 form:
   fields:
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_CORE_LAYOUT_SECTION_CSS_INFO
+
     boxed:
       type: select.selectize
       label: Układ sekcji

@@ -1,0 +1,10 @@
+W katalogu custom znajdują się spolszczone pliki yaml pakietu Gantry 5 w katalogach admin i engine, które według dokumentacji https://docs.gantry.org/gantry5/advanced/customizing-theme-files należy umieścić w Twoim szablonie obsługującym gantry w katalogu custom.
+
+admin -> templates/xxxTwójSzablon/custom
+engine -> templates/xxxTwójSzablon/custom
+
+Po skopiowaniu plików możesz katalog SPOLSZCZENIE_GANTRY5_SZABLON usunąć.
+
+Jeżeli zainstalujesz darmowe szablony Helium lub Hydrogen i pobierzesz spolszczenie z https://github.com/exos-61/language_Gantry5_pl-PL/releases to katalog SPOLSZCZENIE_GANTRY5_SZABLON jest niepotrzebny i możesz go natychmiast usunąć.
+
+Podobnie z komercyjnymi szablonami, które zostały spolszczone.
