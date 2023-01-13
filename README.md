@@ -43,7 +43,7 @@ Zostały spolszczone pliki językowe pakietu w lokalizacjach:
 
 * Moduł Particle
 
- `modules/mod_gantry5_particle/language`
+  `modules/mod_gantry5_particle/language`
 
   * en-GB.mod_gantry5_particle.ini > pl-PL.mod_gantry5_particle.ini
   * en-GB.mod_gantry5_particle.sys.ini > pl-PL.mod_gantry5_particle.sys.ini
