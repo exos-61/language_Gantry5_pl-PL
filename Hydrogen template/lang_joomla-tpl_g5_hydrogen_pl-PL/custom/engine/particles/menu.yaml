@@ -1,0 +1,77 @@
+name: Menu
+description: Gantry menu
+type: particle
+icon: fa-bars
+
+configuration:
+  caching:
+    type: menu
+
+form:
+  fields:
+
+    enabled:
+      type: input.checkbox
+      label: Włączone
+      description: Globalne włączenie Modułu-G5 Menu.
+      default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_CORE_PARTICLE_MENU_INFO
+
+    menu:
+      type: menu.list
+      label: Menu
+      description: Wybierz menu, które ma być używane z Modułem-G5 Menu.
+      default: ''
+      selectize:
+          allowEmptyOption: true
+      options:
+        '': Użyj menu domyślnego
+        '-active-': Użyj aktywnego menu
+
+    base:
+      type: menu.item
+      label: Pozycja podstawowa
+      description: "Wybierz pozycję menu, która ma być zawsze używana jako podstawa do wyświetlania menu."
+      default: '/'
+      options:
+        '/': Aktywny
+
+    startLevel:
+      type: input.text
+      label: Poziom początkowy
+      description: Ustawienie poziomu początkowego menu.
+      default: 1
+
+    maxLevels:
+      type: input.text
+      label: Poziom maksymalny
+      description: Ustawienie maksymalnej liczby poziomów menu do wyświetlenia.
+      default: 0
+
+    renderTitles:
+      type: input.checkbox
+      label: Renderuj tytuły
+      description: Renderuje tytuły/podpowiedzi elementów menu w celu zapewnienia dostępności.
+      default: 0
+
+    hoverExpand:
+      type: input.checkbox
+      label: Rozwiń po najechaniu
+      description: 'Umożliwia włączenie / wyłączenie możliwości rozwijania elementów menu tylko przez najechanie lub kliknięcie'
+      default: 1
+
+    mobileTarget:
+      type: input.checkbox
+      label: Wyślij do Mobile Menu
+      description: Zaznacz to pole, jeśli chcesz, aby to menu dołączyć do Mobile Menu i pojawiło się w Offcanvas
+      default: 0
+
+    forceTarget:
+      type: input.checkbox
+      label: Wymuś otwieranie w tym samym oknie
+      description: "Dodaje atrybut 'target=&quot;_self&quot;' do wszystkich linków menu zamiast pomijać wartość domyślną. Naprawia problem z przypiętymi kartami w Firefoksie, gdzie linki zewnętrzne zawsze otwierały się w nowej karcie."
+      default: 0

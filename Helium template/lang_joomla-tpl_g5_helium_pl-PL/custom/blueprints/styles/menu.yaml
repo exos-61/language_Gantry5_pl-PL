@@ -12,14 +12,14 @@ form:
 
     col-width:
       type: input.text
-      label: Prosta szerokość rozwijania
+      label: Szerokość
       description: 'Określ domyślną szerokość rozwijanych menu dla trybu prostego w jednostkach rem, em lub px. Ta szerokość może być nadpisana na każdej indywidualnej pozycji menu w edytorze menu.'
       default: "180px"
       pattern: '\d+(\.\d+){0,1}(rem|em|px)'
 
     animation:
       type: select.selectize
-      label: Animacja rozwijania
+      label: Animacja
       description: Wybierz animację rozwijania menu.
       default: g-fade
       options:
@@ -33,7 +33,7 @@ form:
 
     hide-on-mobile:
       type: input.checkbox
-      label: Ukryj w telefonie komórkowym
+      label: Ukryj w telefonie
       description: Zaznacz to pole, aby całkowicie ukryć menu rozwijane na urządzeniach mobilnych. Zapobiega to migotaniu menu, ale menu może się nie wyświetlać, gdy JS nie jest obsługiwany przez dane urządzenie..
       placeholder: 'Wybierz...'
       default: 0

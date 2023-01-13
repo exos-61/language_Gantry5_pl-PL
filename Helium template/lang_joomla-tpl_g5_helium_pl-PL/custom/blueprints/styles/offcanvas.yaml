@@ -20,19 +20,19 @@ form:
       default: "#eceeef"
     toggle-color:
       type: input.colorpicker
-      label: Toggle Color
+      label: Kolor przycisku
       default: "#4db2b3"
     toggle-visibility:
       type: select.selectize
-      label: Toggle Visibility
-      description: Choose the OffCanvas Toggle Visibility.
+      label: Widoczność
+      description: Wybierz gdzie ma być widoczny przycisk.
       default: 1
       options:
         1: Mobile Menu
         2: Always
     width:
       type: input.text
-      label: Szerokość panelu
+      label: Szerokość
       description: Ustaw rozmiar offcanvas w wartościach rem, em, px lub jednostkach procentowych
       default: "12rem"
       pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'

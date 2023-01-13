@@ -1,0 +1,23 @@
+name: Zawartość strony
+description: Wyświetlanie zawartości strony w określonym położeniu w układzie strony.
+type: system
+icon: far fa-file-alt
+hidden: false
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Włączone
+      description: Globalnie włącz Moduł-G5
+      default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: Wyświetla główną zawartość w Twoim układzie (layout) strony.
+
+    _alert:
+      type: separator.note
+      class: alert alert-warning
+      content: Ten Moduł-G5 (Page Content - Zawartość strony) jest potrzebny do wyświetlania zawartości strony, choć może być wyłączony z kilku wybranych stron, takich jak Twoja strona główna.

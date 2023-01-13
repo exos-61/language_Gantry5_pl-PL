@@ -1,0 +1,39 @@
+name: Kontener
+description: Zakładka Kontener. Układ (layout) kontenera
+type: container
+
+form:
+  fields:
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_CORE_LAYOUT_CONTAINER_CSS_INFO
+
+    boxed:
+      type: select.selectize
+      label: Układ kontenera
+      description: "Wybierz zachowanie kontenera w układzie strony (Layout). 'Dziedzicz' odnosi się do parametrów w Ustawieniach strony."
+      isset: true
+      selectize:
+        allowEmptyOption: true
+      options:
+        '': Dziedziczenie z Ustawienia strony
+        0: Pełna szerokość (Zawartość w stałym kontenerze)
+        2: Pełna szerokość (Zawartość w pływającym kontenerze)
+        1: Kontener
+        3: Bez kontenera
+
+    class:
+      type: input.selectize
+      label: Klasy CSS
+      description: Wprowadź nazwy klas CSS.
+      default:
+
+    extra:
+      type: collection.keyvalue
+      label: Atrybuty tagów
+      description: Dodatkowe atrybuty tagów.
+      key_placeholder: 'Key (data-*, style, ...)'
+      value_placeholder: Wartość
+      exclude: ['class']

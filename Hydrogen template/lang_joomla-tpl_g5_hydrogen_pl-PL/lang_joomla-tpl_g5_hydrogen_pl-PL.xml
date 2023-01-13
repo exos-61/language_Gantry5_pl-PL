@@ -19,16 +19,16 @@
             <filename>pl-PL.tpl_g5_hydrogen.sys.ini</filename>
         </files>
         <!-- templates/g5_hydrogen/admin/templates/ajax-->
-        <files folder="custom/admin/templates/ajax" target="templates/g5_hydrogen/admin/templates/ajax">
+        <files folder="custom/admin/templates/ajax" target="templates/g5_hydrogen/custom/admin/templates/ajax">
             <filename>icons.html.twig</filename>
             <filename>outline-new.html.twig</filename>
         </files>
         <!-- templates/g5_hydrogen/admin/templates/pages/about-->
-        <files folder="custom/admin/templates/pages/about" target="templates/g5_hydrogen/admin/templates/pages/about">
+        <files folder="custom/admin/templates/pages/about" target="templates/g5_hydrogen/custom/admin/templates/pages/about">
             <filename>about.html.twig</filename>
         </files>
         <!-- templates/g5_hydrogen/blueprints-->
-        <files folder="custom/blueprints" target="templates/g5_hydrogen/blueprints">
+        <files folder="custom/blueprints" target="templates/g5_hydrogen/custom/blueprints">
             <filename>page.yaml</filename>
         </files>
         <!-- templates/g5_hydrogen/blueprints/styles-->
@@ -47,7 +47,7 @@
             <filename>subfeature.yaml</filename>
         </files>
         <!-- templates/g5_hydrogen/layouts-->
-        <files folder="custom/layouts" target="templates/g5_hydrogen/layouts">
+        <files folder="custom/layouts" target="templates/g5_hydrogen/custom/layouts">
             <filename>home.yaml</filename>
         </files>
         <!-- templates/g5_hydrogen/particles-->
@@ -56,12 +56,12 @@
         </files>
         <!-- GANTRY 5 -->
         <!-- administrator -> custom/admin -->
-        <files folder="custom/admin/blueprints_g5/gantry/theme" target="templates/g5_hydrogen/custom/admin/blueprints/gantry/theme">
+        <files folder="custom/admin/blueprints/gantry/theme" target="templates/g5_hydrogen/custom/admin/blueprints/gantry/theme">
             <filename>configuration.yaml</filename>
             <filename>details.yaml</filename>
         </files>
 
-        <files folder="custom/admin/blueprints_g5/menu" target="templates/g5_hydrogen/custom/admin/blueprints/menu">
+        <files folder="custom/admin/blueprints/menu" target="templates/g5_hydrogen/custom/admin/blueprints/menu">
             <filename>menu.yaml</filename>
             <filename>menuitem.yaml</filename>
         </files>

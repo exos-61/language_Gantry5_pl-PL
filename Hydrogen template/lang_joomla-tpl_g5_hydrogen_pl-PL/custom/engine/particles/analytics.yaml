@@ -1,0 +1,29 @@
+name: Google Analytics
+description: Konfiguracja Google Analytics.
+type: atom
+icon: fa-area-chart
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Włącz
+      description: 'Globalne włączenie wtyczki-G5 do analizy strony.'
+      default: true
+
+    ua.code:
+      type: input.text
+      description: 'Wprowadź kod śledzenia Google UA dla analytics (UA-XXXXXX-X)'
+      label: UA Code
+      placeholder: UA-XXXXXXXX-X
+
+    ua.anonym:
+      type: input.checkbox
+      description: Wysyłaj tylko anonimowe adresy IP (obowiązkowe w Europie)
+      label: Statystyki anonimowe
+      default: false
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_CORE_PARTICLE_ANALYTICS_INFO

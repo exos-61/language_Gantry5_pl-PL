@@ -1,5 +1,5 @@
 name: Kolory linków
-description: Link colors for the Helium theme
+description: Kolory linków dla motywu Helium
 type: core
 
 form:
@@ -11,5 +11,5 @@ form:
       default: "#4db2b3"
     hover:
       type: input.colorpicker
-      label: Kolor odwiedzonego łącza
+      label: Odwiedzony link
       default: "#424753"

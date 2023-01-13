@@ -1,0 +1,42 @@
+name: Własny HTML
+description: Wyświetla niestandardowy blok HTML.
+type: particle
+icon: fa-code
+
+configuration:
+  caching:
+    type: config_matches
+    values:
+      twig: '0'
+      filter: '0'
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Włączone
+      description: Globalnie włącz Moduł-G5
+      default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_CORE_PARTICLE_CUSTOM_INFO
+
+    html:
+      type: textarea.textarea
+      label: Własny HTML
+      description: Wprowadź tutaj niestandardowy HTML.
+      overridable: false
+
+    twig:
+       type: input.checkbox
+       label: Obsługuj Twig
+       description: Włącz przetwarzanie szablonów Twig w treści. Twig będzie przetwarzany przed krótkimi kodami (shortcodes).
+       default: '0'
+
+    filter:
+      type: input.checkbox
+      label: Obsługuj krótkie kody
+      description: Włącz przetwarzanie / filtrowanie krótkich kodów (shortcode) w treści.
+      default: '0'

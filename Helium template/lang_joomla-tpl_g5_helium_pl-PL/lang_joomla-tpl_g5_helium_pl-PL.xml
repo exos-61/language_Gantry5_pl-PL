@@ -20,7 +20,7 @@
             <filename>pl-PL.tpl_g5_helium.sys.ini</filename>
         </files>
         <!-- templates/g5_helium/admin/templates/pages/about-->
-        <files folder="custom/admin/templates/pages/about" target="templates/g5_helium/admin/templates/pages/about">
+        <files folder="custom/admin/templates/pages/about" target="templates/g5_helium/custom/admin/templates/pages/about">
             <filename>about.html.twig</filename>
         </files>
         <!-- templates/g5_helium/blueprints/styles-->
@@ -43,7 +43,7 @@
             <filename>utility.yaml</filename>
         </files>
         <!-- templates/g5_helium/layouts-->
-        <files folder="custom/layouts" target="templates/g5_helium/layouts">
+        <files folder="custom/layouts" target="templates/g5_helium/custom/layouts">
             <filename>home_-_particles.yaml</filename>
         </files>
         <!-- templates/g5_helium/particles-->
@@ -57,12 +57,12 @@
 
         <!-- GANTRY 5 -->
         <!-- administrator -> custom/admin -->
-        <files folder="custom/admin/blueprints_g5/gantry/theme" target="templates/g5_helium/custom/admin/blueprints/gantry/theme">
+        <files folder="custom/admin/blueprints/gantry/theme" target="templates/g5_helium/custom/admin/blueprints/gantry/theme">
             <filename>configuration.yaml</filename>
             <filename>details.yaml</filename>
         </files>
 
-        <files folder="custom/admin/blueprints_g5/menu" target="templates/g5_helium/custom/admin/blueprints/menu">
+        <files folder="custom/admin/blueprints/menu" target="templates/g5_helium/custom/admin/blueprints/menu">
             <filename>menu.yaml</filename>
             <filename>menuitem.yaml</filename>
         </files>

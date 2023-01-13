@@ -66,7 +66,7 @@ Zostały spolszczone pliki językowe pakietu w lokalizacjach:
 
 Niestety pliki językowe **.ini** nie zawierają wszystkich wyrażeń użytych przy konfigurowaniu elementów Gantry 5. Elementy Moduły-G5, Wtyczki-G5 i Pozycje-G5 są dostępne tylko w języku angielskim i wymagają przetłumaczenia plików konfiguracyjnych .yaml.
 
-Zgodnie z [dokumentacją](https://docs.gantry.org/gantry5/advanced/customizing-theme-files#theme-directory-matrix) katalog **custom** w lokalizacji *templates/Twój_szablon* służy do nadpisywania wszystkich plików znajdujących się w *administrator/components/com_gantry5* w pliku **admin**, *media/gantry5/engines/nucleus* w pliku **engine** oraz pliki szablonu zgodnie z hierarchią katalogów. Aby pakiet Gantry 5 był całkowicie przetłumaczony pliki yaml muszą być zainstalowane w wymienionych lokalizacjach szablonu. Jeżeli Twój szablon nie został jeszcze przetłumaczony to pobierz jakikolwiek z dostępnych, rozpakuj na komputerze i przy pomocy FTP wrzuć katalogi **admin** i **engine** do katalogu custom Twojego szablonu co spowoduje że pakiet Gantry 5 będzie całościowo przetłumaczony. W razie problemów wystarczy pliki usunąć. Baw sie dobrze i Twórz niesamowite strony, bo teraz masz taką możliwość bez znajomości kodowania.
+Zgodnie z [dokumentacją](https://docs.gantry.org/gantry5/advanced/customizing-theme-files#theme-directory-matrix) katalog **custom** w lokalizacji *templates/Twój_szablon* służy do nadpisywania wszystkich plików znajdujących się w *administrator/components/com_gantry5* w katalogu **admin**, *media/gantry5/engines/nucleus* w katalogu **engine** oraz pliki szablonu zgodnie z nazwą i hierarchią katalogów. Aby pakiet Gantry 5 był całkowicie przetłumaczony pliki yaml muszą być zainstalowane w wymienionych lokalizacjach szablonu. Jeżeli Twój szablon nie został jeszcze przetłumaczony to pobierz jakikolwiek z dostępnych, rozpakuj na komputerze i przy pomocy FTP wrzuć katalogi **admin** i **engine** do katalogu custom Twojego szablonu co spowoduje że pakiet Gantry 5 będzie całościowo przetłumaczony. W razie problemów wystarczy pliki usunąć. Baw sie dobrze i Twórz niesamowite strony, bo teraz masz taką możliwość bez znajomości kodowania.
 
 ### Jakie pliki yaml zostały przetłumaczone?
 
@@ -85,7 +85,7 @@ Zgodnie z [dokumentacją](https://docs.gantry.org/gantry5/advanced/customizing-t
   * block.yaml - *Zakładka Blok (Block).*
   * container.yaml - *Zakładka Kontener (Container).*
   * offcanvas.yaml - *Zakładka Offcanvas.*
-  * section - *zakładka Sekcja (Section).*
+  * section.yaml - *zakładka Sekcja (Section).*
 * media/gantry5/engines/nucleus/admin/blueprints/layout/inheritance
   * atom.yaml - *Zakładka Dziedziczenie Wtyczka-G5.*
   * offcanvas.yaml - *Zakładka Dziedziczenie sekcja Offcanvas.*

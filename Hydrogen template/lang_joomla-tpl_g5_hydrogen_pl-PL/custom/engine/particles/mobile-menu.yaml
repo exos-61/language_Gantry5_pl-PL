@@ -1,0 +1,22 @@
+name: Mobile Menu
+description: Renderuje kontener menu mobilnego dla sekcji offcanvas.
+type: particle
+icon: fa-ellipsis-v
+hidden: false
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Włączone
+      description: Globalne włączenie Modułu-G5 Mobile Menu.
+      default: true
+
+    _note:
+      type: separator.note
+      class: alert alert-info
+      content: '<p>Ten Moduł-G5 jest docelowym kontenerem, do którego zostanie wstrzyknięte Menu dla urządzeń przenośnych.</p><p>Proszę zauważyć, że ten Moduł <strong>musi</strong> być unikalny w Układzie i umieszczony w sekcji Offcanvas. Będziesz również potrzebował Menu obecnego w Układzie.</p>'

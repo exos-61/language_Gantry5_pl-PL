@@ -1,0 +1,112 @@
+name: Własny CSS/JS
+description: Konfiguracja niestandardowego CSS i Javascript.
+type: atom
+icon: far fa-file-code
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Włączone
+      description: Globalnie włącz Dodatki-G5 CSS/JS.
+      default: true
+
+    css:
+      type: collection.list
+      array: true
+      label: CSS
+      description: Dodawanie, usuwanie lub modyfikowanie niestandardowych składników CSS.
+      value: name
+      ajax: true
+
+      fields:
+
+        .name:
+          type: input.text
+          label: Nazwa
+          skip: true
+
+        .location:
+          type: input.filepicker
+          label: Lokalizacja pliku
+          icon: far fa-file-code
+          placeholder: 'http://cdn1.remote/file.css'
+          filter: '\.(css|less|scss|sass)$'
+          root: 'gantry-assets://'
+
+        .inline:
+          type: textarea.textarea
+          label: Inline CSS
+          description: Dodanie CSS wewnątrz tagu HTML, przy użyciu atrybutu „style”  dla fragmentów kodu (quick snippets).
+
+        _info:
+          type: separator.note
+          class: alert alert-info
+          content: DZIADEK_GUIDE_GANTRY5_CORE_PARTICLE_ASSETS_CSS_INFO
+
+        .extra:
+          type: collection.keyvalue
+          label: Atrybuty tagów
+          key_placeholder: 'Key (data-*, style, ...)'
+          value_placeholder: Wartość
+          exclude: ['rel', 'href', 'type']
+
+        .priority:
+          type: input.number
+          label: Priorytet ładowania
+          description: 'Ustawia priorytet ładowania zasobu na stronie. Wartość może zawierać się pomiędzy 10 (pierwszy) a -10 (ostatni). Domyślną wartością jest 0.'
+          default: 0
+          min: -10
+          max: 10
+
+    javascript:
+      type: collection.list
+      array: true
+      label: Javascript
+      description: Dodaj, usuń lub zmodyfikuj niestandardowe elementy Javascript.
+      value: name
+      ajax: true
+
+      fields:
+
+        .name:
+          type: input.text
+          label: Nazwa
+          skip: true
+
+        .location:
+          type: input.filepicker
+          label: Lokalizacja pliku
+          icon: far fa-file-code
+          placeholder: 'http://cdn1.remote/file.js'
+          filter: '\.(jsx?|coffee)$'
+          root: 'gantry-assets://'
+
+        .inline:
+          type: textarea.textarea
+          label: Inline JavaScript
+          description: Dodanie JavaScript wewnątrz tagu HTML, przy użyciu atrybutu „style”  dla fragmentów kodu (quick snippets).
+
+        _info:
+          type: separator.note
+          class: alert alert-info
+          content: DZIADEK_GUIDE_GANTRY5_CORE_PARTICLE_ASSETS_JS_INFO
+
+        .in_footer:
+          type: input.checkbox
+          label: 'Przed </body>'
+          description: Czy chcesz, aby skrypt ładował się na końcu znacznika body czy wewnątrz head
+          default: false
+
+        .extra:
+          type: collection.keyvalue
+          label: Atrybuty tagów
+          exclude: ['src', 'type']
+
+        .priority:
+          type: input.number
+          label: Priorytet ładowania
+          description: 'Ustawia priorytet ładowania zasobu na stronie. Wartość może zawierać się pomiędzy 10 (pierwszy) a -10 (ostatni). Domyślną wartością jest 0.'
+          default: 0
+          min: -10
+          max: 10
