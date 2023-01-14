@@ -1,5 +1,5 @@
-name: Ciasteczka
-description: Wyświetl niestandardową zgodę na pliki cookie.
+name: Zgoda na cookie
+description: Zgoda na wykorzystanie plików cookie.
 type: atom
 
 form:
@@ -7,67 +7,67 @@ form:
     enabled:
       type: input.checkbox
       label: Enabled
-      description: Globally enable to the particles.
+      description: Globalne włączenie Modułu-G5.
       default: true
 
     _note_cookie_item:
       type: separator.note
       class: alert alert-info
-      content: <span style="font-size:16px; font-weight:bold;">Cookie Consent - Options</span>
+      content: <span style="font-size:16px; font-weight:bold;">Zgoda na pliki cookie - opcje</span>
     cookie_consent:
       type: enable.enable
-      label: Enable Cookie Consent
+      label: Włącz zgodę na pliki cookie
       default: false
     cookie_consent_position:
       type: select.select
-      label: Position
+      label: Pozycja
       default: bottom
       options:
-        bottom: Banner Bottom
-        top: Banner Top
+        bottom: Dół
+        top: Góra
         pushdown: Banner top (pushdown)
-        bottom-left: Floating Left
-        bottom-right: Floating Right
+        bottom-left: Ruch z lewej strony
+        bottom-right: Ruch z prawej strony
     cookie_consent_layout:
       type: select.select
-      label: Layout
+      label: Układ
       default: block
       options:
-        block: Block
-        edgeless: Edgeless
-        classic: Classic
-        wire: Wire
+        block: Blok
+        edgeless: Bez krawędzi
+        classic: Klasyczny
+        wire: Pasek
     cookie_consent_cbgColor:
       type: input.colorpicker
-      label: Background Color
+      label: Kolor tła
       default: '#000000'
     cookie_consent_ctextColor:
       type: input.colorpicker
-      label: Text Color
+      label: Kolor tekstu
       default: '#ffffff'
     cookie_consent_cbuttonBg:
       type: input.colorpicker
-      label: Button Background
+      label: Kolor tła przycisku
       default: '#f1d600'
     cookie_consent_cbuttonColor:
       type: input.colorpicker
-      label: Button Text Color
+      label: Kolor tekstu przycisku
       default: '#000000'
     cookie_consent_displayText:
       type: textarea.textarea
-      label: Description
-      default: We use cookies to ensure you get the best experience on our website.
+      label: Opis
+      default: Używamy plików cookie, aby zapewnić Ci najlepsze doświadczenia na naszej stronie.
     cookie_consent_policyText:
       type: input.text
-      label: Link Text
-      default: Learn more
-      description: Leave empty if you don't need.
+      label: Polityka...
+      default: Więcej informacji
+      description: Pozostaw puste, jeśli nie są potrzebne.
     cookie_consent_policyURL:
       type: input.text
       label: Link URL
       placeholder: 'cookie-policy'
-      description: Leave empty if you don't need.
+      description: Pozostaw puste, jeśli nie są potrzebne.
     cookie_consent_dismissText:
       type: input.text
       label: Dismiss Button Text
-      default: Got It!
+      default: Odrzuć!

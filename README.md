@@ -54,7 +54,7 @@ Zostały spolszczone pliki językowe pakietu w lokalizacjach:
 
   * en-GB.lib_gantry5.sys.ini > pl-PL.lib_gantry5.sys.ini
 
-* W site language
+* Front-end
 
   `language`
 
@@ -121,7 +121,7 @@ Zgodnie z [dokumentacją](https://docs.gantry.org/gantry5/advanced/customizing-t
   * menu.yaml - *Moduł-G5 (Particle) - Menu Gantry*
   * messages.yaml - *Pozycja-G5 (Particle) - Wyświetlanie komunikatów systemowych.*
   * mobile-menu.yaml - *Moduł-G5 (Particle) - Renderuje kontener menu mobilnego dla sekcji offcanvas. Mobile Menu.*
-  * module.yaml - *Pozycja-G5 (Particle) - Wyświetlanie Modułów-G5 i Joomla w określonym położeniu w układzie strony. Module Instance (Instancja modułu).*
+  * module.yaml - *Pozycja-G5 (Particle) - Wyświetlanie Modułów-G5 i Joomla w określonym położeniu w układzie strony. Module Instance (Instancja modułu).
   * position.yaml - *Pozycja-G5 (Particle) - Pozycje do umieszczania modułów w Joomla.*
   * social.yaml - *Moduł-G5 (Particle) - Wyświetla przyciski społecznościowe.*
   * spacer.yaml - *Pozycja-G5 (Particle) - Dodaje pustą kolumnę do wiersza.*

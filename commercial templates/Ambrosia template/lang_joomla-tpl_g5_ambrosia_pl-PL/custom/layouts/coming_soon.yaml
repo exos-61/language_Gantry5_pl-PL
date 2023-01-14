@@ -73,49 +73,49 @@ content:
     block:
       class: 'g-logo-block center'
   custom-1359:
-    title: 'Coming Soon'
+    title: 'Już wkrótce'
     attributes:
-      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">Ambrosia is Coming Soon</h2>\n\t<div class=\"g-layercontent-subtitle\">Good News! Something Awesome is in the Works</div>\n</div>"
+      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">Ambrozja już wkrótce.</h2>\n\t<div class=\"g-layercontent-subtitle\">Dobre wieści! Coś niesamowitego jest w przygotowaniu</div>\n</div>"
     block:
       class: 'flush center'
   simplecounter-7630:
     title: 'Simple Counter'
     attributes:
       title: 'Stay Tuned'
-      desc: 'We are working on a new and exciting template that we think you will really like.'
+      desc: 'Pracujemy nad nowym i ekscytującym projektem, który naszym zdaniem naprawdę Ci się spodoba.'
       date: '1'
       month: '1'
       year: '2025'
-      daytext: Day
-      daystext: Days
-      hourtext: Hour
-      hourstext: Hours
-      minutetext: Minute
-      minutestext: Minutes
-      secondtext: Second
-      secondstext: Seconds
+      daytext: Dzień
+      daystext: Dni
+      hourtext: Godzina
+      hourstext: Godzin
+      minutetext: Minuta
+      minutestext: Minuty
+      secondtext: Sekunda
+      secondstext: Sekundy
     block:
       class: center
   custom-5545:
-    title: 'Have Something to Tell Us'
+    title: 'Masz nam coś do powiedzenia'
     attributes:
-      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">Have Something to Tell Us?</h2>\n\t<div class=\"g-layercontent-subtitle\">Ideas, Suggestion, or Review</div>\n\t<a href=\"https://www.rockettheme.com/joomla/templates/ambrosia\" class=\"button\">Contact Us</a>\n</div>"
+      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">Masz nam coś do powiedzenia?</h2>\n\t<div class=\"g-layercontent-subtitle\">Pomysły, sugestie lub recenzje</div>\n\t<a href=\"https://www.rockettheme.com/joomla/templates/ambrosia\" class=\"button\">Kontakt z nami</a>\n</div>"
     block:
       class: 'flush center'
   custom-5147:
-    title: 'About Ambrosia'
+    title: 'O nas'
     attributes:
-      html: "<h2 class=\"g-title\">About Ambrosia</h2>\n<br />\n<span>Ambrosia is available for purchase or part of a club membership from RocketTheme, inclusive of the RocketLauncher, template, addons and sources.</span>"
+      html: "<h2 class=\"g-title\">Zbigniew Sokal</h2>\n<br />\n<span>Na stronie znajdziesz zawsze aktualne wskazówki na temat tworzenia typu "non code", postprodukcji i wiele więcej</span>"
   newsletter-1178:
     attributes:
       title: Newsletter
-      headtext: 'Subscribe to our newsletter and stay updated on the latest developments and special offers!'
+      headtext: 'Zapisz się do naszego newslettera i bądź na bieżąco z najnowszymi wydarzeniami i ofertami specjalnymi!'
       uri: rocketthemeblog
       buttonclass: button-4
   copyright-3074:
     attributes:
       date:
         start: '2007'
-      owner: 'RocketTheme, LLC'
+      owner: 'dziadek.gantry'
     block:
       class: center

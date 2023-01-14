@@ -76,7 +76,7 @@ content:
   custom-7269:
     title: Offline
     attributes:
-      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">Offline</h2>\n\t<div class=\"g-layercontent-subtitle\">Sorry, We are Down for Maintenance</div>\n</div>"
+      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">Offline</h2>\n\t<div class=\"g-layercontent-subtitle\">Przepraszamy, jesteśmy wyłączeni z powodu konserwacji</div>\n</div>"
     block:
       class: 'flush center'
   system-content-2936:
@@ -86,23 +86,23 @@ content:
   custom-6450:
     title: 'Maintenance Mode'
     attributes:
-      html: "<div class=\"g-layercontent\">\n\t<h2 class=\"g-layercontent-title\">Maintenance Mode</h2>\n\t<div class=\"g-layercontent-subtitle\">Sorry, Our Website is Temporarily Down for Maintenance. Please Check Back Again Soon.</div>\n\t<a href=\"#\" class=\"button\">Contact Us</a>\n</div>"
+      html: "<div class=\"g-layercontent\">\n\t<h2 class=\"g-layercontent-title\">Tryb konserwacji</h2>\n\t<div class=\"g-layercontent-subtitle\">Przepraszamy, nasza strona jest tymczasowo wyłączona z powodu konserwacji. Proszę sprawdzić ponownie wkrótce.</div>\n\t<a href=\"#\" class=\"button\">Kontakt z nami</a>\n</div>"
     block:
       class: 'flush center'
   custom-4730:
-    title: 'About Ambrosia'
+    title: 'O nas'
     attributes:
-      html: "<h2 class=\"g-title\">About Ambrosia</h2>\n<br />\n<span>Ambrosia is available for purchase or part of a club membership from RocketTheme, inclusive of the RocketLauncher, template, addons and sources.</span>"
+      html: "<h2 class=\"g-title\">Zbigniew Sokal</h2>\n<br />\n<span>Po pracach konserwacyjnych zapraszam ponownie.</span>"
   newsletter-9127:
     attributes:
       title: Newsletter
-      headtext: 'Subscribe to our newsletter and stay updated on the latest developments and special offers!'
+      headtext: 'Zapisz się do naszego newslettera i bądź na bieżąco z najnowszymi wydarzeniami i ofertami specjalnymi!'
       uri: rocketthemeblog
       buttonclass: button-4
   copyright-5670:
     attributes:
       date:
         start: '2007'
-      owner: 'RocketTheme, LLC'
+      owner: 'moja.firma'
     block:
       class: center

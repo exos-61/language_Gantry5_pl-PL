@@ -29,23 +29,23 @@ Niestety pliki językowe **.ini** nie zawierają wszystkich wyrażeń użytych p
 
 Zgodnie z [dokumentacją](https://docs.gantry.org/gantry5/advanced/customizing-theme-files#theme-directory-matrix) katalog **custom** w lokalizacji *templates/Twój_szablon* służy do nadpisywania wszystkich plików znajdujących się w *administrator/components/com_gantry5* w katalogu **admin**, *media/gantry5/engines/nucleus* w katalogu **engine** oraz pliki szablonu zgodnie z nazwą i hierarchią katalogów. Aby pakiet Gantry 5 był całkowicie przetłumaczony pliki yaml muszą być zainstalowane lub wklejone do katalogu custom szablonu w wymienionych katalogach.
 
-Ten pakiet językowy zainstaluje pliki językowe .ini, przetłumaczone pliki yaml szablonu Hydrogen i pakietu Gantry 5.
+Ten pakiet językowy zainstaluje pliki językowe .ini, przetłumaczone pliki yaml i twig szablonu Hydrogen oraz pakietu Gantry 5.
 
-### Jakie pliki yaml szablonu zostały przetłumaczone?
+### Jakie pliki yaml i twig szablonu zostały przetłumaczone?
 
 **templates**
 
 * templates/g5_hydrogen/admin/templates/ajax
   * icons.html.twig - *Komunikat w oknie dodawania czcionki awesome*
   * outline-new.html.twig - *Okno tworzenia nowego szablonu*
-* admin/templates/pages
+* templates/g5_hydrogen/admin/templates/pages
   * about.html.twig - *Opis szablonu w oknie otwieranym przyciskiem About*
 
 **blueprints**
 
 * templates/g5_hydrogen/blueprints
   * page.yaml - *Zakładka Blok (Block).*
-* templates/g5_hydrogen/blueprints/style
+* templates/g5_hydrogen/blueprints/styles
   * accent.yaml - *Style kolorów akcentujących.*
   * base.yaml - *Style kolorów podstawowych*
   * breakpoints.yaml - *Ustawienia przerwań dla urządzeń wyświetlających*
