@@ -50,6 +50,15 @@
             <filename>coming_soon.yaml</filename>
             <filename>home.yaml</filename>
         </files>
+        <!-- templates/rt_ambrosia/gantry-->
+        <files folder="custom/gantry" target="templates/rt_ambrosia/custom/gantry">
+            <filename>theme.yaml</filename>
+        </files>
+        <!-- templates/rt_ambrosia/gantry/gantry_oryginal_v1.5.0-->
+        <files folder="custom/gantry/gantry_oryginal_v1.5.0" target="templates/rt_ambrosia/custom/gantry/gantry_oryginal_v1.5.0">
+            <filename>theme.yaml</filename>
+            <filename>presets.yaml</filename>
+        </files>
         <!-- templates/rt_ambrosia/particles-->
         <files folder="custom/particles" target="templates/rt_ambrosia/custom/particles">
             <filename>aos.yaml</filename>

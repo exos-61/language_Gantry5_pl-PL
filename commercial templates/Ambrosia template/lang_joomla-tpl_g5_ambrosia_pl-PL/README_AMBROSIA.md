@@ -73,11 +73,15 @@ Ten pakiet językowy zainstaluje pliki językowe .ini, przetłumaczone pliki yam
   * audioplayer.yaml - *Moduł-G5 (Particle) - Odtwarzanie muzyki poprzez interfejs odtwarzacza audio.*
   * blockcontent.yaml - *Moduł-G5 (Particle) - Wyświetla zawartość bloku*
   * calendar.yaml - *Moduł-G5 (Particle) - Kalendarz do wyświetlania dat.*
+  * cookie-consent.yaml - *Wtyczka-G5 (Atom) - Wyświetla komunikat zgody na stosowanie cookies.*
+  * cookie-consent.html.twig - *Wtyczka darmowa z [Inspire Theme](https://www.inspiretheme.com/documentation/gantry5-particles/cookie-consent)*
   * contact.yaml - *Moduł-G5 (Particle) - Wyświetla kontakt.*
   * contentlist.yaml - *Moduł-G5 (Particle) - Wyświetla listę zawartości.*
   * contenttabs.yaml - *Moduł-G5 (Particle) - Wyświetla karty treści.*
   * featuresslider.yaml - *Moduł-G5 (Particle) - Wyświetlanie suwaka z funkcjami.*
   * fixedheader.yaml - *Wtyczka-G5 (Atom) - Dodaje stały nagłówek do swojej strony.*
+  * googlemap.yaml - *Moduł-G5 (Particle) - umożliwia wstawianie na stronę bloku z lokalizacją np. Twojej firmy w mapach Google*
+  * googlemap.html.twig - *Wtyczka darmowa z [Inspire Theme](https://www.inspiretheme.com/documentation/gantry5-particles/google-maps)*
   * headlines.yaml - *Moduł-G5 (Particle) - Wyświetla nagłówki.*
   * horizontalmenu.yaml - *Moduł-G5 (Particle) - Wyświetlanie menu poziomego.*
   * imagegrid.yaml - *Moduł-G5 (Particle) - Wyświetlanie siatki zdjęć.*
