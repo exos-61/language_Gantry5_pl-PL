@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="2.5" method="upgrade">
+
+    <name>Spolszczenie szablonu Ambrosia</name>
+    <author>Zbigniew Sokal</author>
+    <creationDate>12 January 2022</creationDate>
+    <copyright>(C) 2018-2023 Poradniki Dziadka</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>admin@dziadek.guide</authorEmail>
+    <authorUrl>https://dziadek.guide</authorUrl>
+    <version>5.5.15</version>
+    <description>Spolszczenie szablonu Ambrosia Joomla i plików yaml pakietu Gantry 5</description>
+
+    <fileset>
+
+        <!-- TEMPLATES -->
+        <!-- templates/rt_ambrosia/language -->
+        <files folder="language/pl-PL" target="templates/rt_ambrosia/language/pl-PL">
+            <filename>pl-PL.tpl_rt_ambrosia.ini</filename>
+            <filename>pl-PL.tpl_rt_ambrosia.sys.ini</filename>
+        </files>
+        <!-- templates/rt_ambrosia/admin/templates/pages/about-->
+        <files folder="custom/admin/templates/pages/about" target="templates/rt_ambrosia/custom/admin/templates/pages/about">
+            <filename>about.html.twig</filename>
+        </files>
+        <!-- templates/rt_ambrosia/blueprints/styles-->
+        <files folder="custom/blueprints/styles" target="templates/rt_ambrosia/custom/blueprints/styles">
+            <filename>accent.yaml</filename>
+            <filename>base.yaml</filename>
+            <filename>bottom.yaml</filename>
+            <filename>breakpoints.yaml</filename>
+            <filename>copyright.yaml</filename>
+            <filename>extension.yaml</filename>
+            <filename>feature.yaml</filename>
+            <filename>font.yaml</filename>
+            <filename>footer.yaml</filename>
+            <filename>header.yaml</filename>
+            <filename>main.yaml</filename>
+            <filename>menu.yaml</filename>
+            <filename>navigation.yaml</filename>
+            <filename>offcanvas.yaml</filename>
+            <filename>showcase.yaml</filename>
+            <filename>slideshow.yaml</filename>
+            <filename>top.yaml</filename>
+        </files>
+        <!-- templates/rt_ambrosia/layouts-->
+        <files folder="custom/layouts" target="templates/rt_ambrosia/custom/layouts">
+            <filename>_error.yaml</filename>
+            <filename>_offline.yaml</filename>
+            <filename>coming_soon.yaml</filename>
+            <filename>home.yaml</filename>
+        </files>
+        <!-- templates/rt_ambrosia/particles-->
+        <files folder="custom/particles" target="templates/rt_ambrosia/custom/particles">
+            <filename>aos.yaml</filename>
+            <filename>audioplayer.yaml</filename>
+            <filename>blockcontent.yaml</filename>
+            <filename>calendar.yaml</filename>
+            <filename>contact.yaml</filename>
+            <filename>contentlist.yaml</filename>
+            <filename>contenttabs.yaml</filename>
+            <filename>cookie-consent.html.twig</filename>
+            <filename>cookie-consent.yaml</filename>
+            <filename>featuresslider.yaml</filename>
+            <filename>fixedheader.yaml</filename>
+            <filename>headlines.yaml</filename>
+            <filename>horizontalmenu.yaml</filename>
+            <filename>imagegrid.yaml</filename>
+            <filename>infolist.yaml</filename>
+            <filename>lists.yaml</filename>
+            <filename>logo.yaml</filename>
+            <filename>newsletter.yaml</filename>
+            <filename>promoimage.yaml</filename>
+            <filename>simplecounter.yaml</filename>
+            <filename>social.yaml</filename>
+            <filename>stripsslider.yaml</filename>
+            <filename>swiper.yaml</filename>
+            <filename>tabimage.yaml</filename>
+            <filename>video.yaml</filename>
+        </files>
+        <!-- templates/rt_ambrosia/scss-->
+        <files folder="custom/scss" target="templates/rt_ambrosia/custom/scss">
+            <filename>custom.scss</filename>
+        </files>
+        <!-- templates/rt_ambrosia/fonts-->
+        <files folder="custom/fonts/allura" target="templates/rt_ambrosia/custom/fonts/allura">
+            <filename>allura-regular-webfont.woff</filename>
+            <filename>allura-regular-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/italianno" target="templates/rt_ambrosia/custom/fonts/italianno">
+            <filename>italianno-regular-webfont.woff</filename>
+            <filename>italianno-regular-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-black" target="templates/rt_ambrosia/custom/fonts/lato/lato_black">
+            <filename>lato-black-webfont.woff</filename>
+            <filename>lato-black-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-blackitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_blackitalic">
+            <filename>lato-blackitalic-webfont.woff</filename>
+            <filename>lato-blackitalic-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-bold" target="templates/rt_ambrosia/custom/fonts/lato/lato_bold">
+            <filename>lato-bold-webfont.woff</filename>
+            <filename>lato-bold-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-bolditalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_bolditalic">
+            <filename>lato-bolditalic-webfont.woff</filename>
+            <filename>lato-bolditalic-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-hairline" target="templates/rt_ambrosia/custom/fonts/lato/lato_hairline">
+            <filename>lato-hairline-webfont.woff</filename>
+            <filename>lato-hairline-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-hairlineitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_hairlineitalic">
+            <filename>lato-hairlineitalic-webfont.woff</filename>
+            <filename>lato-hairlineitalic-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-heavy" target="templates/rt_ambrosia/custom/fonts/lato/lato_heavy">
+            <filename>lato-heavy-webfont.woff</filename>
+            <filename>lato-heavy-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-heavyitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_heavyitalic">
+            <filename>lato-heavyitalic-webfont.woff</filename>
+            <filename>lato-heavyitalic-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-italic" target="templates/rt_ambrosia/custom/fonts/lato/lato_italic">
+            <filename>lato-italic-webfont.woff</filename>
+            <filename>lato-italic-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-light" target="templates/rt_ambrosia/custom/fonts/lato/lato_light">
+            <filename>lato-light-webfont.woff</filename>
+            <filename>lato-light-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-lightitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_lightitalic">
+            <filename>lato-lightitalic-webfont.woff</filename>
+            <filename>lato-lightitalic-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-medium" target="templates/rt_ambrosia/custom/fonts/lato/lato_medium">
+            <filename>lato-medium-webfont.woff</filename>
+            <filename>lato-medium-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-mediumitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_mediumitalic">
+            <filename>lato-mediumitalic-webfont.woff</filename>
+            <filename>lato-mediumitalic-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-regular" target="templates/rt_ambrosia/custom/fonts/lato/lato_regular">
+            <filename>lato-regular-webfont.woff</filename>
+            <filename>lato-regular-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-semibold" target="templates/rt_ambrosia/custom/fonts/lato/lato_semibold">
+            <filename>lato-semibold-webfont.woff</filename>
+            <filename>lato-semibold-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-semibolditalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_semibolditalic">
+            <filename>lato-semibolditalic-webfont.woff</filename>
+            <filename>lato-semibolditalic-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-thin" target="templates/rt_ambrosia/custom/fonts/lato/lato_thin">
+            <filename>lato-thin-webfont.woff</filename>
+            <filename>lato-thin-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/lato/lato-thinitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_thinitalic">
+            <filename>lato-thinitalic-webfont.woff</filename>
+            <filename>lato-thinitalic-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/promocyja" target="templates/rt_ambrosia/custom/fonts/promocyja">
+            <filename>promocyja-webfont.woff</filename>
+            <filename>promocyja-webfont.woff2</filename>
+        </files>
+        <files folder="custom/fonts/rubikmoonrock" target="templates/rt_ambrosia/custom/fonts/rubikmoonrock">
+            <filename>rubikmoonrocks-regular-webfont.woff</filename>
+            <filename>rubikmoonrocks-regular-webfont.woff2</filename>
+        </files>
+        <!-- GANTRY 5 -->
+        <!-- administrator -> custom/admin -->
+        <files folder="custom/admin/blueprints/gantry/theme" target="templates/rt_ambrosia/custom/admin/blueprints/gantry/theme">
+            <filename>configuration.yaml</filename>
+            <filename>details.yaml</filename>
+        </files>
+
+        <files folder="custom/admin/blueprints/menu" target="templates/rt_ambrosia/custom/admin/blueprints/menu">
+            <filename>menu.yaml</filename>
+            <filename>menuitem.yaml</filename>
+        </files>
+
+        <!-- media -> custom/engine -->
+        <files folder="custom/engine/admin/blueprints/layout/inheritance/messages" target="templates/rt_ambrosia/custom/engine/admin/blueprints/layout/inheritance/messages">
+            <filename>default.yaml</filename>
+            <filename>empty.yaml</filename>
+            <filename>inherited.yaml</filename>
+        </files>
+
+        <files folder="custom/engine/admin/blueprints/layout/inheritance" target="templates/rt_ambrosia/custom/engine/admin/blueprints/layout/inheritance">
+            <filename>atom.yaml</filename>
+            <filename>offcanvas.yaml</filename>
+            <filename>particle.yaml</filename>
+            <filename>position.yaml</filename>
+            <filename>section.yaml</filename>
+            <filename>system.yaml</filename>
+        </files>
+
+        <files folder="custom/engine/admin/blueprints/layout" target="templates/rt_ambrosia/custom/engine/admin/blueprints/layout">
+            <filename>block.yaml</filename>
+            <filename>container.yaml</filename>
+            <filename>offcanvas.yaml</filename>
+            <filename>section.yaml</filename>
+        </files>
+
+        <files folder="custom/engine/admin/blueprints/menu" target="templates/rt_ambrosia/custom/engine/admin/blueprints/menu">
+            <filename>block.yaml</filename>
+        </files>
+
+        <files folder="custom/engine/admin/blueprints/position" target="templates/rt_ambrosia/custom/engine/admin/blueprints/position">
+            <filename>chrome.yaml</filename>
+        </files>
+
+        <files folder="custom/engine/blueprints/page" target="templates/rt_ambrosia/custom/engine/blueprints/page">
+            <filename>assets.yaml</filename>
+            <filename>body.yaml</filename>
+            <filename>fontawesome.yaml</filename>
+            <filename>head.yaml</filename>
+        </files>
+
+        <files folder="custom/engine/particles" target="templates/rt_ambrosia/custom/engine/particles">
+            <filename>analytics.yaml</filename>
+            <filename>assets.yaml</filename>
+            <filename>branding.yaml</filename>
+            <filename>content.yaml</filename>
+            <filename>contentarray.yaml</filename>
+            <filename>copyright.yaml</filename>
+            <filename>custom.yaml</filename>
+            <filename>date.yaml</filename>
+            <filename>frameworks.yaml</filename>
+            <filename>lightcase.yaml</filename>
+            <filename>logo.yaml</filename>
+            <filename>menu.yaml</filename>
+            <filename>messages.yaml</filename>
+            <filename>mobile-menu.yaml</filename>
+            <filename>module.yaml</filename>
+            <filename>position.yaml</filename>
+            <filename>social.yaml</filename>
+            <filename>spacer.yaml</filename>
+            <filename>totop.yaml</filename>
+        </files>
+    </fileset>
+    <updateservers>
+        <server type="collection" priority="1" name="lang_joomla-tpl_rt_ambrosia_pl-PL">https://dziadek.guide/langpack/translationlist.xml</server>
+    </updateservers>
+</extension>

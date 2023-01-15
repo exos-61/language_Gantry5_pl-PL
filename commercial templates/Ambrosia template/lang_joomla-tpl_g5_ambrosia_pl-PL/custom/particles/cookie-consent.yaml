@@ -1,73 +1,66 @@
-name: Zgoda na cookie
-description: Zgoda na wykorzystanie plików cookie.
+name: Zgoda na cookies
+description: Skonfiguruj zgodę na ciasteczka.
 type: atom
 
 form:
   fields:
     enabled:
       type: input.checkbox
-      label: Enabled
+      label: Włączone
       description: Globalne włączenie Modułu-G5.
       default: true
 
-    _note_cookie_item:
+    _info:
       type: separator.note
       class: alert alert-info
-      content: <span style="font-size:16px; font-weight:bold;">Zgoda na pliki cookie - opcje</span>
-    cookie_consent:
-      type: enable.enable
-      label: Włącz zgodę na pliki cookie
-      default: false
-    cookie_consent_position:
-      type: select.select
-      label: Pozycja
-      default: bottom
-      options:
-        bottom: Dół
-        top: Góra
-        pushdown: Banner top (pushdown)
-        bottom-left: Ruch z lewej strony
-        bottom-right: Ruch z prawej strony
-    cookie_consent_layout:
-      type: select.select
-      label: Układ
-      default: block
-      options:
-        block: Blok
-        edgeless: Bez krawędzi
-        classic: Klasyczny
-        wire: Pasek
-    cookie_consent_cbgColor:
-      type: input.colorpicker
-      label: Kolor tła
-      default: '#000000'
-    cookie_consent_ctextColor:
-      type: input.colorpicker
-      label: Kolor tekstu
-      default: '#ffffff'
-    cookie_consent_cbuttonBg:
-      type: input.colorpicker
-      label: Kolor tła przycisku
-      default: '#f1d600'
-    cookie_consent_cbuttonColor:
-      type: input.colorpicker
-      label: Kolor tekstu przycisku
-      default: '#000000'
-    cookie_consent_displayText:
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_COOKIECONSENT_INFO
+
+    messagetext:
       type: textarea.textarea
-      label: Opis
-      default: Używamy plików cookie, aby zapewnić Ci najlepsze doświadczenia na naszej stronie.
-    cookie_consent_policyText:
+      label: Tekst wiadomości
+      description: Wpisz tekst wiadomości.
+      placeholder: Ta strona używa plików cookie, aby zapewnić Ci najlepsze doświadczenia na naszej stronie.
+
+    rmtext:
       type: input.text
-      label: Polityka...
-      default: Więcej informacji
-      description: Pozostaw puste, jeśli nie są potrzebne.
-    cookie_consent_policyURL:
+      label: Tekst Czytaj więcej
+      description: Wpisz tekst " Czytaj więcej".
+      placeholder: Czytaj więcej...
+
+    rmlink:
       type: input.text
-      label: Link URL
-      placeholder: 'cookie-policy'
-      description: Pozostaw puste, jeśli nie są potrzebne.
-    cookie_consent_dismissText:
+      label: Link Czytaj więcej
+      description: Wpisz adres URL " Czytaj więcej".
+      placeholder: http://example.com/polityka-cokies
+
+    target:
+      type: select.select
+      label: Okno docelowe
+      description: Okno docelowe przeglądarki po kliknięciu elementu.
+      placeholder: 'Wybierz...'
+      default: _parent
+      options:
+          _parent: W tym samym oknie
+          _blank: Nowe okno
+
+    accepttext:
       type: input.text
-      label: Dismiss Button Text
-      default: Odrzuć!
+      label: Akceptuj
+      description: Wpisz tekst przycisku akceptacji.
+      placeholder: Zgoda!
+
+    theme:
+      type: select.select
+      label: Motyw
+      description: Wybierz motyw, którego chcesz użyć.
+      placeholder: 'Wybierz...'
+      default: dark-bottom
+      options:
+        dark-bottom: Ciemny dół
+        dark-top: Ciemna góra
+        dark-floating: Ciemny pływający
+        dark-floating-tada: Ciemna, pływająca Tada
+        dark-inline: Ciemna linia
+        light-bottom: Light Bottom
+        light-top: Light Top
+        light-floating: Light Floating

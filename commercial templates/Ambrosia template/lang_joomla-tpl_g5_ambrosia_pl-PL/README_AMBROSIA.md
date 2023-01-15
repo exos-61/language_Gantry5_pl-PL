@@ -29,9 +29,9 @@ Niestety pliki językowe **.ini** nie zawierają wszystkich wyrażeń użytych p
 
 Zgodnie z [dokumentacją](https://docs.gantry.org/gantry5/advanced/customizing-theme-files#theme-directory-matrix) katalog **custom** w lokalizacji *templates/Twój_szablon* służy do nadpisywania wszystkich plików znajdujących się w *administrator/components/com_gantry5* w katalogu **admin**, *media/gantry5/engines/nucleus* w katalogu **engine** oraz pliki szablonu zgodnie z nazwą i hierarchią katalogów. Aby pakiet Gantry 5 był całkowicie przetłumaczony pliki yaml muszą być zainstalowane lub wklejone do katalogu custom szablonu w wymienionych katalogach.
 
-Ten pakiet językowy zainstaluje pliki językowe .ini, przetłumaczone pliki yaml i twig szablonu Ambrosia oraz pakietu Gantry 5.
+Ten pakiet językowy zainstaluje pliki językowe .ini, przetłumaczone pliki yaml i twig, szablonu Ambrosia oraz pakietu Gantry 5.
 
-### Jakie pliki yaml i twig szablonu zostały przetłumaczone?
+### Jakie pliki yaml i twig szablonu zostały przetłumaczone i dorzucone?
 
 **templates**
 
@@ -93,7 +93,19 @@ Ten pakiet językowy zainstaluje pliki językowe .ini, przetłumaczone pliki yam
   * tabimage.yaml - *Moduł-G5 (Particle) - Wyświetlanie obrazów w kartach.*
   * video.yaml - *Moduł-G5 (Particle) - Osadza filmy z serwisów YouTube, Vimeo, lokalnych lub zewnętrznych adresów URL.*
 
+* templates/rt_ambrosia/scss
+  * custom.scss - *Doinstalowanie czcionek*
+    * Allura - 	*Kaligraficzna , ekspozycyjna , elegancka, formalna , zaproszenia*
+    * Italiano - *Kaligraficzna , Kursywa , Wyświetlaczowa , Elegancka , Formalna*
+    * Lato - *Współczesna, Nagłówki, Akapity, Groteska, Humanista, Kursywa, Bolt, Heavy, Light, Sans, Ultra Light*
+    * Promocyjna - *Kaligraficzna , Swobodna , Kręcona , Ekspozycyjna , Elegancka , Ślubna , Szeroka*
+    * Rubik Moonrock - *Ozdobna, Okazjonalna*
+
 ### Dodatkowa treść poza projektem
 
-Do przetłumaczonych plików konfiguracyjnych .yaml dodałem sygnatury językowe dla których treść znajduje się w głównym pliku językowym  **pl-PL.com_gantry5.ini** na końcu arkusza. Sygnatury umieściłem w **_info** i **_alert** plików yaml.
+Dla przetłumaczonych plików konfiguracyjnych .yaml dodałem sygnatury językowe dla których treść znajduje się w głównym pliku językowym  **pl-PL.com_gantry5.ini** na końcu arkusza. Sygnatury umieściłem w **_info** i **_alert** plików yaml.
+
+Dodatkowe darmowe Wtyczki-G i Moduły-G5
+
+* Cookie Consent - *Zgoda na ciasteczka* [Inspire Theme](https://www.inspiretheme.com/downloads/freebies/cookie-consent-atom)
 

@@ -14,11 +14,11 @@ form:
       label: Włączone
       description: Globally enable particles.
       default: true
-_info:
+
+    _info:
       type: separator.note
       class: alert alert-info
       content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_PROMOIMAGE_INFO
-
 
     class:
       type: input.selectize
@@ -59,7 +59,6 @@ _info:
       description: Utwórz każdy element, aby pojawił się w sekcji zawartości strony.
       value: title
       ajax: true
-
       fields:
         .title:
           type: input.text

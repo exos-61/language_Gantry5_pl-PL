@@ -1,0 +1,169 @@
+name: Mapy Google
+description: Wyświetl mapę Google.
+type: particle
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Włączone
+      description: Globalnie włączony moduł-G5.
+      default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: DZIADEK_GUIDE_GANTRY5_TEMPLATE_PARTICLE_GOOGLEMAP_INFO
+
+    apikey:
+      type: input.text
+      label: Klucz API Google Map
+      description: Jeśli korzystasz z Google Maps API na localhost lub Twoja domena nie była aktywna przed 22 czerwca 2016, Mapa będzie wymagała klucza, aby działać.
+
+    width:
+      type: input.text
+      label: Szerokość mapy
+      description: Ustaw szerokość mapy w pikselach lub procentach. Domyślnie jest to '100%'.
+      default: 100%
+
+    height:
+      type: input.text
+      label: Wysokość mapy
+      description: Ustaw wysokość mapy w pikselach. Domyślnie jest to '500px'.
+      default: 500px
+
+    maptype:
+      type: select.select
+      label: Typ mapy
+      description: Wybierz typ mapy.
+      placeholder: 'Wybierz...'
+      default: ROADMAP
+      options:
+        ROADMAP: Mapa drogowa
+        SATELLITE: Satelita
+        HYBRID: Hybrydowa
+        TERRAIN: Terenowa
+
+    latitude:
+      type: input.text
+      label: Szerokość geograficzna
+      description: Wprowadź szerokość geograficzną lokalizacji.
+      default: 52.052312
+
+    longitude:
+      type: input.text
+      label: Długość geograficzna
+      description: Wprowadzić długość geograficzną lokalizacji.
+      default: 4.447141
+
+    zoom:
+      type: input.text
+      label: Zoom
+      description: Ustaw poziom powiększenia mapy. Powinna to być liczba z przedziału od 0 do 22.
+      default: 7
+
+    defaultmarker:
+      type: select.select
+      label: Domyślny znacznik
+      description: Wybierz, czy ma być pokazany marker dla współrzędnych mapy, czy nie.
+      placeholder: 'Wybierz...'
+      default: show
+      options:
+        show: Pokaż
+        hide: Ukryj
+
+    markertext:
+      type: textarea.textarea
+      label: Okno informacyjne
+      description: Wpisz tekst dla okna informacyjnego markera.
+      default:
+
+    markerstate:
+      type: select.select
+      label: Okno informacyjne onLoad
+      description: Wybierz domyślny stan okna informacyjnego po załadowaniu strony.
+      placeholder: 'Wybierz...'
+      default: 1
+      options:
+        1: Pokaż
+        0: Ukryj
+
+    scrollwheel:
+      type: select.select
+      label: Koło przewijania
+      description: Włączenie lub wyłączenie powiększania mapy za pomocą kółka przewijania. Domyślnie jest ono wyłączone.
+      placeholder: 'Wybierz...'
+      default: 0
+      options:
+        1: Włącz
+        0: Wyłączenie
+
+    dragging:
+      type: select.select
+      label: Przeciąganie
+      description: Włączenie lub wyłączenie przeciągania mapy. Domyślnie jest ona włączona.
+      placeholder: 'Wybierz...'
+      default: enabled
+      options:
+        enabled: Włącz
+        disabled: Wyłącz
+        disabledmobile: Wyłącz (tylko telefon komórkowy)
+
+    markers:
+      type: collection.list
+      array: true
+      label: Dodatkowe markery
+      description: Utwórz dodatkowe znaczniki.
+      value: name
+      ajax: true
+
+      fields:
+
+        .latitude:
+          type: input.text
+          label: Szerokość geograficzna
+          description: Wprowadź szerokość geograficzną lokalizacji.
+
+        .longitude:
+          type: input.text
+          label: Długość geograficzna
+          description: Enter the longitude of the location.
+
+        .markertext:
+          type: textarea.textarea
+          label: Tekst znacznika
+          description: Type in the marker text.
+          default:
+
+        .markerstate:
+          type: select.select
+          label: Okno informacyjne onLoad
+          description: Wybierz domyślny stan okna informacyjnego po załadowaniu strony.
+          placeholder: 'Wybierz...'
+          default: 1
+          options:
+            1: Pokaż
+            0: Ukryj
+
+    snazzymaps:
+      type: textarea.textarea
+      label: Styl SnazzyMaps
+      description: Wklej fragment kodu, który skopiowałeś ze strony SnazzyMaps.com.
+
+    css.class:
+      type: input.selectize
+      label: Klasy CSS
+      description: Nazwa klasy CSS dla modułu-G5.
+      default:
+
+    extra:
+      type: collection.keyvalue
+      label: Atrybuty tagów
+      description: Dodatkowe atrybuty Tagów.
+      key_placeholder: Key (data-*, style, ...)
+      value_placeholder: Wartość
+      exclude: ['id', 'class']
