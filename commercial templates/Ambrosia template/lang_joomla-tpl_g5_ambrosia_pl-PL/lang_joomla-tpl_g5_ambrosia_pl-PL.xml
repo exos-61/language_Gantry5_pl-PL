@@ -72,6 +72,8 @@
             <filename>cookie-consent.yaml</filename>
             <filename>featuresslider.yaml</filename>
             <filename>fixedheader.yaml</filename>
+            <filename>googlemap.html.twig</filename>
+            <filename>googlemap.yaml</filename>
             <filename>headlines.yaml</filename>
             <filename>horizontalmenu.yaml</filename>
             <filename>imagegrid.yaml</filename>
@@ -89,7 +91,7 @@
         </files>
         <!-- templates/rt_ambrosia/scss-->
         <files folder="custom/scss" target="templates/rt_ambrosia/custom/scss">
-            <filename>custom.scss</filename>
+            <filename>custom_.scss</filename>
         </files>
         <!-- templates/rt_ambrosia/fonts-->
         <files folder="custom/fonts/allura" target="templates/rt_ambrosia/custom/fonts/allura">
@@ -100,75 +102,75 @@
             <filename>italianno-regular-webfont.woff</filename>
             <filename>italianno-regular-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-black" target="templates/rt_ambrosia/custom/fonts/lato/lato_black">
+        <files folder="custom/fonts/lato/lato_black" target="templates/rt_ambrosia/custom/fonts/lato/lato_black">
             <filename>lato-black-webfont.woff</filename>
             <filename>lato-black-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-blackitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_blackitalic">
+        <files folder="custom/fonts/lato/lato_blackitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_blackitalic">
             <filename>lato-blackitalic-webfont.woff</filename>
             <filename>lato-blackitalic-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-bold" target="templates/rt_ambrosia/custom/fonts/lato/lato_bold">
+        <files folder="custom/fonts/lato/lato_bold" target="templates/rt_ambrosia/custom/fonts/lato/lato_bold">
             <filename>lato-bold-webfont.woff</filename>
             <filename>lato-bold-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-bolditalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_bolditalic">
+        <files folder="custom/fonts/lato/lato_bolditalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_bolditalic">
             <filename>lato-bolditalic-webfont.woff</filename>
             <filename>lato-bolditalic-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-hairline" target="templates/rt_ambrosia/custom/fonts/lato/lato_hairline">
+        <files folder="custom/fonts/lato/lato_hairline" target="templates/rt_ambrosia/custom/fonts/lato/lato_hairline">
             <filename>lato-hairline-webfont.woff</filename>
             <filename>lato-hairline-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-hairlineitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_hairlineitalic">
+        <files folder="custom/fonts/lato/lato_hairlineitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_hairlineitalic">
             <filename>lato-hairlineitalic-webfont.woff</filename>
             <filename>lato-hairlineitalic-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-heavy" target="templates/rt_ambrosia/custom/fonts/lato/lato_heavy">
+        <files folder="custom/fonts/lato/lato_heavy" target="templates/rt_ambrosia/custom/fonts/lato/lato_heavy">
             <filename>lato-heavy-webfont.woff</filename>
             <filename>lato-heavy-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-heavyitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_heavyitalic">
+        <files folder="custom/fonts/lato/lato_heavyitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_heavyitalic">
             <filename>lato-heavyitalic-webfont.woff</filename>
             <filename>lato-heavyitalic-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-italic" target="templates/rt_ambrosia/custom/fonts/lato/lato_italic">
+        <files folder="custom/fonts/lato/lato_italic" target="templates/rt_ambrosia/custom/fonts/lato/lato_italic">
             <filename>lato-italic-webfont.woff</filename>
             <filename>lato-italic-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-light" target="templates/rt_ambrosia/custom/fonts/lato/lato_light">
+        <files folder="custom/fonts/lato/lato_light" target="templates/rt_ambrosia/custom/fonts/lato/lato_light">
             <filename>lato-light-webfont.woff</filename>
             <filename>lato-light-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-lightitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_lightitalic">
+        <files folder="custom/fonts/lato/lato_lightitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_lightitalic">
             <filename>lato-lightitalic-webfont.woff</filename>
             <filename>lato-lightitalic-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-medium" target="templates/rt_ambrosia/custom/fonts/lato/lato_medium">
+        <files folder="custom/fonts/lato/lato_medium" target="templates/rt_ambrosia/custom/fonts/lato/lato_medium">
             <filename>lato-medium-webfont.woff</filename>
             <filename>lato-medium-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-mediumitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_mediumitalic">
+        <files folder="custom/fonts/lato/lato_mediumitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_mediumitalic">
             <filename>lato-mediumitalic-webfont.woff</filename>
             <filename>lato-mediumitalic-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-regular" target="templates/rt_ambrosia/custom/fonts/lato/lato_regular">
+        <files folder="custom/fonts/lato/lato_regular" target="templates/rt_ambrosia/custom/fonts/lato/lato_regular">
             <filename>lato-regular-webfont.woff</filename>
             <filename>lato-regular-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-semibold" target="templates/rt_ambrosia/custom/fonts/lato/lato_semibold">
+        <files folder="custom/fonts/lato/lato_semibold" target="templates/rt_ambrosia/custom/fonts/lato/lato_semibold">
             <filename>lato-semibold-webfont.woff</filename>
             <filename>lato-semibold-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-semibolditalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_semibolditalic">
+        <files folder="custom/fonts/lato/lato_semibolditalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_semibolditalic">
             <filename>lato-semibolditalic-webfont.woff</filename>
             <filename>lato-semibolditalic-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-thin" target="templates/rt_ambrosia/custom/fonts/lato/lato_thin">
+        <files folder="custom/fonts/lato/lato_thin" target="templates/rt_ambrosia/custom/fonts/lato/lato_thin">
             <filename>lato-thin-webfont.woff</filename>
             <filename>lato-thin-webfont.woff2</filename>
         </files>
-        <files folder="custom/fonts/lato/lato-thinitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_thinitalic">
+        <files folder="custom/fonts/lato/lato_thinitalic" target="templates/rt_ambrosia/custom/fonts/lato/lato_thinitalic">
             <filename>lato-thinitalic-webfont.woff</filename>
             <filename>lato-thinitalic-webfont.woff2</filename>
         </files>

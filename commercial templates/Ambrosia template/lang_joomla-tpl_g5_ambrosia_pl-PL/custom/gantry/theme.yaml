@@ -36,6 +36,22 @@ configuration:
     class: \Gantry\Framework\Theme
 
   fonts:
+    allura:
+      400: 'gantry-theme://fonts/allura/allura-regular-webfont'
+    cinzel:
+      900: 'gantry-theme://fonts/cinzel/cinzel_black/cinzel-black-webfont'
+      800: 'gantry-theme://fonts/cinzel/cinzel_extrabold/cinzel-extrabold-webfont'
+      700: 'gantry-theme://fonts/cinzel/cinzel_bold/cinzel-bold-webfont'
+      600: 'gantry-theme://fonts/cinzel/cinzel_semibolt/cinzel-semibolt-webfont'
+      500: 'gantry-theme://fonts/cinzel/cinzel_medium/cinzel-medium-webfont'
+      400: 'gantry-theme://fonts/cinzel/cinzel_regular/cinzel-regular-webfont'
+    cinzeldecorative:
+      900: 'gantry-theme://fonts/cinzel/cinzeldecorative_black/cinzeldecorative-black-webfont'
+      800: 'gantry-theme://fonts/cinzel/cinzeldecorative_extrabold/cinzeldecorative-extrabold-webfont'
+      700: 'gantry-theme://fonts/cinzel/cinzeldecorative_bold/cinzeldecorative-bold-webfont'
+      600: 'gantry-theme://fonts/cinzel/cinzeldecorative_semibolt/cinzeldecorative-semibolt-webfont'
+      500: 'gantry-theme://fonts/cinzel/cinzeldecorative_medium/cinzeldecorative-medium-webfont'
+      400: 'gantry-theme://fonts/cinzel/cinzeldecorative_regular/cinzeldecorative-regular-webfont'
     lato:
       800italic: 'gantry-theme://fonts/lato/lato_heavyitalic/lato-heavyitalic-webfont'
       800: 'gantry-theme://fonts/lato/lato_heavy/lato-heavy-webfont'
@@ -67,8 +83,8 @@ configuration:
     roboto:
       700: 'gantry-theme://fonts/roboto/roboto_bold/roboto-bold-webfont'
       700italic: 'gantry-theme://fonts/roboto/roboto_bolditalic/roboto-bolditalic-webfont'
-      400italic: 'gantry-theme://fonts/roboto/roboto_italic/roboto-italic-webfont'
       400: 'gantry-theme://fonts/roboto/roboto_regular/roboto-regular-webfont'
+      400italic: 'gantry-theme://fonts/roboto/roboto_italic/roboto-italic-webfont'
     robotocondensed:
       700: 'gantry-theme://fonts/robotocondensed/robotocondensed_bold/robotocondensed-bold-webfont'
       700italic: 'gantry-theme://fonts/robotocondensed/robotocondensed_bolditalic/robotocondensed-bolditalic-webfont'

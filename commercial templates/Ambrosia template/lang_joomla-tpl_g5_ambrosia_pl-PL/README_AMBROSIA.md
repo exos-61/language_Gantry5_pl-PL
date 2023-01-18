@@ -31,7 +31,7 @@ Zgodnie z [dokumentacją](https://docs.gantry.org/gantry5/advanced/customizing-t
 
 Ten pakiet językowy zainstaluje pliki językowe .ini, przetłumaczone pliki yaml i twig, szablonu Ambrosia oraz pakietu Gantry 5.
 
-### Jakie pliki yaml i twig szablonu zostały przetłumaczone i dorzucone?
+### Jakie pliki yaml i twig szablonu zostały przetłumaczone?
 
 **templates**
 
@@ -59,9 +59,6 @@ Ten pakiet językowy zainstaluje pliki językowe .ini, przetłumaczone pliki yam
   * slideshow.yaml - *Style sekcji Slideshow*
   * top.yaml - *Style sekcji Top*
 
-* templates/rt_ambrosia/gantry
-  * theme_modyfikuj.yaml - *Wzór instalacji dodatkowej czcionki Lato*
-
 * templates/rt_ambrosia/layouts
   * _error.yaml - *Układ strony błędów z skonfigurowanymi elementami*
   * _offline.yaml - *Układ strony informacyjnej dla wyłączonej witryny*
@@ -73,15 +70,11 @@ Ten pakiet językowy zainstaluje pliki językowe .ini, przetłumaczone pliki yam
   * audioplayer.yaml - *Moduł-G5 (Particle) - Odtwarzanie muzyki poprzez interfejs odtwarzacza audio.*
   * blockcontent.yaml - *Moduł-G5 (Particle) - Wyświetla zawartość bloku*
   * calendar.yaml - *Moduł-G5 (Particle) - Kalendarz do wyświetlania dat.*
-  * cookie-consent.yaml - *Wtyczka-G5 (Atom) - Wyświetla komunikat zgody na stosowanie cookies.*
-  * cookie-consent.html.twig - *Wtyczka darmowa z [Inspire Theme](https://www.inspiretheme.com/documentation/gantry5-particles/cookie-consent)*
   * contact.yaml - *Moduł-G5 (Particle) - Wyświetla kontakt.*
   * contentlist.yaml - *Moduł-G5 (Particle) - Wyświetla listę zawartości.*
   * contenttabs.yaml - *Moduł-G5 (Particle) - Wyświetla karty treści.*
   * featuresslider.yaml - *Moduł-G5 (Particle) - Wyświetlanie suwaka z funkcjami.*
   * fixedheader.yaml - *Wtyczka-G5 (Atom) - Dodaje stały nagłówek do swojej strony.*
-  * googlemap.yaml - *Moduł-G5 (Particle) - umożliwia wstawianie na stronę bloku z lokalizacją np. Twojej firmy w mapach Google*
-  * googlemap.html.twig - *Wtyczka darmowa z [Inspire Theme](https://www.inspiretheme.com/documentation/gantry5-particles/google-maps)*
   * headlines.yaml - *Moduł-G5 (Particle) - Wyświetla nagłówki.*
   * horizontalmenu.yaml - *Moduł-G5 (Particle) - Wyświetlanie menu poziomego.*
   * imagegrid.yaml - *Moduł-G5 (Particle) - Wyświetlanie siatki zdjęć.*
@@ -97,19 +90,24 @@ Ten pakiet językowy zainstaluje pliki językowe .ini, przetłumaczone pliki yam
   * tabimage.yaml - *Moduł-G5 (Particle) - Wyświetlanie obrazów w kartach.*
   * video.yaml - *Moduł-G5 (Particle) - Osadza filmy z serwisów YouTube, Vimeo, lokalnych lub zewnętrznych adresów URL.*
 
+### Dodane dodatkowe elementy poza projektem.
+
+* pl-PL.com_gantry5.ini - *Dla przetłumaczonych plików konfiguracyjnych .yaml dodałem sygnatury językowe na końcu arkusza. W plikach yaml sygnatury umieściłem w **_info** i **_alert**.*
+
+* templates/rt_ambrosia/gantry
+  * theme.yaml - *Lokalna instalacja czcionek Allura, Italiano, Lato, Promocyja i Rubik Moonrock*
+
 * templates/rt_ambrosia/scss
-  * custom.scss - *Doinstalowanie czcionek*
-    * Allura - 	*Kaligraficzna , ekspozycyjna , elegancka, formalna , zaproszenia*
-    * Italiano - *Kaligraficzna , Kursywa , Wyświetlaczowa , Elegancka , Formalna*
-    * Lato - *Współczesna, Nagłówki, Akapity, Groteska, Humanista, Kursywa, Bolt, Heavy, Light, Sans, Ultra Light*
-    * Promocyjna - *Kaligraficzna , Swobodna , Kręcona , Ekspozycyjna , Elegancka , Ślubna , Szeroka*
-    * Rubik Moonrock - *Ozdobna, Okazjonalna*
+  * custom_.scss - *Doinstalowanie czcionek do bezpośredniego użycia. Jeżeli ich potrzebujesz zmień nazwę pliku na custom.scss i przekompiluj css w sekcji Style Twojego szablonu*
+    * Allura - 	*Kaligraficzna , Ekspozycyjna , Elegancka, Formalna , Zaproszenia - Regular (400)*
+    * Cinzel - *Nagłówkowa, Dekoracyjna - Black, Bold, Extrabold, Medium, Regular (400)*
+    * Italianno - *Kaligraficzna , Wyświetlaczowa , Elegancka , Formalna - Kursywa , Regular (400)*
+    * Lato - *Współczesna, Nagłówki, Akapity, Groteska, Humanista - Kursywa, Black, Bolt, Semibold, Heavy, Light, Sans, Ultra Light, Thin, Hairline, Medium, Regular (400)*
+    * Promocyja - *Kaligraficzna , Swobodna , Kręcona , Ekspozycyjna , Elegancka , Ślubna , Szeroka - Medium*
+    * Rubik Moonrock - *Okazjonalna, Dekoracyjna - Regular (400)*
 
-### Dodatkowa treść poza projektem
-
-Dla przetłumaczonych plików konfiguracyjnych .yaml dodałem sygnatury językowe dla których treść znajduje się w głównym pliku językowym  **pl-PL.com_gantry5.ini** na końcu arkusza. Sygnatury umieściłem w **_info** i **_alert** plików yaml.
-
-Dodatkowe darmowe Wtyczki-G i Moduły-G5
-
-* Cookie Consent - *Zgoda na ciasteczka* [Inspire Theme](https://www.inspiretheme.com/downloads/freebies/cookie-consent-atom)
-
+* Dodatkowe darmowe Wtyczki-G i Moduły-G5
+  * cookie-consent.yaml - *Wtyczka-G5 (Atom) - Wyświetla komunikat zgody na stosowanie cookies.*
+  * cookie-consent.html.twig - *Wtyczka darmowa z [Inspire Theme](https://www.inspiretheme.com/documentation/gantry5-particles/cookie-consent)*
+  * googlemap.yaml - *Moduł-G5 (Particle) - umożliwia wstawianie na stronę bloku z lokalizacją np. Twojej firmy w mapach Google*
+  * googlemap.html.twig - *Wtyczka darmowa z [Inspire Theme](https://www.inspiretheme.com/documentation/gantry5-particles/google-maps)*
